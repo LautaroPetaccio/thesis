@@ -1,0 +1,4 @@
+freaz/eventcatalog-bug-reporting	asyncapi.yaml	https://github.com/freaz/eventcatalog-bug-reporting/blob/098ab47ad1576e5f402f7afebfba04da0d40dd3e/asyncapi.yaml
+specmatic/specmatic-order-contracts	io/specmatic/examples/store/asyncapi/3_0_0/order_service_async_v2.yaml	https://github.com/specmatic/specmatic-order-contracts/blob/f904f86dce562c43afa70f6e9573440b76469cc9/io/specmatic/examples/store/asyncapi/3_0_0/order_service_async_v2.yaml
+charlie-haley/asyncapi-go	testdata/valid_3_0_0_googlepubsub.yaml	https://github.com/charlie-haley/asyncapi-go/blob/9782889bf371ab858248130403b43aec907c7fec/testdata/valid_3_0_0_googlepubsub.yaml
+KTCrisis/event7	backend/tests/fixtures/asyncapi_import/06_google_pubsub.yaml	https://github.com/KTCrisis/event7/blob/fe4a0dd68f515ee358c27bb53a043d0e97d6a733/backend/tests/fixtures/asyncapi_import/06_google_pubsub.yaml

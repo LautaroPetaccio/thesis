@@ -1,0 +1,788 @@
+{
+  "generated": "2026-06-15T20:31:23Z",
+  "definition": "AsyncAPI 2.x messages declaring a correlationId (location runtime expression), the 2.x mechanism for pairing a reply with its request",
+  "funnel": {
+    "unique_blobs": 3189,
+    "fetch_failed": 6,
+    "parsed_2x": 2701,
+    "non_2x": 119,
+    "parse_failed": 363,
+    "specs_with_correlationId": 55
+  },
+  "correlationId": {
+    "specs": 55,
+    "repos": 36,
+    "by_location": {
+      "other": {
+        "specs": 2,
+        "repos": 3
+      },
+      "header": {
+        "specs": 46,
+        "repos": 29
+      },
+      "payload": {
+        "specs": 7,
+        "repos": 7
+      }
+    },
+    "top_fields": [
+      [
+        "transactionId",
+        90
+      ],
+      [
+        "correlationId",
+        76
+      ],
+      [
+        "correlation_id",
+        19
+      ],
+      [
+        "sentAt",
+        17
+      ],
+      [
+        "traceId",
+        10
+      ],
+      [
+        "businessId",
+        10
+      ],
+      [
+        "x-correlation-id",
+        8
+      ],
+      [
+        "reply",
+        8
+      ],
+      [
+        "REQUEST_ID",
+        5
+      ],
+      [
+        "messageId",
+        4
+      ],
+      [
+        "not a valid runtime expression",
+        3
+      ],
+      [
+        "MQMD/CorrelId",
+        3
+      ],
+      [
+        "CountryCode",
+        2
+      ],
+      [
+        "tenantId",
+        2
+      ]
+    ],
+    "by_protocol": [
+      {
+        "protocol": "amqp",
+        "specs": 23,
+        "repos": 18
+      },
+      {
+        "protocol": "kafka",
+        "specs": 19,
+        "repos": 18
+      },
+      {
+        "protocol": "mqtt",
+        "specs": 7,
+        "repos": 7
+      },
+      {
+        "protocol": "http",
+        "specs": 4,
+        "repos": 4
+      },
+      {
+        "protocol": "nats",
+        "specs": 1,
+        "repos": 1
+      },
+      {
+        "protocol": "redis",
+        "specs": 1,
+        "repos": 1
+      }
+    ]
+  },
+  "request_reply_context": {
+    "parsed_2x": 2701,
+    "specs_with_reqreply_naming": 49,
+    "specs_with_duplex_channel": 684,
+    "correlationId_specs_with_reqreply_signal": 9
+  },
+  "specs": [
+    {
+      "repo": "asyncapi/tck",
+      "path": "tests/asyncapi-2.0/Correlation ID Object/invalid-location-expression.yaml",
+      "sha": "27d052e1237f35f4c0cac71ac48dd3f008c1a3c8",
+      "version": "2.0.0",
+      "n_correlationIds": 2,
+      "locations": "not a valid runtime expression",
+      "location_classes": "other:2",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "asyncapi/tck",
+      "path": "tests/asyncapi-2.0/Correlation ID Object/valid.yaml",
+      "sha": "506471390904d5960fc668e99e2ef88e43e8bfcc",
+      "version": "2.0.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:2",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "aml-org/amf",
+      "path": "amf-cli/shared/src/test/resources/validations/async20/validations/invalid-runtime-expressions.yaml",
+      "sha": "5be2fe2f9669aa83a4f4c4bbabd70d4b6ea6ed92",
+      "version": "2.0.0",
+      "n_correlationIds": 1,
+      "locations": "not a valid runtime expression",
+      "location_classes": "other:1",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "asyncapi/tck",
+      "path": "tests/asyncapi-2.0/Components Object/invalid-correlationIds-key.yaml",
+      "sha": "6cbea6dda3e702cc20cf6400351e8cf56121df5b",
+      "version": "2.0.0",
+      "n_correlationIds": 1,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:1",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "asyncapi/bundler",
+      "path": "tests/gh-185.yaml",
+      "sha": "74b79651983e58758fc9d63a26140b0ac452118d",
+      "version": "2.0.0",
+      "n_correlationIds": 1,
+      "locations": "$message.header#/correlation_id",
+      "location_classes": "header:1",
+      "protocols": "amqp",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "asyncapi/tck",
+      "path": "tests/asyncapi-2.0/Correlation ID Object/Fields Types/invalid-description-type.yaml",
+      "sha": "63afaba9e8c61fcb42686cc2b6c4a2c57a19da1d",
+      "version": "2.0.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:2",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "asyncapi/tck",
+      "path": "tests/asyncapi-2.0/Message Trait Object/valid-internal-ref-correlationId.yaml",
+      "sha": "9c73a0b4f0f54cdb3767c92583fdd4e653d22859",
+      "version": "2.0.0",
+      "n_correlationIds": 3,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:3",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "aml-org/amf",
+      "path": "amf-cli/shared/src/test/resources/cycle/async20/correlation-id/api.yaml",
+      "sha": "abd6fa73683ee3fe09e9c000b9193d632982a295",
+      "version": "2.0.0",
+      "n_correlationIds": 1,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:1",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "asyncapi/tck",
+      "path": "tests/asyncapi-2.0/Message Object/valid.yaml",
+      "sha": "5c608f44aaa972f25afba0bc15728fd0157a3d67",
+      "version": "2.0.0",
+      "n_correlationIds": 1,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:1",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "jstoiko/amf",
+      "path": "amf-client/shared/src/test/resources/upanddown/cycle/async20/components-cycle.yaml",
+      "sha": "3561762969b04e26459c62757d139ecb143aac47",
+      "version": "2.0.0",
+      "n_correlationIds": 3,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:3",
+      "protocols": "amqp",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "aml-org/amf-metadata",
+      "path": "transform/src/test/resources/specs/async20/message-obj.yaml",
+      "sha": "34aab23da09e484f4484a02f5ad97574caaff42d",
+      "version": "2.0.0",
+      "n_correlationIds": 1,
+      "locations": "$message.header#/MQMD/CorrelId",
+      "location_classes": "header:1",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "aml-org/amf",
+      "path": "amf-cli/shared/src/test/resources/validations/async20/rpc-server.yaml",
+      "sha": "48e7f2fd2ebd221fbcd7e38d27cd3d9df1c3038a",
+      "version": "2.0.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlation_id",
+      "location_classes": "header:2",
+      "protocols": "amqp",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "asyncapi/tck",
+      "path": "tests/asyncapi-2.0/Components Object/valid-complete.yaml",
+      "sha": "47bd27a98e35f745066950b0e3cb9d59dc4097d9",
+      "version": "2.0.0",
+      "n_correlationIds": 6,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:6",
+      "protocols": "kafka",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "somosphi/ts-seed-hexagonal",
+      "path": "docs/asyncapi.yaml",
+      "sha": "9f164f92d8566afe4de6f3c03c79fb83cabd1e29",
+      "version": "2.0.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlation_id",
+      "location_classes": "header:2",
+      "protocols": "amqp",
+      "duplex_channel": false,
+      "reqreply_naming": true
+    },
+    {
+      "repo": "jstoiko/amf",
+      "path": "amf-client/shared/src/test/resources/validations/async20/components/async-components.yaml",
+      "sha": "755473a2f574afb15f40e0bb89fe94b3f3163d75",
+      "version": "2.0.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:2",
+      "protocols": "amqp",
+      "duplex_channel": true,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "asyncapi/tck",
+      "path": "tests/asyncapi-2.0/Message Trait Object/valid.yaml",
+      "sha": "bd34611cf48968456f8b3818863c1c5f9b350893",
+      "version": "2.0.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:2",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "aml-org/amf-metadata",
+      "path": "transform/src/test/resources/specs/async20/components/async-components.yaml",
+      "sha": "6e39231269ecb69ee8731fa07af5b0f41140a0f7",
+      "version": "2.0.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:2",
+      "protocols": "amqp",
+      "duplex_channel": true,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "aml-org/amf",
+      "path": "amf-cli/shared/src/test/resources/upanddown/cycle/async20/components/components-cycle.yaml",
+      "sha": "beff0437001a4c72d7555537f3403a3da1b09f00",
+      "version": "2.0.0",
+      "n_correlationIds": 3,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:3",
+      "protocols": "amqp",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "aml-org/amf",
+      "path": "amf-cli/shared/src/test/resources/validations/async20/validations/invalid-component-names.yaml",
+      "sha": "8a564bcadf14b9a4065bb38befd664c8fc7ece17",
+      "version": "2.0.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:2",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "jstoiko/amf",
+      "path": "amf-client/shared/src/test/resources/validations/async20/message-obj.yaml",
+      "sha": "d9b2256fa529c8de5e69c181920f58715ecfc3ea",
+      "version": "2.0.0",
+      "n_correlationIds": 1,
+      "locations": "$message.header#/MQMD/CorrelId",
+      "location_classes": "header:1",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "aml-org/amf",
+      "path": "amf-cli/shared/src/test/resources/validations/async20/components/async-components.yaml",
+      "sha": "dab7330cf919685e2709250728161a7db3ffc9d3",
+      "version": "2.0.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:2",
+      "protocols": "amqp",
+      "duplex_channel": true,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "aml-org/amf",
+      "path": "amf-cli/shared/src/test/resources/upanddown/cycle/async20/rpc-server.yaml",
+      "sha": "fde257ad49dff576f67dcc1d2d00c5e500e7e962",
+      "version": "2.0.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlation_id",
+      "location_classes": "header:2",
+      "protocols": "amqp",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "aml-org/amf",
+      "path": "amf-cli/shared/src/test/resources/validations/async20/message-obj.yaml",
+      "sha": "f7aff3160e35e88bbdf8ae5f03ee45268a543e16",
+      "version": "2.0.0",
+      "n_correlationIds": 1,
+      "locations": "$message.header#/MQMD/CorrelId",
+      "location_classes": "header:1",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "TykTechnologies/graphql-translator",
+      "path": "asyncapi/fixtures/print-service-api-2.0.0.yaml",
+      "sha": "eaf7b9e7fb9a217f382082505bb4ea0248ff68aa",
+      "version": "2.0.0",
+      "n_correlationIds": 4,
+      "locations": "$message.header#/x-correlation-id",
+      "location_classes": "header:4",
+      "protocols": "amqp|mqtt",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "LowellObservatory/Lorax",
+      "path": "PWMountAgent/extern/example_api.yaml",
+      "sha": "8329944ffcaa6c8ec8fcc7d615ede46a2272ad06",
+      "version": "2.0.0",
+      "n_correlationIds": 4,
+      "locations": "$message.header#/x-correlation-id",
+      "location_classes": "header:4",
+      "protocols": "amqp|mqtt",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "aml-org/als",
+      "path": "als-actions/shared/src/test/resources/actions/hover/async-api20-full.yaml",
+      "sha": "ffe72f03837fa3e8090a3e99af135b87f5300748",
+      "version": "2.0.0",
+      "n_correlationIds": 8,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:8",
+      "protocols": "amqp|kafka",
+      "duplex_channel": true,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "metricq/metricq-rpc-docs",
+      "path": "manager.asyncapi.yaml",
+      "sha": "a97fd8958a7337feb6efb08f98355ab84a46d314",
+      "version": "2.0.0",
+      "n_correlationIds": 1,
+      "locations": "$message.header#/correlation_id",
+      "location_classes": "header:1",
+      "protocols": "amqp",
+      "duplex_channel": true,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "asyncapi/dotnet-rabbitmq-template",
+      "path": "example/asyncapi.yaml",
+      "sha": "9b47afb80cbd32c801a3a0546dc23b76837d7df5",
+      "version": "2.2.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlation_id",
+      "location_classes": "header:2",
+      "protocols": "amqp",
+      "duplex_channel": true,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "The-Microservice-Dungeon/robot",
+      "path": "swagger/v4/asyncapi.yaml",
+      "sha": "ae63d5b2f27ac5491ec136652e9f8b874182c0dc",
+      "version": "2.2.0",
+      "n_correlationIds": 21,
+      "locations": "$message.header#/transactionId",
+      "location_classes": "header:21",
+      "protocols": "kafka",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "The-Microservice-Dungeon/gamelog",
+      "path": "docs/event-spec.yaml",
+      "sha": "391fa16c43cd853eea0ced7d9825b423f59e639f",
+      "version": "2.2.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/transactionId",
+      "location_classes": "header:2",
+      "protocols": "kafka",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "hdulay/streaming-data-mesh",
+      "path": "kafka-pubsub.yaml",
+      "sha": "a01b2800ed7e351d09b9ddd22a91734a57467e92",
+      "version": "2.2.0",
+      "n_correlationIds": 2,
+      "locations": "$message.payload#/CountryCode",
+      "location_classes": "payload:2",
+      "protocols": "kafka",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "asyncapi/dotnet-rabbitmq-template",
+      "path": "example/subscriber.yaml",
+      "sha": "170616f90ef15f7c8eac12750a28550a0058e8e8",
+      "version": "2.2.0",
+      "n_correlationIds": 1,
+      "locations": "$message.header#/correlation_id",
+      "location_classes": "header:1",
+      "protocols": "amqp",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "The-Microservice-Dungeon/game",
+      "path": "doc/asyncapi-doc.yaml",
+      "sha": "d967911eef1ada4f595f6e0fa52ee16f6a21dba4",
+      "version": "2.2.0",
+      "n_correlationIds": 7,
+      "locations": "$message.header#/transactionId",
+      "location_classes": "header:7",
+      "protocols": "kafka",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "asyncapi/dotnet-rabbitmq-template",
+      "path": "example/publisher.yaml",
+      "sha": "b2bdfc529d65f278216c027d1a6dc36ff12d9b7a",
+      "version": "2.2.0",
+      "n_correlationIds": 1,
+      "locations": "$message.header#/correlation_id",
+      "location_classes": "header:1",
+      "protocols": "amqp",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "The-Microservice-Dungeon/trading",
+      "path": "swagger/v1/asyncAPI.yaml",
+      "sha": "4f87db40be1639f8dbb3267c38f1207fcb412ad2",
+      "version": "2.2.0",
+      "n_correlationIds": 10,
+      "locations": "$message.header#/transactionId",
+      "location_classes": "header:10",
+      "protocols": "kafka",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "The-Microservice-Dungeon/robot",
+      "path": "swagger/v5/asyncapi.yaml",
+      "sha": "be09ec8f138574693df4218ac3d55a3fd03702fa",
+      "version": "2.2.0",
+      "n_correlationIds": 25,
+      "locations": "$message.header#/transactionId",
+      "location_classes": "header:25",
+      "protocols": "kafka",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "The-Microservice-Dungeon/robot",
+      "path": "swagger/v3/asyncapi.yaml",
+      "sha": "2e70dcb645934e8b92a6de939e2b76178a3bddd2",
+      "version": "2.2.0",
+      "n_correlationIds": 25,
+      "locations": "$message.header#/transactionId",
+      "location_classes": "header:25",
+      "protocols": "kafka",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "OI4/oi4-oec-service",
+      "path": "packages/oi4-oec-asyncapi/asyncapi.yaml",
+      "sha": "9c13611625d066130e41bcd9e708bf9b9c518a25",
+      "version": "2.3.0",
+      "n_correlationIds": 23,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:23",
+      "protocols": "mqtt",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "4g3nt4333/Ascy-website",
+      "path": "public/resources/casestudies/adeo/asyncapi.yaml",
+      "sha": "ebc2e682004b002c0b2f863a29d094fc9a9c2fe8",
+      "version": "2.4.0",
+      "n_correlationIds": 5,
+      "locations": "$message.header#/REQUEST_ID",
+      "location_classes": "header:5",
+      "protocols": "kafka",
+      "duplex_channel": false,
+      "reqreply_naming": true
+    },
+    {
+      "repo": "edward-hsu-1994/asyncapi-viewer",
+      "path": "src/assets/test.yaml",
+      "sha": "3a95eea09287201afd465d843b3f267979c20f4c",
+      "version": "2.4.0",
+      "n_correlationIds": 5,
+      "locations": "$message.payload#/sentAt",
+      "location_classes": "payload:5",
+      "protocols": "http|kafka|mqtt",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "mcrawfo2/go-msx",
+      "path": "schema/asyncapi/testdata/compliance-asyncapi.yaml",
+      "sha": "befbde7dba73811ccdbe8c818301fb9d02d024f6",
+      "version": "2.4.0",
+      "n_correlationIds": 4,
+      "locations": "$message.payload#/messageId",
+      "location_classes": "payload:4",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "zuevrs/yanote",
+      "path": "yanote-js/test/fixtures/asyncapi/trait-declarations-trait-v2.yaml",
+      "sha": "05360b28c504520058169b85aa852f245803b13e",
+      "version": "2.6.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlation_id",
+      "location_classes": "header:2",
+      "protocols": "kafka",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "zuevrs/yanote",
+      "path": "yanote-js/test/fixtures/asyncapi/trait-declarations-inline-v2.yaml",
+      "sha": "852f43930b1727546850a97addbbb4057e0ec118",
+      "version": "2.6.0",
+      "n_correlationIds": 1,
+      "locations": "$message.header#/correlation_id",
+      "location_classes": "header:1",
+      "protocols": "kafka",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "lerenn/asyncapi-codegen",
+      "path": "examples/ping/v2/asyncapi.yaml",
+      "sha": "02681e92b500857952f6048eb16a69949ec4d607",
+      "version": "2.6.0",
+      "n_correlationIds": 4,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:4",
+      "protocols": "undetermined",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "periclescesar/event-processor",
+      "path": "docs/asyncapi.yaml",
+      "sha": "05d3da7c401a1d637da9986d57a7ab50711be06c",
+      "version": "2.6.0",
+      "n_correlationIds": 3,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:3",
+      "protocols": "amqp",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "prakhar47b/faststream-poc",
+      "path": "asyncapi.yaml",
+      "sha": "787cb87a06966505d50822b5a2d40da6ea567363",
+      "version": "2.6.0",
+      "n_correlationIds": 4,
+      "locations": "$message.header#/correlation_id",
+      "location_classes": "header:4",
+      "protocols": "amqp",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "dgomezs/learning-AI-agents",
+      "path": "apps/product-catalog/api/events/asyncapi.yaml",
+      "sha": "d009274fd53e05a296dc2952da6fb9f5e6c449f3",
+      "version": "2.6.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:2",
+      "protocols": "kafka",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "siom79/jasyncapicmp",
+      "path": "jasyncapicmp-maven-plugin/src/it/simple-it/new_2.6.0.yaml",
+      "sha": "28c8a67da414fc7b062a6fe6c58e7f8def63a8c5",
+      "version": "2.6.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:2",
+      "protocols": "amqp",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "siom79/jasyncapicmp",
+      "path": "jasyncapicmp-maven-plugin/src/it/simple-it/old_2.6.0.yaml",
+      "sha": "02508f6d44eb43d89e169202a9e7129b703a17e1",
+      "version": "2.6.0",
+      "n_correlationIds": 2,
+      "locations": "$message.header#/correlationId",
+      "location_classes": "header:2",
+      "protocols": "amqp",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "jbrannst/async",
+      "path": "spec/async.yaml",
+      "sha": "66470f00ca108956a22c840a5f6fec6b48d68441",
+      "version": "2.6.0",
+      "n_correlationIds": 5,
+      "locations": "$message.payload#/sentAt",
+      "location_classes": "payload:5",
+      "protocols": "amqp|http|kafka|mqtt",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "leefreemanxyz/redocly-async-api-reproduction",
+      "path": "bundled.yaml",
+      "sha": "1fbfab58c16232a638b7bed0acbb34a5512436d3",
+      "version": "2.6.0",
+      "n_correlationIds": 2,
+      "locations": "$message.payload#/sentAt",
+      "location_classes": "payload:2",
+      "protocols": "amqp|http|kafka|mqtt",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "weidmueller/u-os-hub-api",
+      "path": "variable-nats-asyncapi.yaml",
+      "sha": "ca3f480e5a647c24118ca190e58559e51ebac1f7",
+      "version": "2.6.0",
+      "n_correlationIds": 8,
+      "locations": "$message.header#/reply",
+      "location_classes": "header:8",
+      "protocols": "nats",
+      "duplex_channel": true,
+      "reqreply_naming": true
+    },
+    {
+      "repo": "Redocly/redocly-cli",
+      "path": "resources/async.yaml",
+      "sha": "41f5a2032602e06fd8dbb3f4be95d7268583d7f6",
+      "version": "2.6.0",
+      "n_correlationIds": 5,
+      "locations": "$message.payload#/sentAt",
+      "location_classes": "payload:5",
+      "protocols": "amqp|http|kafka|mqtt",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "fluximus-prime/fluximus-prime.github.io",
+      "path": "docs/private/asyncapi.yaml",
+      "sha": "6ceb4ec7ecf3e7479064a09ea1f7d339e43527c4",
+      "version": "2.6.0",
+      "n_correlationIds": 10,
+      "locations": "$message.header#/traceId",
+      "location_classes": "header:10",
+      "protocols": "kafka",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    },
+    {
+      "repo": "shashanksaxena-tz/munciplaityTax",
+      "path": "specs/1-withholding-reconciliation/contracts/event-w1-filed.yaml",
+      "sha": "dab983e4fc6a2a99f56beca48e7cedf7b4ffafa5",
+      "version": "2.6.0",
+      "n_correlationIds": 12,
+      "locations": "$message.payload#/businessId|$message.payload#/tenantId",
+      "location_classes": "payload:12",
+      "protocols": "kafka|redis",
+      "duplex_channel": false,
+      "reqreply_naming": false
+    }
+  ]
+}

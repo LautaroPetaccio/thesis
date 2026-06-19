@@ -1,0 +1,4 @@
+specmatic/specmatic-order-contracts	io/specmatic/examples/store/asyncapi/jms.yaml	https://github.com/specmatic/specmatic-order-contracts/blob/f904f86dce562c43afa70f6e9573440b76469cc9/io/specmatic/examples/store/asyncapi/jms.yaml
+frankkilcommins/arazzo-examples	v1.1.0-prep/async-api-examples/jms/inventory-jms.asyncapi.yaml	https://github.com/frankkilcommins/arazzo-examples/blob/adc5930733e350d88d33c262cdc086dd139f1949/v1.1.0-prep/async-api-examples/jms/inventory-jms.asyncapi.yaml
+belgif/openapi-cloudevents	src/test/resources/meeting-asyncapi.yaml	https://github.com/belgif/openapi-cloudevents/blob/f4e1056de08807e0c5e06728e9ba303c1036a9bd/src/test/resources/meeting-asyncapi.yaml
+zuevrs/yanote	yanote-js/test/fixtures/asyncapi/jms-basic.yaml	https://github.com/zuevrs/yanote/blob/9115da173be121b8ff3cb2d9fb5f92d11299562f/yanote-js/test/fixtures/asyncapi/jms-basic.yaml

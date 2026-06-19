@@ -1,0 +1,22 @@
+# --- Python virtualenv (machine-specific; recreate: python3 -m venv .venv && .venv/bin/pip install pyyaml) ---
+.venv/
+__pycache__/
+*.pyc
+
+# --- macOS ---
+.DS_Store
+
+# --- asyncapi-survey: regenerable caches & bulky query data (NOT tracked) ---
+# Fetched-spec blob caches and README caches (re-fetched by the survey scripts).
+asyncapi-survey/*/raw/specs-3x/
+asyncapi-survey/*/raw/specs-2x/
+asyncapi-survey/*/raw/readmes/
+# Raw GitHub code-search result JSONs (regenerable). Keep the distilled *.unique-repos.tsv
+# repo-lists (tracked by default) and the classification/metadata JSONs (re-included below).
+asyncapi-survey/*/raw/*.json
+!asyncapi-survey/*/raw/repo-classification.json
+!asyncapi-survey/*/raw/repo-classification-augmented.json
+!asyncapi-survey/*/raw/repo-classification-gold.json
+!asyncapi-survey/*/raw/repo-metadata.json
+!asyncapi-survey/*/raw/llm-classification.json
+!asyncapi-survey/*/raw/llm-audit-disagreements.json

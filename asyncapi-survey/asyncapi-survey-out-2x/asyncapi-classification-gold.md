@@ -1,0 +1,350 @@
+# AsyncAPI repos — GOLD classification (rules + audited LLM pass)
+
+Deterministic rule output with the LLM pass layered on: uncategorized recovered at confidence ≥ 0.6, and confident rule buckets overridden only where the LLM disagrees at confidence ≥ 0.78. Lower-confidence disagreements are listed at the end for manual review, not applied.
+
+
+## Distribution: rules → gold
+
+| bucket | rules | gold | Δ |
+|---|--:|--:|--:|
+| product | 294 | 296 | +2 |
+| tooling/library | 224 | 198 | -26 |
+| demo/fixture | 217 | 322 | +105 |
+| spec/docs | 55 | 85 | +30 |
+| catalog | 0 | 0 | +0 |
+| tangential | 11 | 92 | +81 |
+| uncategorized | 302 | 110 | -192 |
+
+**192** uncategorized recovered · **224** confident rule buckets corrected · **82** lower-confidence disagreements flagged (kept as rule).
+
+
+## High-confidence corrections applied (rule → llm)
+
+- product → **demo/fixture**: 54
+- tooling/library → **demo/fixture**: 31
+- tooling/library → **product**: 18
+- product → **tooling/library**: 17
+- tooling/library → **tangential**: 16
+- product → **spec/docs**: 14
+- tooling/library → **spec/docs**: 12
+- spec/docs → **demo/fixture**: 11
+- demo/fixture → **tooling/library**: 11
+- demo/fixture → **spec/docs**: 10
+- spec/docs → **tooling/library**: 9
+- demo/fixture → **product**: 9
+- demo/fixture → **tangential**: 5
+- product → **tangential**: 3
+- spec/docs → **tangential**: 2
+- spec/docs → **product**: 2
+
+## Corrected repos (auditable)
+
+- **event-catalog/eventcatalog** (2734★) demo/fixture → **tooling/library** (c=0.95) — Discovery and governance tool for event-driven systems with AsyncAPI support
+- **Mermade/openapi-filter** (172★) demo/fixture → **tooling/library** (c=0.97) — Tool filtering AsyncAPI/OpenAPI/Swagger definitions
+- **open-data-fabric/open-data-fabric** (144★) demo/fixture → **spec/docs** (c=0.92) — Open protocol specification for decentralized data exchange
+- **Kong/developer.konghq.com** (23★) demo/fixture → **spec/docs** (c=0.85) — Source code for Kong's developer documentation website
+- **Raiffeisen-DGTL/rest-api-guide** (21★) demo/fixture → **spec/docs** (c=0.92) — Bank-internal REST API best practices guidelines site
+- **SDA-SE/sda-spring-boot-commons** (19★) demo/fixture → **tooling/library** (c=0.92) — Library set to bootstrap Spring Boot services
+- **WaleedAshraf/asyncapi-github-action** (11★) demo/fixture → **tooling/library** (c=0.99) — GitHub Action that validates AsyncAPI schema files
+- **weidmueller/u-os-hub-api** (8★) demo/fixture → **spec/docs** (c=0.95) — API specifications for the u-OS Data Hub product
+- **bike4life-organization/bike4life** (3★) demo/fixture → **product** (c=0.82) — Real app with PubSub, MongoDB, Redis local dev stack
+- **razvanguta/SmartLight** (3★) demo/fixture → **product** (c=0.82) — Deployable smart home/office lighting IoT API
+- **Mik-Grzeg/krewetka** (2★) demo/fixture → **product** (c=0.8) — Real-time AI-based network intrusion detection system
+- **NASA-AMMOS/anms** (2★) demo/fixture → **product** (c=0.9) — Real deployable network management system from NASA/JHU
+- **kanekoshoyu/asyncapi-rust-ws-template** (2★) demo/fixture → **tooling/library** (c=0.97) — AsyncAPI code generator template producing Rust WebSocket clients
+- **kiransth77/aionmcp** (2★) demo/fixture → **tooling/library** (c=0.88) — MCP server that imports and exposes AsyncAPI specs as agent tools
+- **victorbahl/mulequiz** (2★) demo/fixture → **product** (c=0.78) — Deployed MuleSoft quiz app with WebSocket event API
+- **fkatsaras/functionality-dsl** (1★) demo/fixture → **tooling/library** (c=0.8) — DSL and code generator for REST and WebSocket APIs
+- **kevinswiber/spectral-function-past-tense** (1★) demo/fixture → **tooling/library** (c=0.95) — Spectral custom function for linting AsyncAPI message names
+- **tiagobento/kie-monorepo** (1★) demo/fixture → **tooling/library** (c=0.78) — KIE tooling applications and libraries monorepo
+- **tkubica12/gh-copilot-constitution** (1★) demo/fixture → **tangential** (c=0.8) — GitHub Copilot governance template; AsyncAPI incidental standard
+- **yaraPB/RICER-project** (1★) demo/fixture → **product** (c=0.82) — Production forest fire management platform with GIS and AI
+- **BakangMonei/PolyGlot-Demo-Examples** (0★) demo/fixture → **spec/docs** (c=0.8) — Architecture documentation for builders, not runnable software
+- **CZSK-MicroHacks/MicroHack-GitHub-engineering-constitution** (0★) demo/fixture → **spec/docs** (c=0.88) — Engineering governance constitution and standards documentation
+- **Fortellis/example-spec** (0★) demo/fixture → **spec/docs** (c=0.85) — Explicitly example specs for Fortellis platform APIs
+- **Ravip2006/Demo** (0★) demo/fixture → **spec/docs** (c=0.8) — Central contract repo for OpenAPI, GraphQL, gRPC, AsyncAPI specs
+- **RidgeRun/ridgerun-immersive-teleoperation** (0★) demo/fixture → **product** (c=0.88) — Real robot teleoperation platform with live video streaming
+- **SebastianBorchardt1984/incubator-kie-kogito-runtimes** (0★) demo/fixture → **product** (c=0.82) — Apache Kogito cloud-native business automation runtime platform
+- **actions-marketplace-validations/WaleedAshraf_asyncapi-github-action** (0★) demo/fixture → **tooling/library** (c=0.95) — GitHub Action that validates AsyncAPI schema files
+- **api-components/amf-components** (0★) demo/fixture → **tooling/library** (c=0.93) — Web components for visualizing AMF graph model
+- **call-sofia/callsofia-webhooks-docs** (0★) demo/fixture → **spec/docs** (c=0.88) — Webhook event catalog and documentation for CallSofia service
+- **eharishgit/hello-world** (0★) demo/fixture → **tangential** (c=0.97) — GitHub tutorial hello-world repo, no real AsyncAPI use
+- **fern-demo/stress-test** (0★) demo/fixture → **tangential** (c=0.8) — Fern docs stress test; no genuine AsyncAPI usage
+- **ibm-cloud-architecture/vaccine-freezer-mgr** (0★) demo/fixture → **product** (c=0.9) — Quarkus microservice for vaccine cold-chain management
+- **online-bridge-hackathon/data-formats** (0★) demo/fixture → **spec/docs** (c=0.88) — Repository is specifications and example JSON payloads only
+- **sjarmak/CodeContextBench_Dashboard** (0★) demo/fixture → **tangential** (c=0.78) — Benchmark platform for coding agents; AsyncAPI incidental
+- **twimprine/GitWorkflow** (0★) demo/fixture → **tangential** (c=0.78) — AI agent orchestrator design repo; no genuine AsyncAPI use
+- **microcks/microcks** (1963★) product → **tooling/library** (c=0.97) — Cloud-native API mocking and testing platform tool
+- **delano/postman-mcp-server** (154★) product → **tangential** (c=0.96) — Postman MCP server; no AsyncAPI relevance
+- **LordMoMA/Intelli-Mall** (63★) product → **demo/fixture** (c=0.8) — Explicitly simulates retail; showcase of distributed patterns
+- **allenheltondev/gopher-holes-unlimited** (61★) product → **tangential** (c=0.85) — OpenAPI spec for fictional site, not AsyncAPI
+- **aml-org/als** (32★) product → **tooling/library** (c=0.96) — Language Server Protocol implementation for API specs
+- **kanekoshoyu/exchange-collection** (23★) product → **spec/docs** (c=0.8) — Collection of machine-readable crypto exchange API specifications
+- **btravers/amqp-contract** (18★) product → **tooling/library** (c=0.95) — Library providing type-safe AMQP/RabbitMQ contracts for TypeScript
+- **event-catalog/generators** (14★) product → **tooling/library** (c=0.97) — Plugin integrations/generators for EventCatalog including AsyncAPI
+- **microcks/microcks-testcontainers-go** (10★) product → **tooling/library** (c=0.96) — Go library embedding Microcks into unit tests
+- **danilfg/bank-test-platform** (6★) product → **demo/fixture** (c=0.91) — Educational banking platform for QA learning
+- **SolaceLabs/solace-tools-typescript** (5★) product → **tooling/library** (c=0.92) — Libraries and CLI tools for Solace platform including AsyncAPI importer
+- **somosphi/ts-seed-jest** (5★) product → **demo/fixture** (c=0.88) — Explicitly a seed/template repo for new TypeScript projects
+- **Chinitsu-Challenge/chinitsu-demo** (4★) product → **demo/fixture** (c=0.95) — Demo mahjong game, name and readme confirm demo purpose
+- **Kuestenlogik/Bowire** (4★) product → **tooling/library** (c=0.95) — Multi-protocol API workbench supporting AsyncAPI among others
+- **Yodata/real-estate** (4★) product → **spec/docs** (c=0.8) — Shared event data standards catalog for real estate
+- **The-All-Knowing/cosmiccpp** (3★) product → **demo/fixture** (c=0.85) — Book companion code reimplementing Python architecture book in C++
+- **atharvagadkari05/template_EDA_API** (3★) product → **demo/fixture** (c=0.95) — Streetlights canonical AsyncAPI example reimplemented
+- **caochun/tollgate** (3★) product → **demo/fixture** (c=0.97) — Readme explicitly states project is for demonstrating microservice design
+- **mcrawfo2/go-msx** (3★) product → **tooling/library** (c=0.9) — Go library for building Cisco MSX microservices
+- **robev2252060/2247107_MAP** (3★) product → **demo/fixture** (c=0.82) — Numbered course-ID name indicates student project
+- **vincenzocorso/car-sharing** (3★) product → **demo/fixture** (c=0.93) — Explicitly a practice project for learning microservice patterns
+- **SoftwareEngineerUB/SmartEnergy** (2★) product → **demo/fixture** (c=0.78) — Romanian university IoT student project for home energy
+- **bb-frc-workshops/wpilib-ws-schema** (2★) product → **spec/docs** (c=0.93) — AsyncAPI schema defining WPILib WebSocket protocol, not runnable software
+- **devmentors/Mikroserwisy-Revisited** (2★) product → **demo/fixture** (c=0.82) — Companion code for a Polish microservices course
+- **ewanvidal/SimuMarty** (2★) product → **demo/fixture** (c=0.93) — End-of-studies school project, educational robotics simulator
+- **gravitee-io/gravitee-apim-mcp-server** (2★) product → **tooling/library** (c=0.9) — MCP server tool wrapping Gravitee APIM for AI assistants
+- **jsa4000/Internal-Development-Platform** (2★) product → **demo/fixture** (c=0.82) — Backstage IDP demo/showcase setup, not a deployed product
+- **mindsmiths/docs** (2★) product → **spec/docs** (c=0.9) — Documentation site for Mindsmiths Platform
+- **pfarkya/asyncApi_AccountManagerEDA** (2★) product → **demo/fixture** (c=0.97) — Explicitly demonstrates EDA creation using AsyncAPI codegen
+- **way-platform/mbz-go** (2★) product → **tooling/library** (c=0.93) — Go SDK and CLI for Mercedes-Benz Fleet API
+- **BitKa-Exchange/bitka-exchange** (1★) product → **demo/fixture** (c=0.97) — Explicitly educational clone, not intended for production
+- **RidaNaz/Agentic-Todo** (1★) product → **demo/fixture** (c=0.82) — Progressive 6-phase learning project, not production service
+- **SourceOS-Linux/sourceos-spec** (1★) product → **spec/docs** (c=0.92) — Machine-readable contract layer of JSON Schemas and API fragments
+- **Sriramanenivikas/Intelligent-Warehouse-Orchestration-System** (1★) product → **spec/docs** (c=0.9) — Documentation-first skeleton explicitly without application code
+- **The-Microservice-Dungeon/gamelog** (1★) product → **demo/fixture** (c=0.8) — Educational game log service for microservices course
+- **The-Microservice-Dungeon/trading** (1★) product → **demo/fixture** (c=0.8) — Educational trading service for microservices course
+- **anonymousc/ft_transcendance-42** (1★) product → **demo/fixture** (c=0.94) — Explicitly created as part of 42 school curriculum
+- **ayointegral/cloud-sandbox-backstage** (1★) product → **demo/fixture** (c=0.82) — Backstage sandbox/template portal, not a production service
+- **danieldan0/microservice-store** (1★) product → **spec/docs** (c=0.87) — C4 architecture documentation for online shop system
+- **olaviolacerda/notification** (1★) product → **demo/fixture** (c=0.93) — Explicitly a template/seed repo for bootstrapping new projects
+- **prafulrana/asyncAPIExamples** (1★) product → **spec/docs** (c=0.97) — Collection of AsyncAPI specs for real-world broker channels
+- **Alex009/architecture-sprint-3** (0★) product → **demo/fixture** (c=0.92) — Microservices course practical assignment
+- **Ashish8951/poker-docs** (0★) product → **spec/docs** (c=0.9) — Single HTML page serving Swagger and AsyncAPI API docs
+- **ChunPingWang/saga-kafka** (0★) product → **demo/fixture** (c=0.88) — Learning/demo project for Kafka Saga orchestration pattern
+- **ClearEyesFullHearts/asyncapi-pub-middleware** (0★) product → **tooling/library** (c=0.96) — Express middleware library that reads AsyncAPI files to validate
+- **ClearEyesFullHearts/asyncapi-sub-middleware** (0★) product → **tooling/library** (c=0.96) — Express middleware library generating routes from AsyncAPI spec
+- **EduRS14/sistema-recomendacion-distribuido-peliculas** (0★) product → **demo/fixture** (c=0.82) — Academic distributed system project, no production indicators
+- **GUR-ok/otus-microservice-architecture** (0★) product → **demo/fixture** (c=0.95) — Explicitly homework for OTUS 2022 course
+- **Lynda1423/gestion-vehicules** (0★) product → **demo/fixture** (c=0.9) — Master 1 university microservices course project
+- **MCI-MS-WS2025-Advanced-Project/crazy-labyrinth-gameserver** (0★) product → **demo/fixture** (c=0.88) — Winter-semester 2025 course/workshop project
+- **MaxwellGBrown/aws_websockets_eventbus** (0★) product → **demo/fixture** (c=0.9) — Explicitly an example eventbus with AWS CloudFormation
+- **Minister2405/my-docs** (0★) product → **spec/docs** (c=0.8) — Docusaurus-based documentation website
+- **Owen-Richards/ai-nutritionist** (0★) product → **tangential** (c=0.82) — AWS/WhatsApp bot; no AsyncAPI connection evident
+- **PikPakPik/T-JSF-600** (0★) product → **demo/fixture** (c=0.78) — Course-code named IRC chat school project
+- **Ramonjrtan/event-driven-order-platform-qa** (0★) product → **demo/fixture** (c=0.93) — Recruiter portfolio simulating QA, not production system
+- **SayReal-US/API-designs---Software-Engineer-Thesis-K22** (0★) product → **spec/docs** (c=0.88) — Thesis API design specifications for microservice rental service
+- **SynapticFour/sc-specs** (0★) product → **spec/docs** (c=0.93) — Repository of API specifications and schemas for compute fabric
+- **The-Microservice-Dungeon/game** (0★) product → **demo/fixture** (c=0.8) — Educational game project teaching microservice architecture
+- **UNIZAR-30226-2025-05/adrenalux-backend** (0★) product → **demo/fixture** (c=0.85) — University course project for collectible card game
+- **Unizar-30226-2026-11/Backend** (0★) product → **demo/fixture** (c=0.85) — University course project (Unizar group 11, 2026) backend
+- **Unizar-30226-2026-11/Movil** (0★) product → **demo/fixture** (c=0.85) — University course project mobile frontend, same cohort
+- **Veriflite/portal-api** (0★) product → **spec/docs** (c=0.92) — Repository content is the Portal API specification document
+- **Xen0Xys/N2I-2024-API** (0★) product → **demo/fixture** (c=0.82) — NestJS starter for N2I-2024 coding competition
+- **ajgarciaparadigma/asyncapi-publisher** (0★) product → **demo/fixture** (c=0.98) — Explicitly illustrates AsyncAPI generator with Spring Boot
+- **andreitudose2000/ingineria-programarii** (0★) product → **demo/fixture** (c=0.82) — Student IoT project for programming engineering course
+- **axvg/store-microservices** (0★) product → **demo/fixture** (c=0.88) — Self-described sample store application, no readme
+- **baldimir/kie-backend** (0★) product → **demo/fixture** (c=0.82) — Explicitly a testing repo for alternative repository structure
+- **bfl-ajay/AsyncApi-Example** (0★) product → **demo/fixture** (c=0.88) — Repo named 'Example', demonstrates AsyncAPI with WebSocket API
+- **cibanezb95STG/quoteAssessmentCIB** (0★) product → **demo/fixture** (c=0.97) — Job application assessment project, not production software
+- **cyberlytics/Conversphere** (0★) product → **demo/fixture** (c=0.93) — University course project (WAE at OTH Amberg Weiden)
+- **d1m1tur/PGJ-2026** (0★) product → **demo/fixture** (c=0.92) — Game jam prototype server, not production
+- **dataGriff/dog.rescue.api** (0★) product → **spec/docs** (c=0.88) — Primarily an OpenAPI contract for a dog adoption platform
+- **djoleant/IoTS-Smart-building** (0★) product → **demo/fixture** (c=0.87) — Student IoT microservices project with named student IDs
+- **funny-bunny-corp/payment-service** (0★) product → **demo/fixture** (c=0.82) — Demo org name; generic payment service sample
+- **ivankahl/asyncapi-food-delivery** (0★) product → **demo/fixture** (c=0.82) — Food delivery demo API, archetypal AsyncAPI example pattern
+- **jean0313/k2a** (0★) product → **tooling/library** (c=0.93) — CLI tool that generates AsyncAPI specs from a Kafka cluster
+- **joass1/ESD-Ticket-booking** (0★) product → **demo/fixture** (c=0.78) — IS213 course code; school group project (G3T1)
+- **kaaaaakun/AsyncAPI-mock-server** (0★) product → **tooling/library** (c=0.88) — Tool that generates WebSocket mock servers from AsyncAPI specs
+- **krittamark/incident-tracking-service** (0★) product → **demo/fixture** (c=0.9) — CS366 course project microservice
+- **kyleczhang/cits5506-iot-parkreserve-group29** (0★) product → **demo/fixture** (c=0.95) — CITS5506 university course IoT project
+- **marcgr9/ptbox-assignment** (0★) product → **demo/fixture** (c=0.78) — School assignment server project
+- **ngscheurich/elixirconf-eu-2024** (0★) product → **demo/fixture** (c=0.95) — Conference talk source code, collaborative game demo
+- **postman-cs/postman-aws-spec-discovery-action** (0★) product → **tooling/library** (c=0.93) — GitHub Action that discovers and exports API specs from AWS
+- **snatalija/IOT** (0★) product → **demo/fixture** (c=0.9) — Explicitly an end-to-end demo system for IoT microservices
+- **springwolf/springwolf-app** (0★) product → **tooling/library** (c=0.78) — Service for viewing and publishing to multiple AsyncAPI docs
+- **thushalya/asyncapi-tools** (0★) product → **tooling/library** (c=0.97) — Ballerina WebSocket service to AsyncAPI generator tool
+- **wallaceespindola/contract-first-integrations** (0★) product → **demo/fixture** (c=0.9) — Reference implementation demonstrating contract-first patterns
+- **ziyashaw/backstage_demo2** (0★) product → **demo/fixture** (c=0.93) — Second Backstage demo repo, same pattern
+- **dedoussis/asynction** (51★) spec/docs → **tooling/library** (c=0.96) — SocketIO Python framework driven by AsyncAPI spec
+- **Kong/spec-renderer** (33★) spec/docs → **tooling/library** (c=0.95) — Pluggable API spec renderer tool for documentation experiences
+- **albertnadal/asyncapi-schema-pydantic** (14★) spec/docs → **tooling/library** (c=0.97) — Pydantic library for parsing AsyncAPI spec schemas
+- **asyncapi/tck** (12★) spec/docs → **tooling/library** (c=0.87) — Test compatibility kit for AsyncAPI processor compliance testing
+- **apideck-io/api-registry** (11★) spec/docs → **tangential** (c=0.83) — API specifications directory/catalog indexing many formats
+- **PcComponentes/open-api-messaging-context** (10★) spec/docs → **tooling/library** (c=0.95) — Behat library validating messages against AsyncAPI specs
+- **asynq-io/pydantic-asyncapi** (9★) spec/docs → **tooling/library** (c=0.97) — Python library providing Pydantic models for AsyncAPI documents
+- **golemfactory/ya-client** (8★) spec/docs → **tooling/library** (c=0.88) — REST API client binding and spec for Yagna/Golem
+- **daveshanley/asyncapi-tutorials** (7★) spec/docs → **demo/fixture** (c=0.97) — Tutorials with code and specs, accompanies blog articles
+- **Ferror/asyncapi-event-catalog** (1★) spec/docs → **demo/fixture** (c=0.78) — POC showing catalog generation from AsyncAPI specs
+- **alexandramartinez/asyncapis-accounts-email** (1★) spec/docs → **demo/fixture** (c=0.92) — Tutorial resources based on AsyncAPI example article
+- **noodlensk/task-tracker** (1★) spec/docs → **demo/fixture** (c=0.9) — Course homework repo with AsyncAPI spec added as exercise
+- **wbelguidoum/docapi** (1★) spec/docs → **tooling/library** (c=0.95) — Tool that discovers and renders OpenAPI/AsyncAPI specs
+- **Leandroyyy/async-api-translator** (0★) spec/docs → **tooling/library** (c=0.82) — Tool that translates/processes AsyncAPI specifications
+- **Pakisan/IDEA-331646** (0★) spec/docs → **demo/fixture** (c=0.95) — AsyncAPI spec fixture reproducing a JetBrains IDE bug
+- **Phoenix-Assassins/ac4-docs** (0★) spec/docs → **tangential** (c=0.8) — Reverse-engineering game protocol docs; no AsyncAPI use
+- **kayalshan/Enterprise-API-Integration-Platform** (0★) spec/docs → **product** (c=0.85) — Deployable enterprise integration backbone with Kafka and AWS
+- **kurtrisley/DemoEventDrivenService** (0★) spec/docs → **demo/fixture** (c=0.95) — Hypertheory course demo event-driven services
+- **kurtrisley/EventDrivenServices** (0★) spec/docs → **demo/fixture** (c=0.95) — Hypertheory course event-driven services repo
+- **lauksas/sync-beat** (0★) spec/docs → **demo/fixture** (c=0.88) — Multi-stack learning implementations of one specification
+- **nicolasard/async-api-stuff** (0★) spec/docs → **demo/fixture** (c=0.95) — Explicitly personal notes and examples about AsyncAPI
+- **paulCormierProgressive/EventDrivenServices** (0★) spec/docs → **demo/fixture** (c=0.97) — Explicitly a Hypertheory course repository
+- **thake/backstage-specs-test** (0★) spec/docs → **demo/fixture** (c=0.88) — Specs and catalogs to test out Backstage, not production
+- **xtm-group/XTRFCloudInternalEventBus** (0★) spec/docs → **product** (c=0.92) — Internal event bus using AsyncAPI to describe its API
+- **mulesoft/api-console** (907★) tooling/library → **tangential** (c=0.82) — RAML/OAS console tool; no AsyncAPI involvement
+- **Sofie-Automation/sofie-core** (341★) tooling/library → **product** (c=0.95) — Real deployed TV broadcast studio automation system by NRK
+- **Lap-Platform/LAP** (339★) tooling/library → **tangential** (c=0.8) — AI-agent API catalog/directory; AsyncAPI is one of many incidental formats
+- **CardanoSolutions/ogmios** (327★) tooling/library → **product** (c=0.85) — Production WebSocket/JSON-RPC bridge service for Cardano node
+- **pproenca/agent-tui** (95★) tooling/library → **tangential** (c=0.8) — AI agent TUI automation tool; AsyncAPI not mentioned
+- **christian-photo/ninaAPI** (46★) tooling/library → **product** (c=0.85) — Real deployed plugin providing WebSocket/REST API for astronomy software
+- **canton-network/wallet** (39★) tooling/library → **product** (c=0.78) — Deployable Wallet Gateway server plus dApp/Wallet SDKs
+- **Verdenroz/finance-query** (36★) tooling/library → **product** (c=0.9) — Hosted open-source financial data API with real endpoints
+- **climateandtech/report-analyst** (35★) tooling/library → **product** (c=0.78) — Real versioned open-core framework for sustainability report analysis
+- **holstein13/mcp-config-manager** (28★) tooling/library → **tangential** (c=0.82) — MCP config tool for AI systems; AsyncAPI only incidental
+- **8cH9azbsFifZ/hangboard** (12★) tooling/library → **product** (c=0.8) — Deployable IoT hangboard training device service
+- **kdcube/kdcube-ai-app** (10★) tooling/library → **product** (c=0.8) — Self-hosted AI control plane with tenancy and RBAC
+- **openxapi/openxapi** (9★) tooling/library → **spec/docs** (c=0.88) — Repository is standardized OpenAPI/AsyncAPI specs for exchanges
+- **deltaeight/ma2-websocket-api** (4★) tooling/library → **spec/docs** (c=0.93) — AsyncAPI documentation of GrandMA2 WebSocket API only
+- **derberg/shrekapp-asyncapi-designed** (4★) tooling/library → **demo/fixture** (c=0.88) — Fun chatbot demo designed to explore AsyncAPI and WebSocket
+- **Chief-Strategist-J/llm-observability-platform** (3★) tooling/library → **product** (c=0.85) — Deployable LLM observability platform with real instrumentation
+- **David-DAM/kafka-cero-a-experto** (3★) tooling/library → **demo/fixture** (c=0.93) — Explicitly a course final project for learning Kafka
+- **MEF-GIT/MEF-LSO-Legato-SDK** (3★) tooling/library → **spec/docs** (c=0.88) — Telecom standards API spec bundle, not runnable software
+- **Mrc0113/asyncapi-codegen-scst** (3★) tooling/library → **demo/fixture** (c=0.97) — Code artifacts for an AsyncAPI code generation blog/video
+- **arih1299/solacedemo-kafkasummitapac2021** (3★) tooling/library → **demo/fixture** (c=0.95) — Conference demo for Kafka Summit APAC 2021
+- **bitsy-ai/printnanny-webapp** (3★) tooling/library → **product** (c=0.9) — Real webapp and API for OctoPrint Print Nanny plugin
+- **hazamashoken/ft_trancendence** (3★) tooling/library → **demo/fixture** (c=0.92) — 42 school final project, not production software
+- **meteatamel/asyncapi-basics** (3★) tooling/library → **demo/fixture** (c=0.97) — Explicitly a samples and reference repo about AsyncAPI
+- **TemplateMechanics/tilt** (2★) tooling/library → **demo/fixture** (c=0.85) — Example Kubernetes environment demonstrating deployment patterns
+- **canton-network/cf-docs** (2★) tooling/library → **spec/docs** (c=0.95) — Documentation website repo for Canton Foundation
+- **durable-workflow/durable-workflow.github.io** (2★) tooling/library → **spec/docs** (c=0.92) — Docusaurus documentation website for Durable Workflow product
+- **jonaslagoni/asyncapi-miniseries** (2★) tooling/library → **demo/fixture** (c=0.97) — Explicitly a mini series with blog posts teaching AsyncAPI codegen
+- **ripple/rippled-api-spec** (2★) tooling/library → **spec/docs** (c=0.97) — Repository of OpenAPI/AsyncAPI specs for XRP Ledger
+- **servaasvdc/whatstack** (2★) tooling/library → **tangential** (c=0.9) — Tech stack detector; AsyncAPI just one detectable technology
+- **Jacksonspencerd/tcss559-project** (1★) tooling/library → **demo/fixture** (c=0.92) — Course project (TCSS 559) full-stack observability platform
+- **MEF-GIT/MEF-LSO-Allegro-SDK** (1★) tooling/library → **spec/docs** (c=0.87) — Telecom standards body API specification bundle
+- **ThomasWimprine/LangChangeWorkflows** (1★) tooling/library → **tangential** (c=0.8) — LangGraph/LLM workflow tool, AsyncAPI mentioned incidentally
+- **advanced-rest-client/api-request** (1★) tooling/library → **tangential** (c=0.8) — HTTP request editor component, not AsyncAPI tooling
+- **imaginestudio-ai/golang-ninja** (1★) tooling/library → **demo/fixture** (c=0.9) — Collection of Go tutorials and hands-on learning projects
+- **n1md7/IoT-Device-Manager** (1★) tooling/library → **product** (c=0.82) — Deployable IoT device manager with Arduino/ESP32 clients
+- **nikolay-e/diffctx** (1★) tooling/library → **tangential** (c=0.8) — LLM diff context tool; AsyncAPI only one of many formats
+- **solace-cto-labs/solace-amplify-discovery-agent** (1★) tooling/library → **product** (c=0.9) — Deployable agent syncing Solace AsyncAPIs with Axway Amplify platform
+- **specmesh/getting-started-apachekafka** (1★) tooling/library → **demo/fixture** (c=0.9) — Getting-started tutorial and HelloWorld guide for SpecMesh
+- **ArshdevSinghji/iffy-backend** (0★) tooling/library → **product** (c=0.78) — Location-based dating app modular monolith backend
+- **BidnessForB/postman-sdk** (0★) tooling/library → **tangential** (c=0.78) — Postman API SDK built as a Cursor learning exercise
+- **ChunPingWang/saga-axon** (0★) tooling/library → **demo/fixture** (c=0.9) — Explicitly demonstrates Axon Saga pattern, not production use
+- **DEFRA/ahwr-message-generator-backend** (0★) tooling/library → **product** (c=0.82) — Real backend service on Core delivery platform
+- **DEFRA/ffc-pay-request-editor** (0★) tooling/library → **product** (c=0.95) — Production web microservice for debt enrichment overrides
+- **GeniaV/stellar-burgers-backend** (0★) tooling/library → **demo/fixture** (c=0.82) — Self-described pet project, frontend built for education
+- **Leonardo-Santos-oficial/jose-diego** (0★) tooling/library → **tangential** (c=0.85) — Crash game demo; AsyncAPI not mentioned or relevant
+- **MEF-GIT/MEF-LSO-Interlude-SDK** (0★) tooling/library → **spec/docs** (c=0.87) — Telecom standards body API specification bundle
+- **Pakisan/jasyncapi-idea-plugin-demo** (0★) tooling/library → **demo/fixture** (c=0.97) — Demo specs showcasing AsyncAPI JetBrains plugin
+- **SolaceLabs/solace-ansible-plugin** (0★) tooling/library → **demo/fixture** (c=0.8) — Sample AsyncAPI files bundled with CICD demo/test playbooks
+- **SolaceLabs/solace-jenkins-plugin** (0★) tooling/library → **demo/fixture** (c=0.9) — Repo explicitly contains AsyncAPI sample files for testing
+- **SolaceLabs/solace-tryme-cli-mcp-server** (0★) tooling/library → **demo/fixture** (c=0.8) — Explicitly a proof-of-concept MCP server wrapping CLI
+- **Zenika/kafka-schema-registry-publish** (0★) tooling/library → **demo/fixture** (c=0.8) — Explicitly shows best practices via demo docker-compose setup
+- **ZiyamSanthosh/AsyncApiAmf** (0★) tooling/library → **demo/fixture** (c=0.9) — PoC experimenting with AsyncAPI and AMF parser combination
+- **advanced-rest-client/api-headers-document** (0★) tooling/library → **tangential** (c=0.8) — AMF-based REST API docs component, not AsyncAPI-specific
+- **advanced-rest-client/api-method-documentation** (0★) tooling/library → **tangential** (c=0.8) — HTTP method documentation renderer, AMF/REST focus
+- **asyncapi-actions-testing/website** (0★) tooling/library → **demo/fixture** (c=0.95) — Explicit test clone of AsyncAPI website, not production
+- **coiouhkc/asyncapi-generator-examples** (0★) tooling/library → **demo/fixture** (c=0.97) — Examples and configurations for asyncapi-generator tool
+- **deathbycaptcha/deathbycaptcha-agent-api-metadata** (0★) tooling/library → **spec/docs** (c=0.82) — API spec/metadata for AI agents, not runnable software
+- **edwmurph/api-docs** (0★) tooling/library → **demo/fixture** (c=0.95) — Demo React app showcasing Swagger and AsyncAPI integrations
+- **fulmenhq/goneat** (0★) tooling/library → **tangential** (c=0.82) — Polyglot code-quality CLI; no AsyncAPI focus
+- **funny-bunny-corp/ledger** (0★) tooling/library → **demo/fixture** (c=0.8) — Demo org name; Quarkus ledger sample service
+- **gedeondt/reatilerworkflow-charla** (0★) tooling/library → **demo/fixture** (c=0.9) — 'charla' = talk/presentation; retail workflow simulation demo
+- **gregoriocarranza/APPS-II-Core-Backend** (0★) tooling/library → **demo/fixture** (c=0.82) — 'APPS-II' course starter backend generated from CLI
+- **hasathcharu/ballerina-websockets-test** (0★) tooling/library → **demo/fixture** (c=0.95) — Explicit test examples demonstrating AsyncAPI tooling usage
+- **hschaffner/AsyncAPI_Test** (0★) tooling/library → **demo/fixture** (c=0.91) — Explicit test of AsyncAPI Solace code generation
+- **iqb-specifications/response** (0★) tooling/library → **spec/docs** (c=0.92) — Data specification repo with JSON Schema and AsyncAPI-generated types
+- **jpxcz/websocket_template_nodejs** (0★) tooling/library → **demo/fixture** (c=0.92) — Explicitly a template/boilerplate for WebSocket with AsyncAPI docs
+- **obedito-lab/document-services-s** (0★) tooling/library → **product** (c=0.8) — Production document-signing System API service
+- **omiga-group/omiga** (0★) tooling/library → **product** (c=0.78) — Multi-domain platform with codegen, DB migrations, multiple services
+- **panand13/backstage** (0★) tooling/library → **product** (c=0.9) — Backstage open-source developer portal platform
+- **pascal-audio/px-api** (0★) tooling/library → **spec/docs** (c=0.78) — Official API spec and docs for hardware audio amplifiers
+- **prichelle/prichelle.github.io** (0★) tooling/library → **tangential** (c=0.85) — Jekyll personal blog theme, no substantive AsyncAPI usage
+- **qmg-vgalcenco/asyncapi-validator** (0★) tooling/library → **demo/fixture** (c=0.92) — Created to test and experiment with asyncapi-validator library
+- **rahulmehta25/Smart-Legal-Contracts** (0★) tooling/library → **tangential** (c=0.9) — Legal contract AI tool, no AsyncAPI mention
+- **rakeshmani35/springboot-openAPI** (0★) tooling/library → **tangential** (c=0.92) — OpenAPI-focused Spring Boot demo, not AsyncAPI
+- **sroigmas/asyncapi** (0★) tooling/library → **demo/fixture** (c=0.95) — Explicitly a small practice of AsyncAPI definition and code gen
+- **verona-interfaces/editor** (0★) tooling/library → **spec/docs** (c=0.92) — Specification for async host-editor iframe communication
+- **viruskizz/42bangkok_ft-transcendence** (0★) tooling/library → **demo/fixture** (c=0.95) — Final project for 42 school, not production software
+
+## ⚠ Flagged for review — LLM disagrees but below 0.78 (kept as rule) (82)
+
+- **Nordic-MVP-GitOps-Repos/hypersonic-lightweight-cp4i** — rule=demo/fixture, llm=tangential (c=0.75) — GitOps deployment config for CP4I; AsyncAPI incidental
+- **RuiEusebio/confluent-selfservice** — rule=demo/fixture, llm=product (c=0.75) — Deployable Confluent/Kafka self-service management platform
+- **VALAWAI/C1_llm_email_replier** — rule=demo/fixture, llm=product (c=0.75) — Deployable AI processing component in VALAWAI framework
+- **starnold-redhat/rhdh-install** — rule=demo/fixture, llm=tangential (c=0.75) — Ansible demo-environment setup; AsyncAPI incidental
+- **sonra44/QIKI_DTMP** — rule=demo/fixture, llm=product (c=0.73) — Space simulation platform with operator console and telemetry pipeline
+- **gsperim/account-engine-lab** — rule=demo/fixture, llm=product (c=0.72) — Financial posting engine with concrete NFRs; two real services
+- **leynos/bournemouth** — rule=demo/fixture, llm=product (c=0.72) — Experimental deployable chat app with RAG and knowledge graph
+- **manuschillerdev/esphome-elero** — rule=demo/fixture, llm=product (c=0.72) — Deployable IoT firmware component for Elero RF devices
+- **zuevrs/yanote** — rule=demo/fixture, llm=tooling/library (c=0.72) — HTTP contract coverage tool for API spec validation
+- **innovatrics/smartface-integrations** — rule=demo/fixture, llm=product (c=0.68) — Real-world SmartFace integrations with deployed production code
+- **nekofar/warpcast** — rule=demo/fixture, llm=tooling/library (c=0.65) — TypeScript client library for Warpcast APIs
+- **specdojo/specdojo** — rule=demo/fixture, llm=spec/docs (c=0.65) — Documentation framework with templates and guidelines, not runnable software
+- **mx-kshitij/filedropper** — rule=demo/fixture, llm=tooling/library (c=0.62) — NPM package React component with demo project link
+- **HenderOrlando/booklyapp** — rule=demo/fixture, llm=product (c=0.6) — Institutional booking platform with microservices architecture
+- **invivo-digital-factory/openapi-compiler-ts** — rule=demo/fixture, llm=tooling/library (c=0.6) — Compiles OpenAPI/AsyncAPI docs to TypeScript types and validation
+- **umdloop/umdloop_gui** — rule=demo/fixture, llm=product (c=0.58) — Real ROS2 web GUI application with WebSocket backend
+- **varunaditya27/sentinel-orchestrator-network** — rule=demo/fixture, llm=product (c=0.52) — AI-powered security and governance platform for Cardano
+- **paulus85/companion** — rule=demo/fixture, llm=product (c=0.5) — Office application monorepo, minimal info available
+- **skunkforce/node-agnostic-datastream-interface** — rule=demo/fixture, llm=tooling/library (c=0.5) — C++23 datastream library with message schemas; AsyncAPI likely incidental
+- **Brico87/seed-kafka** — rule=product, llm=demo/fixture (c=0.75) — Kafka infrastructure seed/starter project
+- **ChiragSethi-1153/RMHA** — rule=product, llm=demo/fixture (c=0.75) — Stock NestJS starter template with no custom product logic
+- **SEP4Y-2025/SEP4** — rule=product, llm=demo/fixture (c=0.75) — School semester engineering project with generic Docker setup
+- **blagoySimandov/takgo** — rule=product, llm=demo/fixture (c=0.75) — Personal multiplayer tic-tac-toe project with spec generated demo
+- **dataGriff/dog-walking** — rule=product, llm=spec/docs (c=0.75) — Product spec and contract with only a reference implementation
+- **dgnsrekt/gexbot-faker-api** — rule=product, llm=demo/fixture (c=0.75) — Mock/faker API replaying historical market data for testing
+- **masechkacat/tic-tac-toe-server** — rule=product, llm=demo/fixture (c=0.75) — Game server demo using WebSockets
+- **nesaa-a/SPDD-EventSystem** — rule=product, llm=demo/fixture (c=0.75) — Student project path in OneDrive Desktop, course assignment
+- **opengeospatial/developer-website** — rule=product, llm=tangential (c=0.75) — OGC standards documentation site; AsyncAPI likely incidental
+- **sohailhaider/backstage-search-github-issues-plugin** — rule=product, llm=tangential (c=0.75) — Backstage plugin for GitHub issues; AsyncAPI only incidental
+- **yukihito-jokyu/postman-mcp-server** — rule=product, llm=tangential (c=0.75) — MCP server AI agent tool, AsyncAPI incidental
+- **zynax-io/zynax** — rule=product, llm=tangential (c=0.75) — AI agent workflow control plane, AsyncAPI incidental
+- **j-alonso-guerra/open-api-public** — rule=product, llm=tangential (c=0.73) — OpenAPI-only ecommerce spec repo; AsyncAPI only incidental
+- **Navdeep-12/Backstage** — rule=product, llm=tangential (c=0.72) — Standard Backstage fork, no AsyncAPI-specific purpose evident
+- **dataGriff/pet.insurance.domain.app.v1** — rule=product, llm=demo/fixture (c=0.72) — Spec-driven example API, educational pattern demonstration
+- **isehuetdk/backstage** — rule=product, llm=demo/fixture (c=0.72) — Test deployment of Backstage developer portal, not production
+- **josebusv/enterprise-integration-platform** — rule=product, llm=demo/fixture (c=0.72) — Academic-style project describing enterprise integration patterns
+- **kishoretvk/AgentAI** — rule=product, llm=tangential (c=0.72) — AI agent collection; AsyncAPI mentioned only incidentally
+- **mattlat21/homeassistant** — rule=product, llm=tangential (c=0.72) — Home Assistant config directory, AsyncAPI incidental
+- **phalanxduel/phalanxduel** — rule=product, llm=tangential (c=0.72) — Card game application; no AsyncAPI mention in readme
+- **project-ascend-io/intracom-backend** — rule=product, llm=demo/fixture (c=0.72) — Express TypeScript boilerplate template, not a specific product
+- **vhurryharry/OOT** — rule=product, llm=tangential (c=0.72) — E-learning web app, no meaningful AsyncAPI usage visible
+- **zdmooc/TradeOps-GenAI-Integration** — rule=product, llm=demo/fixture (c=0.72) — Portfolio project showcasing trading integration patterns
+- **DevOpsMadDog/Fixops** — rule=product, llm=tangential (c=0.7) — Security platform; AsyncAPI not mentioned, incidental at best
+- **DevOpsMadDog/aldeci-core** — rule=product, llm=tangential (c=0.7) — Same ALDECI security platform; no AsyncAPI usage described
+- **SoldierrBoy/EventTicketBookingSystem** — rule=product, llm=demo/fixture (c=0.7) — Personal portfolio project with full-stack boilerplate structure
+- **bshongwe/fintech-api** — rule=product, llm=demo/fixture (c=0.7) — Single-dev portfolio showcase of fintech API patterns
+- **decker757/Smart-Clinic-Queue-ESD** — rule=product, llm=demo/fixture (c=0.68) — ESD likely school course; event-driven microservices project
+- **BalaNarvar/BackStage1** — rule=product, llm=tangential (c=0.65) — Appears to be an upstream Backstage fork with no AsyncAPI focus
+- **EdithRW/rw-backend-dashboard** — rule=product, llm=demo/fixture (c=0.65) — Described as backend test; minimal info, not production
+- **Sakshamjain98/skillforge-meet** — rule=product, llm=demo/fixture (c=0.65) — Personal portfolio video conferencing app, no production indicators
+- **SmartSleepIoT/SmartSleepCoding** — rule=product, llm=demo/fixture (c=0.65) — IoT student project with standard template README structure
+- **fenix-hub/cns-project-backend** — rule=product, llm=tangential (c=0.65) — OpenAPI-focused backend; AsyncAPI not mentioned in readme
+- **naomesh/naomesh-web-api** — rule=product, llm=demo/fixture (c=0.65) — REST API explicitly built for a demonstrator webapp
+- **newsukarun/async-api** — rule=product, llm=tooling/library (c=0.65) — Server providing AsyncAPI tools, pre-1.0 under development
+- **davidosantos/backstage** — rule=product, llm=tangential (c=0.62) — Backstage fork with no clear AsyncAPI-specific purpose
+- **FlorinaMt/SEP4** — rule=product, llm=demo/fixture (c=0.6) — SEP4 suggests 4th-semester school project
+- **EthanSheehan/Grid-Sentinel** — rule=product, llm=demo/fixture (c=0.58) — POC C2 system; fantastical scope reads as demo/prototype
+- **FrackiewiczP/info_bubbles** — rule=product, llm=demo/fixture (c=0.55) — Multiple student authors, minimal project description
+- **dili91/events-based-api-specs** — rule=spec/docs, llm=demo/fixture (c=0.75) — Self-described playground for event-based API specs
+- **trakx/canton-api-client** — rule=spec/docs, llm=product (c=0.62) — Generated .Net API client SDK for Canton blockchain services
+- **jgazeau/shadocs** — rule=spec/docs, llm=tooling/library (c=0.55) — Hugo documentation theme; likely renders or demos AsyncAPI docs
+- **Flissel/Coding_engine** — rule=tooling/library, llm=tangential (c=0.75) — AI code-generation agent; AsyncAPI incidental if present
+- **Flissel/DaveFelix-Coding-Engine** — rule=tooling/library, llm=tangential (c=0.75) — AI code-generation engine; AsyncAPI incidental if present
+- **arielril/hexagonal-architecture** — rule=tooling/library, llm=demo/fixture (c=0.75) — Architectural demo project illustrating hexagonal design patterns
+- **kweaver-ai/kweaver-core** — rule=tooling/library, llm=tangential (c=0.75) — AI decision-agent harness platform, AsyncAPI incidental
+- **CoolSpy3/CSPackets** — rule=tooling/library, llm=product (c=0.72) — Real Minecraft packet library generated via AsyncAPI Generator
+- **encypher-studio/newsware-docs** — rule=tooling/library, llm=spec/docs (c=0.72) — Documentation site frontend for Newsware API clients
+- **openagents-org/openagents** — rule=tooling/library, llm=product (c=0.72) — Deployable AI agent collaboration workspace with CLI
+- **DevOpsMadDog/aldeci_core** — rule=tooling/library, llm=tangential (c=0.7) — Cleaned mirror of ALDECI; no AsyncAPI usage described
+- **conversales/convai-widget-embed** — rule=tooling/library, llm=tangential (c=0.65) — Voice/text SDK; AsyncAPI mention appears incidental
+- **yankeeinlondon/rusty-biscuit** — rule=tooling/library, llm=tangential (c=0.65) — AI research automation tools, AsyncAPI role unclear
+- **claudioed/equipment-metadata** — rule=tooling/library, llm=product (c=0.63) — Quarkus microservice for equipment metadata management
+- **ArabotHXL/BTC_project** — rule=tooling/library, llm=product (c=0.62) — Bitcoin mining SaaS with microservice APIs
+- **Arkhe-Network/Arkhe-OS** — rule=tooling/library, llm=tangential (c=0.62) — Quantum genomics research project, AsyncAPI tangential
+- **arc-framework/arc-platform** — rule=tooling/library, llm=tangential (c=0.62) — AI agent orchestration platform; AsyncAPI likely incidental
+- **junjiepro/mango** — rule=tooling/library, llm=product (c=0.62) — AI agent dialogue platform; AsyncAPI likely incidental
+- **ashtanko/log4fit-api** — rule=tooling/library, llm=product (c=0.6) — Real exercise-tracking backend with JWT auth and workout features
+- **nanoyan/metadata-store** — rule=tooling/library, llm=spec/docs (c=0.6) — Schema/metadata definitions using AsyncAPI type definitions for TypeScript
+- **yuvraj-chouhan-dev/ready-now-server** — rule=tooling/library, llm=product (c=0.6) — SDK backend server, real deployable service
+- **H1lp0p/fins-web** — rule=tooling/library, llm=product (c=0.55) — Monorepo with BFF, multiple packages, real structure
+- **chvanam/fdp-rust-manifest** — rule=tooling/library, llm=demo/fixture (c=0.55) — Benchmarking project using AsyncAPI CLI as tooling dependency
+- **kaje94/choreo-connect-test** — rule=tooling/library, llm=product (c=0.55) — Deployable bridge service connecting local dev to Choreo environment

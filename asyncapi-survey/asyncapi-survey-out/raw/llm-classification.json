@@ -1,0 +1,4502 @@
+{
+  "0xFivis/agentic-mesh-arch-kit": {
+    "bucket": "demo/fixture",
+    "confidence": 0.62,
+    "reason": "Explicitly early draft, not production-ready, template/boilerplate kit"
+  },
+  "0xHoneyJar/loa-hounfour": {
+    "bucket": "spec/docs",
+    "confidence": 0.75,
+    "reason": "Schema-only protocol library defining wire format contracts"
+  },
+  "2025tf20/KTB-LoadTest-team-20": {
+    "bucket": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Bootcamp team project (KTB = Kakao Tech Bootcamp), numbered team"
+  },
+  "21MokseM12/DevPulse": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Real deployable scrapper+bot backend with event-driven notifications"
+  },
+  "244Walyson/GWApp": {
+    "bucket": "product",
+    "confidence": 0.65,
+    "reason": "Real Kanban/chat/notification platform with deployed base URL"
+  },
+  "244Walyson/Strada": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "University course project, 5th semester interdisciplinary assignment"
+  },
+  "45ck/Portarium": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Open-source multi-tenant control plane for AI agent governance"
+  },
+  "4g3nt4333/Ascy-website": {
+    "bucket": "tooling/library",
+    "confidence": 0.88,
+    "reason": "AsyncAPI official website source code"
+  },
+  "5G-PreCiSe/edge-to-cloud-file-uploader": {
+    "bucket": "product",
+    "confidence": 0.7,
+    "reason": "Real deployable Python tool for 5G edge-to-cloud file upload"
+  },
+  "ARCircle/Kojirer": {
+    "bucket": "demo/fixture",
+    "confidence": 0.8,
+    "reason": "Order system for student club school festival ramen booth"
+  },
+  "Aarass/IOT": {
+    "bucket": "uncategorized",
+    "confidence": 0.4,
+    "reason": "No readme content; IoT project description too minimal"
+  },
+  "AbhishekCS3459/URL-Shortner-using-GRPC": {
+    "bucket": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "Student project documenting AsyncAPI 3.0.0 spec for URL shortener"
+  },
+  "AceTheCreator/eda-workshops": {
+    "bucket": "demo/fixture",
+    "confidence": 0.98,
+    "reason": "Explicitly described as AsyncAPI EDA workshops source code"
+  },
+  "AcidicSoil/DSPyTeach": {
+    "bucket": "tangential",
+    "confidence": 0.72,
+    "reason": "DSPy CLI analyzer tool, no meaningful AsyncAPI usage"
+  },
+  "AcidicSoil/lms-llmsTxt": {
+    "bucket": "tangential",
+    "confidence": 0.75,
+    "reason": "LM Studio llms.txt generator, unrelated to AsyncAPI"
+  },
+  "AdanHdzF/event-flow": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Bootcamp distributed systems course project"
+  },
+  "Aidin1998/finalex": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Comprehensive production cryptocurrency exchange platform in Go"
+  },
+  "Alamoalone/Project-of-Desertation": {
+    "bucket": "tangential",
+    "confidence": 0.85,
+    "reason": "LLM-based NPE detection; no evident AsyncAPI usage"
+  },
+  "AlbertKellner/ClaudeDotNetPlayground": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Explicitly a playground/lab operated by Claude Code agent"
+  },
+  "AlexChiquito/SAP-Maintenance-order-adaptor": {
+    "bucket": "product",
+    "confidence": 0.9,
+    "reason": "Deployable Go service bridging Digital Twin and SAP PM"
+  },
+  "AlexanderFromEarth/node-apifactory": {
+    "bucket": "tooling/library",
+    "confidence": 0.8,
+    "reason": "Web framework for API-first development with schema validation"
+  },
+  "AlexandrePh/flywheel-starter-kit": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Starter kit template for AI-driven application development"
+  },
+  "AltairaLabs/Omnia": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Production Kubernetes operator for deploying and managing AI agents"
+  },
+  "Amazon-Cloud-Club-for-KWU/3th-chat-api-demo": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "\"demo\" in name; Korean text confirms chat server demo"
+  },
+  "Andersonfrfilho/backend-websocket": {
+    "bucket": "product",
+    "confidence": 0.68,
+    "reason": "Real backend websocket service with Docker and test setup"
+  },
+  "AndreaGiulianelli/documentation-ghp-action": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "GitHub Action that generates and deploys AsyncAPI documentation"
+  },
+  "AndreiBacs/EchipaMea": {
+    "bucket": "tangential",
+    "confidence": 0.65,
+    "reason": "Flutter contractor app; no AsyncAPI mention in readme"
+  },
+  "AndriyKalashnykov/dapr-dotnet-zero-to-hero-event-driven-architecture": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Based on Dometrain course; pizza shop learning project"
+  },
+  "Anomaliszt/Conquest": {
+    "bucket": "tangential",
+    "confidence": 0.7,
+    "reason": "C2 framework; no AsyncAPI mention in readme"
+  },
+  "Apicurio/apicurio-registry": {
+    "bucket": "product",
+    "confidence": 0.92,
+    "reason": "Real deployable API/Schema registry storing AsyncAPI specs"
+  },
+  "Apress/Crafting-Great-APIs-with-Domain-Driven-Design": {
+    "bucket": "demo/fixture",
+    "confidence": 0.99,
+    "reason": "Companion code for published Apress book"
+  },
+  "ArieGoldkin/ai-agent-hub": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "AI agent skills repo for Claude; not an AsyncAPI user"
+  },
+  "ArneVcrs/howestprime-microservice-movies": {
+    "bucket": "demo/fixture",
+    "confidence": 0.96,
+    "reason": "Explicit 4th-semester Howest school project"
+  },
+  "ArneVcrs/howestprime-microservice-ticketing": {
+    "bucket": "demo/fixture",
+    "confidence": 0.96,
+    "reason": "Explicit 4th-semester Howest school project"
+  },
+  "AsiaOstrich/universal-dev-standards": {
+    "bucket": "spec/docs",
+    "confidence": 0.78,
+    "reason": "Development standards and guidelines documentation repo"
+  },
+  "BackendFans83/Taxi": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Full microservice taxi platform for passengers and drivers"
+  },
+  "BenediktusG/task-manager": {
+    "bucket": "product",
+    "confidence": 0.6,
+    "reason": "Functional multi-tenant task manager with real-time notifications"
+  },
+  "Benzinga/benzinga-docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.92,
+    "reason": "Mintlify-powered documentation site for Benzinga APIs"
+  },
+  "Berthje/envirosense-deno-server": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Real IoT API managing buildings, rooms, and devices"
+  },
+  "BidnessForB/oas-converter-lambda": {
+    "bucket": "tangential",
+    "confidence": 0.75,
+    "reason": "OAS 2\u21923 converter lambda; AsyncAPI not its focus"
+  },
+  "Bikxs/Skafu": {
+    "bucket": "tooling/library",
+    "confidence": 0.78,
+    "reason": "Scaffolding platform that generates microservice applications"
+  },
+  "Binit-Dhakal/Saarathi": {
+    "bucket": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "\"Simulates\" ride lifecycle; portfolio/demo project"
+  },
+  "Bombatomica64/42-matcha": {
+    "bucket": "demo/fixture",
+    "confidence": 0.93,
+    "reason": "42 school project dating app"
+  },
+  "BrentIO/FireFly-Client": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Real client application with dedicated documentation site"
+  },
+  "BrentIO/FireFly-Controller": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Real deployable IoT software-defined lighting controller"
+  },
+  "Brico87/seed-kafka": {
+    "bucket": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Kafka infrastructure seed/starter setup, not a deployable product"
+  },
+  "ByteBardOrg/AsyncAPI.NET": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": ".NET SDK and object model for AsyncAPI specification"
+  },
+  "CALLlA-74/bauman-poker": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "University coursework: online poker protocol prototype"
+  },
+  "CDFmmgr9fLkRH453kRC33TrEp/matching-engine": {
+    "bucket": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "Self-described simplistic exchange simulator, not production"
+  },
+  "CEhresmann/Redocly-api-specificatons": {
+    "bucket": "spec/docs",
+    "confidence": 0.85,
+    "reason": "Repository of OpenAPI/AsyncAPI specs with Redocly documentation"
+  },
+  "CJovan02/iots": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "University IoT subject projects simulating an IoT system"
+  },
+  "Caldis/frameworks": {
+    "bucket": "tangential",
+    "confidence": 0.85,
+    "reason": "Curated design-frameworks catalog; AsyncAPI incidental"
+  },
+  "CardanoSolutions/ogmios": {
+    "bucket": "product",
+    "confidence": 0.92,
+    "reason": "Real deployable WebSocket/JSON-RPC bridge for Cardano node"
+  },
+  "CardinalWave/cw-mqtt-gateway": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Production MQTT gateway service routing broker messages"
+  },
+  "ChargeAndTrack/backend-spe": {
+    "bucket": "demo/fixture",
+    "confidence": 0.65,
+    "reason": "Academic SPE project backend with documentation site"
+  },
+  "Cirripide/local-rag-for-documents-be": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Real deployable local RAG backend application"
+  },
+  "CodingFlow/rating-service-dotnet": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Explicit prototype showcasing architectural best practices"
+  },
+  "ComeOnOliver/skillshub": {
+    "bucket": "tangential",
+    "confidence": 0.88,
+    "reason": "AI agent skills registry; AsyncAPI listed incidentally"
+  },
+  "CruelAddict/ori": {
+    "bucket": "tangential",
+    "confidence": 0.72,
+    "reason": "TUI database explorer; no evident AsyncAPI usage"
+  },
+  "CryptoSmartNow/bizmarket-docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Public-facing documentation site for financial products"
+  },
+  "DEFRA/fcp-audit": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Real UK government audit microservice consuming SQS events"
+  },
+  "DEFRA/fcp-fdm": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Real UK government farming data model microservice"
+  },
+  "DEFRA/fcp-sfd-comms": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Real backend comms service with AsyncAPI spec for inbound events"
+  },
+  "DEFRA/fcp-sfd-crm": {
+    "bucket": "product",
+    "confidence": 0.92,
+    "reason": "Real CRM orchestration microservice with messaging pipeline"
+  },
+  "DEFRA/fcp-sfd-object-processor": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Deployable REST API and messaging gateway for file processing"
+  },
+  "DEFRA/ffc-doc-statement-constructor": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Containerised payment statement construction service"
+  },
+  "DEFRA/ffc-doc-statement-data": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Deployable data integration service using Azure Service Bus"
+  },
+  "DEFRA/ffc-doc-statement-generator": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Production statement generator service with Azure Service Bus"
+  },
+  "DEFRA/ffc-doc-statement-publisher": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Deployable document publisher service with messaging"
+  },
+  "DEFRA/ffc-pay-data-hub": {
+    "bucket": "product",
+    "confidence": 0.9,
+    "reason": "Real UK government payment data hub service, containerised deployment"
+  },
+  "DEFRA/ffc-pay-enrichment": {
+    "bucket": "product",
+    "confidence": 0.93,
+    "reason": "Payment Hub microservice enriching payment requests"
+  },
+  "DLShomies/FluffyPlushiesWebShop": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "KEA 2025 school project webshop, not production"
+  },
+  "DafeCpp/product_dev_course": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Two-semester university backend development course"
+  },
+  "DarkflameUniverse/DarkflameServer": {
+    "bucket": "tangential",
+    "confidence": 0.85,
+    "reason": "Game server emulator; AsyncAPI not central to its purpose"
+  },
+  "DasOxymoron/takeaway-challenge": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Coding challenge exercise, not a production service"
+  },
+  "DataDog/serverless-sample-app": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Sample app explicitly for demonstrating Datadog features"
+  },
+  "DataDog/stickerlandia": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "Real deployed community engagement platform for Datadog events"
+  },
+  "David-Parry/server-agents": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Deployable AI agent orchestration platform with governance"
+  },
+  "DeepLcom/api-docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.95,
+    "reason": "Documentation site for DeepL API, not runnable software"
+  },
+  "DeepLcom/openapi": {
+    "bucket": "spec/docs",
+    "confidence": 0.98,
+    "reason": "Repo's sole content is OpenAPI and AsyncAPI specification files"
+  },
+  "Deutsche-FayTech-Korea/bridge_socket_server": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Real WebSocket server for collaborative whiteboard"
+  },
+  "DevashishBoini/attendanceSystem": {
+    "bucket": "demo/fixture",
+    "confidence": 0.85,
+    "reason": "Explicitly based on a Harkirat Singh course assignment"
+  },
+  "Devathon-2024-team5/Preguntonic-backend": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Hackathon (Devathon-2024) team project, not production software"
+  },
+  "DigKick/DigKick": {
+    "bucket": "product",
+    "confidence": 0.83,
+    "reason": "Real table-soccer goal-detection system with MQTT hardware integration"
+  },
+  "DocHubTeam/DocHub": {
+    "bucket": "tooling/library",
+    "confidence": 0.88,
+    "reason": "Architecture-as-code tool that renders AsyncAPI among other formats"
+  },
+  "DrBlury/Event-Driven-Service-Example": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Named 'Example', described explicitly as a reference implementation"
+  },
+  "E2RD0/digital-resources-transcription-service": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "Live Whisper-as-a-Service with email delivery and editor UI"
+  },
+  "EDALearn/EDA-Modulith-Playground": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Created for a Spring Modulith + AsyncAPI technical talk"
+  },
+  "EDALearn/EDA-Playground-Online-Food-Delivery": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Explicitly for an AsyncAPI technical talk demo"
+  },
+  "EDALearn/EDA-TransactionalOutbox-Modulith-JPA": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Tutorial implementing Transactional Outbox pattern with ZenWaveSDK"
+  },
+  "EDI-Energy/api-directory-service": {
+    "bucket": "spec/docs",
+    "confidence": 0.8,
+    "reason": "German energy sector schema and API spec publication repository"
+  },
+  "EVerest/EVerest": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Linux Foundation Energy-backed EV charging software stack"
+  },
+  "Echo-Chat-Systems/docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.93,
+    "reason": "Pure documentation site built with Docusaurus"
+  },
+  "Eclipse-SDV-Hackathon-Chapter-Three/Den-Team": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Hackathon team project, not production software"
+  },
+  "EcoHub-AG/Api-Specs": {
+    "bucket": "spec/docs",
+    "confidence": 0.97,
+    "reason": "Repository purpose is storing API specifications only"
+  },
+  "ElementAstro/lithium-next": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Real open-source astrophotography terminal application"
+  },
+  "Elhebert/asyncapi-validation": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "Validation package explicitly for AsyncAPI YAML/JSON documents"
+  },
+  "Embiggenerd/spiritio": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Live Zoom-clone deployed at a public domain"
+  },
+  "Emiltzav/asyncapi-iot-examples": {
+    "bucket": "spec/docs",
+    "confidence": 0.87,
+    "reason": "Catalog of AsyncAPI 3.0 descriptions for IoT devices, thesis artifact"
+  },
+  "ErenAri/PulseStream--Real-Time-Event-Processing-Fabric": {
+    "bucket": "product",
+    "confidence": 0.7,
+    "reason": "Described as a KernelGuard telemetry analytics product with real infra"
+  },
+  "FAForever/faf-api-specs": {
+    "bucket": "spec/docs",
+    "confidence": 0.95,
+    "reason": "Repository's main content is OpenAPI and AsyncAPI specs"
+  },
+  "FilippoPracucci/sap-assignment-03": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "University course assignment on event-driven architecture"
+  },
+  "Floffah/echoform": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Real MMORPG game platform using Godot and Bun"
+  },
+  "Forsakringskassan/gradle-conventions": {
+    "bucket": "tooling/library",
+    "confidence": 0.72,
+    "reason": "Shared Gradle build convention plugins library"
+  },
+  "Forsakringskassan/rimfrost-regel-rtf-manuell-asyncapi": {
+    "bucket": "spec/docs",
+    "confidence": 0.93,
+    "reason": "AsyncAPI spec for Swedish insurance agency service"
+  },
+  "Forsakringskassan/rimfrost-service-oul-asyncapi": {
+    "bucket": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "AsyncAPI service template with Gradle conventions"
+  },
+  "Forsakringskassan/template-asyncapi": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly named AsyncAPI template/boilerplate"
+  },
+  "FrankSpooren/HolidaiButler": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Real AI integration platform for travel destinations"
+  },
+  "FreeTAKTeam/Reticulum_AsyncAPI_rs": {
+    "bucket": "tooling/library",
+    "confidence": 0.85,
+    "reason": "Rust framework using AsyncAPI as authoritative mesh contract"
+  },
+  "Freundschaft-ist-Magie/M241_Team0": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "School module team project (M241 Team 0)"
+  },
+  "G-USI/asyncapi-python": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "CLI tool generating Python code from AsyncAPI specs"
+  },
+  "GabrielAderaldo/Merma_a_musica": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "Real deployable multiplayer online music quiz app"
+  },
+  "Generacja-Cuzi/ai-present-finder": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "AI gift recommendation microservices application"
+  },
+  "GitEngHar/pointservice": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Deployable Go microservice with REST API"
+  },
+  "Goldziher/spikard": {
+    "bucket": "tooling/library",
+    "confidence": 0.9,
+    "reason": "Polyglot web toolkit with AsyncAPI/OpenAPI codegen"
+  },
+  "GopiR17/backstage-prod": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "Production Backstage developer portal deployment"
+  },
+  "Gradient-DS/AGORA": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Real multi-agent compliance platform for NVWA inspectors"
+  },
+  "GreenRover/async-api-validator": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "REST API tool for validating and joining AsyncAPI files"
+  },
+  "GregTag/TheSpreadGame": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Client-server game with AsyncAPI describing its WebSocket API"
+  },
+  "Grinseteddy/AiCollections": {
+    "bucket": "tangential",
+    "confidence": 0.82,
+    "reason": "Collection of AI-generated specs, not genuine AsyncAPI user"
+  },
+  "Grinseteddy/DomainDrivenApiDesign": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Training resources with demo online library interfaces"
+  },
+  "Grinseteddy/MasteringDdd": {
+    "bucket": "demo/fixture",
+    "confidence": 0.93,
+    "reason": "Book companion code for 'Mastering Domain Driven Design' manuscript"
+  },
+  "Harmelodic/init-microservice": {
+    "bucket": "demo/fixture",
+    "confidence": 0.87,
+    "reason": "Bootstrapping template and reference implementation for microservices"
+  },
+  "Harsh4902/kubecon-eu-2026-tutorials": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Conference tutorial demo for AsyncAPI mocking with Microcks"
+  },
+  "HexRohit/cardano": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Ogmios: deployable WebSocket bridge service for Cardano node"
+  },
+  "Hochfrequenz/verzeichnisdienst-python-models": {
+    "bucket": "tooling/library",
+    "confidence": 0.82,
+    "reason": "Autogenerated pydantic client models for consuming an API"
+  },
+  "Hullow/Concord": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "42 school curriculum ft_transcendence project, Discord-like app"
+  },
+  "HyPolDev/Bot": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Automated cross-exchange prediction market arbitrage trading engine"
+  },
+  "IATI/iati-message-queue-service": {
+    "bucket": "spec/docs",
+    "confidence": 0.82,
+    "reason": "Repo is the specification for an internal message queue service"
+  },
+  "IMAGINARY/track-n-truck": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Deployable game application with event-driven communication"
+  },
+  "Ihor-Mykytiuk/software-architecture": {
+    "bucket": "product",
+    "confidence": 0.65,
+    "reason": "Web application for finding teams and project collaborators"
+  },
+  "ImadSai/asyncAPI-POC": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicit proof-of-concept exploring AsyncAPI tooling"
+  },
+  "InkbridgeNetworks/SubMan-API-schema": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "OpenResty API schema and OpenLDAP schema files, no runnable app"
+  },
+  "Insightpulseai/agents": {
+    "bucket": "tangential",
+    "confidence": 0.87,
+    "reason": "AI agent personas and prompt contracts registry, not AsyncAPI user"
+  },
+  "Instaconct/instaconct-api": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Real NestJS customer support chat backend with WebSocket"
+  },
+  "Integration-Project-2026-Groep-2/CRM": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Academic integration project microservice for school platform"
+  },
+  "Integration-Project-2026-Groep-2/Planning": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Academic integration project planning microservice, Groep 2"
+  },
+  "IsmaelMartinez/repo-butler": {
+    "bucket": "tangential",
+    "confidence": 0.82,
+    "reason": "AI agent that analyses repos; AsyncAPI likely incidental"
+  },
+  "Itshalffull/Concept-Oriented-Programming-Framework": {
+    "bucket": "uncategorized",
+    "confidence": 0.55,
+    "reason": "No readme; description too vague to classify"
+  },
+  "Jack-the-Pro101/vequate": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Cloud-based Minecraft server orchestration platform"
+  },
+  "Jacksonspencerd/tcss559-project": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "University course project (TCSS 559) observability platform"
+  },
+  "JannikAlx/kafkaProducer": {
+    "bucket": "tangential",
+    "confidence": 0.6,
+    "reason": "Kafka producer app; no AsyncAPI mention in available text"
+  },
+  "Joaopdiasventura/Modularis": {
+    "bucket": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "Explicitly built to demonstrate distributed microservices patterns"
+  },
+  "Jonas-du-bois/phenom": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Deployable UFO observation web app with geolocation and auth"
+  },
+  "JonathanGrocott/A2A-MQTT": {
+    "bucket": "tooling/library",
+    "confidence": 0.82,
+    "reason": "Python library enabling AI agent communication over MQTT"
+  },
+  "KTCrisis/event7": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Deployable schema registry governance platform with FastAPI and Next.js"
+  },
+  "Kambolo/Picksy": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Engineering thesis web app, not production software"
+  },
+  "Kamuyin/schachroboter": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Seminar/school project (Mechatronics chess robot)"
+  },
+  "Karfev/Product-base-Spec-Kit": {
+    "bucket": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "Template and boilerplate kit for B2B SaaS spec artifacts"
+  },
+  "KempDewulf/envirosense-deno-server": {
+    "bucket": "product",
+    "confidence": 0.87,
+    "reason": "Deployable Deno API managing IoT buildings, rooms, devices"
+  },
+  "KevinShabanaj386/SmartGridAnalytics": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Microservices platform for smart energy grid data analytics"
+  },
+  "KibbeWater/wfm-openapi": {
+    "bucket": "spec/docs",
+    "confidence": 0.95,
+    "reason": "Third-party AsyncAPI and OpenAPI documentation for warframe.market"
+  },
+  "Kiloforge/kiloforge": {
+    "bucket": "tangential",
+    "confidence": 0.72,
+    "reason": "AI coding-agent orchestration platform; AsyncAPI incidental"
+  },
+  "Koh0920/webapp_specs": {
+    "bucket": "demo/fixture",
+    "confidence": 0.8,
+    "reason": "Template/boilerplate repo for web app design specifications"
+  },
+  "Kong/spec-renderer": {
+    "bucket": "tooling/library",
+    "confidence": 0.92,
+    "reason": "Pluggable API spec renderer powering documentation experiences"
+  },
+  "KrushilProlink/studio-new": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "AsyncAPI studio: develop, validate, convert, preview AsyncAPI docs"
+  },
+  "Kuestenlogik/Bowire": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "Multi-protocol API workbench supporting AsyncAPI among many protocols"
+  },
+  "Kuestenlogik/Bowire.Samples": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Reference sample apps demonstrating Bowire tooling"
+  },
+  "Lap-Platform/LAP": {
+    "bucket": "tooling/library",
+    "confidence": 0.88,
+    "reason": "CLI tool compiling AsyncAPI/OpenAPI specs into agent-native format"
+  },
+  "LarsArtmann/typespec-asyncapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "TypeSpec emitter that generates AsyncAPI 3.0 specifications"
+  },
+  "LaurenCattoor/st-microservice-ticketing": {
+    "bucket": "demo/fixture",
+    "confidence": 0.8,
+    "reason": "Student project with deliverables language; thesis-style setup"
+  },
+  "Leandroyyy/async-api-example": {
+    "bucket": "demo/fixture",
+    "confidence": 0.99,
+    "reason": "Explicitly named examples for AsyncAPI"
+  },
+  "Leandroyyy/async-api-translator": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "Translator tool for AsyncAPI specifications"
+  },
+  "LeonidasGarcia/puchamon": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly a university project, Pokemon Showdown clone"
+  },
+  "LouisSappey/tp-nest-web-socket": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "'TP' is French for school practical assignment"
+  },
+  "Lulexs/iots-1": {
+    "bucket": "demo/fixture",
+    "confidence": 0.75,
+    "reason": "Uses university dataset, student IoT gateway project"
+  },
+  "MALIEV-Co-Ltd/Maliev.MessagingContracts": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Contract-first schema registry and AsyncAPI specs only"
+  },
+  "MRX1205/AIflow": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "AI coding-agent skill repo for Codex/Claude agents"
+  },
+  "Maksim-yo/chat": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Deployable C++ multi-user chat; AsyncAPI used for its docs"
+  },
+  "Malcolmston/dta-final": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Stock dashboard project report, student submission feel"
+  },
+  "Malmo-Skyttegille-Pistolsektionen/rotation_target_backend_resources": {
+    "bucket": "spec/docs",
+    "confidence": 0.87,
+    "reason": "Resources and AsyncAPI/OpenAPI documentation, not runnable software"
+  },
+  "ManuMarcos/mind-battle-backend": {
+    "bucket": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Kahoot-inspired learning project, no production indicators"
+  },
+  "MathTrail/contracts": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Schema registry with AsyncAPI spec and event contracts"
+  },
+  "MatiasNAmendola/real-time-risk-lab": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly states 'no es producto real', technical exploration"
+  },
+  "Matse-DD/HowestPrime-microservice-movies": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly a 2nd-year university school project"
+  },
+  "Matse-DD/HowestPrime-microservice-ticketing": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly a 2nd-year university school project"
+  },
+  "Matusko/flea": {
+    "bucket": "uncategorized",
+    "confidence": 0.5,
+    "reason": "Only Nx workspace boilerplate readme, no domain context"
+  },
+  "MaximilianWalker/HexRelay": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Self-hostable Discord-like communication platform"
+  },
+  "MehdiMaachi/tp-xml-meteo": {
+    "bucket": "tangential",
+    "confidence": 0.85,
+    "reason": "School XML practical exercise; AsyncAPI only incidental"
+  },
+  "MikeMDV/riden": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Explicitly fictional boat-ride booking system"
+  },
+  "MindGainsLabs/Stratus_Relayer": {
+    "bucket": "product",
+    "confidence": 0.87,
+    "reason": "Real Discord analytics and crypto intelligence application"
+  },
+  "MrS1lentcz/protobridge": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "Code generator producing proxies and pub/sub helpers from proto"
+  },
+  "NHSDigital/nhs-notify-supplier-api": {
+    "bucket": "spec/docs",
+    "confidence": 0.8,
+    "reason": "Primary content is API definitions, sandbox, and SDK for external suppliers"
+  },
+  "NHSDigital/nhs-notify-supplier-config": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Real NHS Notify service with deployable event schema code"
+  },
+  "NUWCDIVNPT/stig-manager": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Real deployable API and web client for STIG compliance management"
+  },
+  "NalinDalal/modheshwari": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Full-stack community management platform with events and notifications"
+  },
+  "NawafSwe/go-service-starter-kit": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Explicitly a Go backend template and boilerplate for new services"
+  },
+  "NeatGuyCoding/spring-io": {
+    "bucket": "tangential",
+    "confidence": 0.8,
+    "reason": "Conference notes and summaries, not an actual service or spec"
+  },
+  "Netcracker/qubership-apihub-api-processor": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "Library that processes API specs including AsyncAPI into build artifacts"
+  },
+  "Netcracker/qubership-apihub-test-service": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Explicitly a mock microservice for testing, not production logic"
+  },
+  "Netcracker/qubership-integration-platform": {
+    "bucket": "product",
+    "confidence": 0.92,
+    "reason": "Real deployable integration and orchestration platform on Kubernetes"
+  },
+  "Netcracker/qubership-integration-runtime-catalog": {
+    "bucket": "product",
+    "confidence": 0.92,
+    "reason": "Real production service managing integration chain deployments"
+  },
+  "OAI/Arazzo-Specification": {
+    "bucket": "spec/docs",
+    "confidence": 0.99,
+    "reason": "Repository's sole content is a formal API specification"
+  },
+  "ODS-IS-UASL/asset": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Production drone-route REST API managing real resources"
+  },
+  "ODS-IS-UASL/safety-management": {
+    "bucket": "product",
+    "confidence": 0.87,
+    "reason": "Production drone safety management deployable module"
+  },
+  "OKArc/backstage": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Fork of Backstage, a real deployable developer portal platform"
+  },
+  "ONSdigital/dp-search-data-extractor": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Real microservice consuming Kafka events to update search index"
+  },
+  "ONSdigital/dp-search-data-importer": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Real microservice consuming Kafka messages to populate Elasticsearch"
+  },
+  "Open-Locker/Open-Locker": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Real IoT smart-locker product sponsored by city government"
+  },
+  "OpenDonationAssistant/docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.8,
+    "reason": "Documentation site using Mintlify, not runnable software"
+  },
+  "OpenSourceAGI/ai-broker-investing-agent": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Real AI-driven trading system executing on Alpaca and Polymarket"
+  },
+  "OptimalMatch/clode": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Full-stack application for managing Claude Code instances in Git workflows"
+  },
+  "Opzet/EFDesignerExamples": {
+    "bucket": "tangential",
+    "confidence": 0.85,
+    "reason": "Entity Framework code-gen examples; no AsyncAPI relevance"
+  },
+  "Or3nges/howestprime-microservice-movies": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Explicit school project, 2nd-year university assignment"
+  },
+  "Or3nges/howestprime-microservice-ticketing": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicit school project, 2nd-year university assignment"
+  },
+  "Order-of-Hospitallers/gru_emoney_token-factory": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "Deployable ERC-20 token factory system on live chain"
+  },
+  "Owen-Richards/ai-nutritionist": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Deployable serverless WhatsApp/SMS bot on AWS"
+  },
+  "PacktPublishing/Software-Architecture-with-Cpp-2E": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Packt book companion code, not production software"
+  },
+  "Pakisan/jasyncapi-idea-plugin-demo": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly a demo repo for JetBrains AsyncAPI plugin"
+  },
+  "PeterAlaks/lyric-display-app": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Production Electron desktop app for live events"
+  },
+  "Pinit-Scheduler/pinit-auth": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Real auth microservice in a bounded-context architecture"
+  },
+  "Pinit-Scheduler/pinit-notification": {
+    "bucket": "product",
+    "confidence": 0.93,
+    "reason": "Real notification microservice with RabbitMQ event-driven design"
+  },
+  "Pinit-Scheduler/pinit-task": {
+    "bucket": "product",
+    "confidence": 0.93,
+    "reason": "Real task-management microservice backend"
+  },
+  "PolyAI-LDN/polyai-mintlify-doc": {
+    "bucket": "spec/docs",
+    "confidence": 0.95,
+    "reason": "Documentation site source for PolyAI Agent Studio"
+  },
+  "Poss111/ClashBot-Service": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Real Spring Boot backend service for Clash Bot"
+  },
+  "PriyanArora/Qeue": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Deployable microservices event platform with concurrency handling"
+  },
+  "ProsusAI/agentic-services-protocol": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Open protocol/spec definition for agentic service lifecycle"
+  },
+  "Quiago/doble9": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Deploy-ready real-time multiplayer game application"
+  },
+  "RafaelAlmeida00/Plant-Simulador": {
+    "bucket": "product",
+    "confidence": 0.65,
+    "reason": "Deployable industrial plant simulation and monitoring app"
+  },
+  "RafaelAlmeida00/Plant-Simulador-Huggy": {
+    "bucket": "demo/fixture",
+    "confidence": 0.65,
+    "reason": "Simulator on HuggingFace, minimal info suggests demo"
+  },
+  "RafaelAlmeida00/Simulador-UI": {
+    "bucket": "product",
+    "confidence": 0.63,
+    "reason": "React frontend for the plant simulation platform"
+  },
+  "Ravip2006/Demo": {
+    "bucket": "spec/docs",
+    "confidence": 0.93,
+    "reason": "Central contract repository housing multiple API specs"
+  },
+  "Redocly/apidocs-starter": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Starter template for API documentation projects"
+  },
+  "Redocly/redocly-cli": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "CLI tool for linting, validating, and documenting APIs"
+  },
+  "Remake1/GrokOA": {
+    "bucket": "tangential",
+    "confidence": 0.92,
+    "reason": "Interview cheat tool; AsyncAPI not mentioned at all"
+  },
+  "Reya-Labs/reya-api-specs": {
+    "bucket": "spec/docs",
+    "confidence": 0.97,
+    "reason": "Repository contains OpenAPI and AsyncAPI spec files only"
+  },
+  "RobinTail/zod-sockets": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Library that generates AsyncAPI specs from Socket.IO schemas"
+  },
+  "RodolfoFigueroa/lyra": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Deployable geospatial REST/WebSocket API service"
+  },
+  "RossBugginsNHS/notify-asyncapi": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Builds and publishes AsyncAPI schema pages for NHS Notify"
+  },
+  "RubizZ/flAIghts": {
+    "bucket": "demo/fixture",
+    "confidence": 0.7,
+    "reason": "Portfolio/student flight-planner project with AI pun name"
+  },
+  "Rycen7822/ExAP": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Protocol specification package, not runnable software"
+  },
+  "SRinatR/RD": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Multi-tenant SaaS event platform with Kafka microservices"
+  },
+  "SchlexanderOlz/MatchMakerHub": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Deployable matchmaker reverse-proxy server"
+  },
+  "Schreglmann/gameshow": {
+    "bucket": "tangential",
+    "confidence": 0.82,
+    "reason": "Browser quiz game; no AsyncAPI connection visible"
+  },
+  "SchwarzIT/api-linter-rules": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "Custom Spectral linter rulesets for API governance"
+  },
+  "Scott-HW-OU/shw-616172": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Docs starter template with sample API for onboarding"
+  },
+  "ScrKiddie/AtoiTalkAPI": {
+    "bucket": "product",
+    "confidence": 0.92,
+    "reason": "Deployable real-time chat backend with WebSocket events"
+  },
+  "Sejsel/ksplang-programs": {
+    "bucket": "tangential",
+    "confidence": 0.9,
+    "reason": "AoC/WASM solutions in esoteric language; no AsyncAPI"
+  },
+  "ShuVeriDa/distahilar-back": {
+    "bucket": "product",
+    "confidence": 0.92,
+    "reason": "Deployable Telegram-inspired messaging app backend"
+  },
+  "SolaceLabs/sol-ep-asyncapi-importer": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Imports AsyncAPI specs into Solace Event Portal"
+  },
+  "SolaceLabs/solace-tools-typescript": {
+    "bucket": "tooling/library",
+    "confidence": 0.96,
+    "reason": "AsyncAPI importer and SDK tools for Solace platform"
+  },
+  "Souvikns/asyncapi-parser": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "AsyncAPI parser library implemented in Rust"
+  },
+  "Souvikns/greet-bot": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Simple WebSocket example app using Glee framework"
+  },
+  "Souvikns/pokemon-trade-api": {
+    "bucket": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Pokemon trading socket.io API; hobby/demo project"
+  },
+  "Sovereign-Labs/sovereign-sdk": {
+    "bucket": "tangential",
+    "confidence": 0.75,
+    "reason": "Blockchain rollup SDK; AsyncAPI mention likely incidental"
+  },
+  "Sriramanenivikas/Intelligent-Warehouse-Orchestration-System": {
+    "bucket": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Explicitly a planning skeleton without implementation code"
+  },
+  "StableCoinTF/StableCoinBC_Adapter_Docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.92,
+    "reason": "AsyncAPI YAML spec repo generating Kafka API documentation"
+  },
+  "StepanNazar/city-report-ai-assistance-service": {
+    "bucket": "demo/fixture",
+    "confidence": 0.93,
+    "reason": "Explicitly described as university software architecture labs"
+  },
+  "Sunagatov/Iced-Latte": {
+    "bucket": "product",
+    "confidence": 0.68,
+    "reason": "Live production-grade coffee marketplace backend with real deployment"
+  },
+  "SwissDataScienceCenter/renku-schema": {
+    "bucket": "spec/docs",
+    "confidence": 0.93,
+    "reason": "Central repo of message queue schemas and AsyncAPI specs"
+  },
+  "Syed1012/kesselops": {
+    "bucket": "product",
+    "confidence": 0.65,
+    "reason": "Full-stack gastronomy operations platform description"
+  },
+  "Tafseerhussain/zillabase_portal": {
+    "bucket": "product",
+    "confidence": 0.62,
+    "reason": "Admin portal UI for Zillabase product"
+  },
+  "TahaShahid203/async-api-issue": {
+    "bucket": "tooling/library",
+    "confidence": 0.88,
+    "reason": "Fork/issue repo of AsyncAPI Studio tooling"
+  },
+  "Tanh1603/auction-hub": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Comprehensive auction platform implementing legal regulations"
+  },
+  "Team-Nyong/KTB-Chat-Load-Testing": {
+    "bucket": "tangential",
+    "confidence": 0.8,
+    "reason": "Chat load testing repo; no AsyncAPI connection"
+  },
+  "TemplateMechanics/tilt": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Tilt file examples demonstrating deployment patterns"
+  },
+  "Thomas-More-Digital-Innovation/2526-DI-004-GoStrategy": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "University course project at Thomas More institution"
+  },
+  "Tomeku-Development/AgentMesh": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Hackathon competition entry for Vertex Swarm Challenge 2026"
+  },
+  "TomzBench/jsmn-tools": {
+    "bucket": "tooling/library",
+    "confidence": 0.72,
+    "reason": "Code generator for JSON parsing targeting embedded C"
+  },
+  "TristanDeLil/ms-microservice-ticketing": {
+    "bucket": "demo/fixture",
+    "confidence": 0.75,
+    "reason": "Student microservices project at Howest university"
+  },
+  "Turisas/solaxy": {
+    "bucket": "tangential",
+    "confidence": 0.78,
+    "reason": "SVM competition monorepo; no AsyncAPI visible"
+  },
+  "TykTechnologies/exp": {
+    "bucket": "tooling/library",
+    "confidence": 0.7,
+    "reason": "Experimental dev tooling and schema generators from API vendor"
+  },
+  "UNIZAR-30226-2026-07/BombaVa-Backend": {
+    "bucket": "demo/fixture",
+    "confidence": 0.93,
+    "reason": "University of Zaragoza course project with academic numbering"
+  },
+  "UTXOnly/oddrip": {
+    "bucket": "tooling/library",
+    "confidence": 0.82,
+    "reason": "Go client SDK for Kalshi trading REST and WebSocket APIs"
+  },
+  "V-ivek/workflow-engine": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly a coding challenge submission, not production software"
+  },
+  "Vellum-IO/keeper-api-contracts": {
+    "bucket": "spec/docs",
+    "confidence": 0.92,
+    "reason": "OpenAPI spec files for internal DBaaS service, no runnable code"
+  },
+  "VisioLab/cash-register-api": {
+    "bucket": "spec/docs",
+    "confidence": 0.97,
+    "reason": "AsyncAPI spec describing WebSocket API, no runnable software"
+  },
+  "VistA-Evolved/vista-evolved-platform": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Real deployable platform monorepo with Docker, backend APIs, UI"
+  },
+  "VoiceBlender/voiceblender": {
+    "bucket": "product",
+    "confidence": 0.97,
+    "reason": "Deployable Go voice platform with SIP, WebRTC, REST, webhooks"
+  },
+  "WSOL12/html-template": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "AsyncAPI Generator HTML template for documentation rendering"
+  },
+  "WaYdotNET/zen-generator": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Bidirectional AsyncAPI 3.0 to Python code generator"
+  },
+  "WaleedAshraf/asyncapi-validator": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "AsyncAPI message validator library for Kafka/RabbitMQ"
+  },
+  "Wavix/wavix-openapi": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "OpenAPI spec repo for REST API, no AsyncAPI content evident"
+  },
+  "WebFuzzing/Dataset": {
+    "bucket": "tangential",
+    "confidence": 0.78,
+    "reason": "Test dataset of REST/GraphQL apps; AsyncAPI only incidental"
+  },
+  "WebSecDetectives/fluffy-plushies-webshop": {
+    "bucket": "demo/fixture",
+    "confidence": 0.87,
+    "reason": "KEA 2026 course security project, educational webshop"
+  },
+  "XaaXaaX/aws-cloudevents-eda": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Code samples illustrating event envelope standards study"
+  },
+  "XaaXaaX/eventcatalog-automation": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Example EventCatalog automation for EDA documentation"
+  },
+  "Xen0Xys/N2I-2024-API": {
+    "bucket": "demo/fixture",
+    "confidence": 0.8,
+    "reason": "NestJS starter for N2I 2024 competition, not production service"
+  },
+  "YOU54F/pact-asyncapi-comparator": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "CLI tool comparing Pact contracts against AsyncAPI specs"
+  },
+  "Yeusepe/cdngine": {
+    "bucket": "product",
+    "confidence": 0.83,
+    "reason": "Real asset ingest, processing, and CDN delivery platform"
+  },
+  "Youka/api-snap": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Deployable K8s app collecting and displaying API docs"
+  },
+  "ZenWave360/json-schema-ref-parser-jvm": {
+    "bucket": "tooling/library",
+    "confidence": 0.88,
+    "reason": "Java library for parsing and resolving JSON Schema $ref pointers"
+  },
+  "ZenWave360/zenwave-playground": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Example projects generated from ZenWave SDK, including AsyncAPI samples"
+  },
+  "ZenWave360/zenwave-sdk": {
+    "bucket": "tooling/library",
+    "confidence": 0.96,
+    "reason": "Code generator toolkit for DDD and API-first event-driven microservices"
+  },
+  "Zenika/kafka-schema-registry-publish": {
+    "bucket": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "Best-practices demo for publishing schemas via CI/CD"
+  },
+  "ZevMM/ColumbiaTradingCompetition": {
+    "bucket": "demo/fixture",
+    "confidence": 0.85,
+    "reason": "University trading competition simulator project"
+  },
+  "ZuzannaTabisz/snp-app": {
+    "bucket": "tangential",
+    "confidence": 0.72,
+    "reason": "RNA structural analysis tool; no meaningful AsyncAPI usage"
+  },
+  "ZuzannaTabisz/snpapptests": {
+    "bucket": "tangential",
+    "confidence": 0.72,
+    "reason": "Test suite for RNA app; no meaningful AsyncAPI usage"
+  },
+  "a-grasso/master-thesis-public": {
+    "bucket": "demo/fixture",
+    "confidence": 0.75,
+    "reason": "Master thesis resources; academic not production"
+  },
+  "acdgbrasil/contracts": {
+    "bucket": "spec/docs",
+    "confidence": 0.96,
+    "reason": "Central org API contracts repo with AsyncAPI v3 specs"
+  },
+  "acharyaPawan/ecommerce-platform": {
+    "bucket": "product",
+    "confidence": 0.65,
+    "reason": "Real deployable ecommerce platform with multiple backend services"
+  },
+  "acidtango/ollert-backend": {
+    "bucket": "product",
+    "confidence": 0.87,
+    "reason": "API-first backend using asyncapi.yml to generate TypeScript types"
+  },
+  "acvigue/casa-bonita": {
+    "bucket": "product",
+    "confidence": 0.55,
+    "reason": "Likely smart-home Nuxt app; AsyncAPI role unclear from readme"
+  },
+  "adhitiad/quantsync": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Real-time trading signal platform with AI engine and WebSocket gateway"
+  },
+  "adimail/rocket-landing-rl": {
+    "bucket": "tangential",
+    "confidence": 0.78,
+    "reason": "RL simulation for rocket landing; no AsyncAPI relevance visible"
+  },
+  "adreno255/nurtura-backend": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "IoT farming platform API with real-time sensor management"
+  },
+  "aequitas-aod/aequitas-backend": {
+    "bucket": "product",
+    "confidence": 0.74,
+    "reason": "WIP backend service for fair-AI Q/A workflows"
+  },
+  "aescanero/dago": {
+    "bucket": "uncategorized",
+    "confidence": 0.45,
+    "reason": "No readme; DA Orchestrator purpose too vague to classify"
+  },
+  "agiopen-org/lux-desktop": {
+    "bucket": "demo/fixture",
+    "confidence": 0.63,
+    "reason": "Described as an example client for oagi-python library"
+  },
+  "ahadify/VDL-gg": {
+    "bucket": "product",
+    "confidence": 0.68,
+    "reason": "Real-time esports fantasy platform with scoring engine"
+  },
+  "ahelme/mcp-claude-code-browser-tools": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "AI coding agent MCP server, no AsyncAPI usage"
+  },
+  "ai-digital-architect/asyncapi_discovery": {
+    "bucket": "tooling/library",
+    "confidence": 0.93,
+    "reason": "Tool that scans code and generates AsyncAPI specs"
+  },
+  "aidansunbury/docs-agent": {
+    "bucket": "tangential",
+    "confidence": 0.92,
+    "reason": "AI coding agent for codebase search, not AsyncAPI"
+  },
+  "aiskillstore/marketplace": {
+    "bucket": "tangential",
+    "confidence": 0.97,
+    "reason": "AI agent skills marketplace, no AsyncAPI usage"
+  },
+  "aixigo/PREvant": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Deployable microservice review/testing platform"
+  },
+  "ajevans99/swift-asyncapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "Swift library for generating AsyncAPI documents"
+  },
+  "ajgarciaparadigma/backstage-example": {
+    "bucket": "demo/fixture",
+    "confidence": 0.65,
+    "reason": "Named 'example', no readme to confirm"
+  },
+  "ak125/nestjs-remix-monorepo": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Deployable e-commerce platform with NestJS backend"
+  },
+  "akash-mondal/mintlify-docs": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Mintlify starter kit template/boilerplate"
+  },
+  "aklivity/zilla": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Deployable multi-protocol API gateway/proxy product"
+  },
+  "aklivity/zilla-demos": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Demo showcases for the Zilla product"
+  },
+  "aklivity/zillabase": {
+    "bucket": "product",
+    "confidence": 0.93,
+    "reason": "Deployable event-driven backend platform"
+  },
+  "aleksa1205/iots": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "University course IoT projects"
+  },
+  "alexandre-touret/api-first-workshop": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Workshop teaching API-first approach"
+  },
+  "allex-mitin/api-doc-conf": {
+    "bucket": "demo/fixture",
+    "confidence": 0.93,
+    "reason": "Demo project for API documentation conference"
+  },
+  "allex-mitin/asyncapi-highload-conf": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Conference example demonstrating AsyncAPI usage"
+  },
+  "alliander-opensource/lsis-api-specs": {
+    "bucket": "spec/docs",
+    "confidence": 0.95,
+    "reason": "Repository explicitly contains API specs for LSIS project"
+  },
+  "allofmeng/streamline_project": {
+    "bucket": "product",
+    "confidence": 0.62,
+    "reason": "Real web UI application for Decent Espresso DE1 IoT device"
+  },
+  "almashooq1/alawael-erp": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "Full ERP system with 211 modules for day care centers"
+  },
+  "ambihome-gmbh/asyncapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.75,
+    "reason": "Middleware validating and routing AsyncAPI messages over MQTT"
+  },
+  "amer8/apibconv": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "CLI converter between AsyncAPI, OpenAPI, and API Blueprint specs"
+  },
+  "aml-org/als": {
+    "bucket": "tooling/library",
+    "confidence": 0.96,
+    "reason": "Language server providing IDE support for AsyncAPI and RAML"
+  },
+  "aml-org/amf": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Open-source library parsing and validating AsyncAPI documents"
+  },
+  "ammario/kalshi-docs": {
+    "bucket": "tangential",
+    "confidence": 0.85,
+    "reason": "Auto-updating API docs mirror packaged as AI coding agent skill"
+  },
+  "amosproj/amos2025ws04-robot-visual-perception": {
+    "bucket": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "University AMOS course project (WS2025), not production software"
+  },
+  "ancoleman/ai-design-components": {
+    "bucket": "tangential",
+    "confidence": 0.96,
+    "reason": "Collection of Claude AI coding agent skills, not AsyncAPI usage"
+  },
+  "andre-nk/bangkit-cloud-migration-tools": {
+    "bucket": "demo/fixture",
+    "confidence": 0.7,
+    "reason": "Bangkit student program project, monorepo of learning tools"
+  },
+  "andreacomo/apicurio-registry-poc": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Playground POC for learning Apicurio Registry with example specs"
+  },
+  "andreaseger/homelab-tools": {
+    "bucket": "product",
+    "confidence": 0.58,
+    "reason": "Real monorepo of containerized homelab infrastructure utilities"
+  },
+  "aniccname/Q-Game": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "School project from Fall 2023 Software Development course"
+  },
+  "apakhbari/backstage": {
+    "bucket": "demo/fixture",
+    "confidence": 0.6,
+    "reason": "Personal notes and tips about a Backstage deployment setup"
+  },
+  "aperim/production-city-web": {
+    "bucket": "product",
+    "confidence": 0.65,
+    "reason": "Production City web application monorepo foundation"
+  },
+  "api-evangelist/ably": {
+    "bucket": "tangential",
+    "confidence": 0.92,
+    "reason": "API catalog/directory entry, not an AsyncAPI implementation"
+  },
+  "api-evangelist/amazon-api-gateway": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "API catalog/directory entry describing AWS service, not using AsyncAPI"
+  },
+  "api-evangelist/amazon-kinesis": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API directory/catalog entry, not an AsyncAPI user"
+  },
+  "api-evangelist/amazon-sqs": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API directory/catalog entry, not an AsyncAPI user"
+  },
+  "api-evangelist/amqp": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "API catalog entry for AMQP protocol, incidental AsyncAPI mention"
+  },
+  "api-evangelist/api-pulse": {
+    "bucket": "tangential",
+    "confidence": 0.9,
+    "reason": "API maturity survey catalog entry by api-evangelist"
+  },
+  "api-evangelist/assemblyai": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API catalog entry for third-party service"
+  },
+  "api-evangelist/async-apis": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "Explicit index/catalog of AsyncAPI ecosystem, not a user"
+  },
+  "api-evangelist/asyncapi": {
+    "bucket": "tangential",
+    "confidence": 0.9,
+    "reason": "Catalog entry about AsyncAPI spec, not a spec repo itself"
+  },
+  "api-evangelist/athena-health": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API catalog entry for healthcare EHR platform"
+  },
+  "api-evangelist/backstage": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API catalog entry for Backstage developer portal"
+  },
+  "api-evangelist/clickhouse": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API catalog entry for ClickHouse database"
+  },
+  "api-evangelist/coingecko": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API catalog entry for crypto data aggregator"
+  },
+  "api-evangelist/confluence": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API catalog entry for Atlassian Confluence"
+  },
+  "api-evangelist/crewai-cloud": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API catalog entry for CrewAI managed platform"
+  },
+  "api-evangelist/deepl": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API catalog entry for DeepL translation service"
+  },
+  "api-evangelist/docusign": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API catalog entry for DocuSign eSignature service"
+  },
+  "api-evangelist/dynamodb": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API catalog entry for AWS DynamoDB service"
+  },
+  "api-evangelist/eigenlayer": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "API catalog profile of EigenLayer; not an AsyncAPI user"
+  },
+  "api-evangelist/fieldwire": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "api-evangelist catalog profile of Fieldwire's APIs"
+  },
+  "api-evangelist/filevine": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "api-evangelist catalog profile of Filevine's APIs"
+  },
+  "api-evangelist/interface-research": {
+    "bucket": "tangential",
+    "confidence": 0.82,
+    "reason": "Meta-analysis of spec overlaps; AsyncAPI mentioned incidentally"
+  },
+  "api-evangelist/intuit": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "API catalog profile of Intuit's APIs"
+  },
+  "api-evangelist/jito": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "api-evangelist catalog profile of Jito Labs"
+  },
+  "api-evangelist/lever-co": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "api-evangelist catalog profile of Lever's APIs"
+  },
+  "api-evangelist/mercado-pago": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "api-evangelist catalog profile of Mercado Pago"
+  },
+  "api-evangelist/microsoft-outlook": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "api-evangelist catalog profile of Outlook APIs"
+  },
+  "api-evangelist/nats": {
+    "bucket": "tangential",
+    "confidence": 0.91,
+    "reason": "API catalog profile of NATS messaging system"
+  },
+  "api-evangelist/oddsjam": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "api-evangelist catalog profile of OddsJam APIs"
+  },
+  "api-evangelist/olo": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "api-evangelist catalog profile of Olo platform"
+  },
+  "api-evangelist/phonely": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "api-evangelist catalog profile of Phonely APIs"
+  },
+  "api-evangelist/pinnacle": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "api-evangelist catalog profile of Pinnacle sportsbook"
+  },
+  "api-evangelist/plivo": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "api-evangelist catalog profile of Plivo APIs"
+  },
+  "api-evangelist/polygon": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "api-evangelist catalog profile of Polygon market data"
+  },
+  "api-evangelist/pubnub": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API Evangelist catalog profile of PubNub, not the platform itself"
+  },
+  "api-evangelist/regal-ai": {
+    "bucket": "tangential",
+    "confidence": 0.98,
+    "reason": "Readme explicitly states it is an API Evangelist profile"
+  },
+  "api-evangelist/roku": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API Evangelist catalog profile of Roku APIs"
+  },
+  "api-evangelist/sendgrid": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API Evangelist catalog profile of SendGrid"
+  },
+  "api-evangelist/sendle": {
+    "bucket": "tangential",
+    "confidence": 0.97,
+    "reason": "Readme states it captures Sendle API surface as profiled by API Evangelist"
+  },
+  "api-evangelist/shodan": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API Evangelist catalog profile of Shodan"
+  },
+  "api-evangelist/slack": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API Evangelist catalog profile of Slack"
+  },
+  "api-evangelist/statsd": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API Evangelist integration profile for StatsD"
+  },
+  "api-evangelist/tensor": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API Evangelist catalog profile of Tensor marketplace"
+  },
+  "api-evangelist/tripleseat": {
+    "bucket": "tangential",
+    "confidence": 0.97,
+    "reason": "Readme explicitly labels it an API Evangelist provider profile"
+  },
+  "api-evangelist/webflux": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API Evangelist catalog profile of Spring WebFlux"
+  },
+  "api-evangelist/websockets": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "Topic Index profile of WebSockets protocol, not runnable software"
+  },
+  "api-evangelist/zendesk": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API Evangelist catalog profile of Zendesk"
+  },
+  "api-evangelist/zoom": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "API Evangelist catalog profile of Zoom"
+  },
+  "apiaddicts/sonar-asyncapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "SonarQube plugin that analyzes AsyncAPI specifications"
+  },
+  "apiaddicts/sonarasyncapi-rules": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "SonarQube rules to analyze and lint AsyncAPI documents"
+  },
+  "arc-framework/arc-platform": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "Production AI agent orchestration platform with event-driven services"
+  },
+  "artur-ciocanu/presentations": {
+    "bucket": "tangential",
+    "confidence": 0.92,
+    "reason": "Conference and meetup slides repository, not software"
+  },
+  "asimarora/semantic-intelligence-layer": {
+    "bucket": "product",
+    "confidence": 0.62,
+    "reason": "Deployable intelligence platform ingesting event streams via adapters"
+  },
+  "asklokesh/NEXT-Portal": {
+    "bucket": "product",
+    "confidence": 0.6,
+    "reason": "Real IDP product competing with Backstage; AsyncAPI describes its APIs"
+  },
+  "asyncapi/avro-schema-parser": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "AsyncAPI schema parser for Avro schemas"
+  },
+  "asyncapi/bundler": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Library to bundle multiple AsyncAPI spec files into one"
+  },
+  "asyncapi/cli": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "CLI tool for validating and working with AsyncAPI files"
+  },
+  "asyncapi/converter-js": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Converts between AsyncAPI versions and from OpenAPI"
+  },
+  "asyncapi/diff": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Library comparing two AsyncAPI documents for breaking changes"
+  },
+  "asyncapi/generator": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Code and documentation generator from AsyncAPI specs"
+  },
+  "asyncapi/html-template": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "HTML doc-generation template for AsyncAPI Generator"
+  },
+  "asyncapi/jasyncapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Java code-first tool for reading/writing AsyncAPI specs"
+  },
+  "asyncapi/jasyncapi-idea-plugin": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "IntelliJ plugin for editing AsyncAPI specifications"
+  },
+  "asyncapi/java-template": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Template generating Java code from AsyncAPI documents"
+  },
+  "asyncapi/markdown-template": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Markdown doc-generation template for AsyncAPI Generator"
+  },
+  "asyncapi/modelina": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Library generating typed models from AsyncAPI/OpenAPI/JSON Schema"
+  },
+  "asyncapi/nodejs-template": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Template generating Node.js server code from AsyncAPI spec"
+  },
+  "asyncapi/openapi-schema-parser": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "AsyncAPI schema parser for OpenAPI and Swagger schemas"
+  },
+  "asyncapi/optimizer": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Library/CLI to optimize and reuse AsyncAPI document parts"
+  },
+  "asyncapi/protobuf-schema-parser": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Schema parser plugin for AsyncAPI JS Parser"
+  },
+  "asyncapi/spec": {
+    "bucket": "spec/docs",
+    "confidence": 0.99,
+    "reason": "The canonical AsyncAPI specification document"
+  },
+  "asyncapi/spec-json-schemas": {
+    "bucket": "spec/docs",
+    "confidence": 0.99,
+    "reason": "JSON Schema files for validating AsyncAPI documents"
+  },
+  "asyncapi/studio": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Visual editor and design tool for AsyncAPI files"
+  },
+  "asyncapi/tck": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Test Compatibility Kit with AsyncAPI fixture documents"
+  },
+  "asyncapi/vs-asyncapi-preview": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "VSCode extension to preview AsyncAPI documents"
+  },
+  "asyncapi/website": {
+    "bucket": "spec/docs",
+    "confidence": 0.97,
+    "reason": "Official AsyncAPI specification documentation website"
+  },
+  "asynq-io/pydantic-asyncapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "Pydantic models for validating and generating AsyncAPI docs"
+  },
+  "ayointegral/cloud-sandbox-backstage": {
+    "bucket": "tangential",
+    "confidence": 0.72,
+    "reason": "Backstage portal; AsyncAPI only incidental in catalog templates"
+  },
+  "babelforce/rtvbp-spec": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "AsyncAPI-described protocol spec for realtime voice bridge"
+  },
+  "bakabala27-svg/NAAS-Agentic-Core": {
+    "bucket": "tangential",
+    "confidence": 0.85,
+    "reason": "AI tutoring framework; no AsyncAPI usage evident"
+  },
+  "ballerina-platform/asyncapi-triggers": {
+    "bucket": "tooling/library",
+    "confidence": 0.88,
+    "reason": "Generated Ballerina trigger code produced by AsyncAPI toolchain"
+  },
+  "barbacane-dev/barbacane": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Deployable Rust API gateway driven by AsyncAPI/OpenAPI specs"
+  },
+  "barrynauta/simpl-repo-tryout": {
+    "bucket": "spec/docs",
+    "confidence": 0.75,
+    "reason": "Documentation restructuring, navigable architectural blueprint only"
+  },
+  "batterypass/BatteryPassDataModel": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Data model specification based on DIN DKE standard, not runnable software"
+  },
+  "bdragon300/go-asyncapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "AsyncAPI codegen, CLI, diagram, and web UI toolchain"
+  },
+  "belgif/openapi-cloudevents": {
+    "bucket": "tangential",
+    "confidence": 0.92,
+    "reason": "OpenAPI CloudEvents definitions; no AsyncAPI usage"
+  },
+  "bian-official/public": {
+    "bucket": "tangential",
+    "confidence": 0.92,
+    "reason": "Banking Swagger/OpenAPI APIs; no AsyncAPI usage"
+  },
+  "bicatu/event-catalog": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Companion repo for an article, starter/example purpose"
+  },
+  "bishoy-alhanna/frightflow": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Deployable microservices freight operations platform"
+  },
+  "bitsy-ai/printnanny-webapp": {
+    "bucket": "product",
+    "confidence": 0.9,
+    "reason": "Real IoT webapp and API for 3D printer monitoring plugin"
+  },
+  "bjuvensjo/backstage-slask": {
+    "bucket": "demo/fixture",
+    "confidence": 0.85,
+    "reason": "Explicitly a test repository for Backstage discovery"
+  },
+  "bmf-san/go-bitflyer-api-client": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "Go client library generated from AsyncAPI/OpenAPI specs"
+  },
+  "boyney123/my-eventcatalog": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Explicitly testing EventCatalog CI/CD features, not production"
+  },
+  "bpbpublications/DDD-Toolbox": {
+    "bucket": "demo/fixture",
+    "confidence": 0.87,
+    "reason": "Book companion code from BPB Publications"
+  },
+  "bpbpublications/Spring-Boot-3-API-Mastery": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Book companion repository by BPB Publications"
+  },
+  "brainsnorkel/hourstats-bsky": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Deployable live Bluesky bot analyzing firehose sentiment"
+  },
+  "briossant/BotAmoungUs": {
+    "bucket": "demo/fixture",
+    "confidence": 0.8,
+    "reason": "Hackathon proof-of-concept game, not production"
+  },
+  "bru-oliveirax/bark2d2-dog-feeder": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "Real deployable IoT dog-feeder with real-time mobile monitoring"
+  },
+  "bsv-blockchain/ts-stack": {
+    "bucket": "tooling/library",
+    "confidence": 0.85,
+    "reason": "BSV blockchain SDK, wallet tooling, and infrastructure libraries"
+  },
+  "btravers/amqp-contract": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "TypeScript library for type-safe AMQP/RabbitMQ contracts"
+  },
+  "bump-sh/cli": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "CLI tool to deploy OpenAPI and AsyncAPI documentation"
+  },
+  "c-plus-plus-equals-c-plus-one/sovereign-sdk-wip": {
+    "bucket": "tooling/library",
+    "confidence": 0.8,
+    "reason": "Toolkit and framework for building ZK/optimistic rollups"
+  },
+  "c2siorg/genie": {
+    "bucket": "product",
+    "confidence": 0.7,
+    "reason": "Open-source AI financial assistant application with agent architecture"
+  },
+  "cajias/syncnode": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Deployable MCP server for multi-agent state synchronization"
+  },
+  "call-sofia/callsofia-webhooks-docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Webhook event catalog and documentation, not runnable software"
+  },
+  "calvinlee999/AI-Platform-for-FinTech-Evolution": {
+    "bucket": "spec/docs",
+    "confidence": 0.95,
+    "reason": "Executive documentation and architecture diagrams only"
+  },
+  "capitanx9/llm-portrait": {
+    "bucket": "product",
+    "confidence": 0.87,
+    "reason": "Deployable Django backend with WebSocket and LLM pipeline"
+  },
+  "ccradle/finding-a-bed-tonight": {
+    "bucket": "product",
+    "confidence": 0.92,
+    "reason": "Real open-source shelter availability platform, Spring Boot and React"
+  },
+  "cedalo/streamsheets-documentation": {
+    "bucket": "spec/docs",
+    "confidence": 0.78,
+    "reason": "Documentation-only repo for the Streamsheets product"
+  },
+  "certifieddata/certifieddata-agent-commerce-public": {
+    "bucket": "spec/docs",
+    "confidence": 0.67,
+    "reason": "Public API contracts, event schemas, and SDK for payments service"
+  },
+  "chainloop-dev/chainloop": {
+    "bucket": "product",
+    "confidence": 0.62,
+    "reason": "Real deployable SDLC evidence store and policy engine"
+  },
+  "charlie-haley/asyncapi-go": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Go library explicitly for parsing AsyncAPI specs"
+  },
+  "chem-gl/chemistry-apps": {
+    "bucket": "product",
+    "confidence": 0.58,
+    "reason": "Real Django-based chemistry apps with async job orchestration"
+  },
+  "chrislyl/apidocs-starter": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Starter template for API documentation projects"
+  },
+  "christianrowlands/network-survey-messaging": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Defines message schemas for wireless survey app communications"
+  },
+  "christopherblaisdell/continuous-architecture-platform-poc": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly a proof-of-concept, not production software"
+  },
+  "cidverse/repoanalyzer": {
+    "bucket": "tangential",
+    "confidence": 0.72,
+    "reason": "Repo scanner library; AsyncAPI detection incidental"
+  },
+  "cipher982/longhouse": {
+    "bucket": "tangential",
+    "confidence": 0.82,
+    "reason": "AI agent session manager; no AsyncAPI usage"
+  },
+  "cjjohansen/drone-web": {
+    "bucket": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "API design example using ADDR/Event Modeling methodology"
+  },
+  "clecioantao/platform-state-repo": {
+    "bucket": "tangential",
+    "confidence": 0.75,
+    "reason": "GitOps state repo; AsyncAPI not mentioned"
+  },
+  "cloudevents/spec": {
+    "bucket": "spec/docs",
+    "confidence": 0.75,
+    "reason": "Primary content is the CloudEvents specification"
+  },
+  "codeboltai/codeboltjs": {
+    "bucket": "tangential",
+    "confidence": 0.82,
+    "reason": "AI agent SDK; no AsyncAPI focus"
+  },
+  "codebricks-tech/taskbricks": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly an example CQRS/EventSourcing application"
+  },
+  "codemonstersteam/mq-rest-sync-adapter": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Explicit example refactoring from a tutorial article series"
+  },
+  "codemonstersteam/pinout-asyncapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.96,
+    "reason": "AsyncAPI 3.0 contract validator tool"
+  },
+  "codertjay/solax-audit": {
+    "bucket": "tangential",
+    "confidence": 0.72,
+    "reason": "Blockchain competition audit monorepo, AsyncAPI incidental"
+  },
+  "codex-k8s/kodex": {
+    "bucket": "tangential",
+    "confidence": 0.75,
+    "reason": "AI coding-agent platform in Kubernetes, AsyncAPI incidental"
+  },
+  "coinpaprika/coinpaprika-docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.91,
+    "reason": "Documentation site with AsyncAPI spec for streaming API"
+  },
+  "cryptoxdog/Cognitive.Engine.Graphs": {
+    "bucket": "product",
+    "confidence": 0.55,
+    "reason": "Graph-native matching engine; AsyncAPI incidental, no mention"
+  },
+  "cycleplatform/api-spec": {
+    "bucket": "spec/docs",
+    "confidence": 0.82,
+    "reason": "Dedicated API spec repo for Cycle platform APIs"
+  },
+  "d0u6ur45u/reminder": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Real microservices app; asyncapi listed as topic"
+  },
+  "daksh0702/first-backstage-app": {
+    "bucket": "demo/fixture",
+    "confidence": 0.7,
+    "reason": "'first-backstage-app' name signals learning/demo project"
+  },
+  "daler-rahimov/sio-asyncapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "Python library generating AsyncAPI specs from SocketIO"
+  },
+  "dalsgaard/account-service": {
+    "bucket": "demo/fixture",
+    "confidence": 0.65,
+    "reason": "Described as blank CDK template project"
+  },
+  "dalsgaard/asyncapi-template": {
+    "bucket": "tooling/library",
+    "confidence": 0.96,
+    "reason": "AsyncAPI Generator template producing TypeScript/SNS/AMQP code"
+  },
+  "daniellmorris/EnvarynAI": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Real speech capture app with Flutter client and backend"
+  },
+  "daniellmorris/spechero": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly a specification-first starter monorepo template"
+  },
+  "darken33/connaissance-client": {
+    "bucket": "product",
+    "confidence": 0.62,
+    "reason": "Backend API for customer knowledge management in Spring Boot"
+  },
+  "darken33/design-first-allinone": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Conference talk presentation companion repo for BordeauxJUG"
+  },
+  "dataGriff/outcome-app-pattern": {
+    "bucket": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Pattern/example repo for app-event-data product pattern"
+  },
+  "davidB/sandbox_cdevents_spec": {
+    "bucket": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "Sandbox exploration of cdevents spec formats"
+  },
+  "davidtgillard/fits": {
+    "bucket": "tangential",
+    "confidence": 0.72,
+    "reason": "Zig repo engine; no AsyncAPI connection visible"
+  },
+  "dcSpark/sovereign-sdk": {
+    "bucket": "tangential",
+    "confidence": 0.72,
+    "reason": "Blockchain rollup toolkit; no AsyncAPI connection visible"
+  },
+  "dduartee/sigaa-socket-api": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "WebSocket integration service for academic management system"
+  },
+  "deepgram/starter-contracts": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Collection of OpenAPI and AsyncAPI specs for Deepgram services"
+  },
+  "delano/postman-mcp-server": {
+    "bucket": "tangential",
+    "confidence": 0.78,
+    "reason": "MCP server for Postman API; no AsyncAPI connection visible"
+  },
+  "depsilon/shardloom": {
+    "bucket": "product",
+    "confidence": 0.52,
+    "reason": "Pre-release compute engine describing its own API via AsyncAPI"
+  },
+  "derberg/python-mqtt-client-template": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "AsyncAPI generator template producing MQTT Python clients"
+  },
+  "derchrischkya/k8s-async-api": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Simple test project for AsyncAPI with RabbitMQ"
+  },
+  "devmentors/Mikroserwisy-Revisited": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Polish microservices course companion code, educational"
+  },
+  "devone-demo/oracle-websocket-client-template": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "AsyncAPI generator template for WebSocket clients"
+  },
+  "dghilardi/asyncapiv3": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "Rust library parsing and serializing AsyncAPI v3 specs"
+  },
+  "dimonoff/asyncapi-codegen": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "AsyncAPI Golang code generator for brokers and clients"
+  },
+  "dipaksodani/async-gen": {
+    "bucket": "tooling/library",
+    "confidence": 0.93,
+    "reason": "HTML template for the AsyncAPI generator tool"
+  },
+  "doemefu/very-cool-karaoke-server": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Real Spring Boot backend for a karaoke application"
+  },
+  "donbagger/documentation": {
+    "bucket": "demo/fixture",
+    "confidence": 0.65,
+    "reason": "Mintlify starter kit boilerplate, not a real service"
+  },
+  "dotnet/maui-labs": {
+    "bucket": "tangential",
+    "confidence": 0.75,
+    "reason": ".NET MAUI mobile tooling; AsyncAPI only incidental"
+  },
+  "droso-hass/openab": {
+    "bucket": "product",
+    "confidence": 0.87,
+    "reason": "Deployable open-source IoT Nabaztag/Karotz server"
+  },
+  "ducbrick/real-time-messaging-api": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Real Spring Boot WebSocket messaging backend API"
+  },
+  "eHealthCardLink/Spezifikation": {
+    "bucket": "spec/docs",
+    "confidence": 0.97,
+    "reason": "Repository named Spezifikation, publishes AsyncAPI docs site"
+  },
+  "eclipse-canought/can-translator": {
+    "bucket": "product",
+    "confidence": 0.87,
+    "reason": "Deployable automotive MQTT-to-CAN translator service"
+  },
+  "eclipse-symphony/symphony": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Production edge service orchestration engine platform"
+  },
+  "eclipse-uprotocol/symphony-target-example-rust": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicit example implementation of Symphony target"
+  },
+  "eda-ecommerce/shoppingBasket-service": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "E-commerce shopping basket microservice in EDA system"
+  },
+  "eduardofesilva/async-eda-otel-workshop": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Workshop files for community live session, not production"
+  },
+  "eduardotourinho/candlesticks-hexagonal-architecture": {
+    "bucket": "demo/fixture",
+    "confidence": 0.85,
+    "reason": "Explicitly a portfolio showcase of hexagonal architecture pattern"
+  },
+  "edulucca/api-autenticacao": {
+    "bucket": "product",
+    "confidence": 0.55,
+    "reason": "Authentication API service registered in Backstage catalog"
+  },
+  "ekhodzitsky/gigastt": {
+    "bucket": "product",
+    "confidence": 0.9,
+    "reason": "Real deployable local Russian STT server, installable binary"
+  },
+  "ekidenfi/ekiden-docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.72,
+    "reason": "Documentation site for ekiden platform using Mintlify"
+  },
+  "encypher-studio/newsware-docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Frontend documentation site for Newsware API clients"
+  },
+  "eoap/event-driven-with-argo": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Explicitly demonstrates event-driven workflow for satellite imagery"
+  },
+  "epieczko/betty": {
+    "bucket": "tooling/library",
+    "confidence": 0.65,
+    "reason": "Claude Code plugin framework for AI-assisted engineering"
+  },
+  "ericfitz/tmi": {
+    "bucket": "product",
+    "confidence": 0.92,
+    "reason": "Real deployable collaborative threat modeling REST platform"
+  },
+  "ermasavior/nebeng-jek": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Ride-sharing service with real matching and ride features"
+  },
+  "escrivivir-co/aleph-scriptorium": {
+    "bucket": "tangential",
+    "confidence": 0.78,
+    "reason": "MCP/AI intellectual amplification stack, AsyncAPI incidental"
+  },
+  "event-catalog/eventcatalog": {
+    "bucket": "tooling/library",
+    "confidence": 0.85,
+    "reason": "Tooling platform to catalog and govern event-driven APIs"
+  },
+  "event-catalog/generators": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "AsyncAPI and OpenAPI generator plugins for EventCatalog"
+  },
+  "eventum-generator/eventum": {
+    "bucket": "tooling/library",
+    "confidence": 0.82,
+    "reason": "Synthetic event generation platform for testing and pipelines"
+  },
+  "evryfs/asyncapi-generator": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Code generator consuming AsyncAPI YAML specs"
+  },
+  "exploding-CATs-42/ft_transcendence": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "42 school capstone project, not production software"
+  },
+  "eyw520/inspirited-docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Read-only documentation site for Inspirited platform"
+  },
+  "factory-x-contributions/async-aas-helm": {
+    "bucket": "tooling/library",
+    "confidence": 0.78,
+    "reason": "Helm charts wiring AAS implementations to MQTT broker"
+  },
+  "facundo1220/asyncapi-eda-ecommerce": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Demonstrates EDA microservices pattern with RabbitMQ"
+  },
+  "fern-api/docs-examples": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Self-contained example projects for starting own docs"
+  },
+  "fern-api/docs-starter": {
+    "bucket": "demo/fixture",
+    "confidence": 0.93,
+    "reason": "Starter template for publishing docs from OpenAPI"
+  },
+  "fern-api/fern": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Platform generating SDKs and docs from API definitions"
+  },
+  "fern-demo/postman-quickstart": {
+    "bucket": "demo/fixture",
+    "confidence": 0.91,
+    "reason": "Demo quickstart template identical to docs-starter"
+  },
+  "fern-support/universal-shuttle-348791": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Docs starter template boilerplate"
+  },
+  "ff-fab/cosalette": {
+    "bucket": "tooling/library",
+    "confidence": 0.85,
+    "reason": "Framework for building IoT-to-MQTT bridge daemons"
+  },
+  "ff-fab/cosalette-apps": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "Deployable smart home IoT bridge applications"
+  },
+  "filipepacheco/the-jam-app-frontend": {
+    "bucket": "product",
+    "confidence": 0.65,
+    "reason": "Real React frontend application with backend API"
+  },
+  "finlayjn/asyncapi-swift-ws-template": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "AsyncAPI generator template producing Swift WebSocket client"
+  },
+  "fishaudio/docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.95,
+    "reason": "Official documentation site for Fish Audio products"
+  },
+  "flameboss/fb-api-doc": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "API documentation published at product domain, no runnable code"
+  },
+  "flamewow/nestjs-asyncapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "NestJS module generating AsyncAPI 3.0 documentation"
+  },
+  "floormatgen/sock-vote-2": {
+    "bucket": "product",
+    "confidence": 0.45,
+    "reason": "Voting application with documentation site; sequel implies real project"
+  },
+  "fmvilas/meiac": {
+    "bucket": "tooling/library",
+    "confidence": 0.92,
+    "reason": "IaC tool that reads AsyncAPI files to generate Terraform configs"
+  },
+  "forepath/agenstra": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Deployable platform for managing AI agent infrastructure"
+  },
+  "foxminchan/BookWorm": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Explicitly demo-only, not production ready"
+  },
+  "frankkilcommins/arazzo-examples": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Examples demonstrating Arazzo workflows with AsyncAPI"
+  },
+  "fraunhoferfokus/dredger": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Code generator from OpenAPI/AsyncAPI specs to Go"
+  },
+  "fraunhoferfokus/dredger-todos": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Demo and test fixture for the dredger generator"
+  },
+  "fredabila/oahl": {
+    "bucket": "product",
+    "confidence": 0.62,
+    "reason": "Deployable framework exposing hardware APIs to AI agents"
+  },
+  "fsgeek/lares": {
+    "bucket": "uncategorized",
+    "confidence": 0.1,
+    "reason": "No readme; name alone insufficient to classify"
+  },
+  "fusion-powered-io/api-generator": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "AsyncAPI and OpenAPI generator for EventCatalog"
+  },
+  "gdg-garage/garage-trip-chores": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Production task manager with Discord, REST and WebSocket APIs"
+  },
+  "geekatron/jerry": {
+    "bucket": "tangential",
+    "confidence": 0.9,
+    "reason": "Claude Code AI agent plugin, no real AsyncAPI use"
+  },
+  "gematik/api-ehcl": {
+    "bucket": "spec/docs",
+    "confidence": 0.97,
+    "reason": "Interface definitions specified in AsyncAPI format"
+  },
+  "gematik/zeta-testfachdienst": {
+    "bucket": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Lightweight test service for integration scenarios"
+  },
+  "geopython/pygeoapi": {
+    "bucket": "product",
+    "confidence": 0.93,
+    "reason": "Production Python OGC API server implementation"
+  },
+  "giannisgkountras/ShelobDSL": {
+    "bucket": "tooling/library",
+    "confidence": 0.85,
+    "reason": "DSL that generates full-stack apps from message broker specs"
+  },
+  "giannisgkountras/web-dsl": {
+    "bucket": "tooling/library",
+    "confidence": 0.85,
+    "reason": "DSL code generator for full-stack apps with broker integration"
+  },
+  "gladiaio/docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.85,
+    "reason": "Documentation site, no runnable software"
+  },
+  "gocobalt/mintlify-docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.82,
+    "reason": "Mintlify docs starter kit, documentation only"
+  },
+  "gokerDEV/node-chat-server": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Production-grade real-time messaging backend service"
+  },
+  "gonewton/newton": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Deployable CLI for workflow automation and orchestration"
+  },
+  "gopal45656/everest-core-release": {
+    "bucket": "product",
+    "confidence": 0.93,
+    "reason": "EVerest open-source EV charge controller, production software"
+  },
+  "gpdeoli/revit-api": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Course completion project (TCC) for school"
+  },
+  "gravitee-io/gravitee-api-management": {
+    "bucket": "product",
+    "confidence": 0.97,
+    "reason": "Production open-source API management gateway platform"
+  },
+  "graviteeqa/testrepo": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Explicitly a test import fixture for regression testing"
+  },
+  "hahnbeelee/docs-michal": {
+    "bucket": "spec/docs",
+    "confidence": 0.8,
+    "reason": "Mintlify starter kit, documentation only"
+  },
+  "han243786/Quantpilot": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Standalone quantitative trading desktop application"
+  },
+  "hassanm0301/plasma-bridge": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "KDE Plasma backend service exposing desktop state over WebSocket"
+  },
+  "hbtrack/official": {
+    "bucket": "tangential",
+    "confidence": 0.8,
+    "reason": "Governance and CI/CD config repo; AsyncAPI incidental"
+  },
+  "heikkilamarko/todo-app": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Explicitly a hobby playground for experimenting with technologies"
+  },
+  "herostrat/arcturus": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Alpha tileserver product for SignalK marine data protocol"
+  },
+  "higorsnt/ansible-workshop": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Ansible minicourse workshop tutorial material"
+  },
+  "hkirat/asyncapi-fork": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "CLI tool for working with AsyncAPI files"
+  },
+  "hmajid2301/banterbus": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Real deployable multiplayer game using WebSockets"
+  },
+  "hollyplankdev/emptystream-monolithic": {
+    "bucket": "uncategorized",
+    "confidence": 0.2,
+    "reason": "TODO readme; insufficient info to classify"
+  },
+  "holydocs/messageflow": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "Go library and CLI to visualize AsyncAPI specifications"
+  },
+  "hongkongkiwi/yorked-docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.72,
+    "reason": "Documentation site for the Yoked dating app product"
+  },
+  "hongmaple0820/agent-academy": {
+    "bucket": "tangential",
+    "confidence": 0.85,
+    "reason": "AI agent skills/knowledge base repo, not AsyncAPI user"
+  },
+  "hotcode-dev/zerohub": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Deployable open-source WebRTC signaling server"
+  },
+  "hungvo2010/free-note-service": {
+    "bucket": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Basic learning project with checklist-style incomplete features"
+  },
+  "huynguyengl99/chanx": {
+    "bucket": "tooling/library",
+    "confidence": 0.92,
+    "reason": "WebSocket framework library for Django Channels and FastAPI"
+  },
+  "huynguyengl99/chanx-fastapi-tutorial": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly a tutorial demonstrating WebSocket patterns"
+  },
+  "icanbwell/fhir-server": {
+    "bucket": "product",
+    "confidence": 0.87,
+    "reason": "Production-grade open-source FHIR server with streaming"
+  },
+  "igmrrf/ecommerce_services": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Self-described demonstration of microservices architecture"
+  },
+  "indiealexh/quarkus-json-rpc-ws-next-example": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly an example implementation of JSON-RPC over WebSocket"
+  },
+  "ingka-group/asyncapi-payload-validator": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Python library and CLI validating payloads against AsyncAPI specs"
+  },
+  "inputlayer/inputlayer": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Deployable streaming reasoning layer for AI systems"
+  },
+  "insspb/asyncapi3": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Python object model for parsing and working with AsyncAPI 3.0"
+  },
+  "intent-driven-dev/openspec-schemas": {
+    "bucket": "spec/docs",
+    "confidence": 0.75,
+    "reason": "Collection of schemas and templates, not runnable software"
+  },
+  "interruping/upbeat": {
+    "bucket": "tooling/library",
+    "confidence": 0.82,
+    "reason": "Python SDK/client library for crypto exchange API"
+  },
+  "ir-kit/ir-kit": {
+    "bucket": "tooling/library",
+    "confidence": 0.92,
+    "reason": "Toolchain federating OpenAPI, AsyncAPI, Protobuf spec formats"
+  },
+  "it-incubator/nestjs": {
+    "bucket": "demo/fixture",
+    "confidence": 0.75,
+    "reason": "NestJS examples repository"
+  },
+  "itamm15/sync-async-docs": {
+    "bucket": "uncategorized",
+    "confidence": 0.35,
+    "reason": "Only Phoenix boilerplate in readme; purpose unclear"
+  },
+  "ivanztz/sandbox": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Explicitly educational or project accelerator purposes"
+  },
+  "izertis/spring-boot-kotlin-playground": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Practical examples accompanying a published article"
+  },
+  "jacekzwpl/docueye": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Deployable architecture visualization tool with product page"
+  },
+  "jambonz/jambonz-fern-config": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Fern config repo generating jambonz developer documentation site"
+  },
+  "jamescarr/async-api-demo": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly named and described as AsyncAPI demo"
+  },
+  "jamescarr/jetstream-messaging": {
+    "bucket": "demo/fixture",
+    "confidence": 0.93,
+    "reason": "Explicitly a demo project exploring NATS JetStream"
+  },
+  "jamesenki/vehicle-to-cloud-communications-architecture": {
+    "bucket": "product",
+    "confidence": 0.65,
+    "reason": "Production-ready V2C communications platform with AsyncAPI docs"
+  },
+  "jardelva96/Orqupay": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Open source payment orchestration module with AsyncAPI 3.0 contracts"
+  },
+  "jason931225/oyatie": {
+    "bucket": "tangential",
+    "confidence": 0.6,
+    "reason": "AI agent-oriented repo; AsyncAPI mentioned incidentally in specs"
+  },
+  "jhamill34/disney-gen-ai-takehome": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Take-home interview/exercise project, not production software"
+  },
+  "jhekasoft/e-backend": {
+    "bucket": "product",
+    "confidence": 0.52,
+    "reason": "Generic personal backend service with HTTP server and DB"
+  },
+  "jijingkun-commits/fastapi": {
+    "bucket": "product",
+    "confidence": 0.6,
+    "reason": "AI conversational assistant application with FastAPI backend"
+  },
+  "jimfil/raspberryPiProject": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "University undergraduate course project (ECE CK801)"
+  },
+  "jimfil/smartWasteBinProject": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "University undergraduate course project (ECE CK801)"
+  },
+  "jlfowle/asterism": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "Home control center platform with microservices and GitOps deployment"
+  },
+  "jmanhype/speckit": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "AI coding-agent skills/workflow repo, not an AsyncAPI user"
+  },
+  "joemphilips/bitCaster": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Real deployable Bitcoin prediction market platform"
+  },
+  "jonathan-prout/tic-tac-toe": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly a demo project for WebSocket and REST API"
+  },
+  "jordancrombie/bsim": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Banking simulator, educational or demo application"
+  },
+  "joserprieto/ai-skills": {
+    "bucket": "tangential",
+    "confidence": 0.97,
+    "reason": "AI coding-agent skills collection, not an AsyncAPI user"
+  },
+  "joserprieto/practice-desk": {
+    "bucket": "product",
+    "confidence": 0.7,
+    "reason": "Real deployable professional practice management platform"
+  },
+  "jqassistant-plugin/jqassistant-asyncapi-plugin": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "AsyncAPI scanner plugin for jQAssistant tooling"
+  },
+  "jrevillard/edulift": {
+    "bucket": "spec/docs",
+    "confidence": 0.78,
+    "reason": "Documentation site with technical, API, and functional docs"
+  },
+  "jstoiko/amf": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "Library for parsing and validating AML/AsyncAPI metadata"
+  },
+  "juliangracin/community-docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.95,
+    "reason": "Repository contains AsyncAPI spec file for community API"
+  },
+  "juniorcmauricio/INF332_SOA": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "University course on SOA and web services"
+  },
+  "justaksi7/b2b-sap-payment-bridge": {
+    "bucket": "product",
+    "confidence": 0.62,
+    "reason": "Deployable SAP B2B payment bridge service architecture"
+  },
+  "justynroberts/emea-backstage-demo": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Explicitly a Backstage demo portal with fictional organization"
+  },
+  "juvi07/bs-templates": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Collection of Backstage example templates"
+  },
+  "kakao-tech-campus-3rd-step3/Team8_BE": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Kakao Tech Campus bootcamp team project"
+  },
+  "kakaoboot-19/19-load-test": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Bootcamp load test project based on chat app"
+  },
+  "kanekoshoyu/asyncapi-rust-ws-template": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "AsyncAPI template/generator for Rust WebSocket clients"
+  },
+  "kanekoshoyu/exchange-collection": {
+    "bucket": "spec/docs",
+    "confidence": 0.82,
+    "reason": "Collection of crypto exchange OpenAPI/AsyncAPI spec documents"
+  },
+  "kardasz/skipper-club-android": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Real Android client for sailing platform product"
+  },
+  "kaucrow/mqtt-rest-bridge": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Explicitly described as a demo SCADA system"
+  },
+  "kdwras/node-red-async-api-plugin": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Node-RED plugin that reads AsyncAPI specs to configure messaging"
+  },
+  "kelnishi/SatMouse": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Real deployable bridge app streaming 6DOF device data"
+  },
+  "khulnasoft/RapidDocs": {
+    "bucket": "tooling/library",
+    "confidence": 0.88,
+    "reason": "Toolkit generating SDKs and docs from API definitions"
+  },
+  "kingak4/ft_transcendence": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "42 school curriculum final project"
+  },
+  "kinoh/Tsuki": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Deployable chat agent with WebSocket APIs in spec files"
+  },
+  "klurvio/sukko": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Real-time trading data WebSocket infrastructure platform"
+  },
+  "knowmadmood-poc-rhdevhub/backstage": {
+    "bucket": "demo/fixture",
+    "confidence": 0.7,
+    "reason": "POC org name; Backstage proof-of-concept deployment"
+  },
+  "kombifyio/SpeechKit": {
+    "bucket": "tooling/library",
+    "confidence": 0.78,
+    "reason": "Speech processing framework/SDK for other products"
+  },
+  "kondoumh/asyncapi-study": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly named study repo for learning AsyncAPI"
+  },
+  "ktb3-team5/ktb-BootcampChat": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Kakao Tech Bootcamp chat application"
+  },
+  "ktbloadtest-03/ktb-BootcampChat": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Kakao Tech Bootcamp chat application fork"
+  },
+  "kubestellar/console-kb": {
+    "bucket": "tangential",
+    "confidence": 0.82,
+    "reason": "AI mission knowledge base, not AsyncAPI user"
+  },
+  "l3wi/docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Documentation site using Mintlify starter kit"
+  },
+  "l3wi/fumadocs-async": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "AsyncAPI plugin for Fumadocs generating docs and playground"
+  },
+  "laat/asyncapi-generator-repro": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Bug reproduction case for asyncapi-generator issue"
+  },
+  "lafette21/smart-gardening": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "IoT smart gardening system with asyncapi.yaml for its API"
+  },
+  "latamteks-cmyk/SmartEdify_app": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Real SaaS platform for residential community management"
+  },
+  "ldynia/learning-api-styles": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Explicitly book companion code with examples and videos"
+  },
+  "lerenn/asyncapi-codegen": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "AsyncAPI Go code generator for brokers and applications"
+  },
+  "letya999/support_rag": {
+    "bucket": "product",
+    "confidence": 0.6,
+    "reason": "Real open-source RAG system with event-driven architecture"
+  },
+  "leynos/wildside": {
+    "bucket": "product",
+    "confidence": 0.68,
+    "reason": "Mobile urban exploration app MVP with event-driven backend"
+  },
+  "lg-labs/blank-service": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly a template; readme says replace blank with domain"
+  },
+  "lg-labs/food-ordering-system": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Architecture showcase: Hex Arch, DDD, SAGA, Outbox patterns"
+  },
+  "lgonzalezrouco/sensareal-backend": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "IoT sensor monitoring backend service with real-time alerts"
+  },
+  "linkkotech/scalar": {
+    "bucket": "tooling/library",
+    "confidence": 0.85,
+    "reason": "API documentation renderer for OpenAPI/Swagger specs"
+  },
+  "livestorm/frontend-engineer-hiring-test": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Technical hiring test, not production software"
+  },
+  "loulou123546/kenshiata-shared": {
+    "bucket": "tangential",
+    "confidence": 0.55,
+    "reason": "Shared types library; AsyncAPI likely incidental"
+  },
+  "lufyxz7/xpogo": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Real AI-powered export platform backend service"
+  },
+  "luistrigueiros/simple-asyncapi-codegen": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "Explicitly experiments in Java codegen for AsyncAPI"
+  },
+  "maciekpapiez/redocly-1": {
+    "bucket": "demo/fixture",
+    "confidence": 0.85,
+    "reason": "Starter template for Redocly API docs project"
+  },
+  "makeevolution/SimplePizzaWinkel": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Personal learning project applying microservices knowledge"
+  },
+  "makeevolution/messaging": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Self-described personal experimentation on async systems"
+  },
+  "manav-1/expense-ai-be": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Production expense tracker backend with AI features"
+  },
+  "manosmax/Pie": {
+    "bucket": "demo/fixture",
+    "confidence": 0.93,
+    "reason": "University lab repo for programming techniques course"
+  },
+  "manosmax/Smart-Waste-Bin": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "IoT pipeline with AsyncAPI docs for real deployment"
+  },
+  "manuschillerdev/esphome-elero": {
+    "bucket": "product",
+    "confidence": 0.65,
+    "reason": "Real ESPHome IoT firmware component for RF blinds"
+  },
+  "marcopaga/config_api": {
+    "bucket": "demo/fixture",
+    "confidence": 0.65,
+    "reason": "'Hacking with elixir' description signals personal exploration"
+  },
+  "marle3003/mokapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "API mocking tool explicitly built for AsyncAPI and OpenAPI"
+  },
+  "marle3003/mokapi-kafka-workflow": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Demonstration repo for testing Kafka workflows with Mokapi"
+  },
+  "masermediagroup-stack/CursorSkills": {
+    "bucket": "tangential",
+    "confidence": 0.95,
+    "reason": "AI coding agent skills backup, AsyncAPI incidental"
+  },
+  "mattmeye/payara-6-ibm-queue": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Integration example showing IBM MQ usage in Payara 6"
+  },
+  "mattys1/raptorChat": {
+    "bucket": "product",
+    "confidence": 0.68,
+    "reason": "Chat application with Docker backend deployment"
+  },
+  "maxime-aube/ollama": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Node/TypeScript starter template boilerplate"
+  },
+  "maximilianoPizarro/platform-hub-spoke-config": {
+    "bucket": "product",
+    "confidence": 0.62,
+    "reason": "Real multi-cluster GitOps platform configuration"
+  },
+  "maxkrv/uchat": {
+    "bucket": "product",
+    "confidence": 0.68,
+    "reason": "Chat application in C with WebSocket and SQLite"
+  },
+  "mayankshouche/docs": {
+    "bucket": "tangential",
+    "confidence": 0.82,
+    "reason": "Mintlify docs starter kit, no AsyncAPI content evident"
+  },
+  "mayankshouche/docs-ally": {
+    "bucket": "tangential",
+    "confidence": 0.82,
+    "reason": "Mintlify docs starter kit, no AsyncAPI content evident"
+  },
+  "med-united/popp-smartphone-konnektor": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "Real software server implementing e-prescription transfer interfaces"
+  },
+  "meridianhub/meridian": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Deployable transaction integrity engine with active development"
+  },
+  "metalalive/e_commerce": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Readme explicitly states not production ready, learning purpose"
+  },
+  "meteatamel/asyncapi-basics": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Educational samples and references about AsyncAPI"
+  },
+  "microcks/microcks": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "API mocking and testing platform consuming AsyncAPI specs"
+  },
+  "microcks/microcks-spectral-ruleset": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Spectral linting rules for AsyncAPI and OpenAPI specs"
+  },
+  "microcks/microcks.github.io": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Public documentation website for Microcks project"
+  },
+  "microcks/microcks.io": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Public website resources and templates for Microcks"
+  },
+  "miltonabdon/ecommerce-scalable-platform": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly a practical demonstration of architectural patterns"
+  },
+  "ministryofjustice/curious-API": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Placeholder repo hosting third-party API specifications only"
+  },
+  "ministryofjustice/hmpps-accredited-programmes-manage-and-deliver-api": {
+    "bucket": "product",
+    "confidence": 0.92,
+    "reason": "Production Spring Boot API for HMPPS accredited programmes"
+  },
+  "ministryofjustice/hmpps-alerts-api": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Real deployed UK government HMPPS alerts API service"
+  },
+  "ministryofjustice/hmpps-challenge-support-intervention-plan-api": {
+    "bucket": "product",
+    "confidence": 0.93,
+    "reason": "Production backend API for prison CSIP management"
+  },
+  "ministryofjustice/hmpps-external-movements-api": {
+    "bucket": "product",
+    "confidence": 0.93,
+    "reason": "Production Spring Boot API for prisoner movement tracking"
+  },
+  "ministryofjustice/hmpps-find-and-refer-an-intervention-service": {
+    "bucket": "product",
+    "confidence": 0.91,
+    "reason": "Production service for finding and referring interventions"
+  },
+  "ministryofjustice/hmpps-health-and-medication-api": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Production Spring Boot Kotlin service owning health/medication data"
+  },
+  "ministryofjustice/hmpps-incentives-api": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Production REST API and database for prison incentive levels"
+  },
+  "ministryofjustice/hmpps-incident-reporting-api": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Production REST API owning prison incident report data"
+  },
+  "ministryofjustice/hmpps-locations-inside-prison-api": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Production API managing locations inside prisons"
+  },
+  "ministryofjustice/hmpps-non-associations-api": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Production REST API owning prisoner non-association data"
+  },
+  "ministryofjustice/hmpps-prison-offender-events": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Real service publishing offender events to pub/sub topics"
+  },
+  "ministryofjustice/hmpps-prison-visit-booker-registry": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Production microservice for prison visit booking registration"
+  },
+  "ministryofjustice/hmpps-prisoner-search": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Real deployed prisoner search service via OpenSearch"
+  },
+  "ministryofjustice/hmpps-restricted-patients-api": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Production API managing restricted patient records"
+  },
+  "ministryofjustice/hmpps-visit-allocation-api": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Production Spring Boot service calculating visit allocations"
+  },
+  "ministryofjustice/offender-case-notes": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Production case notes service for offenders"
+  },
+  "mishasdk/mipt-ml-async": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "University course homework assignment (\u0414\u0417 6)"
+  },
+  "mjones3/interface-exception-collector-service": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Deployable microservice for BioPro interface exception management"
+  },
+  "mmmnt/mmmnt": {
+    "bucket": "tooling/library",
+    "confidence": 0.87,
+    "reason": "DSL and codegen toolchain transforming .moment specs to TypeScript"
+  },
+  "mmussett/flogo-hello-world-event-driven": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Explicitly a PoC for event-driven architecture"
+  },
+  "mnemitz/webpack-asyncapi-schema-loader": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Webpack loader explicitly for parsing AsyncAPI documents"
+  },
+  "monghithub/serialplab": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicit proof-of-concept comparing serialization formats"
+  },
+  "motor-screwdriver/mts-true-tech-hack-26": {
+    "bucket": "demo/fixture",
+    "confidence": 0.8,
+    "reason": "Hackathon project indicated by -hack-26 in repo name"
+  },
+  "mshogin/archctl": {
+    "bucket": "tooling/library",
+    "confidence": 0.88,
+    "reason": "CLI validation tool for architecture-as-code manifests"
+  },
+  "mtturner57/AsyncApiGenerator": {
+    "bucket": "tooling/library",
+    "confidence": 0.93,
+    "reason": "Generates models or YAML from AsyncAPI files"
+  },
+  "mumia/wallet-accountant": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Deployable personal finance/accounting application"
+  },
+  "murithigeo/ogc-edr-api": {
+    "bucket": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Reference implementation for OGC standard, work in progress"
+  },
+  "myrobotaxi/telemetry": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Real telemetry server broadcasting Tesla fleet data via WebSocket"
+  },
+  "nandorsilva/eda-fia-th": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly a lab for local development and study purposes"
+  },
+  "nashspence/pyspec": {
+    "bucket": "tooling/library",
+    "confidence": 0.75,
+    "reason": "Spec-to-artifact code generation tool, not a deployable app"
+  },
+  "navikt/ao-oppfolgingskontor": {
+    "bucket": "product",
+    "confidence": 0.9,
+    "reason": "Norwegian NAV government service with Kafka event API"
+  },
+  "navikt/dp-soknad-orkestrator": {
+    "bucket": "product",
+    "confidence": 0.92,
+    "reason": "Dagpenger application orchestrator consuming Kafka topics"
+  },
+  "navikt/veilarboppfolging": {
+    "bucket": "product",
+    "confidence": 0.93,
+    "reason": "Norwegian employment follow-up service publishing Kafka topics"
+  },
+  "nba-amtgroup/4424rr-2": {
+    "bucket": "product",
+    "confidence": 0.65,
+    "reason": "Real railroad maintenance application using CV and ML"
+  },
+  "nekofar/warpcast": {
+    "bucket": "tooling/library",
+    "confidence": 0.78,
+    "reason": "TypeScript client SDK for Warpcast APIs"
+  },
+  "nemirlev/async-api-example": {
+    "bucket": "demo/fixture",
+    "confidence": 0.98,
+    "reason": "Explicitly a demo project to learn AsyncAPI"
+  },
+  "neosun100/VibeVoice": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Deployable real-time TTS streaming application framework"
+  },
+  "netbarros/Production-MagicSaas-Sofia-IA-Software-Lotus": {
+    "bucket": "uncategorized",
+    "confidence": 0.35,
+    "reason": "No readme; SaaS AI agent description too vague to classify"
+  },
+  "newstack-cloud/celerity": {
+    "bucket": "tooling/library",
+    "confidence": 0.88,
+    "reason": "Backend toolkit/framework for cloud-agnostic deployment"
+  },
+  "nezia1/missive-documentation": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "MkDocs site documenting a diploma thesis project"
+  },
+  "ngscheurich/elixirconf-eu-2024": {
+    "bucket": "demo/fixture",
+    "confidence": 0.96,
+    "reason": "Conference talk companion source code, not production"
+  },
+  "nguyenvinhhuy/microservice-platform": {
+    "bucket": "demo/fixture",
+    "confidence": 0.68,
+    "reason": "Reference architecture demo showcasing full enterprise stack"
+  },
+  "nicolas-codemate/esp32-pixelcast": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Deployable ESP32 firmware for LED matrix panels"
+  },
+  "nikescar/dure": {
+    "bucket": "product",
+    "confidence": 0.68,
+    "reason": "Distributed e-commerce application for small shop owners"
+  },
+  "niteesh-reddy91/cloudevents-kafka-demo": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly a simple demo of CloudEvents with Kafka"
+  },
+  "nitu01019/weelobackend": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Production-ready logistics backend serving real mobile apps"
+  },
+  "nivreddy14/event-mesh": {
+    "bucket": "demo/fixture",
+    "confidence": 0.62,
+    "reason": "ArgoCD EDA setup guide, infrastructure example not product"
+  },
+  "noeliajimenezg/mokapi_issue": {
+    "bucket": "demo/fixture",
+    "confidence": 0.93,
+    "reason": "Bug reproduction fixture for a mokapi Kafka issue"
+  },
+  "notnullptr-gh/architechture-sprint-3": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Course architecture sprint with numbered task assignments"
+  },
+  "nstsai/SAproject": {
+    "bucket": "demo/fixture",
+    "confidence": 0.87,
+    "reason": "Course project with C4, BPMN, OpenAPI documentation artifacts"
+  },
+  "ocampana-videotec/onvif-cloud": {
+    "bucket": "product",
+    "confidence": 0.6,
+    "reason": "IoT cloud service with MQTT device-sharing API"
+  },
+  "omnai-project/OmnAIScope_DataServer_API_Doc": {
+    "bucket": "spec/docs",
+    "confidence": 0.97,
+    "reason": "Repo explicitly documents WebSocket API with AsyncAPI spec"
+  },
+  "openagents-org/openagents": {
+    "bucket": "product",
+    "confidence": 0.62,
+    "reason": "Deployable AI agent collaboration platform/workspace"
+  },
+  "opencaps/mqttcomms": {
+    "bucket": "tooling/library",
+    "confidence": 0.9,
+    "reason": "Go library for MQTT protocol encoding and communication"
+  },
+  "openfoodfacts/documentation": {
+    "bucket": "spec/docs",
+    "confidence": 0.95,
+    "reason": "API documentation site generated from spec files"
+  },
+  "openfoodfacts/openfoodfacts-auth": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Deployable SSO/auth service using Keycloak"
+  },
+  "openfoodfacts/openfoodfacts-query": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Deployable query engine service, MongoDB to PostgreSQL"
+  },
+  "openfoodfacts/openfoodfacts-server": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Main food database API server and web interface"
+  },
+  "opengeospatial/ogcapi-environmental-data-retrieval": {
+    "bucket": "spec/docs",
+    "confidence": 0.97,
+    "reason": "OGC API standard working group specification repository"
+  },
+  "openpx-trade/openpx": {
+    "bucket": "tooling/library",
+    "confidence": 0.88,
+    "reason": "SDK/library for prediction market trading across platforms"
+  },
+  "openshift-hyperfleet/architecture": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Architecture documents and engineering standards repository"
+  },
+  "openwop/openwop": {
+    "bucket": "spec/docs",
+    "confidence": 0.78,
+    "reason": "Wire-level protocol specification for multi-agent orchestration"
+  },
+  "openxapi/openxapi": {
+    "bucket": "spec/docs",
+    "confidence": 0.97,
+    "reason": "Collection of AsyncAPI/OpenAPI specs for crypto exchanges"
+  },
+  "oracle-samples/websocket-client-template": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "Template for AsyncAPI generator, WebSocket client generation"
+  },
+  "otto-de/api-guidelines": {
+    "bucket": "spec/docs",
+    "confidence": 0.97,
+    "reason": "API design guidelines and rules document for REST and Async APIs"
+  },
+  "owasp-noir/noir": {
+    "bucket": "tooling/library",
+    "confidence": 0.8,
+    "reason": "SAST tool parsing API specs including AsyncAPI to extract endpoints"
+  },
+  "pactflow/openapi-pact-comparator": {
+    "bucket": "tooling/library",
+    "confidence": 0.92,
+    "reason": "Tool comparing OpenAPI schemas and Pact contracts for compatibility"
+  },
+  "paddypawprints/VLMChat": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Deployable edge AI platform for vision language models on hardware"
+  },
+  "paga16-hash/anonymous-shard": {
+    "bucket": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Master thesis proof-of-concept P2P anonymity system"
+  },
+  "pagopa/pn-lab-docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.95,
+    "reason": "Explicitly a documentation/experiment repo for PN Lab"
+  },
+  "pagopa/pn-paper-tracker": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Italian government microservice tracking paper shipments in SEND"
+  },
+  "paranoideed/webster": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Real NestJS backend for collaborative canvas editor"
+  },
+  "pardeike/GABP": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Protocol specification defining AI-to-game communication standard"
+  },
+  "pascal-audio/px-api": {
+    "bucket": "spec/docs",
+    "confidence": 0.85,
+    "reason": "API documentation and spec for hardware audio amplifiers"
+  },
+  "peguidotte/aegis-test-pubsub-interfaces": {
+    "bucket": "spec/docs",
+    "confidence": 0.82,
+    "reason": "Single source of truth for inter-service interfaces and contracts"
+  },
+  "pfplay/pfplay-platform": {
+    "bucket": "product",
+    "confidence": 0.9,
+    "reason": "Deployable Spring Boot backend for real-time music party platform"
+  },
+  "picodotdev/blog-bitix": {
+    "bucket": "tangential",
+    "confidence": 0.9,
+    "reason": "Java/Linux blog; AsyncAPI mentioned incidentally in posts"
+  },
+  "picodotdev/blog-ejemplos": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Code examples for developer blog posts, not production software"
+  },
+  "piedraprog/unified-personal-skills": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "AI coding-agent skills registry, AsyncAPI only incidental"
+  },
+  "pingxin403/platform-console": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Personal learning project with explicitly fictional scenario"
+  },
+  "pixel-agents-hq/pixel-agents": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "VS Code extension product for visualizing multi-agent AI systems"
+  },
+  "pmdartus/mintlify-docs": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Test documentation using Mintlify starter kit template"
+  },
+  "pmxt-dev/pmxt": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Real unified trading API service for prediction markets"
+  },
+  "pokerjocke70/cds-poc": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Proof-of-concept for testing Spring CDS, no production intent"
+  },
+  "portus84/smartorder-ms": {
+    "bucket": "demo/fixture",
+    "confidence": 0.85,
+    "reason": "Reference platform explicitly built to demonstrate architecture patterns"
+  },
+  "position-pal/location-service": {
+    "bucket": "product",
+    "confidence": 0.9,
+    "reason": "Real Akka-based location tracking microservice in PositionPal system"
+  },
+  "postel-sh/postel": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Embeddable webhook delivery library for TypeScript/polyglot"
+  },
+  "postman-cs/postman-aws-spec-discovery-action": {
+    "bucket": "tooling/library",
+    "confidence": 0.72,
+    "reason": "CI action that discovers and exports API specs from AWS"
+  },
+  "ppzxc/relaybox": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Deployable relay hub with protocol parsing and message routing"
+  },
+  "prajwalaher33/feeshr": {
+    "bucket": "tangential",
+    "confidence": 0.75,
+    "reason": "AI agent collaboration platform; AsyncAPI use incidental"
+  },
+  "pre-backstage/producer-repo-public": {
+    "bucket": "demo/fixture",
+    "confidence": 0.7,
+    "reason": "Validation/test fixture repo for catalog API entries"
+  },
+  "pseudotop/maekon-client": {
+    "bucket": "tangential",
+    "confidence": 0.65,
+    "reason": "Local desktop agent; AsyncAPI presence not evident from text"
+  },
+  "pt9912/geodata-native-suite": {
+    "bucket": "tangential",
+    "confidence": 0.7,
+    "reason": "Helm/Kubernetes monorepo; no clear AsyncAPI role"
+  },
+  "pv-udpv/dual-publish-platform": {
+    "bucket": "demo/fixture",
+    "confidence": 0.85,
+    "reason": "Reference scaffold template for publishing OpenAPI/AsyncAPI specs"
+  },
+  "qbem-repos/standards": {
+    "bucket": "spec/docs",
+    "confidence": 0.92,
+    "reason": "Official API, webhook, and async standards playbook"
+  },
+  "qoretechnologies/qore": {
+    "bucket": "tangential",
+    "confidence": 0.9,
+    "reason": "General-purpose programming language; AsyncAPI incidental"
+  },
+  "qualtt/restful-slice": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Deployable 3D printing order platform with async processing"
+  },
+  "quarkiverse/quarkus-asyncapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "Quarkus extension generating AsyncAPI metadata and config"
+  },
+  "quub-fi/quub-exchange-docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Documentation repository for a cryptocurrency exchange platform"
+  },
+  "r--w/documentation": {
+    "bucket": "spec/docs",
+    "confidence": 0.95,
+    "reason": "API docs site containing asyncapi.yml for streaming API reference"
+  },
+  "rabbytesoftware/quiver.core": {
+    "bucket": "tangential",
+    "confidence": 0.9,
+    "reason": "Cross-platform package manager; no AsyncAPI relevance"
+  },
+  "radiorabe/pathfinder-cloudevents-service": {
+    "bucket": "product",
+    "confidence": 0.92,
+    "reason": "Production microservice converting events to CloudEvents on Kafka"
+  },
+  "rafaelgpimenta/go-base-project": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Learning project for Go principles, not production software"
+  },
+  "rainbow-mobile/web_robot_server": {
+    "bucket": "demo/fixture",
+    "confidence": 0.85,
+    "reason": "NestJS starter repository template, not a real service"
+  },
+  "raphaeldelio/springwolf-demo-spring-io-2024": {
+    "bucket": "demo/fixture",
+    "confidence": 0.99,
+    "reason": "Conference demo code for Spring IO 2024 AsyncAPI session"
+  },
+  "ravecat/asyncapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "AsyncAPI to TypeScript and Zod code generator"
+  },
+  "ravecat/moda": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Explicitly a learning/educational project exploring tech integrations"
+  },
+  "ravecat/songy": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Real deployed multiplayer music game with WebSocket backend"
+  },
+  "rbaxim/MOP": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Deployable stdio-to-HTTP bridge service with session management"
+  },
+  "remidosol/real-time-trade-api": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Real-time cryptocurrency trading platform with WebSocket and Redis"
+  },
+  "resultakak/argos": {
+    "bucket": "tangential",
+    "confidence": 0.97,
+    "reason": "Claude Code plugin/skills repo, not an AsyncAPI user"
+  },
+  "revue-org/revue": {
+    "bucket": "product",
+    "confidence": 0.93,
+    "reason": "Deployable distributed video surveillance system"
+  },
+  "ripple/rippled-api-spec": {
+    "bucket": "spec/docs",
+    "confidence": 0.96,
+    "reason": "Repository of OpenAPI/AsyncAPI specs for XRP Ledger"
+  },
+  "rlarin/it-crowd-pixel-agents": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "AI coding-agent visualization plugin, not an AsyncAPI user"
+  },
+  "roalcantara/dots": {
+    "bucket": "tangential",
+    "confidence": 0.93,
+    "reason": "Dotfiles repo; AsyncAPI mentioned incidentally"
+  },
+  "rock-hu/architecture-catalog": {
+    "bucket": "spec/docs",
+    "confidence": 0.78,
+    "reason": "Architecture documentation catalog with domain models"
+  },
+  "roldaiateam/apis-especifications": {
+    "bucket": "spec/docs",
+    "confidence": 0.95,
+    "reason": "API contract specifications published as Maven artifacts"
+  },
+  "romdj/tempsdarret.studio": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Photography platform with event-driven microservices architecture"
+  },
+  "ross2p/mindlet-notification": {
+    "bucket": "product",
+    "confidence": 0.68,
+    "reason": "Scaffolded microservice with Kafka messaging, part of real system"
+  },
+  "ross2p/mindlet-payment": {
+    "bucket": "product",
+    "confidence": 0.68,
+    "reason": "Scaffolded payment microservice with Kafka messaging"
+  },
+  "ross2p/mindlet-subscription": {
+    "bucket": "product",
+    "confidence": 0.68,
+    "reason": "Scaffolded subscription microservice with Kafka messaging"
+  },
+  "s-menne-inovex/async_api_pages": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly testing asyncapi generator with GitHub Pages"
+  },
+  "salaboy/pizza": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly a simple example app for Kubernetes/Dapr/Spring Boot"
+  },
+  "salaboy/spring-ai-agentic-webinar": {
+    "bucket": "demo/fixture",
+    "confidence": 0.96,
+    "reason": "Webinar companion code for Spring AI observability demo"
+  },
+  "salaboy/spring-io-2026-workshop": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Hands-on workshop for building AI-powered store application"
+  },
+  "samovers/OFARM": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Open semantic reference model and governance framework, not runnable software"
+  },
+  "sanzhanggui/grandma_cook_agent": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Hackathon PoC for voice-to-recipe-card agent pipeline"
+  },
+  "sap-2025-2026/lab-activity-10": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "University course lab activity on event-driven architectures"
+  },
+  "sarkr72/practice": {
+    "bucket": "demo/fixture",
+    "confidence": 0.96,
+    "reason": "Explicitly described as a learning project for enterprise patterns"
+  },
+  "saujasn/accelerator": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Deployable multi-service application generating code from AsyncAPI spec"
+  },
+  "scalar/scalar": {
+    "bucket": "tooling/library",
+    "confidence": 0.92,
+    "reason": "Open-source API platform rendering OpenAPI/AsyncAPI references and tooling"
+  },
+  "seanchatmangpt/dslmodel": {
+    "bucket": "tangential",
+    "confidence": 0.72,
+    "reason": "AI dev platform; AsyncAPI mentioned incidentally, not core purpose"
+  },
+  "shapeitapp/shapeit-github-app": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "Deployable GitHub App built with Probot"
+  },
+  "sillygod/scaffold": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Multi-language project starter kit and boilerplate templates"
+  },
+  "simliai/docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Documentation site using Mintlify, no runnable application"
+  },
+  "siom79/jasyncapicmp": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Tool to compare two AsyncAPI specification versions"
+  },
+  "siom79/jopenapicmp": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Tool to compare OpenAPI and AsyncAPI specification versions"
+  },
+  "slng-ai/sdks": {
+    "bucket": "tooling/library",
+    "confidence": 0.88,
+    "reason": "Monorepo of SDKs and CLI generated from OpenAPI/AsyncAPI specs"
+  },
+  "smallest-inc/smallest-ai-documentation": {
+    "bucket": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Documentation site for Smallest AI products, not runnable software"
+  },
+  "smoya/asyncapi-parser-example": {
+    "bucket": "demo/fixture",
+    "confidence": 0.99,
+    "reason": "Minimal example showing how to validate AsyncAPI documents"
+  },
+  "sngular/scs-multiapi-plugin": {
+    "bucket": "tooling/library",
+    "confidence": 0.99,
+    "reason": "Maven/Gradle plugin generating code from AsyncAPI and OpenAPI specs"
+  },
+  "socrateasehq/autoproctor-mintlify-docs": {
+    "bucket": "tangential",
+    "confidence": 0.85,
+    "reason": "Mintlify docs starter kit; no AsyncAPI content visible"
+  },
+  "solace-cto-labs/platform-api": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Deployable connector integrating API management tools with Solace"
+  },
+  "solace-cto-labs/solace-amplify-discovery-agent": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Deployable agent synchronizing AsyncAPIs between Solace and Amplify"
+  },
+  "solace-cto-labs/solace-axway-agent": {
+    "bucket": "tooling/library",
+    "confidence": 0.95,
+    "reason": "Agent that provisions AsyncAPI specs into Solace brokers"
+  },
+  "solacecommunity/spring-cloud-stream-request-reply": {
+    "bucket": "tooling/library",
+    "confidence": 0.88,
+    "reason": "Spring Boot starter library for messaging request-reply pattern"
+  },
+  "spbu-ds-practicum-2025/example-project": {
+    "bucket": "demo/fixture",
+    "confidence": 0.8,
+    "reason": "Explicitly named example project for a student practicum"
+  },
+  "specmatic/aws-lambda-kafka-with-localstack": {
+    "bucket": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Demo showing Lambda/Kafka contract testing with AsyncAPI 3.0"
+  },
+  "specmatic/docs.specmatic.io": {
+    "bucket": "spec/docs",
+    "confidence": 0.95,
+    "reason": "Specmatic documentation website, not runnable software"
+  },
+  "specmatic/enterprise-sample": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicit sample project for Specmatic Enterprise features"
+  },
+  "specmatic/labs": {
+    "bucket": "demo/fixture",
+    "confidence": 0.98,
+    "reason": "Workshop hands-on lab exercises, not production software"
+  },
+  "specmatic/labs-contracts": {
+    "bucket": "spec/docs",
+    "confidence": 0.93,
+    "reason": "Central repository of canonical OpenAPI/AsyncAPI contract specs"
+  },
+  "specmatic/specmatic": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Contract testing and service virtualization tool for AsyncAPI/OpenAPI"
+  },
+  "specmatic/specmatic-arazzo-openapi-asyncapi-sample": {
+    "bucket": "demo/fixture",
+    "confidence": 0.96,
+    "reason": "Sample project demonstrating API workflow testing with Arazzo"
+  },
+  "specmatic/specmatic-async-sample": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Sample project demonstrating multi-protocol async contract testing"
+  },
+  "specmatic/specmatic-kafka-avro-sample": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Sample project for Kafka/Avro contract testing with AsyncAPI"
+  },
+  "specmatic/specmatic-kafka-sample-asyncapi3": {
+    "bucket": "demo/fixture",
+    "confidence": 0.98,
+    "reason": "Explicit sample project for AsyncAPI 3.0 Kafka testing"
+  },
+  "specmatic/specmatic-order-contracts": {
+    "bucket": "spec/docs",
+    "confidence": 0.93,
+    "reason": "Central contract repository holding API specs for sample projects"
+  },
+  "specmatic/specmatic-studio-playwright-ts-tests": {
+    "bucket": "tangential",
+    "confidence": 0.75,
+    "reason": "E2E test suite for Specmatic Studio; no direct AsyncAPI usage"
+  },
+  "specmatic/studio-demo": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly a demo project for Specmatic Studio features"
+  },
+  "speechmatics/docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.93,
+    "reason": "Documentation site for Speechmatics APIs built with Docusaurus"
+  },
+  "springwolf/springwolf-core": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "Generates AsyncAPI docs automatically for Spring Boot apps"
+  },
+  "stardew-valley-dedicated-server/asyncapi-generator-template-ts": {
+    "bucket": "tooling/library",
+    "confidence": 0.96,
+    "reason": "AsyncAPI generator template producing TypeScript Nuxt3 WebSocket clients"
+  },
+  "stardew-valley-dedicated-server/web": {
+    "bucket": "product",
+    "confidence": 0.78,
+    "reason": "Real admin web interface for a Stardew Valley dedicated server"
+  },
+  "stojkovic-a/IOT-Project-2": {
+    "bucket": "demo/fixture",
+    "confidence": 0.85,
+    "reason": "Student IoT school project with sensor and analytics containers"
+  },
+  "stojkovic-a/IOT-project-3": {
+    "bucket": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "Named 'IOT project 3', school-style instructions, dataset-driven demo"
+  },
+  "straylight-archive/render-api": {
+    "bucket": "uncategorized",
+    "confidence": 0.4,
+    "reason": "No readme, cryptic description, truly impossible to classify"
+  },
+  "sun475300-sudo/Swarm-control-in-sc2bot": {
+    "bucket": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "StarCraft 2 bot hobby/demo project"
+  },
+  "suwa-sh/lineage-to-graph": {
+    "bucket": "product",
+    "confidence": 0.65,
+    "reason": "Deployable data lineage visualization tool"
+  },
+  "swagger-api/apidom": {
+    "bucket": "tooling/library",
+    "confidence": 0.98,
+    "reason": "Semantic parser and AST library for OpenAPI and AsyncAPI specs"
+  },
+  "tachu2/transcendence": {
+    "bucket": "product",
+    "confidence": 0.82,
+    "reason": "Real-time multiplayer Pong tournament application using microservices"
+  },
+  "tadelv/reaprime": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Real app bridging Decent Espresso machine to web UIs"
+  },
+  "takeruun/ws-ts-gen": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "CLI code generator from AsyncAPI 3.0 schemas to TypeScript"
+  },
+  "tanagraspace/ccsds-mo-to-asyncapi": {
+    "bucket": "tooling/library",
+    "confidence": 0.93,
+    "reason": "Converter tool from CCSDS MO XML specs to AsyncAPI YAML"
+  },
+  "tanishy7777/Joined_Words": {
+    "bucket": "product",
+    "confidence": 0.76,
+    "reason": "Real-time multiplayer game with rooms and live leaderboards"
+  },
+  "taonaben/grupus-frontend": {
+    "bucket": "tangential",
+    "confidence": 0.72,
+    "reason": "Flutter boilerplate starter with no meaningful AsyncAPI usage"
+  },
+  "tassosgomes/poc-event-system": {
+    "bucket": "demo/fixture",
+    "confidence": 0.91,
+    "reason": "Explicit POC demoing Springwolf, EventCatalog, and Apicurio tools"
+  },
+  "tenacious89/open_agent_hackathon": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Hackathon AI agent project, not production service"
+  },
+  "tewhatuora/api-standards": {
+    "bucket": "spec/docs",
+    "confidence": 0.94,
+    "reason": "Official API development and security standards documentation site"
+  },
+  "the-codegen-project/cli": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Code generator CLI for AsyncAPI v2/v3 and OpenAPI specs"
+  },
+  "thealmikey/zilla-kt": {
+    "bucket": "tooling/library",
+    "confidence": 0.9,
+    "reason": "Zilla is a multi-protocol proxy for event-driven messaging"
+  },
+  "thomascarter613/aic-smb-copilot-codebase": {
+    "bucket": "demo/fixture",
+    "confidence": 0.74,
+    "reason": "Skeleton/boilerplate microservices architecture with K8s manifests"
+  },
+  "timnavigate/DAC": {
+    "bucket": "demo/fixture",
+    "confidence": 0.86,
+    "reason": "Explicit proof-of-concept for docs-as-code practices"
+  },
+  "timonback/springwolf-demo": {
+    "bucket": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Presentation demo code for Springwolf/AsyncAPI talk"
+  },
+  "tomascejka/microcks.labs": {
+    "bucket": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Labs/exploration content around Microcks tooling"
+  },
+  "tornado80/collaborative-whiteboard": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "University course project, Internet Protocols at Aalto"
+  },
+  "trustgraph-ai/trustgraph": {
+    "bucket": "product",
+    "confidence": 0.9,
+    "reason": "Real deployable semantic AI infrastructure platform"
+  },
+  "udamir/api-ref-bundler": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Library bundling $refs in AsyncAPI/OpenAPI documents"
+  },
+  "ugaemi/gyeongdohalsaram-server": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Real WebSocket multiplayer game backend server"
+  },
+  "underpass-ai/underpass-choreographer": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Deployable event-driven AI agent coordination service"
+  },
+  "underpass-ai/underpass-runtime": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Deployable governed execution plane for AI agents"
+  },
+  "up1/workshop-asyncapi-services-2025": {
+    "bucket": "demo/fixture",
+    "confidence": 0.98,
+    "reason": "Explicit AsyncAPI workshop with step-by-step tutorial"
+  },
+  "up1/workshop-js-testing-202507": {
+    "bucket": "tangential",
+    "confidence": 0.78,
+    "reason": "JS testing workshop; AsyncAPI only incidental"
+  },
+  "vasilisalmpanis/ft_transcendence": {
+    "bucket": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "ft_transcendence is a 42 school curriculum project"
+  },
+  "vasudevgrg/stock_exchange": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Stock exchange backend with real trading routes and websockets"
+  },
+  "viktorSrk/quartogether": {
+    "bucket": "demo/fixture",
+    "confidence": 0.96,
+    "reason": "TU Delft CSE2000 course project, academic year"
+  },
+  "vivekjava/Spring-Boot-Rest": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Deployable Spring Boot reporting service using AsyncAPI"
+  },
+  "vondacho/my-api-portal": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Deployable API developer portal with catalog and mocking"
+  },
+  "vsk-api/papi": {
+    "bucket": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Versioned API specification for eOSAGO insurance interface"
+  },
+  "whitebit-exchange/docs": {
+    "bucket": "spec/docs",
+    "confidence": 0.97,
+    "reason": "Official API documentation portal, not runnable software"
+  },
+  "will-break-it/wallet-architecture": {
+    "bucket": "spec/docs",
+    "confidence": 0.8,
+    "reason": "Architecture/API design document for blockchain wallet API"
+  },
+  "wirenboard/wb-device-manager": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Real IoT Modbus device manager with MQTT/AsyncAPI spec"
+  },
+  "wirenboard/wb-diag-collect": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Deployable IoT diagnostics collector with MQTT RPC API"
+  },
+  "wirenboard/wb-mqtt-confed": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Real Wiren Board configuration editor backend service"
+  },
+  "wirenboard/wb-mqtt-dali": {
+    "bucket": "product",
+    "confidence": 0.9,
+    "reason": "Deployable MQTT-DALI bridge service for Wiren Board"
+  },
+  "wirenboard/wb-mqtt-db": {
+    "bucket": "product",
+    "confidence": 0.9,
+    "reason": "Deployable MQTT channel data logger service"
+  },
+  "wirenboard/wb-mqtt-logs": {
+    "bucket": "product",
+    "confidence": 0.88,
+    "reason": "Deployable service exposing journald logs over MQTT"
+  },
+  "wirenboard/wb-rules": {
+    "bucket": "product",
+    "confidence": 0.95,
+    "reason": "Real rule engine for Wiren Board IoT controllers"
+  },
+  "wohnheim/stueble": {
+    "bucket": "product",
+    "confidence": 0.72,
+    "reason": "Real access-management system with frontend, backend, data"
+  },
+  "worried-networking/uptrakit": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Self-hosted deployable update-tracking service for homelabs"
+  },
+  "wso2/product-apim": {
+    "bucket": "product",
+    "confidence": 0.97,
+    "reason": "WSO2 API Manager, well-known enterprise API platform"
+  },
+  "xavisavvy/scrum-monsters": {
+    "bucket": "product",
+    "confidence": 0.75,
+    "reason": "Real multiplayer web game with event-driven real-time API"
+  },
+  "xingyug/service2mcp": {
+    "bucket": "tooling/library",
+    "confidence": 0.88,
+    "reason": "Compiles AsyncAPI and other specs into MCP tool servers"
+  },
+  "xraph/forge": {
+    "bucket": "tooling/library",
+    "confidence": 0.78,
+    "reason": "Opinionated distributed backend framework for building services"
+  },
+  "yaccob/teds": {
+    "bucket": "tooling/library",
+    "confidence": 0.65,
+    "reason": "CLI for testing JSON Schema contracts, AsyncAPI schemas in scope"
+  },
+  "yethan4/where-is-my-dog": {
+    "bucket": "product",
+    "confidence": 0.8,
+    "reason": "Real mobile app for reuniting lost dogs with owners"
+  },
+  "yojo-generator/generator": {
+    "bucket": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Explicitly generates Java POJOs from AsyncAPI YAML specs"
+  },
+  "yonatangross/orchestkit": {
+    "bucket": "tangential",
+    "confidence": 0.92,
+    "reason": "AI coding-agent skills/hooks repo for Claude Code"
+  },
+  "yoshioterada/Spec-Driven-Dev": {
+    "bucket": "demo/fixture",
+    "confidence": 0.62,
+    "reason": "Named 'Sample', spec-driven development example project"
+  },
+  "yourbourse/trade-server-trading-view-js": {
+    "bucket": "product",
+    "confidence": 0.85,
+    "reason": "Production-ready trading terminal with real-time market data"
+  },
+  "yousuf7474/meerkat": {
+    "bucket": "product",
+    "confidence": 0.63,
+    "reason": "Deployable frontend for multi-agent RAG system"
+  },
+  "yukihito-jokyu/postman-mcp-server": {
+    "bucket": "tangential",
+    "confidence": 0.72,
+    "reason": "MCP server wrapping Postman API, AsyncAPI incidental"
+  },
+  "yuvraj-chouhan-dev/ready-now-server": {
+    "bucket": "uncategorized",
+    "confidence": 0.5,
+    "reason": "Sparse readme, insufficient information to classify"
+  },
+  "zachariep/spring-petclinic-saga-refactor": {
+    "bucket": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Refactoring demo of Spring Petclinic for Saga pattern teaching"
+  },
+  "zikratski/LinguaConnect": {
+    "bucket": "spec/docs",
+    "confidence": 0.92,
+    "reason": "Repo is documentation for a service, not the service itself"
+  },
+  "zimoch84/HaggisProject": {
+    "bucket": "product",
+    "confidence": 0.65,
+    "reason": "Real platform monorepo with API contracts and full docs"
+  },
+  "znsio/specmatic-async-order-api-kotlin": {
+    "bucket": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Sample app demonstrating Specmatic async contract testing"
+  },
+  "zuevrs/yanote": {
+    "bucket": "tooling/library",
+    "confidence": 0.75,
+    "reason": "Tool recording live calls and validating API contract coverage"
+  }
+}

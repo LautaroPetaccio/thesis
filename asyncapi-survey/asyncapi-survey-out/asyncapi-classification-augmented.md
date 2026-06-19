@@ -1,0 +1,1019 @@
+# AsyncAPI repos — augmented classification (rules + LLM pass)
+
+Rule-based buckets, with the readable uncategorized residual resolved by an LLM pass (`claude --model sonnet`, accepted at confidence ≥ 0.6).
+
+| bucket | count |
+|---|--:|
+| product | 307 |
+| tooling/library | 225 |
+| demo/fixture | 221 |
+| spec/docs | 75 |
+| catalog | 48 |
+| tangential | 31 |
+| uncategorized | 77 |
+
+
+## product (307)
+
+- **pixel-agents-hq/pixel-agents** — 8127★
+- **event-catalog/eventcatalog** — 2724★
+- **trustgraph-ai/trustgraph** — 2147★
+- **microcks/microcks** — 1956★
+- **pmxt-dev/pmxt** — 1870★  _(llm 0.72: Real unified trading API service for prediction markets)_
+- **owasp-noir/noir** — 1320★
+- **wso2/product-apim** — 986★
+- **Apicurio/apicurio-registry** — 810★
+- **DarkflameUniverse/DarkflameServer** — 738★
+- **aklivity/zilla** — 690★
+- **Sunagatov/Iced-Latte** — 631★
+- **geopython/pygeoapi** — 609★
+- **chainloop-dev/chainloop** — 554★
+- **foxminchan/BookWorm** — 502★
+- **gravitee-io/gravitee-api-management** — 418★
+- **specmatic/specmatic** — 381★
+- **NUWCDIVNPT/stig-manager** — 218★
+- **delano/postman-mcp-server** — 150★
+- **wirenboard/wb-rules** — 82★
+- **VoiceBlender/voiceblender** — 73★
+- **eclipse-symphony/symphony** — 51★
+- **tadelv/reaprime** — 38★  _(llm 0.88: Real app bridging Decent Espresso machine to web UIs)_
+- **aml-org/als** — 32★
+- **barbacane-dev/barbacane** — 27★
+- **seanchatmangpt/dslmodel** — 27★
+- **PeterAlaks/lyric-display-app** — 25★
+- **kanekoshoyu/exchange-collection** — 23★
+- **Open-Locker/Open-Locker** — 20★  _(llm 0.85: Real IoT smart-locker product sponsored by city government)_
+- **btravers/amqp-contract** — 18★
+- **Kiloforge/kiloforge** — 17★
+- **aixigo/PREvant** — 17★
+- **event-catalog/generators** — 14★
+- **ProsusAI/agentic-services-protocol** — 12★
+- **OpenSourceAGI/ai-broker-investing-agent** — 11★
+- **aklivity/zillabase** — 11★
+- **droso-hass/openab** — 10★
+- **meridianhub/meridian** — 10★
+- **revue-org/revue** — 10★
+- **med-united/popp-smartphone-konnektor** — 9★
+- **ekhodzitsky/gigastt** — 8★
+- **hmajid2301/banterbus** — 7★
+- **Generacja-Cuzi/ai-present-finder** — 6★
+- **rabbytesoftware/quiver.core** — 6★
+- **c2siorg/genie** — 5★  _(llm 0.7: Open-source AI financial assistant application with agent architecture)_
+- **cycleplatform/api-spec** — 5★
+- **KTCrisis/event7** — 4★
+- **Kuestenlogik/Bowire** — 4★
+- **kingak4/ft_transcendence** — 4★
+- **motor-screwdriver/mts-true-tech-hack-26** — 4★
+- **openfoodfacts/openfoodfacts-query** — 4★
+- **45ck/Portarium** — 3★
+- **MindGainsLabs/Stratus_Relayer** — 3★
+- **Netcracker/qubership-integration-platform** — 3★
+- **doemefu/very-cool-karaoke-server** — 3★
+- **ministryofjustice/hmpps-prison-offender-events** — 3★  _(llm 0.95: Real service publishing offender events to pub/sub topics)_
+- **ministryofjustice/offender-case-notes** — 3★
+- **openfoodfacts/openfoodfacts-auth** — 3★
+- **ravecat/songy** — 3★  _(llm 0.88: Real deployed multiplayer music game with WebSocket backend)_
+- **wirenboard/wb-mqtt-dali** — 3★  _(llm 0.9: Deployable MQTT-DALI bridge service for Wiren Board)_
+- **xavisavvy/scrum-monsters** — 3★  _(llm 0.75: Real multiplayer web game with event-driven real-time API)_
+- **AltairaLabs/Omnia** — 2★
+- **CDFmmgr9fLkRH453kRC33TrEp/matching-engine** — 2★
+- **Integration-Project-2026-Groep-2/CRM** — 2★
+- **Netcracker/qubership-integration-runtime-catalog** — 2★
+- **ODS-IS-UASL/safety-management** — 2★  _(llm 0.87: Production drone safety management deployable module)_
+- **ahelme/mcp-claude-code-browser-tools** — 2★
+- **ccradle/finding-a-bed-tonight** — 2★
+- **cjjohansen/drone-web** — 2★
+- **devmentors/Mikroserwisy-Revisited** — 2★
+- **ivanztz/sandbox** — 2★
+- **ministryofjustice/hmpps-incentives-api** — 2★
+- **ministryofjustice/hmpps-prison-visit-booker-registry** — 2★
+- **ministryofjustice/hmpps-visit-allocation-api** — 2★
+- **pfplay/pfplay-platform** — 2★
+- **piedraprog/unified-personal-skills** — 2★
+- **radiorabe/pathfinder-cloudevents-service** — 2★
+- **rainbow-mobile/web_robot_server** — 2★
+- **tachu2/transcendence** — 2★
+- **Anomaliszt/Conquest** — 1★
+- **BackendFans83/Taxi** — 1★  _(llm 0.88: Full microservice taxi platform for passengers and drivers)_
+- **CardinalWave/cw-mqtt-gateway** — 1★
+- **CodingFlow/rating-service-dotnet** — 1★
+- **DEFRA/fcp-audit** — 1★
+- **ElementAstro/lithium-next** — 1★  _(llm 0.8: Real open-source astrophotography terminal application)_
+- **Embiggenerd/spiritio** — 1★
+- **Floffah/echoform** — 1★
+- **Jack-the-Pro101/vequate** — 1★
+- **Jonas-du-bois/phenom** — 1★  _(llm 0.72: Deployable UFO observation web app with geolocation and auth)_
+- **NalinDalal/modheshwari** — 1★
+- **Order-of-Hospitallers/gru_emoney_token-factory** — 1★  _(llm 0.78: Deployable ERC-20 token factory system on live chain)_
+- **Poss111/ClashBot-Service** — 1★
+- **Sriramanenivikas/Intelligent-Warehouse-Orchestration-System** — 1★
+- **UNIZAR-30226-2026-07/BombaVa-Backend** — 1★
+- **VisioLab/cash-register-api** — 1★
+- **Youka/api-snap** — 1★
+- **adhitiad/quantsync** — 1★
+- **asimarora/semantic-intelligence-layer** — 1★
+- **asklokesh/NEXT-Portal** — 1★
+- **ayointegral/cloud-sandbox-backstage** — 1★
+- **brainsnorkel/hourstats-bsky** — 1★
+- **cajias/syncnode** — 1★
+- **cryptoxdog/Cognitive.Engine.Graphs** — 1★
+- **darken33/connaissance-client** — 1★
+- **dduartee/sigaa-socket-api** — 1★  _(llm 0.72: WebSocket integration service for academic management system)_
+- **ermasavior/nebeng-jek** — 1★
+- **igmrrf/ecommerce_services** — 1★
+- **jlfowle/asterism** — 1★
+- **joemphilips/bitCaster** — 1★
+- **letya999/support_rag** — 1★  _(llm 0.6: Real open-source RAG system with event-driven architecture)_
+- **mattys1/raptorChat** — 1★
+- **metalalive/e_commerce** — 1★
+- **ministryofjustice/hmpps-alerts-api** — 1★  _(llm 0.95: Real deployed UK government HMPPS alerts API service)_
+- **ministryofjustice/hmpps-challenge-support-intervention-plan-api** — 1★
+- **ministryofjustice/hmpps-health-and-medication-api** — 1★
+- **ministryofjustice/hmpps-incident-reporting-api** — 1★
+- **ministryofjustice/hmpps-non-associations-api** — 1★
+- **ministryofjustice/hmpps-prisoner-search** — 1★  _(llm 0.95: Real deployed prisoner search service via OpenSearch)_
+- **navikt/veilarboppfolging** — 1★  _(llm 0.93: Norwegian employment follow-up service publishing Kafka topics)_
+- **openwop/openwop** — 1★
+- **prajwalaher33/feeshr** — 1★
+- **rlarin/it-crowd-pixel-agents** — 1★
+- **solace-cto-labs/platform-api** — 1★
+- **tornado80/collaborative-whiteboard** — 1★
+- **underpass-ai/underpass-runtime** — 1★
+- **wirenboard/wb-diag-collect** — 1★  _(llm 0.88: Deployable IoT diagnostics collector with MQTT RPC API)_
+- **wirenboard/wb-mqtt-confed** — 1★
+- **wirenboard/wb-mqtt-db** — 1★  _(llm 0.9: Deployable MQTT channel data logger service)_
+- **wohnheim/stueble** — 1★
+- **21MokseM12/DevPulse** — 0★
+- **244Walyson/GWApp** — 0★  _(llm 0.65: Real Kanban/chat/notification platform with deployed base URL)_
+- **5G-PreCiSe/edge-to-cloud-file-uploader** — 0★
+- **Aidin1998/finalex** — 0★
+- **AlexChiquito/SAP-Maintenance-order-adaptor** — 0★  _(llm 0.9: Deployable Go service bridging Digital Twin and SAP PM)_
+- **Andersonfrfilho/backend-websocket** — 0★  _(llm 0.68: Real backend websocket service with Docker and test setup)_
+- **Berthje/envirosense-deno-server** — 0★  _(llm 0.88: Real IoT API managing buildings, rooms, and devices)_
+- **Binit-Dhakal/Saarathi** — 0★
+- **BrentIO/FireFly-Client** — 0★  _(llm 0.75: Real client application with dedicated documentation site)_
+- **BrentIO/FireFly-Controller** — 0★  _(llm 0.82: Real deployable IoT software-defined lighting controller)_
+- **Brico87/seed-kafka** — 0★
+- **CALLlA-74/bauman-poker** — 0★
+- **ChargeAndTrack/backend-spe** — 0★
+- **Cirripide/local-rag-for-documents-be** — 0★
+- **DEFRA/fcp-fdm** — 0★
+- **DEFRA/fcp-sfd-comms** — 0★
+- **DEFRA/fcp-sfd-crm** — 0★
+- **DEFRA/fcp-sfd-object-processor** — 0★
+- **DEFRA/ffc-doc-statement-constructor** — 0★
+- **DEFRA/ffc-doc-statement-data** — 0★
+- **DEFRA/ffc-doc-statement-publisher** — 0★
+- **DEFRA/ffc-pay-data-hub** — 0★  _(llm 0.9: Real UK government payment data hub service, containerised deployment)_
+- **DEFRA/ffc-pay-enrichment** — 0★
+- **Deutsche-FayTech-Korea/bridge_socket_server** — 0★
+- **DevashishBoini/attendanceSystem** — 0★
+- **Devathon-2024-team5/Preguntonic-backend** — 0★
+- **EcoHub-AG/Api-Specs** — 0★
+- **ErenAri/PulseStream--Real-Time-Event-Processing-Fabric** — 0★
+- **FrankSpooren/HolidaiButler** — 0★
+- **GabrielAderaldo/Merma_a_musica** — 0★  _(llm 0.78: Real deployable multiplayer online music quiz app)_
+- **GitEngHar/pointservice** — 0★
+- **Gradient-DS/AGORA** — 0★
+- **GregTag/TheSpreadGame** — 0★
+- **HexRohit/cardano** — 0★  _(llm 0.8: Ogmios: deployable WebSocket bridge service for Cardano node)_
+- **IATI/iati-message-queue-service** — 0★
+- **Insightpulseai/agents** — 0★
+- **Instaconct/instaconct-api** — 0★  _(llm 0.88: Real NestJS customer support chat backend with WebSocket)_
+- **Integration-Project-2026-Groep-2/Planning** — 0★
+- **Kambolo/Picksy** — 0★
+- **KempDewulf/envirosense-deno-server** — 0★  _(llm 0.87: Deployable Deno API managing IoT buildings, rooms, devices)_
+- **KevinShabanaj386/SmartGridAnalytics** — 0★  _(llm 0.85: Microservices platform for smart energy grid data analytics)_
+- **LaurenCattoor/st-microservice-ticketing** — 0★
+- **LeonidasGarcia/puchamon** — 0★
+- **LouisSappey/tp-nest-web-socket** — 0★
+- **Lulexs/iots-1** — 0★
+- **MALIEV-Co-Ltd/Maliev.MessagingContracts** — 0★
+- **Maksim-yo/chat** — 0★  _(llm 0.82: Deployable C++ multi-user chat; AsyncAPI used for its docs)_
+- **Malmo-Skyttegille-Pistolsektionen/rotation_target_backend_resources** — 0★
+- **ManuMarcos/mind-battle-backend** — 0★
+- **MathTrail/contracts** — 0★
+- **MaximilianWalker/HexRelay** — 0★
+- **NHSDigital/nhs-notify-supplier-config** — 0★  _(llm 0.8: Real NHS Notify service with deployable event schema code)_
+- **ODS-IS-UASL/asset** — 0★  _(llm 0.88: Production drone-route REST API managing real resources)_
+- **ONSdigital/dp-search-data-extractor** — 0★
+- **Owen-Richards/ai-nutritionist** — 0★
+- **Pinit-Scheduler/pinit-auth** — 0★  _(llm 0.85: Real auth microservice in a bounded-context architecture)_
+- **Pinit-Scheduler/pinit-notification** — 0★
+- **PriyanArora/Qeue** — 0★
+- **Quiago/doble9** — 0★
+- **RafaelAlmeida00/Plant-Simulador** — 0★  _(llm 0.65: Deployable industrial plant simulation and monitoring app)_
+- **RafaelAlmeida00/Simulador-UI** — 0★  _(llm 0.63: React frontend for the plant simulation platform)_
+- **Remake1/GrokOA** — 0★
+- **RodolfoFigueroa/lyra** — 0★
+- **SRinatR/RD** — 0★
+- **SchlexanderOlz/MatchMakerHub** — 0★
+- **Souvikns/greet-bot** — 0★
+- **StableCoinTF/StableCoinBC_Adapter_Docs** — 0★
+- **StepanNazar/city-report-ai-assistance-service** — 0★
+- **Syed1012/kesselops** — 0★
+- **Tafseerhussain/zillabase_portal** — 0★  _(llm 0.62: Admin portal UI for Zillabase product)_
+- **Tanh1603/auction-hub** — 0★
+- **Thomas-More-Digital-Innovation/2526-DI-004-GoStrategy** — 0★
+- **TristanDeLil/ms-microservice-ticketing** — 0★
+- **V-ivek/workflow-engine** — 0★
+- **VistA-Evolved/vista-evolved-platform** — 0★
+- **Xen0Xys/N2I-2024-API** — 0★
+- **Yeusepe/cdngine** — 0★
+- **ZuzannaTabisz/snp-app** — 0★
+- **ZuzannaTabisz/snpapptests** — 0★
+- **acharyaPawan/ecommerce-platform** — 0★
+- **adreno255/nurtura-backend** — 0★
+- **aequitas-aod/aequitas-backend** — 0★
+- **aescanero/dago** — 0★
+- **ahadify/VDL-gg** — 0★
+- **ai-digital-architect/asyncapi_discovery** — 0★
+- **ak125/nestjs-remix-monorepo** — 0★
+- **almashooq1/alawael-erp** — 0★
+- **aniccname/Q-Game** — 0★
+- **apakhbari/backstage** — 0★
+- **bishoy-alhanna/frightflow** — 0★
+- **briossant/BotAmoungUs** — 0★
+- **bru-oliveirax/bark2d2-dog-feeder** — 0★  _(llm 0.78: Real deployable IoT dog-feeder with real-time mobile monitoring)_
+- **calvinlee999/AI-Platform-for-FinTech-Evolution** — 0★
+- **capitanx9/llm-portrait** — 0★
+- **codeboltai/codeboltjs** — 0★
+- **d0u6ur45u/reminder** — 0★
+- **daniellmorris/EnvarynAI** — 0★
+- **davidtgillard/fits** — 0★
+- **depsilon/shardloom** — 0★
+- **ducbrick/real-time-messaging-api** — 0★
+- **eda-ecommerce/shoppingBasket-service** — 0★  _(llm 0.88: E-commerce shopping basket microservice in EDA system)_
+- **ericfitz/tmi** — 0★
+- **facundo1220/asyncapi-eda-ecommerce** — 0★
+- **filipepacheco/the-jam-app-frontend** — 0★
+- **fraunhoferfokus/dredger-todos** — 0★
+- **gdg-garage/garage-trip-chores** — 0★  _(llm 0.88: Production task manager with Discord, REST and WebSocket APIs)_
+- **gokerDEV/node-chat-server** — 0★
+- **gopal45656/everest-core-release** — 0★  _(llm 0.93: EVerest open-source EV charge controller, production software)_
+- **han243786/Quantpilot** — 0★  _(llm 0.72: Standalone quantitative trading desktop application)_
+- **hassanm0301/plasma-bridge** — 0★
+- **herostrat/arcturus** — 0★  _(llm 0.75: Alpha tileserver product for SignalK marine data protocol)_
+- **hungvo2010/free-note-service** — 0★
+- **itamm15/sync-async-docs** — 0★
+- **jamesenki/vehicle-to-cloud-communications-architecture** — 0★
+- **jardelva96/Orqupay** — 0★
+- **jhamill34/disney-gen-ai-takehome** — 0★
+- **jordancrombie/bsim** — 0★
+- **joserprieto/practice-desk** — 0★
+- **justaksi7/b2b-sap-payment-bridge** — 0★  _(llm 0.62: Deployable SAP B2B payment bridge service architecture)_
+- **kardasz/skipper-club-android** — 0★
+- **kaucrow/mqtt-rest-bridge** — 0★
+- **kelnishi/SatMouse** — 0★
+- **kinoh/Tsuki** — 0★
+- **lafette21/smart-gardening** — 0★  _(llm 0.85: IoT smart gardening system with asyncapi.yaml for its API)_
+- **latamteks-cmyk/SmartEdify_app** — 0★
+- **leynos/wildside** — 0★
+- **lgonzalezrouco/sensareal-backend** — 0★
+- **loulou123546/kenshiata-shared** — 0★
+- **makeevolution/SimplePizzaWinkel** — 0★
+- **manav-1/expense-ai-be** — 0★
+- **maxime-aube/ollama** — 0★
+- **maximilianoPizarro/platform-hub-spoke-config** — 0★
+- **miltonabdon/ecommerce-scalable-platform** — 0★
+- **ministryofjustice/hmpps-external-movements-api** — 0★
+- **ministryofjustice/hmpps-restricted-patients-api** — 0★
+- **mjones3/interface-exception-collector-service** — 0★
+- **mumia/wallet-accountant** — 0★  _(llm 0.72: Deployable personal finance/accounting application)_
+- **murithigeo/ogc-edr-api** — 0★
+- **myrobotaxi/telemetry** — 0★
+- **nandorsilva/eda-fia-th** — 0★
+- **navikt/ao-oppfolgingskontor** — 0★  _(llm 0.9: Norwegian NAV government service with Kafka event API)_
+- **navikt/dp-soknad-orkestrator** — 0★  _(llm 0.92: Dagpenger application orchestrator consuming Kafka topics)_
+- **ngscheurich/elixirconf-eu-2024** — 0★
+- **nguyenvinhhuy/microservice-platform** — 0★
+- **nicolas-codemate/esp32-pixelcast** — 0★
+- **nikescar/dure** — 0★
+- **nitu01019/weelobackend** — 0★
+- **ocampana-videotec/onvif-cloud** — 0★
+- **omnai-project/OmnAIScope_DataServer_API_Doc** — 0★
+- **pagopa/pn-paper-tracker** — 0★  _(llm 0.95: Italian government microservice tracking paper shipments in SEND)_
+- **paranoideed/webster** — 0★
+- **position-pal/location-service** — 0★
+- **pseudotop/maekon-client** — 0★
+- **pt9912/geodata-native-suite** — 0★
+- **qualtt/restful-slice** — 0★
+- **remidosol/real-time-trade-api** — 0★
+- **romdj/tempsdarret.studio** — 0★
+- **ross2p/mindlet-notification** — 0★
+- **ross2p/mindlet-payment** — 0★
+- **ross2p/mindlet-subscription** — 0★
+- **shapeitapp/shapeit-github-app** — 0★
+- **specmatic/specmatic-arazzo-openapi-asyncapi-sample** — 0★
+- **stardew-valley-dedicated-server/web** — 0★
+- **suwa-sh/lineage-to-graph** — 0★  _(llm 0.65: Deployable data lineage visualization tool)_
+- **takeruun/ws-ts-gen** — 0★
+- **thomascarter613/aic-smb-copilot-codebase** — 0★
+- **ugaemi/gyeongdohalsaram-server** — 0★
+- **underpass-ai/underpass-choreographer** — 0★
+- **vasudevgrg/stock_exchange** — 0★  _(llm 0.8: Stock exchange backend with real trading routes and websockets)_
+- **vondacho/my-api-portal** — 0★  _(llm 0.72: Deployable API developer portal with catalog and mocking)_
+- **webitel/im-delivery-service** — 0★
+- **wirenboard/wb-mqtt-logs** — 0★  _(llm 0.88: Deployable service exposing journald logs over MQTT)_
+- **xingyug/service2mcp** — 0★
+- **yethan4/where-is-my-dog** — 0★
+- **yousuf7474/meerkat** — 0★
+- **yukihito-jokyu/postman-mcp-server** — 0★
+- **yuvraj-chouhan-dev/ready-now-server** — 0★
+- **zimoch84/HaggisProject** — 0★
+- **znsio/specmatic-async-order-api-kotlin** — 0★
+
+## tooling/library (225)
+
+- **scalar/scalar** — 15204★
+- **openagents-org/openagents** — 3737★
+- **fern-api/fern** — 3654★
+- **Redocly/redocly-cli** — 1464★
+- **asyncapi/generator** — 1059★
+- **openfoodfacts/openfoodfacts-server** — 1047★
+- **Sovereign-Labs/sovereign-sdk** — 476★
+- **asyncapi/modelina** — 436★
+- **springwolf/springwolf-core** — 343★
+- **Lap-Platform/LAP** — 337★
+- **CardanoSolutions/ogmios** — 327★
+- **asyncapi/cli** — 267★
+- **flamewow/nestjs-asyncapi** — 233★
+- **EVerest/EVerest** — 207★
+- **asyncapi/studio** — 205★
+- **bian-official/public** — 194★
+- **lerenn/asyncapi-codegen** — 157★
+- **huynguyengl99/chanx** — 149★
+- **ballerina-platform/asyncapi-triggers** — 103★  _(llm 0.88: Generated Ballerina trigger code produced by AsyncAPI toolchain)_
+- **Goldziher/spikard** — 101★
+- **swagger-api/apidom** — 99★
+- **asyncapi/html-template** — 90★
+- **asyncapi/jasyncapi** — 79★
+- **bump-sh/cli** — 69★
+- **sngular/scs-multiapi-plugin** — 61★
+- **asyncapi/vs-asyncapi-preview** — 60★
+- **ZenWave360/zenwave-sdk** — 56★
+- **marle3003/mokapi** — 56★
+- **WaleedAshraf/asyncapi-validator** — 51★
+- **asyncapi/nodejs-template** — 47★
+- **eventum-generator/eventum** — 44★
+- **asyncapi/markdown-template** — 36★
+- **the-codegen-project/cli** — 34★
+- **asyncapi/avro-schema-parser** — 33★
+- **asyncapi/bundler** — 33★
+- **SchwarzIT/api-linter-rules** — 29★
+- **asyncapi/diff** — 29★
+- **udamir/api-ref-bundler** — 26★
+- **G-USI/asyncapi-python** — 24★
+- **asyncapi/converter-js** — 24★
+- **ZenWave360/json-schema-ref-parser-jvm** — 18★
+- **asyncapi/openapi-schema-parser** — 18★
+- **jacekzwpl/docueye** — 18★
+- **daler-rahimov/sio-asyncapi** — 17★
+- **asyncapi/jasyncapi-idea-plugin** — 16★
+- **asyncapi/java-template** — 14★
+- **yojo-generator/generator** — 14★
+- **LarsArtmann/typespec-asyncapi** — 13★  _(llm 0.99: TypeSpec emitter that generates AsyncAPI 3.0 specifications)_
+- **asyncapi/optimizer** — 12★
+- **quarkiverse/quarkus-asyncapi** — 12★
+- **aml-org/amf** — 11★
+- **asyncapi/protobuf-schema-parser** — 11★
+- **microcks/microcks-spectral-ruleset** — 11★
+- **holydocs/messageflow** — 10★
+- **allofmeng/streamline_project** — 9★
+- **openxapi/openxapi** — 9★
+- **Caldis/frameworks** — 8★
+- **pactflow/openapi-pact-comparator** — 8★
+- **oracle-samples/websocket-client-template** — 7★
+- **xraph/forge** — 7★
+- **fredabila/oahl** — 6★
+- **EDALearn/EDA-TransactionalOutbox-Modulith-JPA** — 5★
+- **Grinseteddy/DomainDrivenApiDesign** — 5★
+- **SolaceLabs/solace-tools-typescript** — 5★
+- **evryfs/asyncapi-generator** — 5★
+- **insspb/asyncapi3** — 5★
+- **DigKick/DigKick** — 4★
+- **Elhebert/asyncapi-validation** — 4★
+- **derberg/python-mqtt-client-template** — 4★
+- **lg-labs/blank-service** — 4★
+- **maxkrv/uchat** — 4★
+- **openpx-trade/openpx** — 4★
+- **David-Parry/server-agents** — 3★
+- **NHSDigital/nhs-notify-supplier-api** — 3★
+- **WaYdotNET/zen-generator** — 3★
+- **apiaddicts/sonar-asyncapi** — 3★
+- **bitsy-ai/printnanny-webapp** — 3★
+- **hkirat/asyncapi-fork** — 3★
+- **ir-kit/ir-kit** — 3★
+- **kombifyio/SpeechKit** — 3★
+- **meteatamel/asyncapi-basics** — 3★
+- **ministryofjustice/hmpps-accredited-programmes-manage-and-deliver-api** — 3★
+- **solace-cto-labs/solace-axway-agent** — 3★  _(llm 0.95: Agent that provisions AsyncAPI specs into Solace brokers)_
+- **Benzinga/benzinga-docs** — 2★
+- **TemplateMechanics/tilt** — 2★
+- **acidtango/ollert-backend** — 2★
+- **amer8/apibconv** — 2★
+- **apiaddicts/sonarasyncapi-rules** — 2★  _(llm 0.97: SonarQube rules to analyze and lint AsyncAPI documents)_
+- **bakabala27-svg/NAAS-Agentic-Core** — 2★
+- **bsv-blockchain/ts-stack** — 2★
+- **ekidenfi/ekiden-docs** — 2★
+- **ingka-group/asyncapi-payload-validator** — 2★
+- **ministryofjustice/hmpps-find-and-refer-an-intervention-service** — 2★
+- **neosun100/VibeVoice** — 2★
+- **ripple/rippled-api-spec** — 2★
+- **siom79/jasyncapicmp** — 2★
+- **solacecommunity/spring-cloud-stream-request-reply** — 2★  _(llm 0.88: Spring Boot starter library for messaging request-reply pattern)_
+- **AcidicSoil/DSPyTeach** — 1★
+- **AcidicSoil/lms-llmsTxt** — 1★
+- **AndreaGiulianelli/documentation-ghp-action** — 1★
+- **Jacksonspencerd/tcss559-project** — 1★
+- **JonathanGrocott/A2A-MQTT** — 1★
+- **NeatGuyCoding/spring-io** — 1★
+- **RossBugginsNHS/notify-asyncapi** — 1★
+- **SolaceLabs/sol-ep-asyncapi-importer** — 1★  _(llm 0.97: Imports AsyncAPI specs into Solace Event Portal)_
+- **Souvikns/asyncapi-parser** — 1★
+- **WSOL12/html-template** — 1★
+- **ajevans99/swift-asyncapi** — 1★
+- **certifieddata/certifieddata-agent-commerce-public** — 1★
+- **cidverse/repoanalyzer** — 1★
+- **dcSpark/sovereign-sdk** — 1★
+- **ff-fab/cosalette** — 1★
+- **ff-fab/cosalette-apps** — 1★
+- **finlayjn/asyncapi-swift-ws-template** — 1★
+- **forepath/agenstra** — 1★
+- **giannisgkountras/web-dsl** — 1★  _(llm 0.85: DSL code generator for full-stack apps with broker integration)_
+- **gocobalt/mintlify-docs** — 1★
+- **hahnbeelee/docs-michal** — 1★
+- **kdwras/node-red-async-api-plugin** — 1★
+- **paddypawprints/VLMChat** — 1★
+- **s-menne-inovex/async_api_pages** — 1★
+- **simliai/docs** — 1★
+- **slng-ai/sdks** — 1★
+- **solace-cto-labs/solace-amplify-discovery-agent** — 1★
+- **4g3nt4333/Ascy-website** — 0★
+- **AbhishekCS3459/URL-Shortner-using-GRPC** — 0★
+- **AlexanderFromEarth/node-apifactory** — 0★
+- **AlexandrePh/flywheel-starter-kit** — 0★
+- **BidnessForB/oas-converter-lambda** — 0★
+- **Bikxs/Skafu** — 0★
+- **DEFRA/ffc-doc-statement-generator** — 0★
+- **E2RD0/digital-resources-transcription-service** — 0★
+- **Forsakringskassan/gradle-conventions** — 0★  _(llm 0.72: Shared Gradle build convention plugins library)_
+- **FreeTAKTeam/Reticulum_AsyncAPI_rs** — 0★
+- **GopiR17/backstage-prod** — 0★
+- **GreenRover/async-api-validator** — 0★
+- **Hochfrequenz/verzeichnisdienst-python-models** — 0★
+- **IMAGINARY/track-n-truck** — 0★
+- **Itshalffull/Concept-Oriented-Programming-Framework** — 0★
+- **JannikAlx/kafkaProducer** — 0★
+- **KrushilProlink/studio-new** — 0★
+- **Matusko/flea** — 0★
+- **MrS1lentcz/protobridge** — 0★
+- **Netcracker/qubership-apihub-api-processor** — 0★
+- **OKArc/backstage** — 0★
+- **OpenDonationAssistant/docs** — 0★
+- **Opzet/EFDesignerExamples** — 0★
+- **Pakisan/jasyncapi-idea-plugin-demo** — 0★
+- **Pinit-Scheduler/pinit-task** — 0★
+- **PolyAI-LDN/polyai-mintlify-doc** — 0★
+- **RafaelAlmeida00/Plant-Simulador-Huggy** — 0★
+- **TahaShahid203/async-api-issue** — 0★  _(llm 0.88: Fork/issue repo of AsyncAPI Studio tooling)_
+- **Tomeku-Development/AgentMesh** — 0★
+- **TomzBench/jsmn-tools** — 0★
+- **UTXOnly/oddrip** — 0★
+- **YOU54F/pact-asyncapi-comparator** — 0★
+- **Zenika/kafka-schema-registry-publish** — 0★
+- **acvigue/casa-bonita** — 0★
+- **aperim/production-city-web** — 0★
+- **arc-framework/arc-platform** — 0★
+- **bmf-san/go-bitflyer-api-client** — 0★
+- **c-plus-plus-equals-c-plus-one/sovereign-sdk-wip** — 0★
+- **charlie-haley/asyncapi-go** — 0★
+- **chem-gl/chemistry-apps** — 0★
+- **cipher982/longhouse** — 0★
+- **codemonstersteam/pinout-asyncapi** — 0★
+- **daksh0702/first-backstage-app** — 0★
+- **dalsgaard/account-service** — 0★
+- **dalsgaard/asyncapi-template** — 0★
+- **davidB/sandbox_cdevents_spec** — 0★
+- **deepgram/starter-contracts** — 0★
+- **devone-demo/oracle-websocket-client-template** — 0★
+- **dimonoff/asyncapi-codegen** — 0★
+- **dipaksodani/async-gen** — 0★
+- **donbagger/documentation** — 0★
+- **encypher-studio/newsware-docs** — 0★
+- **epieczko/betty** — 0★
+- **exploding-CATs-42/ft_transcendence** — 0★
+- **fmvilas/meiac** — 0★  _(llm 0.92: IaC tool that reads AsyncAPI files to generate Terraform configs)_
+- **fraunhoferfokus/dredger** — 0★
+- **fusion-powered-io/api-generator** — 0★
+- **giannisgkountras/ShelobDSL** — 0★  _(llm 0.85: DSL that generates full-stack apps from message broker specs)_
+- **gonewton/newton** — 0★
+- **hotcode-dev/zerohub** — 0★
+- **interruping/upbeat** — 0★
+- **jason931225/oyatie** — 0★
+- **jqassistant-plugin/jqassistant-asyncapi-plugin** — 0★
+- **jstoiko/amf** — 0★
+- **juliangracin/community-docs** — 0★
+- **khulnasoft/RapidDocs** — 0★
+- **klurvio/sukko** — 0★
+- **knowmadmood-poc-rhdevhub/backstage** — 0★
+- **l3wi/docs** — 0★
+- **l3wi/fumadocs-async** — 0★
+- **laat/asyncapi-generator-repro** — 0★
+- **linkkotech/scalar** — 0★
+- **luistrigueiros/simple-asyncapi-codegen** — 0★
+- **mayankshouche/docs** — 0★
+- **mayankshouche/docs-ally** — 0★
+- **mmmnt/mmmnt** — 0★
+- **mnemitz/webpack-asyncapi-schema-loader** — 0★  _(llm 0.97: Webpack loader explicitly for parsing AsyncAPI documents)_
+- **mshogin/archctl** — 0★
+- **mtturner57/AsyncApiGenerator** — 0★  _(llm 0.93: Generates models or YAML from AsyncAPI files)_
+- **newstack-cloud/celerity** — 0★
+- **opencaps/mqttcomms** — 0★
+- **pascal-audio/px-api** — 0★
+- **postel-sh/postel** — 0★
+- **postman-cs/postman-aws-spec-discovery-action** — 0★
+- **ppzxc/relaybox** — 0★
+- **pv-udpv/dual-publish-platform** — 0★
+- **ravecat/asyncapi** — 0★
+- **rbaxim/MOP** — 0★
+- **roldaiateam/apis-especifications** — 0★
+- **samovers/OFARM** — 0★
+- **saujasn/accelerator** — 0★
+- **siom79/jopenapicmp** — 0★
+- **smoya/asyncapi-parser-example** — 0★
+- **specmatic/aws-lambda-kafka-with-localstack** — 0★
+- **stardew-valley-dedicated-server/asyncapi-generator-template-ts** — 0★
+- **tanagraspace/ccsds-mo-to-asyncapi** — 0★
+- **thealmikey/zilla-kt** — 0★  _(llm 0.9: Zilla is a multi-protocol proxy for event-driven messaging)_
+- **viktorSrk/quartogether** — 0★
+- **vivekjava/Spring-Boot-Rest** — 0★
+- **worried-networking/uptrakit** — 0★
+- **yaccob/teds** — 0★
+
+## demo/fixture (221)
+
+- **dotnet/maui-labs** — 166★
+- **picodotdev/blog-ejemplos** — 90★
+- **PacktPublishing/Software-Architecture-with-Cpp-2E** — 68★
+- **qoretechnologies/qore** — 63★
+- **DataDog/serverless-sample-app** — 60★
+- **WebFuzzing/Dataset** — 50★
+- **agiopen-org/lux-desktop** — 48★
+- **icanbwell/fhir-server** — 47★
+- **NawafSwe/go-service-starter-kit** — 42★
+- **salaboy/pizza** — 34★
+- **inputlayer/inputlayer** — 26★
+- **microcks/microcks.io** — 24★
+- **ldynia/learning-api-styles** — 22★  _(llm 0.95: Explicitly book companion code with examples and videos)_
+- **tewhatuora/api-standards** — 13★
+- **bpbpublications/Spring-Boot-3-API-Mastery** — 12★
+- **ArieGoldkin/ai-agent-hub** — 10★
+- **aklivity/zilla-demos** — 10★
+- **Apress/Crafting-Great-APIs-with-Domain-Driven-Design** — 9★  _(llm 0.99: Companion code for published Apress book)_
+- **Joaopdiasventura/Modularis** — 9★
+- **allex-mitin/api-doc-conf** — 9★
+- **DataDog/stickerlandia** — 7★
+- **it-incubator/nestjs** — 7★  _(llm 0.75: NestJS examples repository)_
+- **specmatic/specmatic-order-contracts** — 6★
+- **ARCircle/Kojirer** — 5★
+- **Harsh4902/kubecon-eu-2026-tutorials** — 5★
+- **amosproj/amos2025ws04-robot-visual-perception** — 5★  _(llm 0.72: University AMOS course project (WS2025), not production software)_
+- **bicatu/event-catalog** — 5★
+- **salaboy/spring-io-2026-workshop** — 5★
+- **EDALearn/EDA-Playground-Online-Food-Delivery** — 4★
+- **eduardofesilva/async-eda-otel-workshop** — 4★
+- **EDALearn/EDA-Modulith-Playground** — 3★
+- **Harmelodic/init-microservice** — 3★
+- **Redocly/apidocs-starter** — 3★
+- **ZenWave360/zenwave-playground** — 3★
+- **darken33/design-first-allinone** — 3★  _(llm 0.97: Conference talk presentation companion repo for BordeauxJUG)_
+- **jimfil/raspberryPiProject** — 3★
+- **nemirlev/async-api-example** — 3★
+- **AceTheCreator/eda-workshops** — 2★  _(llm 0.98: Explicitly described as AsyncAPI EDA workshops source code)_
+- **AlbertKellner/ClaudeDotNetPlayground** — 2★
+- **Grinseteddy/MasteringDdd** — 2★  _(llm 0.93: Book companion code for 'Mastering Domain Driven Design' manuscript)_
+- **RubizZ/flAIghts** — 2★  _(llm 0.7: Portfolio/student flight-planner project with AI pun name)_
+- **XaaXaaX/eventcatalog-automation** — 2★
+- **ZevMM/ColumbiaTradingCompetition** — 2★  _(llm 0.85: University trading competition simulator project)_
+- **bpbpublications/DDD-Toolbox** — 2★  _(llm 0.87: Book companion code from BPB Publications)_
+- **factory-x-contributions/async-aas-helm** — 2★
+- **kakao-tech-campus-3rd-step3/Team8_BE** — 2★  _(llm 0.88: Kakao Tech Campus bootcamp team project)_
+- **kanekoshoyu/asyncapi-rust-ws-template** — 2★
+- **lg-labs/food-ordering-system** — 2★  _(llm 0.88: Architecture showcase: Hex Arch, DDD, SAGA, Outbox patterns)_
+- **manuschillerdev/esphome-elero** — 2★
+- **ministryofjustice/hmpps-locations-inside-prison-api** — 2★
+- **nekofar/warpcast** — 2★
+- **openshift-hyperfleet/architecture** — 2★
+- **ravecat/moda** — 2★
+- **salaboy/spring-ai-agentic-webinar** — 2★
+- **specmatic/studio-demo** — 2★
+- **yoshioterada/Spec-Driven-Dev** — 2★
+- **AndreiBacs/EchipaMea** — 1★
+- **CruelAddict/ori** — 1★
+- **DasOxymoron/takeaway-challenge** — 1★  _(llm 0.9: Coding challenge exercise, not a production service)_
+- **DrBlury/Event-Driven-Service-Example** — 1★
+- **FilippoPracucci/sap-assignment-03** — 1★
+- **Kamuyin/schachroboter** — 1★  _(llm 0.9: Seminar/school project (Mechatronics chess robot))_
+- **Karfev/Product-base-Spec-Kit** — 1★  _(llm 0.78: Template and boilerplate kit for B2B SaaS spec artifacts)_
+- **XaaXaaX/aws-cloudevents-eda** — 1★
+- **adimail/rocket-landing-rl** — 1★
+- **alexandre-touret/api-first-workshop** — 1★
+- **allex-mitin/asyncapi-highload-conf** — 1★
+- **andreacomo/apicurio-registry-poc** — 1★
+- **codebricks-tech/taskbricks** — 1★
+- **codemonstersteam/mq-rest-sync-adapter** — 1★  _(llm 0.82: Explicit example refactoring from a tutorial article series)_
+- **eclipse-uprotocol/symphony-target-example-rust** — 1★
+- **higorsnt/ansible-workshop** — 1★
+- **jimfil/smartWasteBinProject** — 1★
+- **manosmax/Pie** — 1★
+- **manosmax/Smart-Waste-Bin** — 1★
+- **monghithub/serialplab** — 1★
+- **paga16-hash/anonymous-shard** — 1★  _(llm 0.9: Master thesis proof-of-concept P2P anonymity system)_
+- **portus84/smartorder-ms** — 1★
+- **raphaeldelio/springwolf-demo-spring-io-2024** — 1★
+- **sun475300-sudo/Swarm-control-in-sc2bot** — 1★  _(llm 0.72: StarCraft 2 bot hobby/demo project)_
+- **tanishy7777/Joined_Words** — 1★
+- **up1/workshop-js-testing-202507** — 1★
+- **0xFivis/agentic-mesh-arch-kit** — 0★
+- **2025tf20/KTB-LoadTest-team-20** — 0★  _(llm 0.72: Bootcamp team project (KTB = Kakao Tech Bootcamp), numbered team)_
+- **244Walyson/Strada** — 0★
+- **AdanHdzF/event-flow** — 0★  _(llm 0.95: Bootcamp distributed systems course project)_
+- **Amazon-Cloud-Club-for-KWU/3th-chat-api-demo** — 0★
+- **AndriyKalashnykov/dapr-dotnet-zero-to-hero-event-driven-architecture** — 0★
+- **ArneVcrs/howestprime-microservice-movies** — 0★
+- **ArneVcrs/howestprime-microservice-ticketing** — 0★
+- **BenediktusG/task-manager** — 0★
+- **Bombatomica64/42-matcha** — 0★
+- **CJovan02/iots** — 0★
+- **DLShomies/FluffyPlushiesWebShop** — 0★  _(llm 0.92: KEA 2025 school project webshop, not production)_
+- **DafeCpp/product_dev_course** — 0★
+- **Eclipse-SDV-Hackathon-Chapter-Three/Den-Team** — 0★  _(llm 0.97: Hackathon team project, not production software)_
+- **Emiltzav/asyncapi-iot-examples** — 0★
+- **Forsakringskassan/rimfrost-service-oul-asyncapi** — 0★
+- **Forsakringskassan/template-asyncapi** — 0★
+- **Freundschaft-ist-Magie/M241_Team0** — 0★
+- **Hullow/Concord** — 0★  _(llm 0.97: 42 school curriculum ft_transcendence project, Discord-like app)_
+- **HyPolDev/Bot** — 0★
+- **Ihor-Mykytiuk/software-architecture** — 0★
+- **ImadSai/asyncAPI-POC** — 0★
+- **J0SAL/kafka-playground** — 0★
+- **Kuestenlogik/Bowire.Samples** — 0★
+- **Leandroyyy/async-api-example** — 0★
+- **LucasKonrath/arch-kata-mr-bill** — 0★
+- **Malcolmston/dta-final** — 0★
+- **MatiasNAmendola/real-time-risk-lab** — 0★
+- **Matse-DD/HowestPrime-microservice-movies** — 0★
+- **Matse-DD/HowestPrime-microservice-ticketing** — 0★
+- **MikeMDV/riden** — 0★  _(llm 0.82: Explicitly fictional boat-ride booking system)_
+- **Netcracker/qubership-apihub-test-service** — 0★
+- **ONSdigital/dp-search-data-importer** — 0★
+- **Or3nges/howestprime-microservice-movies** — 0★
+- **Or3nges/howestprime-microservice-ticketing** — 0★
+- **Ravip2006/Demo** — 0★
+- **ScrKiddie/AtoiTalkAPI** — 0★
+- **ShuVeriDa/distahilar-back** — 0★
+- **Souvikns/pokemon-trade-api** — 0★  _(llm 0.72: Pokemon trading socket.io API; hobby/demo project)_
+- **TykTechnologies/exp** — 0★
+- **Vellum-IO/keeper-api-contracts** — 0★
+- **WebSecDetectives/fluffy-plushies-webshop** — 0★
+- **a-grasso/master-thesis-public** — 0★  _(llm 0.75: Master thesis resources; academic not production)_
+- **ajgarciaparadigma/backstage-example** — 0★
+- **akash-mondal/mintlify-docs** — 0★
+- **aleksa1205/iots** — 0★
+- **ambihome-gmbh/asyncapi** — 0★
+- **andre-nk/bangkit-cloud-migration-tools** — 0★  _(llm 0.7: Bangkit student program project, monorepo of learning tools)_
+- **andreaseger/homelab-tools** — 0★
+- **arravo-co/hackathon-backend** — 0★
+- **artur-ciocanu/presentations** — 0★
+- **bjuvensjo/backstage-slask** — 0★  _(llm 0.85: Explicitly a test repository for Backstage discovery)_
+- **boyney123/my-eventcatalog** — 0★  _(llm 0.88: Explicitly testing EventCatalog CI/CD features, not production)_
+- **boyney123/starter-catalog** — 0★
+- **call-sofia/callsofia-webhooks-docs** — 0★
+- **chrislyl/apidocs-starter** — 0★
+- **christopherblaisdell/continuous-architecture-platform-poc** — 0★
+- **cjjohansen/eventcatalog-examples** — 0★
+- **clecioantao/platform-state-repo** — 0★
+- **daniellmorris/spechero** — 0★
+- **dataGriff/outcome-app-pattern** — 0★
+- **derchrischkya/k8s-async-api** — 0★  _(llm 0.92: Simple test project for AsyncAPI with RabbitMQ)_
+- **eduardotourinho/candlesticks-hexagonal-architecture** — 0★
+- **eoap/event-driven-with-argo** — 0★
+- **fern-api/docs-examples** — 0★
+- **fern-demo/postman-quickstart** — 0★
+- **fern-support/universal-shuttle-348791** — 0★
+- **frankkilcommins/arazzo-examples** — 0★
+- **gematik/zeta-testfachdienst** — 0★
+- **gpdeoli/revit-api** — 0★
+- **graviteeqa/testrepo** — 0★  _(llm 0.95: Explicitly a test import fixture for regression testing)_
+- **huynguyengl99/chanx-fastapi-tutorial** — 0★
+- **indiealexh/quarkus-json-rpc-ws-next-example** — 0★
+- **izertis/spring-boot-kotlin-playground** — 0★
+- **jamescarr/async-api-demo** — 0★
+- **jamescarr/jetstream-messaging** — 0★
+- **jhekasoft/e-backend** — 0★
+- **jijingkun-commits/fastapi** — 0★
+- **johnmarios/advanced-programming-techniques-lab** — 0★
+- **jonathan-prout/tic-tac-toe** — 0★
+- **jonathaneichenhofer/workshop-eric** — 0★
+- **juniorcmauricio/INF332_SOA** — 0★  _(llm 0.92: University course on SOA and web services)_
+- **justynroberts/emea-backstage-demo** — 0★
+- **juvi07/bs-templates** — 0★
+- **kakaoboot-19/19-load-test** — 0★  _(llm 0.9: Bootcamp load test project based on chat app)_
+- **kondoumh/asyncapi-study** — 0★
+- **ktb3-team5/ktb-BootcampChat** — 0★  _(llm 0.9: Kakao Tech Bootcamp chat application)_
+- **ktbloadtest-03/ktb-BootcampChat** — 0★  _(llm 0.9: Kakao Tech Bootcamp chat application fork)_
+- **livestorm/frontend-engineer-hiring-test** — 0★  _(llm 0.97: Technical hiring test, not production software)_
+- **lufyxz7/xpogo** — 0★
+- **makeevolution/messaging** — 0★  _(llm 0.9: Self-described personal experimentation on async systems)_
+- **marcopaga/config_api** — 0★  _(llm 0.65: 'Hacking with elixir' description signals personal exploration)_
+- **marle3003/mokapi-kafka-workflow** — 0★
+- **mattmeye/payara-6-ibm-queue** — 0★  _(llm 0.92: Integration example showing IBM MQ usage in Payara 6)_
+- **medmo/backstage-templates** — 0★
+- **mishasdk/mipt-ml-async** — 0★  _(llm 0.97: University course homework assignment (ДЗ 6))_
+- **mmussett/flogo-hello-world-event-driven** — 0★
+- **nashspence/pyspec** — 0★
+- **nba-amtgroup/4424rr-2** — 0★
+- **nezia1/missive-documentation** — 0★  _(llm 0.82: MkDocs site documenting a diploma thesis project)_
+- **niteesh-reddy91/cloudevents-kafka-demo** — 0★
+- **nivreddy14/event-mesh** — 0★
+- **noeliajimenezg/mokapi_issue** — 0★
+- **notnullptr-gh/architechture-sprint-3** — 0★  _(llm 0.88: Course architecture sprint with numbered task assignments)_
+- **nstsai/SAproject** — 0★  _(llm 0.87: Course project with C4, BPMN, OpenAPI documentation artifacts)_
+- **pingxin403/platform-console** — 0★
+- **pmdartus/mintlify-docs** — 0★
+- **pokerjocke70/cds-poc** — 0★
+- **pre-backstage/producer-repo-public** — 0★  _(llm 0.7: Validation/test fixture repo for catalog API entries)_
+- **quenbyako/asyncapi-example** — 0★
+- **rafaelgpimenta/go-base-project** — 0★
+- **rajeshrsinha/template** — 0★
+- **sanzhanggui/grandma_cook_agent** — 0★  _(llm 0.82: Hackathon PoC for voice-to-recipe-card agent pipeline)_
+- **sap-2025-2026/lab-activity-10** — 0★
+- **sarkr72/practice** — 0★
+- **sillygod/scaffold** — 0★
+- **socrateasehq/autoproctor-mintlify-docs** — 0★
+- **spbu-ds-practicum-2025/example-project** — 0★
+- **specmatic/enterprise-sample** — 0★
+- **specmatic/labs** — 0★
+- **specmatic/labs-contracts** — 0★
+- **specmatic/specmatic-async-sample** — 0★
+- **specmatic/specmatic-kafka-avro-sample** — 0★
+- **specmatic/specmatic-kafka-sample-asyncapi3** — 0★
+- **specmatic/specmatic-studio-playwright-ts-tests** — 0★
+- **stojkovic-a/IOT-Project-2** — 0★  _(llm 0.85: Student IoT school project with sensor and analytics containers)_
+- **stojkovic-a/IOT-project-3** — 0★  _(llm 0.78: Named 'IOT project 3', school-style instructions, dataset-driven demo)_
+- **taonaben/grupus-frontend** — 0★
+- **tassosgomes/poc-event-system** — 0★
+- **tenacious89/open_agent_hackathon** — 0★  _(llm 0.82: Hackathon AI agent project, not production service)_
+- **timnavigate/DAC** — 0★
+- **timonback/springwolf-demo** — 0★
+- **tomascejka/microcks.labs** — 0★
+- **up1/workshop-asyncapi-services-2025** — 0★
+- **up1/workshop-event-based-golang** — 0★
+- **vasilisalmpanis/ft_transcendence** — 0★  _(llm 0.95: ft_transcendence is a 42 school curriculum project)_
+- **yourbourse/trade-server-trading-view-js** — 0★
+- **zachariep/spring-petclinic-saga-refactor** — 0★
+- **zuevrs/yanote** — 0★
+
+## spec/docs (75)
+
+- **cloudevents/spec** — 5781★
+- **asyncapi/spec** — 5205★
+- **asyncapi/website** — 708★
+- **OAI/Arazzo-Specification** — 439★
+- **DocHubTeam/DocHub** — 375★
+- **RobinTail/zod-sockets** — 116★
+- **DeepLcom/openapi** — 92★
+- **asyncapi/spec-json-schemas** — 74★
+- **opengeospatial/ogcapi-environmental-data-retrieval** — 69★
+- **batterypass/BatteryPassDataModel** — 59★  _(llm 0.9: Data model specification based on DIN DKE standard, not runnable software)_
+- **intent-driven-dev/openspec-schemas** — 51★
+- **otto-de/api-guidelines** — 50★
+- **fern-api/docs-starter** — 39★
+- **christianrowlands/network-survey-messaging** — 34★  _(llm 0.88: Defines message schemas for wireless survey app communications)_
+- **Kong/spec-renderer** — 33★
+- **heikkilamarko/todo-app** — 20★
+- **pardeike/GABP** — 16★
+- **ByteBardOrg/AsyncAPI.NET** — 13★
+- **asyncapi/tck** — 12★
+- **bdragon300/go-asyncapi** — 11★
+- **DeepLcom/api-docs** — 9★
+- **asynq-io/pydantic-asyncapi** — 9★
+- **gematik/api-ehcl** — 9★
+- **microcks/microcks.github.io** — 8★
+- **flameboss/fb-api-doc** — 7★  _(llm 0.9: API documentation published at product domain, no runnable code)_
+- **fishaudio/docs** — 6★
+- **speechmatics/docs** — 5★
+- **gladiaio/docs** — 4★
+- **openfoodfacts/documentation** — 4★
+- **dghilardi/asyncapiv3** — 3★
+- **eHealthCardLink/Spezifikation** — 3★  _(llm 0.97: Repository named Spezifikation, publishes AsyncAPI docs site)_
+- **specmatic/docs.specmatic.io** — 3★
+- **will-break-it/wallet-architecture** — 3★  _(llm 0.8: Architecture/API design document for blockchain wallet API)_
+- **EDI-Energy/api-directory-service** — 2★  _(llm 0.8: German energy sector schema and API spec publication repository)_
+- **Reya-Labs/reya-api-specs** — 2★
+- **vsk-api/papi** — 2★  _(llm 0.88: Versioned API specification for eOSAGO insurance interface)_
+- **Echo-Chat-Systems/docs** — 1★
+- **InkbridgeNetworks/SubMan-API-schema** — 1★
+- **Rycen7822/ExAP** — 1★
+- **Wavix/wavix-openapi** — 1★
+- **babelforce/rtvbp-spec** — 1★
+- **ministryofjustice/curious-API** — 1★
+- **pagopa/pn-lab-docs** — 1★
+- **whitebit-exchange/docs** — 1★
+- **CEhresmann/Redocly-api-specificatons** — 0★  _(llm 0.85: Repository of OpenAPI/AsyncAPI specs with Redocly documentation)_
+- **CryptoSmartNow/bizmarket-docs** — 0★
+- **FAForever/faf-api-specs** — 0★
+- **Forsakringskassan/rimfrost-regel-rtf-manuell-asyncapi** — 0★  _(llm 0.93: AsyncAPI spec for Swedish insurance agency service)_
+- **KibbeWater/wfm-openapi** — 0★
+- **Koh0920/webapp_specs** — 0★
+- **Leandroyyy/async-api-translator** — 0★
+- **Scott-HW-OU/shw-616172** — 0★
+- **SwissDataScienceCenter/renku-schema** — 0★  _(llm 0.93: Central repo of message queue schemas and AsyncAPI specs)_
+- **ToweringDragoon/mintlify-docs** — 0★
+- **acdgbrasil/contracts** — 0★  _(llm 0.96: Central org API contracts repo with AsyncAPI v3 specs)_
+- **alliander-opensource/lsis-api-specs** — 0★
+- **barrynauta/simpl-repo-tryout** — 0★  _(llm 0.75: Documentation restructuring, navigable architectural blueprint only)_
+- **belgif/openapi-cloudevents** — 0★
+- **cedalo/documentation-staging** — 0★
+- **cedalo/streamsheets-documentation** — 0★
+- **coinpaprika/coinpaprika-docs** — 0★
+- **eclipse-canought/can-translator** — 0★
+- **eyw520/inspirited-docs** — 0★
+- **hongkongkiwi/yorked-docs** — 0★  _(llm 0.72: Documentation site for the Yoked dating app product)_
+- **jambonz/jambonz-fern-config** — 0★
+- **jrevillard/edulift** — 0★  _(llm 0.78: Documentation site with technical, API, and functional docs)_
+- **maciekpapiez/redocly-1** — 0★
+- **peguidotte/aegis-test-pubsub-interfaces** — 0★  _(llm 0.82: Single source of truth for inter-service interfaces and contracts)_
+- **qbem-repos/standards** — 0★  _(llm 0.92: Official API, webhook, and async standards playbook)_
+- **quub-fi/quub-exchange-docs** — 0★
+- **r--w/documentation** — 0★
+- **rock-hu/architecture-catalog** — 0★  _(llm 0.78: Architecture documentation catalog with domain models)_
+- **smallest-inc/smallest-ai-documentation** — 0★
+- **wirenboard/wb-device-manager** — 0★
+- **zikratski/LinguaConnect** — 0★  _(llm 0.92: Repo is documentation for a service, not the service itself)_
+
+## catalog (48)
+
+- **api-evangelist/api-pulse** — 1★
+- **api-evangelist/assemblyai** — 1★
+- **api-evangelist/deepl** — 1★
+- **api-evangelist/shodan** — 1★
+- **api-evangelist/ably** — 0★
+- **api-evangelist/amazon-api-gateway** — 0★
+- **api-evangelist/amazon-kinesis** — 0★
+- **api-evangelist/amazon-sqs** — 0★
+- **api-evangelist/amqp** — 0★
+- **api-evangelist/async-apis** — 0★
+- **api-evangelist/asyncapi** — 0★
+- **api-evangelist/athena-health** — 0★
+- **api-evangelist/backstage** — 0★
+- **api-evangelist/clickhouse** — 0★
+- **api-evangelist/coingecko** — 0★
+- **api-evangelist/confluence** — 0★
+- **api-evangelist/crewai-cloud** — 0★
+- **api-evangelist/docusign** — 0★
+- **api-evangelist/dynamodb** — 0★
+- **api-evangelist/eigenlayer** — 0★
+- **api-evangelist/fieldwire** — 0★
+- **api-evangelist/filevine** — 0★
+- **api-evangelist/interface-research** — 0★
+- **api-evangelist/intuit** — 0★
+- **api-evangelist/jito** — 0★
+- **api-evangelist/lever-co** — 0★
+- **api-evangelist/mercado-pago** — 0★
+- **api-evangelist/microsoft-outlook** — 0★
+- **api-evangelist/nats** — 0★
+- **api-evangelist/oddsjam** — 0★
+- **api-evangelist/olo** — 0★
+- **api-evangelist/phonely** — 0★
+- **api-evangelist/pinnacle** — 0★
+- **api-evangelist/plivo** — 0★
+- **api-evangelist/polygon** — 0★
+- **api-evangelist/pubnub** — 0★
+- **api-evangelist/regal-ai** — 0★
+- **api-evangelist/roku** — 0★
+- **api-evangelist/sendgrid** — 0★
+- **api-evangelist/sendle** — 0★
+- **api-evangelist/slack** — 0★
+- **api-evangelist/statsd** — 0★
+- **api-evangelist/tensor** — 0★
+- **api-evangelist/tripleseat** — 0★
+- **api-evangelist/webflux** — 0★
+- **api-evangelist/websockets** — 0★
+- **api-evangelist/zendesk** — 0★
+- **api-evangelist/zoom** — 0★
+
+## tangential (31)
+
+- **ancoleman/ai-design-components** — 371★
+- **aiskillstore/marketplace** — 350★
+- **yonatangross/orchestkit** — 183★
+- **AsiaOstrich/universal-dev-standards** — 69★
+- **ComeOnOliver/skillshub** — 47★
+- **geekatron/jerry** — 23★
+- **jmanhype/speckit** — 19★
+- **codex-k8s/kodex** — 13★  _(llm 0.75: AI coding-agent platform in Kubernetes, AsyncAPI incidental)_
+- **kubestellar/console-kb** — 9★  _(llm 0.82: AI mission knowledge base, not AsyncAPI user)_
+- **ammario/kalshi-docs** — 7★
+- **hongmaple0820/agent-academy** — 6★  _(llm 0.85: AI agent skills/knowledge base repo, not AsyncAPI user)_
+- **Grinseteddy/AiCollections** — 5★  _(llm 0.82: Collection of AI-generated specs, not genuine AsyncAPI user)_
+- **0xHoneyJar/loa-hounfour** — 4★
+- **IsmaelMartinez/repo-butler** — 3★  _(llm 0.82: AI agent that analyses repos; AsyncAPI likely incidental)_
+- **OptimalMatch/clode** — 3★
+- **Schreglmann/gameshow** — 2★  _(llm 0.82: Browser quiz game; no AsyncAPI connection visible)_
+- **Sejsel/ksplang-programs** — 2★  _(llm 0.9: AoC/WASM solutions in esoteric language; no AsyncAPI)_
+- **joserprieto/ai-skills** — 2★
+- **MRX1205/AIflow** — 1★
+- **MehdiMaachi/tp-xml-meteo** — 1★  _(llm 0.85: School XML practical exercise; AsyncAPI only incidental)_
+- **escrivivir-co/aleph-scriptorium** — 1★  _(llm 0.78: MCP/AI intellectual amplification stack, AsyncAPI incidental)_
+- **masermediagroup-stack/CursorSkills** — 1★
+- **Alamoalone/Project-of-Desertation** — 0★  _(llm 0.85: LLM-based NPE detection; no evident AsyncAPI usage)_
+- **Team-Nyong/KTB-Chat-Load-Testing** — 0★  _(llm 0.8: Chat load testing repo; no AsyncAPI connection)_
+- **Turisas/solaxy** — 0★  _(llm 0.78: SVM competition monorepo; no AsyncAPI visible)_
+- **aidansunbury/docs-agent** — 0★
+- **codertjay/solax-audit** — 0★  _(llm 0.72: Blockchain competition audit monorepo, AsyncAPI incidental)_
+- **hbtrack/official** — 0★  _(llm 0.8: Governance and CI/CD config repo; AsyncAPI incidental)_
+- **picodotdev/blog-bitix** — 0★  _(llm 0.9: Java/Linux blog; AsyncAPI mentioned incidentally in posts)_
+- **resultakak/argos** — 0★
+- **roalcantara/dots** — 0★  _(llm 0.93: Dotfiles repo; AsyncAPI mentioned incidentally)_
+
+## uncategorized (77)
+
+- **FinamWeb/finam-trade-api** — 16★
+- **Dometrain/zero-to-hero-event-driven-architecture** — 8★
+- **bian-official/staging** — 3★
+- **pb33f/libasyncapi** — 3★
+- **ranchat-kr/ranchat-api** — 3★
+- **SpecterOps/SpecterOpsDocs** — 2★
+- **aklivity/todo-service** — 2★
+- **cm-nishida-masayuki/odyssey-osaka-cx** — 2★
+- **romanchaa997/st-risk-platform** — 2★
+- **allex-mitin/rome-api** — 1★
+- **cryptoxdog/Enrichment.Inference.Engine** — 1★
+- **hsborges/TDSOFT-FACOM-UFMS** — 1★
+- **netbarros/Production-MagicSaas-Sofia-IA-Software-Lotus** — 1★
+- **zon/wurbs** — 1★
+- **Aarass/IOT** — 0★
+- **BattMoTeam/BattMoAPI** — 0★
+- **CodeBeast357/webosapi-asyncapi** — 0★
+- **DevFranzen/dethroned** — 0★
+- **DigitalFemsa-Genesys/test-backstage-asynapi** — 0★
+- **ETI-Software-Solutions/api-specifications** — 0★
+- **Gulvan0/IntellectorServerV2** — 0★
+- **JordanNoah/sync-student-hexagonal** — 0★
+- **KeertiPusarlaa/idp-platform** — 0★
+- **Khrisseh1995/event-catalogue-test-2** — 0★
+- **LaurenCattoor/st-microservice-movies** — 0★
+- **LeonidasGarcia/basic-chat-app** — 0★
+- **Lulexs/gis** — 0★
+- **Notaduck/settlers-from-catan** — 0★
+- **Shurtu-gal/action-test-bed** — 0★
+- **Split-Receipt/explosive-puppies-contract** — 0★
+- **Tadonkeng/project1** — 0★
+- **TristanDeLil/ms-client-backoffice** — 0★
+- **TristanDeLil/ms-microservice-movies** — 0★
+- **XplorodoX/ITS** — 0★
+- **adheeshmishra/BitscrunchAssignment** — 0★
+- **aerdman1/aerdman1.github.io** — 0★
+- **alcaann/OpenFaceWeb** — 0★
+- **dalsgaard/account-service-local** — 0★
+- **danabrams/m** — 0★
+- **delokoseni/apigateway** — 0★
+- **dhanisetti/Tenderlink** — 0★
+- **dlopezby93/digital-femsa-gaia** — 0★
+- **dmytmeln/eshop-microservices** — 0★
+- **dnonakolesax/cccad-locks** — 0★
+- **edulucca/api-autenticacao** — 0★
+- **fedykvitalik2004/library-book-service** — 0★
+- **fedykvitalik2004/library-notification-service** — 0★
+- **fedykvitalik2004/library-user-service** — 0★
+- **fernandoeqc/log_stream** — 0★
+- **floormatgen/sock-vote-2** — 0★
+- **freaz/eventcatalog-asyncapi-order-issue** — 0★
+- **freaz/eventcatalog-bug-reporting** — 0★
+- **fsgeek/lares** — 0★
+- **grace88888884/respo** — 0★
+- **hollyplankdev/emptystream-monolithic** — 0★
+- **jlikeme/fileserver** — 0★
+- **kakabisht/AsyncAPITemplate** — 0★
+- **lihs-ie/alpha-mind** — 0★
+- **madebykrol/formr** — 0★
+- **mcavicchiaUADE/desapps2** — 0★
+- **medmo/ft-event-catalog** — 0★
+- **mindwm/mindwm-api** — 0★
+- **nandinimukherjeeblr/testing_dita** — 0★
+- **nivoragit/authord-mkdocs** — 0★
+- **parmendes/API_Doc** — 0★
+- **parmendes/MessageBrokerExample** — 0★
+- **peterjaberau/mock-data** — 0★
+- **redman2004/tinyXfixer** — 0★
+- **seboraid/asyncapitest** — 0★
+- **sfpostman/PokemonBrightbox** — 0★
+- **siemendev/asyncapi-php** — 0★
+- **ssstijn/movies-backend-sem4** — 0★
+- **straylight-archive/render-api** — 0★
+- **strukovsv/yclients-micro** — 0★
+- **taonaben/grupus** — 0★
+- **thelonggoodbuy/cryptowallet** — 0★
+- **tudor-upt/urban-pulse-ada** — 0★

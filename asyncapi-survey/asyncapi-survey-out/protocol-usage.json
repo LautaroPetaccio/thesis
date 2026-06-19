@@ -1,0 +1,198 @@
+{
+  "3x": {
+    "parsed": 4151,
+    "with_protocol": 1397,
+    "repos_total": 902,
+    "by_proto": {
+      "amqp": {
+        "specs": 173,
+        "repos": 107
+      },
+      "ws": {
+        "specs": 229,
+        "repos": 203
+      },
+      "kafka": {
+        "specs": 393,
+        "repos": 193
+      },
+      "wss": {
+        "specs": 218,
+        "repos": 173
+      },
+      "http": {
+        "specs": 179,
+        "repos": 110
+      },
+      "mqtt": {
+        "specs": 219,
+        "repos": 116
+      },
+      "solace": {
+        "specs": 15,
+        "repos": 1
+      },
+      "nats": {
+        "specs": 42,
+        "repos": 29
+      },
+      "sqs": {
+        "specs": 65,
+        "repos": 34
+      },
+      "googlepubsub": {
+        "specs": 19,
+        "repos": 10
+      },
+      "sns": {
+        "specs": 34,
+        "repos": 30
+      },
+      "pulsar": {
+        "specs": 7,
+        "repos": 5
+      },
+      "jms": {
+        "specs": 15,
+        "repos": 8
+      },
+      "redis": {
+        "specs": 20,
+        "repos": 14
+      },
+      "ibmmq": {
+        "specs": 9,
+        "repos": 9
+      },
+      "stomp": {
+        "specs": 7,
+        "repos": 6
+      },
+      "mqtt5": {
+        "specs": 10,
+        "repos": 2
+      },
+      "amqp1": {
+        "specs": 3,
+        "repos": 2
+      },
+      "anypointmq": {
+        "specs": 7,
+        "repos": 1
+      },
+      "mercure": {
+        "specs": 5,
+        "repos": 8
+      }
+    }
+  },
+  "2x": {
+    "parsed": 2701,
+    "with_protocol": 1627,
+    "repos_total": 984,
+    "by_proto": {
+      "mqtt": {
+        "specs": 281,
+        "repos": 127
+      },
+      "amqp": {
+        "specs": 228,
+        "repos": 106
+      },
+      "ws": {
+        "specs": 459,
+        "repos": 250
+      },
+      "kafka": {
+        "specs": 472,
+        "repos": 201
+      },
+      "wss": {
+        "specs": 140,
+        "repos": 112
+      },
+      "http": {
+        "specs": 145,
+        "repos": 81
+      },
+      "ibmmq": {
+        "specs": 44,
+        "repos": 7
+      },
+      "sns": {
+        "specs": 23,
+        "repos": 9
+      },
+      "redis": {
+        "specs": 23,
+        "repos": 19
+      },
+      "solace": {
+        "specs": 58,
+        "repos": 13
+      },
+      "pulsar": {
+        "specs": 13,
+        "repos": 5
+      },
+      "googlepubsub": {
+        "specs": 13,
+        "repos": 5
+      },
+      "anypointmq": {
+        "specs": 24,
+        "repos": 5
+      },
+      "nats": {
+        "specs": 31,
+        "repos": 27
+      },
+      "mqtt5": {
+        "specs": 5,
+        "repos": 3
+      },
+      "amqp1": {
+        "specs": 7,
+        "repos": 4
+      },
+      "sqs": {
+        "specs": 11,
+        "repos": 9
+      },
+      "stomp": {
+        "specs": 12,
+        "repos": 9
+      },
+      "jms": {
+        "specs": 7,
+        "repos": 5
+      },
+      "mercure": {
+        "specs": 5,
+        "repos": 2
+      }
+    }
+  },
+  "protocols": [
+    "kafka",
+    "ws",
+    "mqtt",
+    "amqp",
+    "wss",
+    "http",
+    "sqs",
+    "solace",
+    "nats",
+    "sns",
+    "ibmmq",
+    "redis",
+    "googlepubsub",
+    "anypointmq",
+    "jms",
+    "pulsar",
+    "stomp",
+    "mqtt5",
+    "amqp1",
+    "mercure"
+  ]
+}

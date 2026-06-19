@@ -1,0 +1,9 @@
+openfoodfacts/openfoodfacts-server	docs/events/openfoodfacts-server.yaml	https://github.com/openfoodfacts/openfoodfacts-server/blob/20ef2ed0eb4aec12ccf3fcf31f5883faa53537ce/docs/events/openfoodfacts-server.yaml
+SwissDataScienceCenter/renku-schema	v2/user/asyncapi.yaml	https://github.com/SwissDataScienceCenter/renku-schema/blob/c7d74afc0668678955724c4b954a871919a634a7/v2/user/asyncapi.yaml
+openfoodfacts/openfoodfacts-auth	docs/events/openfoodfacts-auth.yaml	https://github.com/openfoodfacts/openfoodfacts-auth/blob/3226f445e7693cb3f9fe08020c932d13aa3c9284/docs/events/openfoodfacts-auth.yaml
+AlexandrePh/flywheel-starter-kit	product/contracts/asyncapi.yaml	https://github.com/AlexandrePh/flywheel-starter-kit/blob/985e97a701480ed7e0ad40b5eb46f3715d32506d/product/contracts/asyncapi.yaml
+V-ivek/workflow-engine	asyncapi.yaml	https://github.com/V-ivek/workflow-engine/blob/3b35282719f6eca4459ad7396a12f098cac2c640/asyncapi.yaml
+openfoodfacts/openfoodfacts-query	docs/events/openfoodfacts-query.yaml	https://github.com/openfoodfacts/openfoodfacts-query/blob/5b66d85b407c092673696b3a47a4a957310c3f2d/docs/events/openfoodfacts-query.yaml
+cryptoxdog/Enrichment.Inference.Engine	docs/contracts/events/asyncapi.yaml	https://github.com/cryptoxdog/Enrichment.Inference.Engine/blob/343cc62cba90713f1d289a71a52143ffdd7dd445/docs/contracts/events/asyncapi.yaml
+KTCrisis/event7	backend/tests/fixtures/asyncapi_import/07_redis_streams.yaml	https://github.com/KTCrisis/event7/blob/fe4a0dd68f515ee358c27bb53a043d0e97d6a733/backend/tests/fixtures/asyncapi_import/07_redis_streams.yaml
+openfoodfacts/documentation	docs/product-opener/events/openfoodfacts-server.yaml	https://github.com/openfoodfacts/documentation/blob/90b4fac9eb1506ff02d0bedc1f546ef2be6ac008/docs/product-opener/events/openfoodfacts-server.yaml

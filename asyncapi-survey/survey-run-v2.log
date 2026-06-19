@@ -1,0 +1,163 @@
+Running 36 GitHub code-search queries — this takes ~8-15 minutes...
+  query: asyncapi-3-0
+    headline total_count=1224
+    over partition threshold (900); splitting by file size
+      bucket size:<1024
+      attempt 1: rate-limited, sleeping 6s
+      WARNING: bucket size:<1024 has 1116 hits, exceeds 1000 ceiling — some results lost
+      bucket size:1024..4095
+      bucket size:4096..16383
+      bucket size:16384..65535
+      bucket size:>=65536
+  query: asyncapi-3-1
+    headline total_count=153
+  query: asyncapi-2-0
+    headline total_count=1528
+    over partition threshold (900); splitting by file size
+      bucket size:<1024
+      WARNING: bucket size:<1024 has 1054 hits, exceeds 1000 ceiling — some results lost
+      bucket size:1024..4095
+      bucket size:4096..16383
+      bucket size:16384..65535
+      bucket size:>=65536
+  query: asyncapi-2-1
+    headline total_count=125
+  query: asyncapi-2-2
+    headline total_count=159
+  query: asyncapi-2-3
+    headline total_count=132
+  query: asyncapi-2-4
+    headline total_count=207
+  query: asyncapi-2-5
+    headline total_count=293
+  query: asyncapi-2-6
+    headline total_count=936
+    over partition threshold (900); splitting by file size
+      bucket size:<1024
+      attempt 1: rate-limited, sleeping 6s
+      bucket size:1024..4095
+      bucket size:4096..16383
+      bucket size:16384..65535
+      bucket size:>=65536
+  query: reply-clause
+    headline total_count=370
+  query: reply-messages-array
+    headline total_count=363
+  query: kafka-bindings
+    headline total_count=208
+  query: kafka-key
+    headline total_count=75
+  query: kafka-partition-key
+    headline total_count=2
+  query: send-action
+    headline total_count=1264
+    over partition threshold (900); splitting by file size
+      bucket size:<1024
+      bucket size:1024..4095
+      bucket size:4096..16383
+      bucket size:16384..65535
+      bucket size:>=65536
+  query: receive-action
+    headline total_count=1176
+    over partition threshold (900); splitting by file size
+      bucket size:<1024
+      bucket size:1024..4095
+      bucket size:4096..16383
+      bucket size:16384..65535
+      bucket size:>=65536
+  query: channel-parameters
+    headline total_count=982
+    over partition threshold (900); splitting by file size
+      bucket size:<1024
+      bucket size:1024..4095
+      bucket size:4096..16383
+      bucket size:16384..65535
+      bucket size:>=65536
+  query: mqtt-bindings
+    headline total_count=149
+  query: amqp-bindings
+    headline total_count=111
+  query: mqtt5-bindings
+    headline total_count=1
+  query: amqp1-bindings
+    headline total_count=1
+  query: nats-bindings
+    headline total_count=30
+  query: jms-bindings
+    headline total_count=5
+  query: pulsar-bindings
+    headline total_count=2
+  query: redis-bindings
+    headline total_count=14
+  query: stomp-bindings
+    headline total_count=3
+  query: googlepubsub-bindings
+    headline total_count=6
+  query: ibmmq-bindings
+    headline total_count=4
+  query: solace-bindings
+    headline total_count=0
+  query: anypointmq-bindings
+    headline total_count=0
+  query: sns-bindings
+    headline total_count=7
+  query: sqs-bindings
+    headline total_count=10
+  query: ws-bindings
+    headline total_count=280
+      attempt 1: rate-limited, sleeping 6s
+  query: wss-bindings
+    headline total_count=181
+  query: http-bindings
+    headline total_count=127
+  query: mercure-bindings
+    headline total_count=0
+
+Extracting unique-repos.tsv per query...
+  asyncapi-3-0: 693 unique repos
+  asyncapi-3-1: 74 unique repos
+  asyncapi-2-0: 395 unique repos
+  asyncapi-2-1: 63 unique repos
+  asyncapi-2-2: 52 unique repos
+  asyncapi-2-3: 62 unique repos
+  asyncapi-2-4: 85 unique repos
+  asyncapi-2-5: 81 unique repos
+  asyncapi-2-6: 558 unique repos
+  reply-clause: 95 unique repos
+  reply-messages-array: 94 unique repos
+  kafka-bindings: 75 unique repos
+  kafka-key: 46 unique repos
+  kafka-partition-key: 2 unique repos
+  send-action: 468 unique repos
+  receive-action: 467 unique repos
+  channel-parameters: 192 unique repos
+  mqtt-bindings: 70 unique repos
+  amqp-bindings: 68 unique repos
+  mqtt5-bindings: 1 unique repos
+  amqp1-bindings: 1 unique repos
+  nats-bindings: 20 unique repos
+  jms-bindings: 4 unique repos
+  pulsar-bindings: 2 unique repos
+  redis-bindings: 9 unique repos
+  stomp-bindings: 3 unique repos
+  googlepubsub-bindings: 4 unique repos
+  ibmmq-bindings: 4 unique repos
+  solace-bindings: 0 unique repos
+  anypointmq-bindings: 0 unique repos
+  sns-bindings: 7 unique repos
+  sqs-bindings: 9 unique repos
+  ws-bindings: 203 unique repos
+  wss-bindings: 122 unique repos
+  http-bindings: 54 unique repos
+  mercure-bindings: 0 unique repos
+
+Building aggregations...
+  asyncapi-2x-combined: 1108 unique repos (total file count: 3380)
+  asyncapi-3x-combined: 740 unique repos (total file count: 1377)
+
+Report written to /Users/lpetaccio/tesis/asyncapi-survey/asyncapi-survey-out/asyncapi-survey.md
+Raw responses under  /Users/lpetaccio/tesis/asyncapi-survey/asyncapi-survey-out/raw
+
+Optional next steps:
+  scripts/asyncapi_repo_metadata.py /Users/lpetaccio/tesis/asyncapi-survey/asyncapi-survey-out       # fetch stars + descriptions
+  scripts/asyncapi_classify_repos.py /Users/lpetaccio/tesis/asyncapi-survey/asyncapi-survey-out      # classify product / tooling / demo / hobby

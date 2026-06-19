@@ -1,0 +1,6576 @@
+{
+  "0xFivis/agentic-mesh-arch-kit": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "0xHoneyJar/loa-hounfour": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 4
+  },
+  "2025tf20/KTB-LoadTest-team-20": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.72,
+    "_reason": "Bootcamp team project (KTB = Kakao Tech Bootcamp), numbered team",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "21MokseM12/DevPulse": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "244Walyson/GWApp": {
+    "_bucket": "product",
+    "_confidence": 0.65,
+    "_reason": "Real Kanban/chat/notification platform with deployed base URL",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "244Walyson/Strada": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "45ck/Portarium": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "4g3nt4333/Ascy-website": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "5G-PreCiSe/edge-to-cloud-file-uploader": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ARCircle/Kojirer": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 5
+  },
+  "Aarass/IOT": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "AbhishekCS3459/URL-Shortner-using-GRPC": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.78,
+    "_reason": "Student project documenting AsyncAPI 3.0.0 spec for URL shortener",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "AceTheCreator/eda-workshops": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.98,
+    "_reason": "Explicitly described as AsyncAPI EDA workshops source code",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "AcidicSoil/DSPyTeach": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "AcidicSoil/lms-llmsTxt": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "AdanHdzF/event-flow": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.95,
+    "_reason": "Bootcamp distributed systems course project",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Aidin1998/finalex": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Alamoalone/Project-of-Desertation": {
+    "_bucket": "tangential",
+    "_confidence": 0.85,
+    "_reason": "LLM-based NPE detection; no evident AsyncAPI usage",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "AlbertKellner/ClaudeDotNetPlayground": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "AlexChiquito/SAP-Maintenance-order-adaptor": {
+    "_bucket": "product",
+    "_confidence": 0.9,
+    "_reason": "Deployable Go service bridging Digital Twin and SAP PM",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "AlexanderFromEarth/node-apifactory": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "AlexandrePh/flywheel-starter-kit": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.82,
+    "_reason": "Starter kit template for AI-driven application development",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "AltairaLabs/Omnia": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "Amazon-Cloud-Club-for-KWU/3th-chat-api-demo": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Andersonfrfilho/backend-websocket": {
+    "_bucket": "product",
+    "_confidence": 0.68,
+    "_reason": "Real backend websocket service with Docker and test setup",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "AndreaGiulianelli/documentation-ghp-action": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "AndreiBacs/EchipaMea": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "AndriyKalashnykov/dapr-dotnet-zero-to-hero-event-driven-architecture": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Anomaliszt/Conquest": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "Apicurio/apicurio-registry": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 810
+  },
+  "Apress/Crafting-Great-APIs-with-Domain-Driven-Design": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.99,
+    "_reason": "Companion code for published Apress book",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 9
+  },
+  "ArieGoldkin/ai-agent-hub": {
+    "_bucket": "tangential",
+    "_confidence": 0.93,
+    "_reason": "AI agent skills repo for Claude; not an AsyncAPI user",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 10
+  },
+  "ArneVcrs/howestprime-microservice-movies": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ArneVcrs/howestprime-microservice-ticketing": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "AsiaOstrich/universal-dev-standards": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 69
+  },
+  "BackendFans83/Taxi": {
+    "_bucket": "product",
+    "_confidence": 0.88,
+    "_reason": "Full microservice taxi platform for passengers and drivers",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "BattMoTeam/BattMoAPI": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "BenediktusG/task-manager": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Benzinga/benzinga-docs": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.92,
+    "_reason": "Mintlify-powered documentation site for Benzinga APIs",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "Berthje/envirosense-deno-server": {
+    "_bucket": "product",
+    "_confidence": 0.88,
+    "_reason": "Real IoT API managing buildings, rooms, and devices",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "BidnessForB/oas-converter-lambda": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Bikxs/Skafu": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Binit-Dhakal/Saarathi": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.78,
+    "_reason": "\"Simulates\" ride lifecycle; portfolio/demo project",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Bombatomica64/42-matcha": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "BrentIO/FireFly-Client": {
+    "_bucket": "product",
+    "_confidence": 0.75,
+    "_reason": "Real client application with dedicated documentation site",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "BrentIO/FireFly-Controller": {
+    "_bucket": "product",
+    "_confidence": 0.82,
+    "_reason": "Real deployable IoT software-defined lighting controller",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Brico87/seed-kafka": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ByteBardOrg/AsyncAPI.NET": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.99,
+    "_reason": ".NET SDK and object model for AsyncAPI specification",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 13
+  },
+  "CALLlA-74/bauman-poker": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.95,
+    "_reason": "University coursework: online poker protocol prototype",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "CDFmmgr9fLkRH453kRC33TrEp/matching-engine": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.78,
+    "_reason": "Self-described simplistic exchange simulator, not production",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "CEhresmann/Redocly-api-specificatons": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.85,
+    "_reason": "Repository of OpenAPI/AsyncAPI specs with Redocly documentation",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "CJovan02/iots": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Caldis/frameworks": {
+    "_bucket": "tangential",
+    "_confidence": 0.85,
+    "_reason": "Curated design-frameworks catalog; AsyncAPI incidental",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 8
+  },
+  "CardanoSolutions/ogmios": {
+    "_bucket": "product",
+    "_confidence": 0.92,
+    "_reason": "Real deployable WebSocket/JSON-RPC bridge for Cardano node",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 327
+  },
+  "CardinalWave/cw-mqtt-gateway": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "ChargeAndTrack/backend-spe": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Cirripide/local-rag-for-documents-be": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "CodeBeast357/webosapi-asyncapi": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "CodingFlow/rating-service-dotnet": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.88,
+    "_reason": "Explicit prototype showcasing architectural best practices",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "ComeOnOliver/skillshub": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 47
+  },
+  "CruelAddict/ori": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "CryptoSmartNow/bizmarket-docs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "DEFRA/fcp-audit": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "DEFRA/fcp-fdm": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "DEFRA/fcp-sfd-comms": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "DEFRA/fcp-sfd-crm": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "DEFRA/fcp-sfd-object-processor": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "DEFRA/ffc-doc-statement-constructor": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "DEFRA/ffc-doc-statement-data": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "DEFRA/ffc-doc-statement-generator": {
+    "_bucket": "product",
+    "_confidence": 0.88,
+    "_reason": "Production statement generator service with Azure Service Bus",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "DEFRA/ffc-doc-statement-publisher": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "DEFRA/ffc-pay-data-hub": {
+    "_bucket": "product",
+    "_confidence": 0.9,
+    "_reason": "Real UK government payment data hub service, containerised deployment",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "DEFRA/ffc-pay-enrichment": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "DLShomies/FluffyPlushiesWebShop": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "KEA 2025 school project webshop, not production",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "DafeCpp/product_dev_course": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "DarkflameUniverse/DarkflameServer": {
+    "_bucket": "tangential",
+    "_confidence": 0.85,
+    "_reason": "Game server emulator; AsyncAPI not central to its purpose",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 738
+  },
+  "DasOxymoron/takeaway-challenge": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.9,
+    "_reason": "Coding challenge exercise, not a production service",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "DataDog/serverless-sample-app": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 60
+  },
+  "DataDog/stickerlandia": {
+    "_bucket": "product",
+    "_confidence": 0.78,
+    "_reason": "Real deployed community engagement platform for Datadog events",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 7
+  },
+  "David-Parry/server-agents": {
+    "_bucket": "product",
+    "_confidence": 0.8,
+    "_reason": "Deployable AI agent orchestration platform with governance",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 3
+  },
+  "DeepLcom/api-docs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 9
+  },
+  "DeepLcom/openapi": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 92
+  },
+  "Deutsche-FayTech-Korea/bridge_socket_server": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "DevFranzen/dethroned": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "DevashishBoini/attendanceSystem": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.85,
+    "_reason": "Explicitly based on a Harkirat Singh course assignment",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Devathon-2024-team5/Preguntonic-backend": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.82,
+    "_reason": "Hackathon (Devathon-2024) team project, not production software",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "DigKick/DigKick": {
+    "_bucket": "product",
+    "_confidence": 0.83,
+    "_reason": "Real table-soccer goal-detection system with MQTT hardware integration",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 4
+  },
+  "DigitalFemsa-Genesys/test-backstage-asynapi": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "DocHubTeam/DocHub": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.88,
+    "_reason": "Architecture-as-code tool that renders AsyncAPI among other formats",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 375
+  },
+  "Dometrain/zero-to-hero-event-driven-architecture": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 8
+  },
+  "DrBlury/Event-Driven-Service-Example": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "E2RD0/digital-resources-transcription-service": {
+    "_bucket": "product",
+    "_confidence": 0.78,
+    "_reason": "Live Whisper-as-a-Service with email delivery and editor UI",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "EDALearn/EDA-Modulith-Playground": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "EDALearn/EDA-Playground-Online-Food-Delivery": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 4
+  },
+  "EDALearn/EDA-TransactionalOutbox-Modulith-JPA": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "Tutorial implementing Transactional Outbox pattern with ZenWaveSDK",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 5
+  },
+  "EDI-Energy/api-directory-service": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.8,
+    "_reason": "German energy sector schema and API spec publication repository",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "ETI-Software-Solutions/api-specifications": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "EVerest/EVerest": {
+    "_bucket": "product",
+    "_confidence": 0.95,
+    "_reason": "Linux Foundation Energy-backed EV charging software stack",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 207
+  },
+  "Echo-Chat-Systems/docs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "Eclipse-SDV-Hackathon-Chapter-Three/Den-Team": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.97,
+    "_reason": "Hackathon team project, not production software",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "EcoHub-AG/Api-Specs": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.97,
+    "_reason": "Repository purpose is storing API specifications only",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "ElementAstro/lithium-next": {
+    "_bucket": "product",
+    "_confidence": 0.8,
+    "_reason": "Real open-source astrophotography terminal application",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "Elhebert/asyncapi-validation": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 4
+  },
+  "Embiggenerd/spiritio": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "Emiltzav/asyncapi-iot-examples": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.87,
+    "_reason": "Catalog of AsyncAPI 3.0 descriptions for IoT devices, thesis artifact",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "ErenAri/PulseStream--Real-Time-Event-Processing-Fabric": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "FAForever/faf-api-specs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "FilippoPracucci/sap-assignment-03": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "FinamWeb/finam-trade-api": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 16
+  },
+  "Floffah/echoform": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "Forsakringskassan/gradle-conventions": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.72,
+    "_reason": "Shared Gradle build convention plugins library",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Forsakringskassan/rimfrost-regel-rtf-manuell-asyncapi": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.93,
+    "_reason": "AsyncAPI spec for Swedish insurance agency service",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Forsakringskassan/rimfrost-service-oul-asyncapi": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Forsakringskassan/template-asyncapi": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "FrankSpooren/HolidaiButler": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "FreeTAKTeam/Reticulum_AsyncAPI_rs": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Freundschaft-ist-Magie/M241_Team0": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "G-USI/asyncapi-python": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 24
+  },
+  "GabrielAderaldo/Merma_a_musica": {
+    "_bucket": "product",
+    "_confidence": 0.78,
+    "_reason": "Real deployable multiplayer online music quiz app",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Generacja-Cuzi/ai-present-finder": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 6
+  },
+  "GitEngHar/pointservice": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Goldziher/spikard": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 101
+  },
+  "GopiR17/backstage-prod": {
+    "_bucket": "product",
+    "_confidence": 0.78,
+    "_reason": "Production Backstage developer portal deployment",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Gradient-DS/AGORA": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "GreenRover/async-api-validator": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "GregTag/TheSpreadGame": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Grinseteddy/AiCollections": {
+    "_bucket": "tangential",
+    "_confidence": 0.82,
+    "_reason": "Collection of AI-generated specs, not genuine AsyncAPI user",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 5
+  },
+  "Grinseteddy/DomainDrivenApiDesign": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "Training resources with demo online library interfaces",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 5
+  },
+  "Grinseteddy/MasteringDdd": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.93,
+    "_reason": "Book companion code for 'Mastering Domain Driven Design' manuscript",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "Gulvan0/IntellectorServerV2": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Harmelodic/init-microservice": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "Harsh4902/kubecon-eu-2026-tutorials": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 5
+  },
+  "HexRohit/cardano": {
+    "_bucket": "product",
+    "_confidence": 0.8,
+    "_reason": "Ogmios: deployable WebSocket bridge service for Cardano node",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Hochfrequenz/verzeichnisdienst-python-models": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Hullow/Concord": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.97,
+    "_reason": "42 school curriculum ft_transcendence project, Discord-like app",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "HyPolDev/Bot": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "IATI/iati-message-queue-service": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.82,
+    "_reason": "Repo is the specification for an internal message queue service",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "IMAGINARY/track-n-truck": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Ihor-Mykytiuk/software-architecture": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ImadSai/asyncAPI-POC": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "InkbridgeNetworks/SubMan-API-schema": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "Insightpulseai/agents": {
+    "_bucket": "tangential",
+    "_confidence": 0.87,
+    "_reason": "AI agent personas and prompt contracts registry, not AsyncAPI user",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Instaconct/instaconct-api": {
+    "_bucket": "product",
+    "_confidence": 0.88,
+    "_reason": "Real NestJS customer support chat backend with WebSocket",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Integration-Project-2026-Groep-2/CRM": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.88,
+    "_reason": "Academic integration project microservice for school platform",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "Integration-Project-2026-Groep-2/Planning": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.88,
+    "_reason": "Academic integration project planning microservice, Groep 2",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "IsmaelMartinez/repo-butler": {
+    "_bucket": "tangential",
+    "_confidence": 0.82,
+    "_reason": "AI agent that analyses repos; AsyncAPI likely incidental",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 3
+  },
+  "Itshalffull/Concept-Oriented-Programming-Framework": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "J0SAL/kafka-playground": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Jack-the-Pro101/vequate": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "Jacksonspencerd/tcss559-project": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.88,
+    "_reason": "University course project (TCSS 559) observability platform",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "JannikAlx/kafkaProducer": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Joaopdiasventura/Modularis": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 9
+  },
+  "Jonas-du-bois/phenom": {
+    "_bucket": "product",
+    "_confidence": 0.72,
+    "_reason": "Deployable UFO observation web app with geolocation and auth",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "JonathanGrocott/A2A-MQTT": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "JordanNoah/sync-student-hexagonal": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "KTCrisis/event7": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 4
+  },
+  "Kambolo/Picksy": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.88,
+    "_reason": "Engineering thesis web app, not production software",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Kamuyin/schachroboter": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.9,
+    "_reason": "Seminar/school project (Mechatronics chess robot)",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "Karfev/Product-base-Spec-Kit": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.78,
+    "_reason": "Template and boilerplate kit for B2B SaaS spec artifacts",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "KeertiPusarlaa/idp-platform": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "KempDewulf/envirosense-deno-server": {
+    "_bucket": "product",
+    "_confidence": 0.87,
+    "_reason": "Deployable Deno API managing IoT buildings, rooms, devices",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "KevinShabanaj386/SmartGridAnalytics": {
+    "_bucket": "product",
+    "_confidence": 0.85,
+    "_reason": "Microservices platform for smart energy grid data analytics",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Khrisseh1995/event-catalogue-test-2": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "KibbeWater/wfm-openapi": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Kiloforge/kiloforge": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 17
+  },
+  "Koh0920/webapp_specs": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.8,
+    "_reason": "Template/boilerplate repo for web app design specifications",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Kong/spec-renderer": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.92,
+    "_reason": "Pluggable API spec renderer powering documentation experiences",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 33
+  },
+  "KrushilProlink/studio-new": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Kuestenlogik/Bowire": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.95,
+    "_reason": "Multi-protocol API workbench supporting AsyncAPI among many protocols",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 4
+  },
+  "Kuestenlogik/Bowire.Samples": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Lap-Platform/LAP": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 337
+  },
+  "LarsArtmann/typespec-asyncapi": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.99,
+    "_reason": "TypeSpec emitter that generates AsyncAPI 3.0 specifications",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 13
+  },
+  "LaurenCattoor/st-microservice-movies": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "LaurenCattoor/st-microservice-ticketing": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.8,
+    "_reason": "Student project with deliverables language; thesis-style setup",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Leandroyyy/async-api-example": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Leandroyyy/async-api-translator": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.95,
+    "_reason": "Translator tool for AsyncAPI specifications",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "LeonidasGarcia/basic-chat-app": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "LeonidasGarcia/puchamon": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "Explicitly a university project, Pokemon Showdown clone",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "LouisSappey/tp-nest-web-socket": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.95,
+    "_reason": "'TP' is French for school practical assignment",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "LucasKonrath/arch-kata-mr-bill": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Lulexs/gis": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Lulexs/iots-1": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "MALIEV-Co-Ltd/Maliev.MessagingContracts": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.9,
+    "_reason": "Contract-first schema registry and AsyncAPI specs only",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "MRX1205/AIflow": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "Maksim-yo/chat": {
+    "_bucket": "product",
+    "_confidence": 0.82,
+    "_reason": "Deployable C++ multi-user chat; AsyncAPI used for its docs",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Malcolmston/dta-final": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Malmo-Skyttegille-Pistolsektionen/rotation_target_backend_resources": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.87,
+    "_reason": "Resources and AsyncAPI/OpenAPI documentation, not runnable software",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "ManuMarcos/mind-battle-backend": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "MathTrail/contracts": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.88,
+    "_reason": "Schema registry with AsyncAPI spec and event contracts",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "MatiasNAmendola/real-time-risk-lab": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Matse-DD/HowestPrime-microservice-movies": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Matse-DD/HowestPrime-microservice-ticketing": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Matusko/flea": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "MaximilianWalker/HexRelay": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "MehdiMaachi/tp-xml-meteo": {
+    "_bucket": "tangential",
+    "_confidence": 0.85,
+    "_reason": "School XML practical exercise; AsyncAPI only incidental",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "MikeMDV/riden": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.82,
+    "_reason": "Explicitly fictional boat-ride booking system",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "MindGainsLabs/Stratus_Relayer": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "MrS1lentcz/protobridge": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "NHSDigital/nhs-notify-supplier-api": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.8,
+    "_reason": "Primary content is API definitions, sandbox, and SDK for external suppliers",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 3
+  },
+  "NHSDigital/nhs-notify-supplier-config": {
+    "_bucket": "product",
+    "_confidence": 0.8,
+    "_reason": "Real NHS Notify service with deployable event schema code",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "NUWCDIVNPT/stig-manager": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 218
+  },
+  "NalinDalal/modheshwari": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "NawafSwe/go-service-starter-kit": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 42
+  },
+  "NeatGuyCoding/spring-io": {
+    "_bucket": "tangential",
+    "_confidence": 0.8,
+    "_reason": "Conference notes and summaries, not an actual service or spec",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "Netcracker/qubership-apihub-api-processor": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Netcracker/qubership-apihub-test-service": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Netcracker/qubership-integration-platform": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "Netcracker/qubership-integration-runtime-catalog": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "Notaduck/settlers-from-catan": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "OAI/Arazzo-Specification": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 439
+  },
+  "ODS-IS-UASL/asset": {
+    "_bucket": "product",
+    "_confidence": 0.88,
+    "_reason": "Production drone-route REST API managing real resources",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "ODS-IS-UASL/safety-management": {
+    "_bucket": "product",
+    "_confidence": 0.87,
+    "_reason": "Production drone safety management deployable module",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "OKArc/backstage": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ONSdigital/dp-search-data-extractor": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ONSdigital/dp-search-data-importer": {
+    "_bucket": "product",
+    "_confidence": 0.95,
+    "_reason": "Real microservice consuming Kafka messages to populate Elasticsearch",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Open-Locker/Open-Locker": {
+    "_bucket": "product",
+    "_confidence": 0.85,
+    "_reason": "Real IoT smart-locker product sponsored by city government",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 20
+  },
+  "OpenDonationAssistant/docs": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.8,
+    "_reason": "Documentation site using Mintlify, not runnable software",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "OpenSourceAGI/ai-broker-investing-agent": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 11
+  },
+  "OptimalMatch/clode": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "Opzet/EFDesignerExamples": {
+    "_bucket": "tangential",
+    "_confidence": 0.85,
+    "_reason": "Entity Framework code-gen examples; no AsyncAPI relevance",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Or3nges/howestprime-microservice-movies": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Or3nges/howestprime-microservice-ticketing": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Order-of-Hospitallers/gru_emoney_token-factory": {
+    "_bucket": "product",
+    "_confidence": 0.78,
+    "_reason": "Deployable ERC-20 token factory system on live chain",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "Owen-Richards/ai-nutritionist": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "PacktPublishing/Software-Architecture-with-Cpp-2E": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 68
+  },
+  "Pakisan/jasyncapi-idea-plugin-demo": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.97,
+    "_reason": "Explicitly a demo repo for JetBrains AsyncAPI plugin",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "PeterAlaks/lyric-display-app": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 25
+  },
+  "Pinit-Scheduler/pinit-auth": {
+    "_bucket": "product",
+    "_confidence": 0.85,
+    "_reason": "Real auth microservice in a bounded-context architecture",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Pinit-Scheduler/pinit-notification": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Pinit-Scheduler/pinit-task": {
+    "_bucket": "product",
+    "_confidence": 0.93,
+    "_reason": "Real task-management microservice backend",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "PolyAI-LDN/polyai-mintlify-doc": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.95,
+    "_reason": "Documentation site source for PolyAI Agent Studio",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Poss111/ClashBot-Service": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "PriyanArora/Qeue": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ProsusAI/agentic-services-protocol": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.88,
+    "_reason": "Open protocol/spec definition for agentic service lifecycle",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 12
+  },
+  "Quiago/doble9": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "RafaelAlmeida00/Plant-Simulador": {
+    "_bucket": "product",
+    "_confidence": 0.65,
+    "_reason": "Deployable industrial plant simulation and monitoring app",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "RafaelAlmeida00/Plant-Simulador-Huggy": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "RafaelAlmeida00/Simulador-UI": {
+    "_bucket": "product",
+    "_confidence": 0.63,
+    "_reason": "React frontend for the plant simulation platform",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Ravip2006/Demo": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.93,
+    "_reason": "Central contract repository housing multiple API specs",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Redocly/apidocs-starter": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "Redocly/redocly-cli": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1464
+  },
+  "Remake1/GrokOA": {
+    "_bucket": "tangential",
+    "_confidence": 0.92,
+    "_reason": "Interview cheat tool; AsyncAPI not mentioned at all",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Reya-Labs/reya-api-specs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "RobinTail/zod-sockets": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.97,
+    "_reason": "Library that generates AsyncAPI specs from Socket.IO schemas",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 116
+  },
+  "RodolfoFigueroa/lyra": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "RossBugginsNHS/notify-asyncapi": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.88,
+    "_reason": "Builds and publishes AsyncAPI schema pages for NHS Notify",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "RubizZ/flAIghts": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.7,
+    "_reason": "Portfolio/student flight-planner project with AI pun name",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "Rycen7822/ExAP": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "SRinatR/RD": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "SchlexanderOlz/MatchMakerHub": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Schreglmann/gameshow": {
+    "_bucket": "tangential",
+    "_confidence": 0.82,
+    "_reason": "Browser quiz game; no AsyncAPI connection visible",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "SchwarzIT/api-linter-rules": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 29
+  },
+  "Scott-HW-OU/shw-616172": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.9,
+    "_reason": "Docs starter template with sample API for onboarding",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "ScrKiddie/AtoiTalkAPI": {
+    "_bucket": "product",
+    "_confidence": 0.92,
+    "_reason": "Deployable real-time chat backend with WebSocket events",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Sejsel/ksplang-programs": {
+    "_bucket": "tangential",
+    "_confidence": 0.9,
+    "_reason": "AoC/WASM solutions in esoteric language; no AsyncAPI",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "ShuVeriDa/distahilar-back": {
+    "_bucket": "product",
+    "_confidence": 0.92,
+    "_reason": "Deployable Telegram-inspired messaging app backend",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Shurtu-gal/action-test-bed": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "SolaceLabs/sol-ep-asyncapi-importer": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.97,
+    "_reason": "Imports AsyncAPI specs into Solace Event Portal",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "SolaceLabs/solace-tools-typescript": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 5
+  },
+  "Souvikns/asyncapi-parser": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "Souvikns/greet-bot": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.97,
+    "_reason": "Simple WebSocket example app using Glee framework",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Souvikns/pokemon-trade-api": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.72,
+    "_reason": "Pokemon trading socket.io API; hobby/demo project",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Sovereign-Labs/sovereign-sdk": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 476
+  },
+  "SpecterOps/SpecterOpsDocs": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "Split-Receipt/explosive-puppies-contract": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Sriramanenivikas/Intelligent-Warehouse-Orchestration-System": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "StableCoinTF/StableCoinBC_Adapter_Docs": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.92,
+    "_reason": "AsyncAPI YAML spec repo generating Kafka API documentation",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "StepanNazar/city-report-ai-assistance-service": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.93,
+    "_reason": "Explicitly described as university software architecture labs",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Sunagatov/Iced-Latte": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 631
+  },
+  "SwissDataScienceCenter/renku-schema": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.93,
+    "_reason": "Central repo of message queue schemas and AsyncAPI specs",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Syed1012/kesselops": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Tadonkeng/project1": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Tafseerhussain/zillabase_portal": {
+    "_bucket": "product",
+    "_confidence": 0.62,
+    "_reason": "Admin portal UI for Zillabase product",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "TahaShahid203/async-api-issue": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.88,
+    "_reason": "Fork/issue repo of AsyncAPI Studio tooling",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "Tanh1603/auction-hub": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Team-Nyong/KTB-Chat-Load-Testing": {
+    "_bucket": "tangential",
+    "_confidence": 0.8,
+    "_reason": "Chat load testing repo; no AsyncAPI connection",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "TemplateMechanics/tilt": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.9,
+    "_reason": "Tilt file examples demonstrating deployment patterns",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "Thomas-More-Digital-Innovation/2526-DI-004-GoStrategy": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "University course project at Thomas More institution",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Tomeku-Development/AgentMesh": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.82,
+    "_reason": "Hackathon competition entry for Vertex Swarm Challenge 2026",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "TomzBench/jsmn-tools": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ToweringDragoon/mintlify-docs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "TristanDeLil/ms-client-backoffice": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "TristanDeLil/ms-microservice-movies": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "TristanDeLil/ms-microservice-ticketing": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Turisas/solaxy": {
+    "_bucket": "tangential",
+    "_confidence": 0.78,
+    "_reason": "SVM competition monorepo; no AsyncAPI visible",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "TykTechnologies/exp": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "UNIZAR-30226-2026-07/BombaVa-Backend": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.93,
+    "_reason": "University of Zaragoza course project with academic numbering",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "UTXOnly/oddrip": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "V-ivek/workflow-engine": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "Explicitly a coding challenge submission, not production software",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "Vellum-IO/keeper-api-contracts": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.92,
+    "_reason": "OpenAPI spec files for internal DBaaS service, no runnable code",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "VisioLab/cash-register-api": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.97,
+    "_reason": "AsyncAPI spec describing WebSocket API, no runnable software",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "VistA-Evolved/vista-evolved-platform": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "VoiceBlender/voiceblender": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 73
+  },
+  "WSOL12/html-template": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "WaYdotNET/zen-generator": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "WaleedAshraf/asyncapi-validator": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 51
+  },
+  "Wavix/wavix-openapi": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "WebFuzzing/Dataset": {
+    "_bucket": "tangential",
+    "_confidence": 0.78,
+    "_reason": "Test dataset of REST/GraphQL apps; AsyncAPI only incidental",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 50
+  },
+  "WebSecDetectives/fluffy-plushies-webshop": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "XaaXaaX/aws-cloudevents-eda": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "XaaXaaX/eventcatalog-automation": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "Xen0Xys/N2I-2024-API": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.8,
+    "_reason": "NestJS starter for N2I 2024 competition, not production service",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "XplorodoX/ITS": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "YOU54F/pact-asyncapi-comparator": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Yeusepe/cdngine": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "Youka/api-snap": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "ZenWave360/json-schema-ref-parser-jvm": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 18
+  },
+  "ZenWave360/zenwave-playground": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "ZenWave360/zenwave-sdk": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 56
+  },
+  "Zenika/kafka-schema-registry-publish": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.78,
+    "_reason": "Best-practices demo for publishing schemas via CI/CD",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "ZevMM/ColumbiaTradingCompetition": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.85,
+    "_reason": "University trading competition simulator project",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "ZuzannaTabisz/snp-app": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ZuzannaTabisz/snpapptests": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "a-grasso/master-thesis-public": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.75,
+    "_reason": "Master thesis resources; academic not production",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "acdgbrasil/contracts": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.96,
+    "_reason": "Central org API contracts repo with AsyncAPI v3 specs",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "acharyaPawan/ecommerce-platform": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "acidtango/ollert-backend": {
+    "_bucket": "product",
+    "_confidence": 0.87,
+    "_reason": "API-first backend using asyncapi.yml to generate TypeScript types",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "acvigue/casa-bonita": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "adheeshmishra/BitscrunchAssignment": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "adhitiad/quantsync": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "adimail/rocket-landing-rl": {
+    "_bucket": "tangential",
+    "_confidence": 0.78,
+    "_reason": "RL simulation for rocket landing; no AsyncAPI relevance visible",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "adreno255/nurtura-backend": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "aequitas-aod/aequitas-backend": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "aerdman1/aerdman1.github.io": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "aescanero/dago": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "agiopen-org/lux-desktop": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 48
+  },
+  "ahadify/VDL-gg": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ahelme/mcp-claude-code-browser-tools": {
+    "_bucket": "tangential",
+    "_confidence": 0.95,
+    "_reason": "AI coding agent MCP server, no AsyncAPI usage",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "ai-digital-architect/asyncapi_discovery": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.93,
+    "_reason": "Tool that scans code and generates AsyncAPI specs",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "aidansunbury/docs-agent": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "aiskillstore/marketplace": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 350
+  },
+  "aixigo/PREvant": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 17
+  },
+  "ajevans99/swift-asyncapi": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "ajgarciaparadigma/backstage-example": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ak125/nestjs-remix-monorepo": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "akash-mondal/mintlify-docs": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "aklivity/todo-service": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "aklivity/zilla": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 690
+  },
+  "aklivity/zilla-demos": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 10
+  },
+  "aklivity/zillabase": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 11
+  },
+  "alcaann/OpenFaceWeb": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "aleksa1205/iots": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "alexandre-touret/api-first-workshop": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "allex-mitin/api-doc-conf": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 9
+  },
+  "allex-mitin/asyncapi-highload-conf": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "allex-mitin/rome-api": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "alliander-opensource/lsis-api-specs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "allofmeng/streamline_project": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 9
+  },
+  "almashooq1/alawael-erp": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ambihome-gmbh/asyncapi": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "amer8/apibconv": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "aml-org/als": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.96,
+    "_reason": "Language server providing IDE support for AsyncAPI and RAML",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 32
+  },
+  "aml-org/amf": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 11
+  },
+  "ammario/kalshi-docs": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 7
+  },
+  "amosproj/amos2025ws04-robot-visual-perception": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.72,
+    "_reason": "University AMOS course project (WS2025), not production software",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 5
+  },
+  "ancoleman/ai-design-components": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 371
+  },
+  "andre-nk/bangkit-cloud-migration-tools": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.7,
+    "_reason": "Bangkit student program project, monorepo of learning tools",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "andreacomo/apicurio-registry-poc": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "andreaseger/homelab-tools": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "aniccname/Q-Game": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "School project from Fall 2023 Software Development course",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "apakhbari/backstage": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "aperim/production-city-web": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/ably": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/amazon-api-gateway": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/amazon-kinesis": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/amazon-sqs": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/amqp": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/api-pulse": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "api-evangelist/assemblyai": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "api-evangelist/async-apis": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/asyncapi": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/athena-health": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/backstage": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/clickhouse": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/coingecko": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/confluence": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/crewai-cloud": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/deepl": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "api-evangelist/docusign": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/dynamodb": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/eigenlayer": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/fieldwire": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/filevine": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/interface-research": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/intuit": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/jito": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/lever-co": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/mercado-pago": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/microsoft-outlook": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/nats": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/oddsjam": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/olo": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/phonely": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/pinnacle": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/plivo": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/polygon": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/pubnub": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/regal-ai": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/roku": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/sendgrid": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/sendle": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/shodan": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "api-evangelist/slack": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/statsd": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/tensor": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/tripleseat": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/webflux": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/websockets": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/zendesk": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "api-evangelist/zoom": {
+    "_bucket": "catalog",
+    "_rule_bucket": "catalog",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "apiaddicts/sonar-asyncapi": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "apiaddicts/sonarasyncapi-rules": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.97,
+    "_reason": "SonarQube rules to analyze and lint AsyncAPI documents",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "arc-framework/arc-platform": {
+    "_bucket": "product",
+    "_confidence": 0.78,
+    "_reason": "Production AI agent orchestration platform with event-driven services",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "arravo-co/hackathon-backend": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "artur-ciocanu/presentations": {
+    "_bucket": "tangential",
+    "_confidence": 0.92,
+    "_reason": "Conference and meetup slides repository, not software",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "asimarora/semantic-intelligence-layer": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "asklokesh/NEXT-Portal": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "asyncapi/avro-schema-parser": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 33
+  },
+  "asyncapi/bundler": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 33
+  },
+  "asyncapi/cli": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 267
+  },
+  "asyncapi/converter-js": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 24
+  },
+  "asyncapi/diff": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 29
+  },
+  "asyncapi/generator": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1059
+  },
+  "asyncapi/html-template": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 90
+  },
+  "asyncapi/jasyncapi": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 79
+  },
+  "asyncapi/jasyncapi-idea-plugin": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 16
+  },
+  "asyncapi/java-template": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 14
+  },
+  "asyncapi/markdown-template": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 36
+  },
+  "asyncapi/modelina": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 436
+  },
+  "asyncapi/nodejs-template": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 47
+  },
+  "asyncapi/openapi-schema-parser": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 18
+  },
+  "asyncapi/optimizer": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 12
+  },
+  "asyncapi/protobuf-schema-parser": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 11
+  },
+  "asyncapi/spec": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 5205
+  },
+  "asyncapi/spec-json-schemas": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 74
+  },
+  "asyncapi/studio": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 205
+  },
+  "asyncapi/tck": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.97,
+    "_reason": "Test Compatibility Kit with AsyncAPI fixture documents",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 12
+  },
+  "asyncapi/vs-asyncapi-preview": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 60
+  },
+  "asyncapi/website": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 708
+  },
+  "asynq-io/pydantic-asyncapi": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.98,
+    "_reason": "Pydantic models for validating and generating AsyncAPI docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 9
+  },
+  "ayointegral/cloud-sandbox-backstage": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "babelforce/rtvbp-spec": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "bakabala27-svg/NAAS-Agentic-Core": {
+    "_bucket": "tangential",
+    "_confidence": 0.85,
+    "_reason": "AI tutoring framework; no AsyncAPI usage evident",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "ballerina-platform/asyncapi-triggers": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.88,
+    "_reason": "Generated Ballerina trigger code produced by AsyncAPI toolchain",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 103
+  },
+  "barbacane-dev/barbacane": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 27
+  },
+  "barrynauta/simpl-repo-tryout": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.75,
+    "_reason": "Documentation restructuring, navigable architectural blueprint only",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "batterypass/BatteryPassDataModel": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.9,
+    "_reason": "Data model specification based on DIN DKE standard, not runnable software",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 59
+  },
+  "bdragon300/go-asyncapi": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.99,
+    "_reason": "AsyncAPI codegen, CLI, diagram, and web UI toolchain",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 11
+  },
+  "belgif/openapi-cloudevents": {
+    "_bucket": "tangential",
+    "_confidence": 0.92,
+    "_reason": "OpenAPI CloudEvents definitions; no AsyncAPI usage",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "bian-official/public": {
+    "_bucket": "tangential",
+    "_confidence": 0.92,
+    "_reason": "Banking Swagger/OpenAPI APIs; no AsyncAPI usage",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 194
+  },
+  "bian-official/staging": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "bicatu/event-catalog": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 5
+  },
+  "bishoy-alhanna/frightflow": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "bitsy-ai/printnanny-webapp": {
+    "_bucket": "product",
+    "_confidence": 0.9,
+    "_reason": "Real IoT webapp and API for 3D printer monitoring plugin",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 3
+  },
+  "bjuvensjo/backstage-slask": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.85,
+    "_reason": "Explicitly a test repository for Backstage discovery",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "bmf-san/go-bitflyer-api-client": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "boyney123/my-eventcatalog": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.88,
+    "_reason": "Explicitly testing EventCatalog CI/CD features, not production",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "boyney123/starter-catalog": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "bpbpublications/DDD-Toolbox": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.87,
+    "_reason": "Book companion code from BPB Publications",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "bpbpublications/Spring-Boot-3-API-Mastery": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 12
+  },
+  "brainsnorkel/hourstats-bsky": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "briossant/BotAmoungUs": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.8,
+    "_reason": "Hackathon proof-of-concept game, not production",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "bru-oliveirax/bark2d2-dog-feeder": {
+    "_bucket": "product",
+    "_confidence": 0.78,
+    "_reason": "Real deployable IoT dog-feeder with real-time mobile monitoring",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "bsv-blockchain/ts-stack": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "btravers/amqp-contract": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.95,
+    "_reason": "TypeScript library for type-safe AMQP/RabbitMQ contracts",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 18
+  },
+  "bump-sh/cli": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 69
+  },
+  "c-plus-plus-equals-c-plus-one/sovereign-sdk-wip": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "c2siorg/genie": {
+    "_bucket": "product",
+    "_confidence": 0.7,
+    "_reason": "Open-source AI financial assistant application with agent architecture",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 5
+  },
+  "cajias/syncnode": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "call-sofia/callsofia-webhooks-docs": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.9,
+    "_reason": "Webhook event catalog and documentation, not runnable software",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "calvinlee999/AI-Platform-for-FinTech-Evolution": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.95,
+    "_reason": "Executive documentation and architecture diagrams only",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "capitanx9/llm-portrait": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ccradle/finding-a-bed-tonight": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "cedalo/documentation-staging": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "cedalo/streamsheets-documentation": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "certifieddata/certifieddata-agent-commerce-public": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "chainloop-dev/chainloop": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 554
+  },
+  "charlie-haley/asyncapi-go": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "chem-gl/chemistry-apps": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "chrislyl/apidocs-starter": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "christianrowlands/network-survey-messaging": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.88,
+    "_reason": "Defines message schemas for wireless survey app communications",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 34
+  },
+  "christopherblaisdell/continuous-architecture-platform-poc": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "cidverse/repoanalyzer": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "cipher982/longhouse": {
+    "_bucket": "tangential",
+    "_confidence": 0.82,
+    "_reason": "AI agent session manager; no AsyncAPI usage",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "cjjohansen/drone-web": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.78,
+    "_reason": "API design example using ADDR/Event Modeling methodology",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "cjjohansen/eventcatalog-examples": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "clecioantao/platform-state-repo": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "cloudevents/spec": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 5781
+  },
+  "cm-nishida-masayuki/odyssey-osaka-cx": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "codeboltai/codeboltjs": {
+    "_bucket": "tangential",
+    "_confidence": 0.82,
+    "_reason": "AI agent SDK; no AsyncAPI focus",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "codebricks-tech/taskbricks": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "codemonstersteam/mq-rest-sync-adapter": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.82,
+    "_reason": "Explicit example refactoring from a tutorial article series",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "codemonstersteam/pinout-asyncapi": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "codertjay/solax-audit": {
+    "_bucket": "tangential",
+    "_confidence": 0.72,
+    "_reason": "Blockchain competition audit monorepo, AsyncAPI incidental",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "codex-k8s/kodex": {
+    "_bucket": "tangential",
+    "_confidence": 0.75,
+    "_reason": "AI coding-agent platform in Kubernetes, AsyncAPI incidental",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 13
+  },
+  "coinpaprika/coinpaprika-docs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "cryptoxdog/Cognitive.Engine.Graphs": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "cryptoxdog/Enrichment.Inference.Engine": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "cycleplatform/api-spec": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.82,
+    "_reason": "Dedicated API spec repo for Cycle platform APIs",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 5
+  },
+  "d0u6ur45u/reminder": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "daksh0702/first-backstage-app": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "daler-rahimov/sio-asyncapi": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 17
+  },
+  "dalsgaard/account-service": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "dalsgaard/account-service-local": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "dalsgaard/asyncapi-template": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "danabrams/m": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "daniellmorris/EnvarynAI": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "daniellmorris/spechero": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "darken33/connaissance-client": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "darken33/design-first-allinone": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.97,
+    "_reason": "Conference talk presentation companion repo for BordeauxJUG",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 3
+  },
+  "dataGriff/outcome-app-pattern": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "davidB/sandbox_cdevents_spec": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.78,
+    "_reason": "Sandbox exploration of cdevents spec formats",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "davidtgillard/fits": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "dcSpark/sovereign-sdk": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "dduartee/sigaa-socket-api": {
+    "_bucket": "product",
+    "_confidence": 0.72,
+    "_reason": "WebSocket integration service for academic management system",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "deepgram/starter-contracts": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.9,
+    "_reason": "Collection of OpenAPI and AsyncAPI specs for Deepgram services",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "delano/postman-mcp-server": {
+    "_bucket": "tangential",
+    "_confidence": 0.78,
+    "_reason": "MCP server for Postman API; no AsyncAPI connection visible",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 150
+  },
+  "delokoseni/apigateway": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "depsilon/shardloom": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "derberg/python-mqtt-client-template": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 4
+  },
+  "derchrischkya/k8s-async-api": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "Simple test project for AsyncAPI with RabbitMQ",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "devmentors/Mikroserwisy-Revisited": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.88,
+    "_reason": "Polish microservices course companion code, educational",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "devone-demo/oracle-websocket-client-template": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "dghilardi/asyncapiv3": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.98,
+    "_reason": "Rust library parsing and serializing AsyncAPI v3 specs",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 3
+  },
+  "dhanisetti/Tenderlink": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "dimonoff/asyncapi-codegen": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "dipaksodani/async-gen": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "dlopezby93/digital-femsa-gaia": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "dmytmeln/eshop-microservices": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "dnonakolesax/cccad-locks": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "doemefu/very-cool-karaoke-server": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "donbagger/documentation": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "dotnet/maui-labs": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 166
+  },
+  "droso-hass/openab": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 10
+  },
+  "ducbrick/real-time-messaging-api": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "eHealthCardLink/Spezifikation": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.97,
+    "_reason": "Repository named Spezifikation, publishes AsyncAPI docs site",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 3
+  },
+  "eclipse-canought/can-translator": {
+    "_bucket": "product",
+    "_confidence": 0.87,
+    "_reason": "Deployable automotive MQTT-to-CAN translator service",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "eclipse-symphony/symphony": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 51
+  },
+  "eclipse-uprotocol/symphony-target-example-rust": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "eda-ecommerce/shoppingBasket-service": {
+    "_bucket": "product",
+    "_confidence": 0.88,
+    "_reason": "E-commerce shopping basket microservice in EDA system",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "eduardofesilva/async-eda-otel-workshop": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 4
+  },
+  "eduardotourinho/candlesticks-hexagonal-architecture": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "edulucca/api-autenticacao": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ekhodzitsky/gigastt": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 8
+  },
+  "ekidenfi/ekiden-docs": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "encypher-studio/newsware-docs": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.9,
+    "_reason": "Frontend documentation site for Newsware API clients",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "eoap/event-driven-with-argo": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "epieczko/betty": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ericfitz/tmi": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ermasavior/nebeng-jek": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "escrivivir-co/aleph-scriptorium": {
+    "_bucket": "tangential",
+    "_confidence": 0.78,
+    "_reason": "MCP/AI intellectual amplification stack, AsyncAPI incidental",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "event-catalog/eventcatalog": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.85,
+    "_reason": "Tooling platform to catalog and govern event-driven APIs",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 2724
+  },
+  "event-catalog/generators": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.97,
+    "_reason": "AsyncAPI and OpenAPI generator plugins for EventCatalog",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 14
+  },
+  "eventum-generator/eventum": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 44
+  },
+  "evryfs/asyncapi-generator": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 5
+  },
+  "exploding-CATs-42/ft_transcendence": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "42 school capstone project, not production software",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "eyw520/inspirited-docs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "factory-x-contributions/async-aas-helm": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.78,
+    "_reason": "Helm charts wiring AAS implementations to MQTT broker",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "facundo1220/asyncapi-eda-ecommerce": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.9,
+    "_reason": "Demonstrates EDA microservices pattern with RabbitMQ",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "fedykvitalik2004/library-book-service": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "fedykvitalik2004/library-notification-service": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "fedykvitalik2004/library-user-service": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "fern-api/docs-examples": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "fern-api/docs-starter": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.93,
+    "_reason": "Starter template for publishing docs from OpenAPI",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 39
+  },
+  "fern-api/fern": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 3654
+  },
+  "fern-demo/postman-quickstart": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "fern-support/universal-shuttle-348791": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "fernandoeqc/log_stream": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ff-fab/cosalette": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "ff-fab/cosalette-apps": {
+    "_bucket": "product",
+    "_confidence": 0.78,
+    "_reason": "Deployable smart home IoT bridge applications",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "filipepacheco/the-jam-app-frontend": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "finlayjn/asyncapi-swift-ws-template": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "fishaudio/docs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 6
+  },
+  "flameboss/fb-api-doc": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.9,
+    "_reason": "API documentation published at product domain, no runnable code",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 7
+  },
+  "flamewow/nestjs-asyncapi": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 233
+  },
+  "floormatgen/sock-vote-2": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "fmvilas/meiac": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.92,
+    "_reason": "IaC tool that reads AsyncAPI files to generate Terraform configs",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "forepath/agenstra": {
+    "_bucket": "product",
+    "_confidence": 0.88,
+    "_reason": "Deployable platform for managing AI agent infrastructure",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "foxminchan/BookWorm": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.95,
+    "_reason": "Explicitly demo-only, not production ready",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 502
+  },
+  "frankkilcommins/arazzo-examples": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "fraunhoferfokus/dredger": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "fraunhoferfokus/dredger-todos": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.97,
+    "_reason": "Demo and test fixture for the dredger generator",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "freaz/eventcatalog-asyncapi-order-issue": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "freaz/eventcatalog-bug-reporting": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "fredabila/oahl": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 6
+  },
+  "fsgeek/lares": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "fusion-powered-io/api-generator": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "gdg-garage/garage-trip-chores": {
+    "_bucket": "product",
+    "_confidence": 0.88,
+    "_reason": "Production task manager with Discord, REST and WebSocket APIs",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "geekatron/jerry": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 23
+  },
+  "gematik/api-ehcl": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 9
+  },
+  "gematik/zeta-testfachdienst": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "geopython/pygeoapi": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 609
+  },
+  "giannisgkountras/ShelobDSL": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.85,
+    "_reason": "DSL that generates full-stack apps from message broker specs",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "giannisgkountras/web-dsl": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.85,
+    "_reason": "DSL code generator for full-stack apps with broker integration",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "gladiaio/docs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 4
+  },
+  "gocobalt/mintlify-docs": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.82,
+    "_reason": "Mintlify docs starter kit, documentation only",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "gokerDEV/node-chat-server": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "gonewton/newton": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "gopal45656/everest-core-release": {
+    "_bucket": "product",
+    "_confidence": 0.93,
+    "_reason": "EVerest open-source EV charge controller, production software",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "gpdeoli/revit-api": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "grace88888884/respo": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "gravitee-io/gravitee-api-management": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 418
+  },
+  "graviteeqa/testrepo": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.95,
+    "_reason": "Explicitly a test import fixture for regression testing",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "hahnbeelee/docs-michal": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.8,
+    "_reason": "Mintlify starter kit, documentation only",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "han243786/Quantpilot": {
+    "_bucket": "product",
+    "_confidence": 0.72,
+    "_reason": "Standalone quantitative trading desktop application",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "hassanm0301/plasma-bridge": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "hbtrack/official": {
+    "_bucket": "tangential",
+    "_confidence": 0.8,
+    "_reason": "Governance and CI/CD config repo; AsyncAPI incidental",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "heikkilamarko/todo-app": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.9,
+    "_reason": "Explicitly a hobby playground for experimenting with technologies",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 20
+  },
+  "herostrat/arcturus": {
+    "_bucket": "product",
+    "_confidence": 0.75,
+    "_reason": "Alpha tileserver product for SignalK marine data protocol",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "higorsnt/ansible-workshop": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "hkirat/asyncapi-fork": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "hmajid2301/banterbus": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 7
+  },
+  "hollyplankdev/emptystream-monolithic": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "holydocs/messageflow": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 10
+  },
+  "hongkongkiwi/yorked-docs": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.72,
+    "_reason": "Documentation site for the Yoked dating app product",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "hongmaple0820/agent-academy": {
+    "_bucket": "tangential",
+    "_confidence": 0.85,
+    "_reason": "AI agent skills/knowledge base repo, not AsyncAPI user",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 6
+  },
+  "hotcode-dev/zerohub": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "hsborges/TDSOFT-FACOM-UFMS": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "hungvo2010/free-note-service": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "huynguyengl99/chanx": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 149
+  },
+  "huynguyengl99/chanx-fastapi-tutorial": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "icanbwell/fhir-server": {
+    "_bucket": "product",
+    "_confidence": 0.87,
+    "_reason": "Production-grade open-source FHIR server with streaming",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 47
+  },
+  "igmrrf/ecommerce_services": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "Self-described demonstration of microservices architecture",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "indiealexh/quarkus-json-rpc-ws-next-example": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ingka-group/asyncapi-payload-validator": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "inputlayer/inputlayer": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 26
+  },
+  "insspb/asyncapi3": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 5
+  },
+  "intent-driven-dev/openspec-schemas": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 51
+  },
+  "interruping/upbeat": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ir-kit/ir-kit": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "it-incubator/nestjs": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.75,
+    "_reason": "NestJS examples repository",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 7
+  },
+  "itamm15/sync-async-docs": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ivanztz/sandbox": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.88,
+    "_reason": "Explicitly educational or project accelerator purposes",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "izertis/spring-boot-kotlin-playground": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jacekzwpl/docueye": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 18
+  },
+  "jambonz/jambonz-fern-config": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jamescarr/async-api-demo": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jamescarr/jetstream-messaging": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jamesenki/vehicle-to-cloud-communications-architecture": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jardelva96/Orqupay": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jason931225/oyatie": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jhamill34/disney-gen-ai-takehome": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "Take-home interview/exercise project, not production software",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "jhekasoft/e-backend": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jijingkun-commits/fastapi": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jimfil/raspberryPiProject": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "jimfil/smartWasteBinProject": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "jlfowle/asterism": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "jlikeme/fileserver": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jmanhype/speckit": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 19
+  },
+  "joemphilips/bitCaster": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "johnmarios/advanced-programming-techniques-lab": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jonathan-prout/tic-tac-toe": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jonathaneichenhofer/workshop-eric": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jordancrombie/bsim": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.9,
+    "_reason": "Banking simulator, educational or demo application",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "joserprieto/ai-skills": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "joserprieto/practice-desk": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jqassistant-plugin/jqassistant-asyncapi-plugin": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "jrevillard/edulift": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.78,
+    "_reason": "Documentation site with technical, API, and functional docs",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "jstoiko/amf": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "juliangracin/community-docs": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.95,
+    "_reason": "Repository contains AsyncAPI spec file for community API",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "juniorcmauricio/INF332_SOA": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "University course on SOA and web services",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "justaksi7/b2b-sap-payment-bridge": {
+    "_bucket": "product",
+    "_confidence": 0.62,
+    "_reason": "Deployable SAP B2B payment bridge service architecture",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "justynroberts/emea-backstage-demo": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "juvi07/bs-templates": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "kakabisht/AsyncAPITemplate": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "kakao-tech-campus-3rd-step3/Team8_BE": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.88,
+    "_reason": "Kakao Tech Campus bootcamp team project",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "kakaoboot-19/19-load-test": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.9,
+    "_reason": "Bootcamp load test project based on chat app",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "kanekoshoyu/asyncapi-rust-ws-template": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.99,
+    "_reason": "AsyncAPI template/generator for Rust WebSocket clients",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "kanekoshoyu/exchange-collection": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.82,
+    "_reason": "Collection of crypto exchange OpenAPI/AsyncAPI spec documents",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 23
+  },
+  "kardasz/skipper-club-android": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "kaucrow/mqtt-rest-bridge": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.88,
+    "_reason": "Explicitly described as a demo SCADA system",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "kdwras/node-red-async-api-plugin": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "kelnishi/SatMouse": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "khulnasoft/RapidDocs": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "kingak4/ft_transcendence": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.95,
+    "_reason": "42 school curriculum final project",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 4
+  },
+  "kinoh/Tsuki": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "klurvio/sukko": {
+    "_bucket": "product",
+    "_confidence": 0.82,
+    "_reason": "Real-time trading data WebSocket infrastructure platform",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "knowmadmood-poc-rhdevhub/backstage": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "kombifyio/SpeechKit": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "kondoumh/asyncapi-study": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ktb3-team5/ktb-BootcampChat": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.9,
+    "_reason": "Kakao Tech Bootcamp chat application",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "ktbloadtest-03/ktb-BootcampChat": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.9,
+    "_reason": "Kakao Tech Bootcamp chat application fork",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "kubestellar/console-kb": {
+    "_bucket": "tangential",
+    "_confidence": 0.82,
+    "_reason": "AI mission knowledge base, not AsyncAPI user",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 9
+  },
+  "l3wi/docs": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.88,
+    "_reason": "Documentation site using Mintlify starter kit",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "l3wi/fumadocs-async": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "laat/asyncapi-generator-repro": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.97,
+    "_reason": "Bug reproduction case for asyncapi-generator issue",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "lafette21/smart-gardening": {
+    "_bucket": "product",
+    "_confidence": 0.85,
+    "_reason": "IoT smart gardening system with asyncapi.yaml for its API",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "latamteks-cmyk/SmartEdify_app": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ldynia/learning-api-styles": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.95,
+    "_reason": "Explicitly book companion code with examples and videos",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 22
+  },
+  "lerenn/asyncapi-codegen": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 157
+  },
+  "letya999/support_rag": {
+    "_bucket": "product",
+    "_confidence": 0.6,
+    "_reason": "Real open-source RAG system with event-driven architecture",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "leynos/wildside": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "lg-labs/blank-service": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "Explicitly a template; readme says replace blank with domain",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 4
+  },
+  "lg-labs/food-ordering-system": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.88,
+    "_reason": "Architecture showcase: Hex Arch, DDD, SAGA, Outbox patterns",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "lgonzalezrouco/sensareal-backend": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "lihs-ie/alpha-mind": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "linkkotech/scalar": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "livestorm/frontend-engineer-hiring-test": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.97,
+    "_reason": "Technical hiring test, not production software",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "loulou123546/kenshiata-shared": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "lufyxz7/xpogo": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "luistrigueiros/simple-asyncapi-codegen": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "maciekpapiez/redocly-1": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.85,
+    "_reason": "Starter template for Redocly API docs project",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "madebykrol/formr": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "makeevolution/SimplePizzaWinkel": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.82,
+    "_reason": "Personal learning project applying microservices knowledge",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "makeevolution/messaging": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.9,
+    "_reason": "Self-described personal experimentation on async systems",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "manav-1/expense-ai-be": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "manosmax/Pie": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "manosmax/Smart-Waste-Bin": {
+    "_bucket": "product",
+    "_confidence": 0.78,
+    "_reason": "IoT pipeline with AsyncAPI docs for real deployment",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "manuschillerdev/esphome-elero": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "marcopaga/config_api": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.65,
+    "_reason": "'Hacking with elixir' description signals personal exploration",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "marle3003/mokapi": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 56
+  },
+  "marle3003/mokapi-kafka-workflow": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "masermediagroup-stack/CursorSkills": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "mattmeye/payara-6-ibm-queue": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "Integration example showing IBM MQ usage in Payara 6",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "mattys1/raptorChat": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "maxime-aube/ollama": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.88,
+    "_reason": "Node/TypeScript starter template boilerplate",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "maximilianoPizarro/platform-hub-spoke-config": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "maxkrv/uchat": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 4
+  },
+  "mayankshouche/docs": {
+    "_bucket": "tangential",
+    "_confidence": 0.82,
+    "_reason": "Mintlify docs starter kit, no AsyncAPI content evident",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "mayankshouche/docs-ally": {
+    "_bucket": "tangential",
+    "_confidence": 0.82,
+    "_reason": "Mintlify docs starter kit, no AsyncAPI content evident",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "mcavicchiaUADE/desapps2": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "med-united/popp-smartphone-konnektor": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 9
+  },
+  "medmo/backstage-templates": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "medmo/ft-event-catalog": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "meridianhub/meridian": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 10
+  },
+  "metalalive/e_commerce": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.9,
+    "_reason": "Readme explicitly states not production ready, learning purpose",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "meteatamel/asyncapi-basics": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.97,
+    "_reason": "Educational samples and references about AsyncAPI",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 3
+  },
+  "microcks/microcks": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.99,
+    "_reason": "API mocking and testing platform consuming AsyncAPI specs",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 1956
+  },
+  "microcks/microcks-spectral-ruleset": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 11
+  },
+  "microcks/microcks.github.io": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 8
+  },
+  "microcks/microcks.io": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.9,
+    "_reason": "Public website resources and templates for Microcks",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 24
+  },
+  "miltonabdon/ecommerce-scalable-platform": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "Explicitly a practical demonstration of architectural patterns",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "mindwm/mindwm-api": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ministryofjustice/curious-API": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "ministryofjustice/hmpps-accredited-programmes-manage-and-deliver-api": {
+    "_bucket": "product",
+    "_confidence": 0.92,
+    "_reason": "Production Spring Boot API for HMPPS accredited programmes",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 3
+  },
+  "ministryofjustice/hmpps-alerts-api": {
+    "_bucket": "product",
+    "_confidence": 0.95,
+    "_reason": "Real deployed UK government HMPPS alerts API service",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "ministryofjustice/hmpps-challenge-support-intervention-plan-api": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "ministryofjustice/hmpps-external-movements-api": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ministryofjustice/hmpps-find-and-refer-an-intervention-service": {
+    "_bucket": "product",
+    "_confidence": 0.91,
+    "_reason": "Production service for finding and referring interventions",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "ministryofjustice/hmpps-health-and-medication-api": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "ministryofjustice/hmpps-incentives-api": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "ministryofjustice/hmpps-incident-reporting-api": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "ministryofjustice/hmpps-locations-inside-prison-api": {
+    "_bucket": "product",
+    "_confidence": 0.85,
+    "_reason": "Production API managing locations inside prisons",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "ministryofjustice/hmpps-non-associations-api": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "ministryofjustice/hmpps-prison-offender-events": {
+    "_bucket": "product",
+    "_confidence": 0.95,
+    "_reason": "Real service publishing offender events to pub/sub topics",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 3
+  },
+  "ministryofjustice/hmpps-prison-visit-booker-registry": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "ministryofjustice/hmpps-prisoner-search": {
+    "_bucket": "product",
+    "_confidence": 0.95,
+    "_reason": "Real deployed prisoner search service via OpenSearch",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "ministryofjustice/hmpps-restricted-patients-api": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ministryofjustice/hmpps-visit-allocation-api": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "ministryofjustice/offender-case-notes": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "mishasdk/mipt-ml-async": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.97,
+    "_reason": "University course homework assignment (\u0414\u0417 6)",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "mjones3/interface-exception-collector-service": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "mmmnt/mmmnt": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "mmussett/flogo-hello-world-event-driven": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "mnemitz/webpack-asyncapi-schema-loader": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.97,
+    "_reason": "Webpack loader explicitly for parsing AsyncAPI documents",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "monghithub/serialplab": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "motor-screwdriver/mts-true-tech-hack-26": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.8,
+    "_reason": "Hackathon project indicated by -hack-26 in repo name",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 4
+  },
+  "mshogin/archctl": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "mtturner57/AsyncApiGenerator": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.93,
+    "_reason": "Generates models or YAML from AsyncAPI files",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "mumia/wallet-accountant": {
+    "_bucket": "product",
+    "_confidence": 0.72,
+    "_reason": "Deployable personal finance/accounting application",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "murithigeo/ogc-edr-api": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "myrobotaxi/telemetry": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "nandinimukherjeeblr/testing_dita": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "nandorsilva/eda-fia-th": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "Explicitly a lab for local development and study purposes",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "nashspence/pyspec": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "navikt/ao-oppfolgingskontor": {
+    "_bucket": "product",
+    "_confidence": 0.9,
+    "_reason": "Norwegian NAV government service with Kafka event API",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "navikt/dp-soknad-orkestrator": {
+    "_bucket": "product",
+    "_confidence": 0.92,
+    "_reason": "Dagpenger application orchestrator consuming Kafka topics",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "navikt/veilarboppfolging": {
+    "_bucket": "product",
+    "_confidence": 0.93,
+    "_reason": "Norwegian employment follow-up service publishing Kafka topics",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "nba-amtgroup/4424rr-2": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "nekofar/warpcast": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.78,
+    "_reason": "TypeScript client SDK for Warpcast APIs",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "nemirlev/async-api-example": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "neosun100/VibeVoice": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "netbarros/Production-MagicSaas-Sofia-IA-Software-Lotus": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "newstack-cloud/celerity": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "nezia1/missive-documentation": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.82,
+    "_reason": "MkDocs site documenting a diploma thesis project",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "ngscheurich/elixirconf-eu-2024": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.96,
+    "_reason": "Conference talk companion source code, not production",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "nguyenvinhhuy/microservice-platform": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "nicolas-codemate/esp32-pixelcast": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "nikescar/dure": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "niteesh-reddy91/cloudevents-kafka-demo": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "nitu01019/weelobackend": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "nivoragit/authord-mkdocs": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "nivreddy14/event-mesh": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "noeliajimenezg/mokapi_issue": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "notnullptr-gh/architechture-sprint-3": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.88,
+    "_reason": "Course architecture sprint with numbered task assignments",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "nstsai/SAproject": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.87,
+    "_reason": "Course project with C4, BPMN, OpenAPI documentation artifacts",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "ocampana-videotec/onvif-cloud": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "omnai-project/OmnAIScope_DataServer_API_Doc": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.97,
+    "_reason": "Repo explicitly documents WebSocket API with AsyncAPI spec",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "openagents-org/openagents": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 3737
+  },
+  "opencaps/mqttcomms": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "openfoodfacts/documentation": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 4
+  },
+  "openfoodfacts/openfoodfacts-auth": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "openfoodfacts/openfoodfacts-query": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 4
+  },
+  "openfoodfacts/openfoodfacts-server": {
+    "_bucket": "product",
+    "_confidence": 0.95,
+    "_reason": "Main food database API server and web interface",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 1047
+  },
+  "opengeospatial/ogcapi-environmental-data-retrieval": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 69
+  },
+  "openpx-trade/openpx": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 4
+  },
+  "openshift-hyperfleet/architecture": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.88,
+    "_reason": "Architecture documents and engineering standards repository",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "openwop/openwop": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.78,
+    "_reason": "Wire-level protocol specification for multi-agent orchestration",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "openxapi/openxapi": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.97,
+    "_reason": "Collection of AsyncAPI/OpenAPI specs for crypto exchanges",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 9
+  },
+  "oracle-samples/websocket-client-template": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 7
+  },
+  "otto-de/api-guidelines": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 50
+  },
+  "owasp-noir/noir": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.8,
+    "_reason": "SAST tool parsing API specs including AsyncAPI to extract endpoints",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 1320
+  },
+  "pactflow/openapi-pact-comparator": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 8
+  },
+  "paddypawprints/VLMChat": {
+    "_bucket": "product",
+    "_confidence": 0.82,
+    "_reason": "Deployable edge AI platform for vision language models on hardware",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "paga16-hash/anonymous-shard": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.9,
+    "_reason": "Master thesis proof-of-concept P2P anonymity system",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "pagopa/pn-lab-docs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "pagopa/pn-paper-tracker": {
+    "_bucket": "product",
+    "_confidence": 0.95,
+    "_reason": "Italian government microservice tracking paper shipments in SEND",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "paranoideed/webster": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "pardeike/GABP": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 16
+  },
+  "parmendes/API_Doc": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "parmendes/MessageBrokerExample": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "pascal-audio/px-api": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.85,
+    "_reason": "API documentation and spec for hardware audio amplifiers",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "pb33f/libasyncapi": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "peguidotte/aegis-test-pubsub-interfaces": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.82,
+    "_reason": "Single source of truth for inter-service interfaces and contracts",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "peterjaberau/mock-data": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "pfplay/pfplay-platform": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "picodotdev/blog-bitix": {
+    "_bucket": "tangential",
+    "_confidence": 0.9,
+    "_reason": "Java/Linux blog; AsyncAPI mentioned incidentally in posts",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "picodotdev/blog-ejemplos": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 90
+  },
+  "piedraprog/unified-personal-skills": {
+    "_bucket": "tangential",
+    "_confidence": 0.93,
+    "_reason": "AI coding-agent skills registry, AsyncAPI only incidental",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "pingxin403/platform-console": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "pixel-agents-hq/pixel-agents": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 8127
+  },
+  "pmdartus/mintlify-docs": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "pmxt-dev/pmxt": {
+    "_bucket": "product",
+    "_confidence": 0.72,
+    "_reason": "Real unified trading API service for prediction markets",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1870
+  },
+  "pokerjocke70/cds-poc": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "portus84/smartorder-ms": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "position-pal/location-service": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "postel-sh/postel": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "postman-cs/postman-aws-spec-discovery-action": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ppzxc/relaybox": {
+    "_bucket": "product",
+    "_confidence": 0.8,
+    "_reason": "Deployable relay hub with protocol parsing and message routing",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "prajwalaher33/feeshr": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "pre-backstage/producer-repo-public": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.7,
+    "_reason": "Validation/test fixture repo for catalog API entries",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "pseudotop/maekon-client": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "pt9912/geodata-native-suite": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "pv-udpv/dual-publish-platform": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.85,
+    "_reason": "Reference scaffold template for publishing OpenAPI/AsyncAPI specs",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "qbem-repos/standards": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.92,
+    "_reason": "Official API, webhook, and async standards playbook",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "qoretechnologies/qore": {
+    "_bucket": "tangential",
+    "_confidence": 0.9,
+    "_reason": "General-purpose programming language; AsyncAPI incidental",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 63
+  },
+  "qualtt/restful-slice": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "quarkiverse/quarkus-asyncapi": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 12
+  },
+  "quenbyako/asyncapi-example": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "quub-fi/quub-exchange-docs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "r--w/documentation": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "rabbytesoftware/quiver.core": {
+    "_bucket": "tangential",
+    "_confidence": 0.9,
+    "_reason": "Cross-platform package manager; no AsyncAPI relevance",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 6
+  },
+  "radiorabe/pathfinder-cloudevents-service": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "rafaelgpimenta/go-base-project": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "rainbow-mobile/web_robot_server": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.85,
+    "_reason": "NestJS starter repository template, not a real service",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "rajeshrsinha/template": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ranchat-kr/ranchat-api": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "raphaeldelio/springwolf-demo-spring-io-2024": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "ravecat/asyncapi": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ravecat/moda": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "ravecat/songy": {
+    "_bucket": "product",
+    "_confidence": 0.88,
+    "_reason": "Real deployed multiplayer music game with WebSocket backend",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 3
+  },
+  "rbaxim/MOP": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "redman2004/tinyXfixer": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "remidosol/real-time-trade-api": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "resultakak/argos": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "revue-org/revue": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 10
+  },
+  "ripple/rippled-api-spec": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.96,
+    "_reason": "Repository of OpenAPI/AsyncAPI specs for XRP Ledger",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 2
+  },
+  "rlarin/it-crowd-pixel-agents": {
+    "_bucket": "tangential",
+    "_confidence": 0.93,
+    "_reason": "AI coding-agent visualization plugin, not an AsyncAPI user",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "roalcantara/dots": {
+    "_bucket": "tangential",
+    "_confidence": 0.93,
+    "_reason": "Dotfiles repo; AsyncAPI mentioned incidentally",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "rock-hu/architecture-catalog": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.78,
+    "_reason": "Architecture documentation catalog with domain models",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "roldaiateam/apis-especifications": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.95,
+    "_reason": "API contract specifications published as Maven artifacts",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "romanchaa997/st-risk-platform": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "romdj/tempsdarret.studio": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ross2p/mindlet-notification": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ross2p/mindlet-payment": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "ross2p/mindlet-subscription": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "s-menne-inovex/async_api_pages": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.97,
+    "_reason": "Explicitly testing asyncapi generator with GitHub Pages",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "salaboy/pizza": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 34
+  },
+  "salaboy/spring-ai-agentic-webinar": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "salaboy/spring-io-2026-workshop": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 5
+  },
+  "samovers/OFARM": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.88,
+    "_reason": "Open semantic reference model and governance framework, not runnable software",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "sanzhanggui/grandma_cook_agent": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.82,
+    "_reason": "Hackathon PoC for voice-to-recipe-card agent pipeline",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "sap-2025-2026/lab-activity-10": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "sarkr72/practice": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "saujasn/accelerator": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "scalar/scalar": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 15204
+  },
+  "seanchatmangpt/dslmodel": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 27
+  },
+  "seboraid/asyncapitest": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "sfpostman/PokemonBrightbox": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "shapeitapp/shapeit-github-app": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "siemendev/asyncapi-php": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "sillygod/scaffold": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "simliai/docs": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.88,
+    "_reason": "Documentation site using Mintlify, no runnable application",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "siom79/jasyncapicmp": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "siom79/jopenapicmp": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "slng-ai/sdks": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "smallest-inc/smallest-ai-documentation": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "smoya/asyncapi-parser-example": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.99,
+    "_reason": "Minimal example showing how to validate AsyncAPI documents",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "sngular/scs-multiapi-plugin": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 61
+  },
+  "socrateasehq/autoproctor-mintlify-docs": {
+    "_bucket": "tangential",
+    "_confidence": 0.85,
+    "_reason": "Mintlify docs starter kit; no AsyncAPI content visible",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "solace-cto-labs/platform-api": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "solace-cto-labs/solace-amplify-discovery-agent": {
+    "_bucket": "product",
+    "_confidence": 0.85,
+    "_reason": "Deployable agent synchronizing AsyncAPIs between Solace and Amplify",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "solace-cto-labs/solace-axway-agent": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.95,
+    "_reason": "Agent that provisions AsyncAPI specs into Solace brokers",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 3
+  },
+  "solacecommunity/spring-cloud-stream-request-reply": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.88,
+    "_reason": "Spring Boot starter library for messaging request-reply pattern",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "spbu-ds-practicum-2025/example-project": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "specmatic/aws-lambda-kafka-with-localstack": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.92,
+    "_reason": "Demo showing Lambda/Kafka contract testing with AsyncAPI 3.0",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "specmatic/docs.specmatic.io": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 3
+  },
+  "specmatic/enterprise-sample": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "specmatic/labs": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "specmatic/labs-contracts": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.93,
+    "_reason": "Central repository of canonical OpenAPI/AsyncAPI contract specs",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "specmatic/specmatic": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.97,
+    "_reason": "Contract testing and service virtualization tool for AsyncAPI/OpenAPI",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 381
+  },
+  "specmatic/specmatic-arazzo-openapi-asyncapi-sample": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.96,
+    "_reason": "Sample project demonstrating API workflow testing with Arazzo",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "specmatic/specmatic-async-sample": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "specmatic/specmatic-kafka-avro-sample": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "specmatic/specmatic-kafka-sample-asyncapi3": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "specmatic/specmatic-order-contracts": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.93,
+    "_reason": "Central contract repository holding API specs for sample projects",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 6
+  },
+  "specmatic/specmatic-studio-playwright-ts-tests": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "specmatic/studio-demo": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "speechmatics/docs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 5
+  },
+  "springwolf/springwolf-core": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 343
+  },
+  "ssstijn/movies-backend-sem4": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "stardew-valley-dedicated-server/asyncapi-generator-template-ts": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "stardew-valley-dedicated-server/web": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "stojkovic-a/IOT-Project-2": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.85,
+    "_reason": "Student IoT school project with sensor and analytics containers",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "stojkovic-a/IOT-project-3": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.78,
+    "_reason": "Named 'IOT project 3', school-style instructions, dataset-driven demo",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "straylight-archive/render-api": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "strukovsv/yclients-micro": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "sun475300-sudo/Swarm-control-in-sc2bot": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.72,
+    "_reason": "StarCraft 2 bot hobby/demo project",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "suwa-sh/lineage-to-graph": {
+    "_bucket": "product",
+    "_confidence": 0.65,
+    "_reason": "Deployable data lineage visualization tool",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "swagger-api/apidom": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 99
+  },
+  "tachu2/transcendence": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "tadelv/reaprime": {
+    "_bucket": "product",
+    "_confidence": 0.88,
+    "_reason": "Real app bridging Decent Espresso machine to web UIs",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 38
+  },
+  "takeruun/ws-ts-gen": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.97,
+    "_reason": "CLI code generator from AsyncAPI 3.0 schemas to TypeScript",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "tanagraspace/ccsds-mo-to-asyncapi": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "tanishy7777/Joined_Words": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "taonaben/grupus": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "taonaben/grupus-frontend": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "tassosgomes/poc-event-system": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "tenacious89/open_agent_hackathon": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.82,
+    "_reason": "Hackathon AI agent project, not production service",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "tewhatuora/api-standards": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.94,
+    "_reason": "Official API development and security standards documentation site",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 13
+  },
+  "the-codegen-project/cli": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 34
+  },
+  "thealmikey/zilla-kt": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.9,
+    "_reason": "Zilla is a multi-protocol proxy for event-driven messaging",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "thelonggoodbuy/cryptowallet": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "thomascarter613/aic-smb-copilot-codebase": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "timnavigate/DAC": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "timonback/springwolf-demo": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "tomascejka/microcks.labs": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "tornado80/collaborative-whiteboard": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.95,
+    "_reason": "University course project, Internet Protocols at Aalto",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "trustgraph-ai/trustgraph": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 2147
+  },
+  "tudor-upt/urban-pulse-ada": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "udamir/api-ref-bundler": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 26
+  },
+  "ugaemi/gyeongdohalsaram-server": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "underpass-ai/underpass-choreographer": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "underpass-ai/underpass-runtime": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "up1/workshop-asyncapi-services-2025": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "up1/workshop-event-based-golang": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "up1/workshop-js-testing-202507": {
+    "_bucket": "tangential",
+    "_confidence": 0.78,
+    "_reason": "JS testing workshop; AsyncAPI only incidental",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 1
+  },
+  "vasilisalmpanis/ft_transcendence": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.95,
+    "_reason": "ft_transcendence is a 42 school curriculum project",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "vasudevgrg/stock_exchange": {
+    "_bucket": "product",
+    "_confidence": 0.8,
+    "_reason": "Stock exchange backend with real trading routes and websockets",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "viktorSrk/quartogether": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.96,
+    "_reason": "TU Delft CSE2000 course project, academic year",
+    "_rule_bucket": "tooling/library",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "vivekjava/Spring-Boot-Rest": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "vondacho/my-api-portal": {
+    "_bucket": "product",
+    "_confidence": 0.72,
+    "_reason": "Deployable API developer portal with catalog and mocking",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "vsk-api/papi": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.88,
+    "_reason": "Versioned API specification for eOSAGO insurance interface",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 2
+  },
+  "webitel/im-delivery-service": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "whitebit-exchange/docs": {
+    "_bucket": "spec/docs",
+    "_rule_bucket": "spec/docs",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "will-break-it/wallet-architecture": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.8,
+    "_reason": "Architecture/API design document for blockchain wallet API",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 3
+  },
+  "wirenboard/wb-device-manager": {
+    "_bucket": "product",
+    "_confidence": 0.95,
+    "_reason": "Real IoT Modbus device manager with MQTT/AsyncAPI spec",
+    "_rule_bucket": "spec/docs",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "wirenboard/wb-diag-collect": {
+    "_bucket": "product",
+    "_confidence": 0.88,
+    "_reason": "Deployable IoT diagnostics collector with MQTT RPC API",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "wirenboard/wb-mqtt-confed": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "wirenboard/wb-mqtt-dali": {
+    "_bucket": "product",
+    "_confidence": 0.9,
+    "_reason": "Deployable MQTT-DALI bridge service for Wiren Board",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 3
+  },
+  "wirenboard/wb-mqtt-db": {
+    "_bucket": "product",
+    "_confidence": 0.9,
+    "_reason": "Deployable MQTT channel data logger service",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 1
+  },
+  "wirenboard/wb-mqtt-logs": {
+    "_bucket": "product",
+    "_confidence": 0.88,
+    "_reason": "Deployable service exposing journald logs over MQTT",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "wirenboard/wb-rules": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 82
+  },
+  "wohnheim/stueble": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "worried-networking/uptrakit": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "wso2/product-apim": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 986
+  },
+  "xavisavvy/scrum-monsters": {
+    "_bucket": "product",
+    "_confidence": 0.75,
+    "_reason": "Real multiplayer web game with event-driven real-time API",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 3
+  },
+  "xingyug/service2mcp": {
+    "_bucket": "tooling/library",
+    "_confidence": 0.88,
+    "_reason": "Compiles AsyncAPI and other specs into MCP tool servers",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "xraph/forge": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 7
+  },
+  "yaccob/teds": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "yethan4/where-is-my-dog": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "yojo-generator/generator": {
+    "_bucket": "tooling/library",
+    "_rule_bucket": "tooling/library",
+    "_source": "rule",
+    "stargazerCount": 14
+  },
+  "yonatangross/orchestkit": {
+    "_bucket": "tangential",
+    "_rule_bucket": "tangential",
+    "_source": "rule",
+    "stargazerCount": 183
+  },
+  "yoshioterada/Spec-Driven-Dev": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 2
+  },
+  "yourbourse/trade-server-trading-view-js": {
+    "_bucket": "product",
+    "_confidence": 0.85,
+    "_reason": "Production-ready trading terminal with real-time market data",
+    "_rule_bucket": "demo/fixture",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "yousuf7474/meerkat": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "yukihito-jokyu/postman-mcp-server": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "yuvraj-chouhan-dev/ready-now-server": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "zachariep/spring-petclinic-saga-refactor": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "zikratski/LinguaConnect": {
+    "_bucket": "spec/docs",
+    "_confidence": 0.92,
+    "_reason": "Repo is documentation for a service, not the service itself",
+    "_rule_bucket": "uncategorized",
+    "_source": "llm-recovered",
+    "stargazerCount": 0
+  },
+  "zimoch84/HaggisProject": {
+    "_bucket": "product",
+    "_rule_bucket": "product",
+    "_source": "rule",
+    "stargazerCount": 0
+  },
+  "znsio/specmatic-async-order-api-kotlin": {
+    "_bucket": "demo/fixture",
+    "_confidence": 0.82,
+    "_reason": "Sample app demonstrating Specmatic async contract testing",
+    "_rule_bucket": "product",
+    "_source": "llm-corrected",
+    "stargazerCount": 0
+  },
+  "zon/wurbs": {
+    "_bucket": "uncategorized",
+    "_rule_bucket": "uncategorized",
+    "_source": "rule",
+    "stargazerCount": 1
+  },
+  "zuevrs/yanote": {
+    "_bucket": "demo/fixture",
+    "_rule_bucket": "demo/fixture",
+    "_source": "rule",
+    "stargazerCount": 0
+  }
+}

@@ -1,0 +1,2459 @@
+[
+  {
+    "repo": "kanekoshoyu/asyncapi-rust-ws-template",
+    "stars": 2,
+    "rule": "demo/fixture",
+    "llm": "tooling/library",
+    "confidence": 0.99,
+    "reason": "AsyncAPI template/generator for Rust WebSocket clients",
+    "text": "AsyncAPI Template for Generating Rust WebSocket Client"
+  },
+  {
+    "repo": "ONSdigital/dp-search-data-importer",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.95,
+    "reason": "Real microservice consuming Kafka messages to populate Elasticsearch",
+    "text": "Service to store searchable content into elasticsearch"
+  },
+  {
+    "repo": "tewhatuora/api-standards",
+    "stars": 13,
+    "rule": "demo/fixture",
+    "llm": "spec/docs",
+    "confidence": 0.94,
+    "reason": "Official API development and security standards documentation site",
+    "text": "Health New Zealand | Te Whatu Ora API Development and Security Standards"
+  },
+  {
+    "repo": "ArieGoldkin/ai-agent-hub",
+    "stars": 10,
+    "rule": "demo/fixture",
+    "llm": "tangential",
+    "confidence": 0.93,
+    "reason": "AI agent skills repo for Claude; not an AsyncAPI user",
+    "text": "\ud83d\ude80 AI Agent Hub \u2728 Transform Claude into 10 Context Aware AI Agents Working in Parallel \u2728 \ud83e\udde0 Intelligent Orchestration + 79% Faster with Squad "
+  },
+  {
+    "repo": "Ravip2006/Demo",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "spec/docs",
+    "confidence": 0.93,
+    "reason": "Central contract repository housing multiple API specs",
+    "text": "Central Contract Repository for the Order API What is Central Contract Repository? Please see Documentation This repository serves as the Ce"
+  },
+  {
+    "repo": "specmatic/labs-contracts",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "spec/docs",
+    "confidence": 0.93,
+    "reason": "Central repository of canonical OpenAPI/AsyncAPI contract specs",
+    "text": "Central Contracts Repo for projects inside Labs"
+  },
+  {
+    "repo": "specmatic/specmatic-order-contracts",
+    "stars": 6,
+    "rule": "demo/fixture",
+    "llm": "spec/docs",
+    "confidence": 0.93,
+    "reason": "Central contract repository holding API specs for sample projects",
+    "text": "Contracts for sample projects that use Specmatic to do contract driven development"
+  },
+  {
+    "repo": "ScrKiddie/AtoiTalkAPI",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.92,
+    "reason": "Deployable real-time chat backend with WebSocket events",
+    "text": "RESTful API for real-time chat applications with WebSocket events, media uploads, and automated cleanup."
+  },
+  {
+    "repo": "Vellum-IO/keeper-api-contracts",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "spec/docs",
+    "confidence": 0.92,
+    "reason": "OpenAPI spec files for internal DBaaS service, no runnable code",
+    "text": "The openAPI contracts for back and frontends."
+  },
+  {
+    "repo": "call-sofia/callsofia-webhooks-docs",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Webhook event catalog and documentation, not runnable software",
+    "text": "CallSofia Webhooks v2 Real time event notifications for your CallSofia voice AI intake pipeline. Subscribe to call lifecycle events, lead qu"
+  },
+  {
+    "repo": "microcks/microcks.io",
+    "stars": 24,
+    "rule": "demo/fixture",
+    "llm": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Public website resources and templates for Microcks",
+    "text": "Public website resources and templates"
+  },
+  {
+    "repo": "qoretechnologies/qore",
+    "stars": 63,
+    "rule": "demo/fixture",
+    "llm": "tangential",
+    "confidence": 0.9,
+    "reason": "General-purpose programming language; AsyncAPI incidental",
+    "text": "Qore Programming Language"
+  },
+  {
+    "repo": "openshift-hyperfleet/architecture",
+    "stars": 2,
+    "rule": "demo/fixture",
+    "llm": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Architecture documents and engineering standards repository",
+    "text": "Status: Active Owner: Architecture Team Last Updated: 2025 11 07 HyperFleet Architecture Repository Table of Contents Overview Repository Ac"
+  },
+  {
+    "repo": "Emiltzav/asyncapi-iot-examples",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "spec/docs",
+    "confidence": 0.87,
+    "reason": "Catalog of AsyncAPI 3.0 descriptions for IoT devices, thesis artifact",
+    "text": "A catalog of AsyncAPI 3.0 descriptions for asynchronous APIs of IoT devices."
+  },
+  {
+    "repo": "icanbwell/fhir-server",
+    "stars": 47,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.87,
+    "reason": "Production-grade open-source FHIR server with streaming",
+    "text": "Open Source FHIR Server backed by MongoDB"
+  },
+  {
+    "repo": "ministryofjustice/hmpps-locations-inside-prison-api",
+    "stars": 2,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.85,
+    "reason": "Production API managing locations inside prisons",
+    "text": "HMPPS Location Inside Prison Service API"
+  },
+  {
+    "repo": "socrateasehq/autoproctor-mintlify-docs",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "tangential",
+    "confidence": 0.85,
+    "reason": "Mintlify docs starter kit; no AsyncAPI content visible",
+    "text": "Mintlify Starter Kit Use the starter kit to get your docs deployed and ready to customize. Click the green Use this template button at the t"
+  },
+  {
+    "repo": "yourbourse/trade-server-trading-view-js",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.85,
+    "reason": "Production-ready trading terminal with real-time market data",
+    "text": "Public Repository for Trading View integration with Trade Server"
+  },
+  {
+    "repo": "DataDog/stickerlandia",
+    "stars": 7,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.78,
+    "reason": "Real deployed community engagement platform for Datadog events",
+    "text": "Stickerlandia Overview Stickerlandia lets you collect Datadog stickers by completing Datadog certifications, trading with others, and throug"
+  },
+  {
+    "repo": "WebFuzzing/Dataset",
+    "stars": 50,
+    "rule": "demo/fixture",
+    "llm": "tangential",
+    "confidence": 0.78,
+    "reason": "Test dataset of REST/GraphQL apps; AsyncAPI only incidental",
+    "text": "Web Fuzzing Dataset (WFD): a set of web/enterprise applications for experimentation in automated system testing"
+  },
+  {
+    "repo": "adimail/rocket-landing-rl",
+    "stars": 1,
+    "rule": "demo/fixture",
+    "llm": "tangential",
+    "confidence": 0.78,
+    "reason": "RL simulation for rocket landing; no AsyncAPI relevance visible",
+    "text": "reinforcement learning simulation to land a spacex rocket booster vertically"
+  },
+  {
+    "repo": "factory-x-contributions/async-aas-helm",
+    "stars": 2,
+    "rule": "demo/fixture",
+    "llm": "tooling/library",
+    "confidence": 0.78,
+    "reason": "Helm charts wiring AAS implementations to MQTT broker",
+    "text": "A helm chart to spin up various AAS implementations and connect them to an MQTT broker."
+  },
+  {
+    "repo": "manosmax/Smart-Waste-Bin",
+    "stars": 1,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.78,
+    "reason": "IoT pipeline with AsyncAPI docs for real deployment",
+    "text": "Final Project for Advanced Programming Techniques"
+  },
+  {
+    "repo": "nekofar/warpcast",
+    "stars": 2,
+    "rule": "demo/fixture",
+    "llm": "tooling/library",
+    "confidence": 0.78,
+    "reason": "TypeScript client SDK for Warpcast APIs",
+    "text": "TypeScript client for interacting with Warpcast APIs"
+  },
+  {
+    "repo": "up1/workshop-js-testing-202507",
+    "stars": 1,
+    "rule": "demo/fixture",
+    "llm": "tangential",
+    "confidence": 0.78,
+    "reason": "JS testing workshop; AsyncAPI only incidental",
+    "text": "Full stack testing workshop with JavaScript"
+  },
+  {
+    "repo": "tanishy7777/Joined_Words",
+    "stars": 1,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.76,
+    "reason": "Real-time multiplayer game with rooms and live leaderboards",
+    "text": "This repo adds multiplayer functionality to the Joined Words Game"
+  },
+  {
+    "repo": "HyPolDev/Bot",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.75,
+    "reason": "Automated cross-exchange prediction market arbitrage trading engine",
+    "text": "Cross Exchange Prediction Market Arbitrage Engine A fully automated, market neutral trading system designed to identify and execute statisti"
+  },
+  {
+    "repo": "ambihome-gmbh/asyncapi",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "tooling/library",
+    "confidence": 0.75,
+    "reason": "Middleware validating and routing AsyncAPI messages over MQTT",
+    "text": "EXPERIMENTAL. Receive and send valid asyncapi messages over MQTT."
+  },
+  {
+    "repo": "clecioantao/platform-state-repo",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "tangential",
+    "confidence": 0.75,
+    "reason": "GitOps state repo; AsyncAPI not mentioned",
+    "text": "platform state repo Fonte \u00fanica da verdade (GitOps) para a PoC de IDP com: Backstage (local, fora do cluster) \u2192 gera conte\u00fado GitOps Argo CD"
+  },
+  {
+    "repo": "dotnet/maui-labs",
+    "stars": 166,
+    "rule": "demo/fixture",
+    "llm": "tangential",
+    "confidence": 0.75,
+    "reason": ".NET MAUI mobile tooling; AsyncAPI only incidental",
+    "text": "Experimental and pre-release tools for .NET MAUI"
+  },
+  {
+    "repo": "nashspence/pyspec",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "tooling/library",
+    "confidence": 0.75,
+    "reason": "Spec-to-artifact code generation tool, not a deployable app",
+    "text": "pyspec contract pyspec contract is a Python first, spec to artifact tool for whole app product specifications. It turns a sparse human autho"
+  },
+  {
+    "repo": "specmatic/specmatic-studio-playwright-ts-tests",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "tangential",
+    "confidence": 0.75,
+    "reason": "E2E test suite for Specmatic Studio; no direct AsyncAPI usage",
+    "text": "Automated tests for Specmatic Studio"
+  },
+  {
+    "repo": "zuevrs/yanote",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "tooling/library",
+    "confidence": 0.75,
+    "reason": "Tool recording live calls and validating API contract coverage",
+    "text": "yanote Yanote \u043f\u043e\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442 \u043d\u0435 \u0430\u0431\u0441\u0442\u0440\u0430\u043a\u0442\u043d\u043e\u0435 \u00ab\u0442\u0435\u0441\u0442\u044b \u043f\u0440\u043e\u0448\u043b\u0438\u00bb, \u0430 \u0434\u043e\u043a\u0430\u0437\u0443\u0435\u043c\u043e\u0435 \u043f\u043e\u043a\u0440\u044b\u0442\u0438\u0435 HTTP \u043a\u043e\u043d\u0442\u0440\u0430\u043a\u0442\u0430 \u043f\u043e \u0436\u0438\u0432\u044b\u043c \u0432\u044b\u0437\u043e\u0432\u0430\u043c: \u0440\u0435\u043a\u043e\u0440\u0434\u0435\u0440 \u043f\u0438\u0448\u0435\u0442 events.jsonl ,"
+  },
+  {
+    "repo": "CruelAddict/ori",
+    "stars": 1,
+    "rule": "demo/fixture",
+    "llm": "tangential",
+    "confidence": 0.72,
+    "reason": "TUI database explorer; no evident AsyncAPI usage",
+    "text": "TUI DB Explorer"
+  },
+  {
+    "repo": "inputlayer/inputlayer",
+    "stars": 26,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.72,
+    "reason": "Deployable streaming reasoning layer for AI systems",
+    "text": "Streaming reasoning layer for AI. Incremental rules engine with vector search, graph traversal, and explainable derivation traces."
+  },
+  {
+    "repo": "lufyxz7/xpogo",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.72,
+    "reason": "Real AI-powered export platform backend service",
+    "text": "Backend Detail : https://xpogo-backend.vercel.app"
+  },
+  {
+    "repo": "taonaben/grupus-frontend",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "tangential",
+    "confidence": 0.72,
+    "reason": "Flutter boilerplate starter with no meaningful AsyncAPI usage",
+    "text": "grupus A new Flutter project. Getting Started This project is a starting point for a Flutter application. A few resources to get you started"
+  },
+  {
+    "repo": "TykTechnologies/exp",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "tooling/library",
+    "confidence": 0.7,
+    "reason": "Experimental dev tooling and schema generators from API vendor",
+    "text": "This repository holds experimental and deprecated tooling"
+  },
+  {
+    "repo": "AndreiBacs/EchipaMea",
+    "stars": 1,
+    "rule": "demo/fixture",
+    "llm": "tangential",
+    "confidence": 0.65,
+    "reason": "Flutter contractor app; no AsyncAPI mention in readme",
+    "text": "EchipaMea Mobile app for small contractor teams, built with Flutter. What it does Supports two roles: Foreman and Worker Foreman area includ"
+  },
+  {
+    "repo": "Ihor-Mykytiuk/software-architecture",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.65,
+    "reason": "Web application for finding teams and project collaborators",
+    "text": "Web application for finding teams and projects Online web application that helps people find like minded collaborators for informal projects"
+  },
+  {
+    "repo": "manuschillerdev/esphome-elero",
+    "stars": 2,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.65,
+    "reason": "Real ESPHome IoT firmware component for RF blinds",
+    "text": "An ESPHome component to control Devices with the bidirectional Elero protocol (Covers and Lights)"
+  },
+  {
+    "repo": "nba-amtgroup/4424rr-2",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.65,
+    "reason": "Real railroad maintenance application using CV and ML",
+    "text": "trackbot2"
+  },
+  {
+    "repo": "BenediktusG/task-manager",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.6,
+    "reason": "Functional multi-tenant task manager with real-time notifications",
+    "text": "Multi Tenant Task Manager with real-time notification"
+  },
+  {
+    "repo": "jijingkun-commits/fastapi",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.6,
+    "reason": "AI conversational assistant application with FastAPI backend",
+    "text": "ai agent"
+  },
+  {
+    "repo": "andreaseger/homelab-tools",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.58,
+    "reason": "Real monorepo of containerized homelab infrastructure utilities",
+    "text": "Homelab Tools A monorepo of containerized applications and utilities for homelab infrastructure management. Getting Started This workspace u"
+  },
+  {
+    "repo": "jhekasoft/e-backend",
+    "stars": 0,
+    "rule": "demo/fixture",
+    "llm": "product",
+    "confidence": 0.52,
+    "reason": "Generic personal backend service with HTTP server and DB",
+    "text": "e-backend is a backend for all the projects"
+  },
+  {
+    "repo": "microcks/microcks",
+    "stars": 1956,
+    "rule": "product",
+    "llm": "tooling/library",
+    "confidence": 0.99,
+    "reason": "API mocking and testing platform consuming AsyncAPI specs",
+    "text": "The open source, cloud native tool for API Mocking and Testing. Microcks is a Cloud Native Computing Foundation incubating project \ud83d\ude80"
+  },
+  {
+    "repo": "EcoHub-AG/Api-Specs",
+    "stars": 0,
+    "rule": "product",
+    "llm": "spec/docs",
+    "confidence": 0.97,
+    "reason": "Repository purpose is storing API specifications only",
+    "text": "Specifications for all our APIs"
+  },
+  {
+    "repo": "Souvikns/greet-bot",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Simple WebSocket example app using Glee framework",
+    "text": "A simple websocket API example using glee."
+  },
+  {
+    "repo": "VisioLab/cash-register-api",
+    "stars": 1,
+    "rule": "product",
+    "llm": "spec/docs",
+    "confidence": 0.97,
+    "reason": "AsyncAPI spec describing WebSocket API, no runnable software",
+    "text": "Specification of VisioLab's cash register API"
+  },
+  {
+    "repo": "bpbpublications/Spring-Boot-3-API-Mastery",
+    "stars": 12,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Book companion repository by BPB Publications",
+    "text": "Spring Boot 3 API Mastery, by BPB Publications"
+  },
+  {
+    "repo": "event-catalog/generators",
+    "stars": 14,
+    "rule": "product",
+    "llm": "tooling/library",
+    "confidence": 0.97,
+    "reason": "AsyncAPI and OpenAPI generator plugins for EventCatalog",
+    "text": "Plugin integrations for EventCatalog"
+  },
+  {
+    "repo": "fraunhoferfokus/dredger-todos",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Demo and test fixture for the dredger generator",
+    "text": "dredger todos async dredger todos dient zum Demonstrieren und Testen von dredger . dredger generiert aus OpenAPI und AsyncAPI Spezifikatione"
+  },
+  {
+    "repo": "omnai-project/OmnAIScope_DataServer_API_Doc",
+    "stars": 0,
+    "rule": "product",
+    "llm": "spec/docs",
+    "confidence": 0.97,
+    "reason": "Repo explicitly documents WebSocket API with AsyncAPI spec",
+    "text": "Async API description for the OmnAIView Backend"
+  },
+  {
+    "repo": "specmatic/specmatic",
+    "stars": 381,
+    "rule": "product",
+    "llm": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Contract testing and service virtualization tool for AsyncAPI/OpenAPI",
+    "text": "Eliminate API integration headaches with Specmatic's no-code AI-powered API development suite. Teams ship APIs 10x faster by transforming sp"
+  },
+  {
+    "repo": "specmatic/studio-demo",
+    "stars": 2,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly a demo project for Specmatic Studio features",
+    "text": "Demo project showcasing how to use Specmatic Studio for API contract testing, mocking, resiliency, and more, with hands-on video guidance."
+  },
+  {
+    "repo": "takeruun/ws-ts-gen",
+    "stars": 0,
+    "rule": "product",
+    "llm": "tooling/library",
+    "confidence": 0.97,
+    "reason": "CLI code generator from AsyncAPI 3.0 schemas to TypeScript",
+    "text": "ws ts gen AsyncAPI\u30b9\u30ad\u30fc\u30de\uff08YAML/JSON\uff09\u304b\u3089TypeScript\u30b3\u30fc\u30c9\u3092\u81ea\u52d5\u751f\u6210\u3059\u308bCLI\u30c4\u30fc\u30eb\u3067\u3059\u3002 \u7279\u5fb4 WebSocket\u30b5\u30fc\u30d0\u30fc\u30fb\u30af\u30e9\u30a4\u30a2\u30f3\u30c8\u4e21\u5bfe\u5fdc : \u30b5\u30fc\u30d0\u30fc\u5074\u3068\u30af\u30e9\u30a4\u30a2\u30f3\u30c8\u5074\u306e\u30b3\u30fc\u30c9\u3092\u751f\u6210 \u578b\u5b89\u5168\u306a\u30e1\u30c3\u30bb\u30fc\u30b8\u30cf\u30f3\u30c9\u30ea\u30f3\u30b0 : TypeScr"
+  },
+  {
+    "repo": "aml-org/als",
+    "stars": 32,
+    "rule": "product",
+    "llm": "tooling/library",
+    "confidence": 0.96,
+    "reason": "Language server providing IDE support for AsyncAPI and RAML",
+    "text": "Language Server implementation for AML and AML-defined metadata"
+  },
+  {
+    "repo": "ngscheurich/elixirconf-eu-2024",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.96,
+    "reason": "Conference talk companion source code, not production",
+    "text": "\ud83d\uddfa\ufe0f \u201cLet\u2019s Go on an Adventure\u201d (ElixirConf EU 2024)"
+  },
+  {
+    "repo": "specmatic/specmatic-arazzo-openapi-asyncapi-sample",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.96,
+    "reason": "Sample project demonstrating API workflow testing with Arazzo",
+    "text": "From REST to Events: API Workflow Testing and Mocking with a Single Arazzo Spec"
+  },
+  {
+    "repo": "CALLlA-74/bauman-poker",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "University coursework: online poker protocol prototype",
+    "text": "\u041a\u0443\u0440\u0441\u043e\u0432\u0430\u044f \u0440\u0430\u0431\u043e\u0442\u0430 \u043f\u043e \u043f\u0440\u043e\u0442\u043e\u043a\u043e\u043b\u0430\u043c \u0432\u044b\u0447\u0438\u0441\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u0441\u0435\u0442\u0435\u0439 \u0412 \u0445\u043e\u0434\u0435 \u0432\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f \u0434\u0430\u043d\u043d\u043e\u0439 \u0440\u0430\u0431\u043e\u0442\u044b \u0431\u044b\u043b\u0438 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u044b \u043f\u0440\u043e\u0442\u043e\u043a\u043e\u043b \u043e\u043d\u043b\u0430\u0439\u043d \u0438\u0433\u0440\u044b \"\u041f\u041e\u041a\u0415\u0420\" \u0438 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u043d"
+  },
+  {
+    "repo": "Kuestenlogik/Bowire",
+    "stars": 4,
+    "rule": "product",
+    "llm": "tooling/library",
+    "confidence": 0.95,
+    "reason": "Multi-protocol API workbench supporting AsyncAPI among many protocols",
+    "text": "Multi-protocol API workbench for .NET \u2014 discover, invoke, record, mock, replay across gRPC, REST, GraphQL, MQTT, SignalR, WebSocket, SSE, MC"
+  },
+  {
+    "repo": "LouisSappey/tp-nest-web-socket",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "'TP' is French for school practical assignment",
+    "text": "TP Nest Chat WebSocket Backend NestJS pour un chat temps reel avec authentification JWT, chat general, salons prives, reactions emojis et in"
+  },
+  {
+    "repo": "ahelme/mcp-claude-code-browser-tools",
+    "stars": 2,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.95,
+    "reason": "AI coding agent MCP server, no AsyncAPI usage",
+    "text": "An browser-tools mcp server for claude code"
+  },
+  {
+    "repo": "btravers/amqp-contract",
+    "stars": 18,
+    "rule": "product",
+    "llm": "tooling/library",
+    "confidence": 0.95,
+    "reason": "TypeScript library for type-safe AMQP/RabbitMQ contracts",
+    "text": "Type-safe contracts for AMQP/RabbitMQ messaging with TypeScript"
+  },
+  {
+    "repo": "calvinlee999/AI-Platform-for-FinTech-Evolution",
+    "stars": 0,
+    "rule": "product",
+    "llm": "spec/docs",
+    "confidence": 0.95,
+    "reason": "Executive documentation and architecture diagrams only",
+    "text": "AI Platform for FinTech Evolution \ud83c\udfaf Executive Summary This repository provides executive level documentation and high level architecture for"
+  },
+  {
+    "repo": "foxminchan/BookWorm",
+    "stars": 502,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Explicitly demo-only, not production ready",
+    "text": "The practical implementation of Aspire using Microservices, AI-Agents"
+  },
+  {
+    "repo": "kingak4/ft_transcendence",
+    "stars": 4,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "42 school curriculum final project",
+    "text": "ft_transcendence is a team-based web application built as part of the final 42 project. Our web application includes a login system, interac"
+  },
+  {
+    "repo": "pingxin403/platform-console",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "Personal learning project with explicitly fictional scenario",
+    "text": "Personal learning project: Backstage IDP reference implementation. Scenario (50-person SaaS) is fictional."
+  },
+  {
+    "repo": "tornado80/collaborative-whiteboard",
+    "stars": 1,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.95,
+    "reason": "University course project, Internet Protocols at Aalto",
+    "text": "Collaborative Whiteboard written in Erlang and React over Websocket protocol. Share the URL with your team mates to start doodling your awes"
+  },
+  {
+    "repo": "StepanNazar/city-report-ai-assistance-service",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.93,
+    "reason": "Explicitly described as university software architecture labs",
+    "text": "university labs for software architecture"
+  },
+  {
+    "repo": "UNIZAR-30226-2026-07/BombaVa-Backend",
+    "stars": 1,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.93,
+    "reason": "University of Zaragoza course project with academic numbering",
+    "text": "Backend del juego de Bomba Va"
+  },
+  {
+    "repo": "ai-digital-architect/asyncapi_discovery",
+    "stars": 0,
+    "rule": "product",
+    "llm": "tooling/library",
+    "confidence": 0.93,
+    "reason": "Tool that scans code and generates AsyncAPI specs",
+    "text": "Scan repositories for event producers regardless of the broker and create asynapi catalog specifications for those."
+  },
+  {
+    "repo": "piedraprog/unified-personal-skills",
+    "stars": 2,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.93,
+    "reason": "AI coding-agent skills registry, AsyncAPI only incidental",
+    "text": "skills que voy acumulando que me funcionen para el desarrollo"
+  },
+  {
+    "repo": "rlarin/it-crowd-pixel-agents",
+    "stars": 1,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.93,
+    "reason": "AI coding-agent visualization plugin, not an AsyncAPI user",
+    "text": "Pixel art office where your Claude Code agents come to life \u2014 with JetBrains (PyCharm/WebStorm) support. Fork of pixel-agents by Pablo De Lu"
+  },
+  {
+    "repo": "LeonidasGarcia/puchamon",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly a university project, Pokemon Showdown clone",
+    "text": "Proyecto universitario de clon de Pokemon Showdown con un bot IA para simulaci\u00f3n de batallas 3v3 o 4v4"
+  },
+  {
+    "repo": "Remake1/GrokOA",
+    "stars": 0,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.92,
+    "reason": "Interview cheat tool; AsyncAPI not mentioned at all",
+    "text": "Stealth coding Online Assessment and Interview cheat tool."
+  },
+  {
+    "repo": "StableCoinTF/StableCoinBC_Adapter_Docs",
+    "stars": 0,
+    "rule": "product",
+    "llm": "spec/docs",
+    "confidence": 0.92,
+    "reason": "AsyncAPI YAML spec repo generating Kafka API documentation",
+    "text": "StableCoinBC_Adapter_Docs"
+  },
+  {
+    "repo": "Thomas-More-Digital-Innovation/2526-DI-004-GoStrategy",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "University course project at Thomas More institution",
+    "text": "Project 2025-2026 DI-004: GoStrategy"
+  },
+  {
+    "repo": "V-ivek/workflow-engine",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly a coding challenge submission, not production software",
+    "text": "An Event-Driven workflow orchestration engine"
+  },
+  {
+    "repo": "aniccname/Q-Game",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "School project from Fall 2023 Software Development course",
+    "text": "A Qwirkle inspired game using a Client-Server architecture. A browser-based client is hosted at the linked website."
+  },
+  {
+    "repo": "igmrrf/ecommerce_services",
+    "stars": 1,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Self-described demonstration of microservices architecture",
+    "text": "E commerce Microservices This project is a demonstration of a microservices architecture for an e commerce platform. It involves four main s"
+  },
+  {
+    "repo": "jhamill34/disney-gen-ai-takehome",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Take-home interview/exercise project, not production software",
+    "text": "Disney GenAI Take home This project ingests different web pages and stores them in a vector database (I chose to use the PgVector extension "
+  },
+  {
+    "repo": "miltonabdon/ecommerce-scalable-platform",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly a practical demonstration of architectural patterns",
+    "text": "E-Commerce platform demonstrating scalable architecture for Black Friday \u2014 Java 21, Spring Boot 3.3, Kafka, Redis, MongoDB, Elasticsearch, O"
+  },
+  {
+    "repo": "nandorsilva/eda-fia-th",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly a lab for local development and study purposes",
+    "text": "Lab Eda Kafka Connect Disclaimer As configura\u00e7\u00f5es dos Laborat\u00f3rios \u00e9 puramente para fins de desenvolvimento local e estudos Pr\u00e9 requisitos? "
+  },
+  {
+    "repo": "MALIEV-Co-Ltd/Maliev.MessagingContracts",
+    "stars": 0,
+    "rule": "product",
+    "llm": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Contract-first schema registry and AsyncAPI specs only",
+    "text": "Messaging contracts for all Maliev microservices \u2014 events, commands, RPC messages, schemas, AsyncAPI specs, and RabbitMQ topology."
+  },
+  {
+    "repo": "facundo1220/asyncapi-eda-ecommerce",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Demonstrates EDA microservices pattern with RabbitMQ",
+    "text": "EDA Ecommerce Microservices Este proyecto implementa una arquitectura orientada a eventos (EDA) para un sistema de ecommerce, utilizando mic"
+  },
+  {
+    "repo": "jordancrombie/bsim",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Banking simulator, educational or demo application",
+    "text": "A Banking Simulator"
+  },
+  {
+    "repo": "metalalive/e_commerce",
+    "stars": 1,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Readme explicitly states not production ready, learning purpose",
+    "text": "E-commerce backend platform implemented in Python / C / Rust"
+  },
+  {
+    "repo": "rabbytesoftware/quiver.core",
+    "stars": 6,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.9,
+    "reason": "Cross-platform package manager; no AsyncAPI relevance",
+    "text": "Quiver is a multi-platform package manager - probably the only one you'll ever need! It's designed to make complex installation processes qu"
+  },
+  {
+    "repo": "CodingFlow/rating-service-dotnet",
+    "stars": 1,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Explicit prototype showcasing architectural best practices",
+    "text": "Prototype full-stack C#, Preact web app deployed on Azure AKS using modern tools, developer experience, architectural design for enterprise-"
+  },
+  {
+    "repo": "Integration-Project-2026-Groep-2/CRM",
+    "stars": 2,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Academic integration project microservice for school platform",
+    "text": "CRM \u2014 Integration Project 2025/2026 Salesforce integration for the Desideriushogeschool event management platform (Groep 2). CRM is the mast"
+  },
+  {
+    "repo": "Integration-Project-2026-Groep-2/Planning",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Academic integration project planning microservice, Groep 2",
+    "text": "Planning Service Microservice voor het beheren van sessies, locaties en sprekers. Onderdeel van het Integratieproject 2026 \u2014 Groep 2. Vereis"
+  },
+  {
+    "repo": "Kambolo/Picksy",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Engineering thesis web app, not production software",
+    "text": "Picksy \u2013 Real Time Group Voting Application Picksy is a web based application designed to facilitate real time group voting. The system allo"
+  },
+  {
+    "repo": "MathTrail/contracts",
+    "stars": 0,
+    "rule": "product",
+    "llm": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Schema registry with AsyncAPI spec and event contracts",
+    "text": "Schema Registry for MathTrail: Type-safe contracts and event definitions to ensure cross-service compatibility across the EDA stack."
+  },
+  {
+    "repo": "ProsusAI/agentic-services-protocol",
+    "stars": 12,
+    "rule": "product",
+    "llm": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Open protocol/spec definition for agentic service lifecycle",
+    "text": "Agentic Services Protocol (ASP) - an open protocol for the complete agentic service lifecycle: discovery, catalog, fulfillment, order tracki"
+  },
+  {
+    "repo": "bicatu/event-catalog",
+    "stars": 5,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Companion repo for an article, starter/example purpose",
+    "text": "Event Catalog starter repository"
+  },
+  {
+    "repo": "devmentors/Mikroserwisy-Revisited",
+    "stars": 2,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Polish microservices course companion code, educational",
+    "text": "[PL] Mikroserwisy 6 lat p\u00f3\u017aniej czyli... jak nie uton\u0105\u0107 \ud83d\ude09"
+  },
+  {
+    "repo": "ivanztz/sandbox",
+    "stars": 2,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Explicitly educational or project accelerator purposes",
+    "text": "Sandbox project"
+  },
+  {
+    "repo": "kaucrow/mqtt-rest-bridge",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Explicitly described as a demo SCADA system",
+    "text": "MQTT broker & REST API for a demo SCADA system which bridges two microcontrollers with a real-time dashboard and an SQLite database."
+  },
+  {
+    "repo": "maxime-aube/ollama",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "Node/TypeScript starter template boilerplate",
+    "text": "node ts starter template This is a starter repository for nodejs projects in Typescript made in node v20.11. You'll find: Typescript and esl"
+  },
+  {
+    "repo": "xingyug/service2mcp",
+    "stars": 0,
+    "rule": "product",
+    "llm": "tooling/library",
+    "confidence": 0.88,
+    "reason": "Compiles AsyncAPI and other specs into MCP tool servers",
+    "text": "Compile any API (OpenAPI, GraphQL, gRPC, REST, SOAP, SQL, AsyncAPI, JSONRPC) into a governed, observable MCP tool server \u2014 detect \u2192 extract "
+  },
+  {
+    "repo": "Harmelodic/init-microservice",
+    "stars": 3,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.87,
+    "reason": "Bootstrapping template and reference implementation for microservices",
+    "text": "How I build microservices (in Java)."
+  },
+  {
+    "repo": "Insightpulseai/agents",
+    "stars": 0,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.87,
+    "reason": "AI agent personas and prompt contracts registry, not AsyncAPI user",
+    "text": "Agent personas, skills, judges, evals, metadata, registries, and prompt contracts"
+  },
+  {
+    "repo": "Malmo-Skyttegille-Pistolsektionen/rotation_target_backend_resources",
+    "stars": 0,
+    "rule": "product",
+    "llm": "spec/docs",
+    "confidence": 0.87,
+    "reason": "Resources and AsyncAPI/OpenAPI documentation, not runnable software",
+    "text": "Resources used by the Rotation Target Backend"
+  },
+  {
+    "repo": "DarkflameUniverse/DarkflameServer",
+    "stars": 738,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.85,
+    "reason": "Game server emulator; AsyncAPI not central to its purpose",
+    "text": "The main repository for the Darkflame Universe Server Emulator project."
+  },
+  {
+    "repo": "DevashishBoini/attendanceSystem",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.85,
+    "reason": "Explicitly based on a Harkirat Singh course assignment",
+    "text": "Attendance System A real time classroom attendance marking system built with Node.js, Express, WebSocket, and MongoDB. Teachers can mark stu"
+  },
+  {
+    "repo": "event-catalog/eventcatalog",
+    "stars": 2724,
+    "rule": "product",
+    "llm": "tooling/library",
+    "confidence": 0.85,
+    "reason": "Tooling platform to catalog and govern event-driven APIs",
+    "text": "The discovery and governance layer for event-driven systems. Document your domains, services, events and schemas \u2014 for your teams and your A"
+  },
+  {
+    "repo": "rainbow-mobile/web_robot_server",
+    "stars": 2,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.85,
+    "reason": "NestJS starter repository template, not a real service",
+    "text": "[circleci image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token abc123def456 [circleci url]: https://circleci.com/gh"
+  },
+  {
+    "repo": "Devathon-2024-team5/Preguntonic-backend",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Hackathon (Devathon-2024) team project, not production software",
+    "text": "Preguntonic-Backend es el n\u00facleo inteligente y robusto que impulsa la experiencia de juego de Preguntonic. Dise\u00f1ado para proporcionar una ge"
+  },
+  {
+    "repo": "IATI/iati-message-queue-service",
+    "stars": 0,
+    "rule": "product",
+    "llm": "spec/docs",
+    "confidence": 0.82,
+    "reason": "Repo is the specification for an internal message queue service",
+    "text": "IATI Message Queue Service Summary Product IATI Message Queue Service Description The specification for the internal message queue service t"
+  },
+  {
+    "repo": "codeboltai/codeboltjs",
+    "stars": 0,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.82,
+    "reason": "AI agent SDK; no AsyncAPI focus",
+    "text": "Js Library for Codebolt"
+  },
+  {
+    "repo": "cycleplatform/api-spec",
+    "stars": 5,
+    "rule": "product",
+    "llm": "spec/docs",
+    "confidence": 0.82,
+    "reason": "Dedicated API spec repo for Cycle platform APIs",
+    "text": "OpenAPI spec files for Cycle APIs"
+  },
+  {
+    "repo": "kanekoshoyu/exchange-collection",
+    "stars": 23,
+    "rule": "product",
+    "llm": "spec/docs",
+    "confidence": 0.82,
+    "reason": "Collection of crypto exchange OpenAPI/AsyncAPI spec documents",
+    "text": "Collection of Crypto Exchange OpenAPI and Generated Clients"
+  },
+  {
+    "repo": "makeevolution/SimplePizzaWinkel",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Personal learning project applying microservices knowledge",
+    "text": "Simple Pizza Winkel Description This is my personal project, to apply my learnings about microservices that I have seen and worked with in m"
+  },
+  {
+    "repo": "znsio/specmatic-async-order-api-kotlin",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Sample app demonstrating Specmatic async contract testing",
+    "text": "Order API accepts request for an order which is created asynchronously."
+  },
+  {
+    "repo": "LaurenCattoor/st-microservice-ticketing",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.8,
+    "reason": "Student project with deliverables language; thesis-style setup",
+    "text": "Microservices Ticketing Before proceeding, make sure to follow the Project Build and Deploy document for proper setup and deployment instruc"
+  },
+  {
+    "repo": "Xen0Xys/N2I-2024-API",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.8,
+    "reason": "NestJS starter for N2I 2024 competition, not production service",
+    "text": "[circleci image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token abc123def456 [circleci url]: https://circleci.com/gh"
+  },
+  {
+    "repo": "briossant/BotAmoungUs",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.8,
+    "reason": "Hackathon proof-of-concept game, not production",
+    "text": "Bot Among Us A real time multiplayer social deduction game where humans try to identify AI controlled players \u2014 and an AI benchmarking platf"
+  },
+  {
+    "repo": "motor-screwdriver/mts-true-tech-hack-26",
+    "stars": 4,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.8,
+    "reason": "Hackathon project indicated by -hack-26 in repo name",
+    "text": "WikiLive is a real-time document collaboration platform. The project combines an editor with CRDT synchronization, a backend API for busines"
+  },
+  {
+    "repo": "owasp-noir/noir",
+    "stars": 1320,
+    "rule": "product",
+    "llm": "tooling/library",
+    "confidence": 0.8,
+    "reason": "SAST tool parsing API specs including AsyncAPI to extract endpoints",
+    "text": "Hunt every Endpoint in your code, expose Shadow APIs, map the Attack Surface."
+  },
+  {
+    "repo": "Binit-Dhakal/Saarathi",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "\"Simulates\" ride lifecycle; portfolio/demo project",
+    "text": "Ride-sharing App built with Golang and NextJS in event-driven architecture"
+  },
+  {
+    "repo": "CDFmmgr9fLkRH453kRC33TrEp/matching-engine",
+    "stars": 2,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "Self-described simplistic exchange simulator, not production",
+    "text": "Rust Matching Engine, Limit Order Book, and Exchange Simulator Simplistic exchange simulator with in memory order book and multi asset credi"
+  },
+  {
+    "repo": "cjjohansen/drone-web",
+    "stars": 2,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "API design example using ADDR/Event Modeling methodology",
+    "text": "drone ecommerce website using ADDR Design process"
+  },
+  {
+    "repo": "delano/postman-mcp-server",
+    "stars": 150,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.78,
+    "reason": "MCP server for Postman API; no AsyncAPI connection visible",
+    "text": "An MCP server that provides access to Postman."
+  },
+  {
+    "repo": "openwop/openwop",
+    "stars": 1,
+    "rule": "product",
+    "llm": "spec/docs",
+    "confidence": 0.78,
+    "reason": "Wire-level protocol specification for multi-agent orchestration",
+    "text": "openwop \u2014 Open Workflow Orchestration Protocol"
+  },
+  {
+    "repo": "Lulexs/iots-1",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.75,
+    "reason": "Uses university dataset, student IoT gateway project",
+    "text": "O dataset u: Izvor: https://zenodo.org/records/13808085 Dataset sadrzi sirok skup podataka (1.6 gb) o razlicitim parametrima sistema za snab"
+  },
+  {
+    "repo": "TristanDeLil/ms-microservice-ticketing",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.75,
+    "reason": "Student microservices project at Howest university",
+    "text": "Microservices Ticketing bash docker compose f config/ticketing howestprime dev/docker compose.yml up d remove orphans Infrastructure \ud83d\udcd8 Mongo"
+  },
+  {
+    "repo": "prajwalaher33/feeshr",
+    "stars": 1,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.75,
+    "reason": "AI agent collaboration platform; AsyncAPI use incidental",
+    "text": "Feeshr \u2014 Operating Engine for AI Agents"
+  },
+  {
+    "repo": "thomascarter613/aic-smb-copilot-codebase",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.74,
+    "reason": "Skeleton/boilerplate microservices architecture with K8s manifests",
+    "text": "Orders Vertical Slice (Skeleton) Gateway \u2192 Orders \u2192 Payments \u2192 Projector with K8s manifests ( canary , KEDA ) and Sigstore admission policy."
+  },
+  {
+    "repo": "Brico87/seed-kafka",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Kafka infrastructure seed/starter setup, not a deployable product",
+    "text": "Lancement infra C:\\Projects\\seed kafka docker compose up d [+] Running 5/6 Volume \"seed kafka klaw data\" Created 3.3s \u2714 Container klaw core "
+  },
+  {
+    "repo": "Kiloforge/kiloforge",
+    "stars": 17,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.72,
+    "reason": "AI coding-agent orchestration platform; AsyncAPI incidental",
+    "text": "1,000x Productivity. Command AI agent swarms and ship code at the speed of thought."
+  },
+  {
+    "repo": "ManuMarcos/mind-battle-backend",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Kahoot-inspired learning project, no production indicators",
+    "text": "Backend for a real-time multiplayer quiz game inspired by Kahoot. Built with a microservices architecture using Spring Boot, MongoDB, WebSoc"
+  },
+  {
+    "repo": "Sriramanenivikas/Intelligent-Warehouse-Orchestration-System",
+    "stars": 1,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Explicitly a planning skeleton without implementation code",
+    "text": "IWOS  is a unified fulfillment platform that combines quick commerce (dark stores, rapid picking), large-scale e-commerce fulfillment (pick-"
+  },
+  {
+    "repo": "ZuzannaTabisz/snp-app",
+    "stars": 0,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.72,
+    "reason": "RNA structural analysis tool; no meaningful AsyncAPI usage",
+    "text": "SNPsniper leverages state of the art computational methods to predict, compare, and visualize structural changes in RNA sequences, offering "
+  },
+  {
+    "repo": "ZuzannaTabisz/snpapptests",
+    "stars": 0,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.72,
+    "reason": "Test suite for RNA app; no meaningful AsyncAPI usage",
+    "text": "snp app W\u0142\u0105czenie aplikacji docker compose up build W\u0142\u0105czenie aplikacji z zapisywaiem log\u00f3w docker compose up build 2 &1 tee build log.txt B"
+  },
+  {
+    "repo": "ayointegral/cloud-sandbox-backstage",
+    "stars": 1,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.72,
+    "reason": "Backstage portal; AsyncAPI only incidental in catalog templates",
+    "text": "Cloud Sandbox - Backstage Developer Portal with custom catalog and templates"
+  },
+  {
+    "repo": "davidtgillard/fits",
+    "stars": 0,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.72,
+    "reason": "Zig repo engine; no AsyncAPI connection visible",
+    "text": "One eighth of an agony"
+  },
+  {
+    "repo": "hungvo2010/free-note-service",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Basic learning project with checklist-style incomplete features",
+    "text": "free note service Simple web socket server built with Java Core Supports: [ ] WebSocket handshaking [ ] HTTPS support [ ] Fragmentation [ ] "
+  },
+  {
+    "repo": "murithigeo/ogc-edr-api",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.72,
+    "reason": "Reference implementation for OGC standard, work in progress",
+    "text": "A reference implementation for OGC EDR API"
+  },
+  {
+    "repo": "seanchatmangpt/dslmodel",
+    "stars": 27,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.72,
+    "reason": "AI dev platform; AsyncAPI mentioned incidentally, not core purpose",
+    "text": "Structured outputs from DSPy and Jinja2"
+  },
+  {
+    "repo": "yukihito-jokyu/postman-mcp-server",
+    "stars": 0,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.72,
+    "reason": "MCP server wrapping Postman API, AsyncAPI incidental",
+    "text": "Postman MCP Server Version: v0.2.0 An MCP server that provides access to the Postman API. Functionality is based on the official OpenAPI spe"
+  },
+  {
+    "repo": "Anomaliszt/Conquest",
+    "stars": 1,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.7,
+    "reason": "C2 framework; no AsyncAPI mention in readme",
+    "text": "Conquest Command & Control (C2) framework with Flask/Socket.IO server, PyInstaller based payload builder, and operator CLI. Prerequisites Py"
+  },
+  {
+    "repo": "pt9912/geodata-native-suite",
+    "stars": 0,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.7,
+    "reason": "Helm/Kubernetes monorepo; no clear AsyncAPI role",
+    "text": "geodata native suite (monorepo) Vereint Charts , Values (base\u2192platform\u2192env), RKE2 Deployment und DevContainer in einem Repo. Struktur .devco"
+  },
+  {
+    "repo": "nguyenvinhhuy/microservice-platform",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.68,
+    "reason": "Reference architecture demo showcasing full enterprise stack",
+    "text": "Microservice Platform Complete Stack \ud83d\ude80 Enterprise grade microservice platform v\u1edbi 8 Spring Boot services + Angular 21 Frontend + Keycloak Id"
+  },
+  {
+    "repo": "ChargeAndTrack/backend-spe",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.65,
+    "reason": "Academic SPE project backend with documentation site",
+    "text": "Backend for the SPE project."
+  },
+  {
+    "repo": "pseudotop/maekon-client",
+    "stars": 0,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.65,
+    "reason": "Local desktop agent; AsyncAPI presence not evident from text",
+    "text": "Open-source desktop intelligence client that turns local work signals into a real-time focus timeline and actionable suggestions."
+  },
+  {
+    "repo": "apakhbari/backstage",
+    "stars": 0,
+    "rule": "product",
+    "llm": "demo/fixture",
+    "confidence": 0.6,
+    "reason": "Personal notes and tips about a Backstage deployment setup",
+    "text": "Backstage \ud83e\uddbe"
+  },
+  {
+    "repo": "loulou123546/kenshiata-shared",
+    "stars": 0,
+    "rule": "product",
+    "llm": "tangential",
+    "confidence": 0.55,
+    "reason": "Shared types library; AsyncAPI likely incidental",
+    "text": "Shared files between server and clients, like types or some pure function"
+  },
+  {
+    "repo": "yuvraj-chouhan-dev/ready-now-server",
+    "stars": 0,
+    "rule": "product",
+    "llm": "uncategorized",
+    "confidence": 0.5,
+    "reason": "Sparse readme, insufficient information to classify",
+    "text": "ready now SDK Backend server"
+  },
+  {
+    "repo": "aescanero/dago",
+    "stars": 0,
+    "rule": "product",
+    "llm": "uncategorized",
+    "confidence": 0.45,
+    "reason": "No readme; DA Orchestrator purpose too vague to classify",
+    "text": "DA Orchestrator core repository"
+  },
+  {
+    "repo": "itamm15/sync-async-docs",
+    "stars": 0,
+    "rule": "product",
+    "llm": "uncategorized",
+    "confidence": 0.35,
+    "reason": "Only Phoenix boilerplate in readme; purpose unclear",
+    "text": "SyncAsyncDocs To start your Phoenix server: Run mix setup to install and setup dependencies Start Phoenix endpoint with mix phx.server or in"
+  },
+  {
+    "repo": "ByteBardOrg/AsyncAPI.NET",
+    "stars": 13,
+    "rule": "spec/docs",
+    "llm": "tooling/library",
+    "confidence": 0.99,
+    "reason": ".NET SDK and object model for AsyncAPI specification",
+    "text": "The official continuation of LEGO.AsyncAPI.NET from the original author and maintainer. The SDK contains a useful object model for AsyncAPI "
+  },
+  {
+    "repo": "bdragon300/go-asyncapi",
+    "stars": 11,
+    "rule": "spec/docs",
+    "llm": "tooling/library",
+    "confidence": 0.99,
+    "reason": "AsyncAPI codegen, CLI, diagram, and web UI toolchain",
+    "text": "AsyncAPI tool: codegen, no-code CLI app, server definitions, diagrams, web UI"
+  },
+  {
+    "repo": "asynq-io/pydantic-asyncapi",
+    "stars": 9,
+    "rule": "spec/docs",
+    "llm": "tooling/library",
+    "confidence": 0.98,
+    "reason": "Pydantic models for validating and generating AsyncAPI docs",
+    "text": "Pydantic models for AsyncAPI schema"
+  },
+  {
+    "repo": "dghilardi/asyncapiv3",
+    "stars": 3,
+    "rule": "spec/docs",
+    "llm": "tooling/library",
+    "confidence": 0.98,
+    "reason": "Rust library parsing and serializing AsyncAPI v3 specs",
+    "text": "Asyncapi v3 Representation of the AsyncAPI v3 specification. AsyncAPI is a standard inspired by OpenAPI/Swagger targetting asynchronous and "
+  },
+  {
+    "repo": "RobinTail/zod-sockets",
+    "stars": 116,
+    "rule": "spec/docs",
+    "llm": "tooling/library",
+    "confidence": 0.97,
+    "reason": "Library that generates AsyncAPI specs from Socket.IO schemas",
+    "text": "Socket.IO solution with I/O validation and the ability to generate AsyncAPI specification and a contract for consumers."
+  },
+  {
+    "repo": "asyncapi/tck",
+    "stars": 12,
+    "rule": "spec/docs",
+    "llm": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Test Compatibility Kit with AsyncAPI fixture documents",
+    "text": "(WIP) Test Compatibility Suite for AsyncAPI"
+  },
+  {
+    "repo": "joserprieto/ai-skills",
+    "stars": 2,
+    "rule": "spec/docs",
+    "llm": "tangential",
+    "confidence": 0.97,
+    "reason": "AI coding-agent skills collection, not an AsyncAPI user",
+    "text": "Reusable AI agent skills for Claude Code and other AI tools"
+  },
+  {
+    "repo": "Leandroyyy/async-api-translator",
+    "stars": 0,
+    "rule": "spec/docs",
+    "llm": "tooling/library",
+    "confidence": 0.95,
+    "reason": "Translator tool for AsyncAPI specifications",
+    "text": "Translator for async api specification"
+  },
+  {
+    "repo": "wirenboard/wb-device-manager",
+    "stars": 0,
+    "rule": "spec/docs",
+    "llm": "product",
+    "confidence": 0.95,
+    "reason": "Real IoT Modbus device manager with MQTT/AsyncAPI spec",
+    "text": "Wiren Board modbus devices manager"
+  },
+  {
+    "repo": "fern-api/docs-starter",
+    "stars": 39,
+    "rule": "spec/docs",
+    "llm": "demo/fixture",
+    "confidence": 0.93,
+    "reason": "Starter template for publishing docs from OpenAPI",
+    "text": "Publish beautiful documentation from OpenAPI and markdown (MDX)"
+  },
+  {
+    "repo": "Kong/spec-renderer",
+    "stars": 33,
+    "rule": "spec/docs",
+    "llm": "tooling/library",
+    "confidence": 0.92,
+    "reason": "Pluggable API spec renderer powering documentation experiences",
+    "text": "A lightweight, pluggable spec renderer built by Kong. Designed to power fast, customizable API documentation experiences."
+  },
+  {
+    "repo": "belgif/openapi-cloudevents",
+    "stars": 0,
+    "rule": "spec/docs",
+    "llm": "tangential",
+    "confidence": 0.92,
+    "reason": "OpenAPI CloudEvents definitions; no AsyncAPI usage",
+    "text": "OpenAPI definitions for CloudEvents"
+  },
+  {
+    "repo": "fern-demo/postman-quickstart",
+    "stars": 0,
+    "rule": "spec/docs",
+    "llm": "demo/fixture",
+    "confidence": 0.91,
+    "reason": "Demo quickstart template identical to docs-starter",
+    "text": "Docs starter Create beautiful documentation in under 5 minutes using your OpenAPI specification. Customer showcase Get inspired by API docum"
+  },
+  {
+    "repo": "Scott-HW-OU/shw-616172",
+    "stars": 0,
+    "rule": "spec/docs",
+    "llm": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Docs starter template with sample API for onboarding",
+    "text": "Documentation for shw-616172"
+  },
+  {
+    "repo": "fern-support/universal-shuttle-348791",
+    "stars": 0,
+    "rule": "spec/docs",
+    "llm": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Docs starter template boilerplate",
+    "text": "Documentation for universal-shuttle-348791"
+  },
+  {
+    "repo": "heikkilamarko/todo-app",
+    "stars": 20,
+    "rule": "spec/docs",
+    "llm": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Explicitly a hobby playground for experimenting with technologies",
+    "text": "Todo App"
+  },
+  {
+    "repo": "DocHubTeam/DocHub",
+    "stars": 375,
+    "rule": "spec/docs",
+    "llm": "tooling/library",
+    "confidence": 0.88,
+    "reason": "Architecture-as-code tool that renders AsyncAPI among other formats",
+    "text": "\u0423\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0430\u0440\u0445\u0438\u0442\u0435\u043a\u0442\u0443\u0440\u043e\u0439 \u043a\u0430\u043a \u043a\u043e\u0434\u043e\u043c"
+  },
+  {
+    "repo": "eclipse-canought/can-translator",
+    "stars": 0,
+    "rule": "spec/docs",
+    "llm": "product",
+    "confidence": 0.87,
+    "reason": "Deployable automotive MQTT-to-CAN translator service",
+    "text": "can-translator"
+  },
+  {
+    "repo": "maciekpapiez/redocly-1",
+    "stars": 0,
+    "rule": "spec/docs",
+    "llm": "demo/fixture",
+    "confidence": 0.85,
+    "reason": "Starter template for Redocly API docs project",
+    "text": "Reunite Redoc Starter Project [!IMPORTANT] This project is a starter template for use with Redocly's Reunite product suite. For open source "
+  },
+  {
+    "repo": "Koh0920/webapp_specs",
+    "stars": 0,
+    "rule": "spec/docs",
+    "llm": "demo/fixture",
+    "confidence": 0.8,
+    "reason": "Template/boilerplate repo for web app design specifications",
+    "text": "webapp specs \u73fe\u4ee3\u306eWeb\u30a2\u30d7\u30ea\u958b\u767a\u306b\u5fc5\u8981\u306a\u8a2d\u8a08\u4ed5\u69d8\u66f8\u3092\u3001\u696d\u754c\u6a19\u6e96\u306e\u66f8\u5f0f\u3067\u7ba1\u7406\u3059\u308b\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8\u30ea\u30dd\u30b8\u30c8\u30ea\u3002 \u7279\u5fb4 \u696d\u754c\u6a19\u6e96\u6e96\u62e0 : OpenAPI\u3001DBML\u3001AsyncAPI\u7b49\u3092\u63a1\u7528 3\u6bb5\u968e\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8 : minimal/standard/enterprise \u81ea\u52d5"
+  },
+  {
+    "repo": "smoya/asyncapi-parser-example",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.99,
+    "reason": "Minimal example showing how to validate AsyncAPI documents",
+    "text": "This small and simple repository shows how to validate an AsyncAPI document from your code using the @asyncapi/parser"
+  },
+  {
+    "repo": "Pakisan/jasyncapi-idea-plugin-demo",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly a demo repo for JetBrains AsyncAPI plugin",
+    "text": "Repository to show how AsyncAPI specification works in JetBrains IDE"
+  },
+  {
+    "repo": "jonathan-prout/tic-tac-toe",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly a demo project for WebSocket and REST API",
+    "text": "Demo project for websocket and rest api"
+  },
+  {
+    "repo": "kondoumh/asyncapi-study",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly named study repo for learning AsyncAPI",
+    "text": "asyncapi study AsyncAPI Initiative for event driven APIs AsyncAPI Studio install CLI shell npm install g @asyncapi/cli"
+  },
+  {
+    "repo": "laat/asyncapi-generator-repro",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Bug reproduction case for asyncapi-generator issue",
+    "text": "repro sh npm ci npx asyncapi generator force write output dist asyncapi.yaml @asyncapi/html template Something went wrong: Error: This templ"
+  },
+  {
+    "repo": "meteatamel/asyncapi-basics",
+    "stars": 3,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Educational samples and references about AsyncAPI",
+    "text": "This repository contains information, references, and samples about AsyncAPI"
+  },
+  {
+    "repo": "openxapi/openxapi",
+    "stars": 9,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.97,
+    "reason": "Collection of AsyncAPI/OpenAPI specs for crypto exchanges",
+    "text": "OpenAPI and AsyncAPI specifications for cryptocurrency exchanges and DeFi protocols"
+  },
+  {
+    "repo": "s-menne-inovex/async_api_pages",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.97,
+    "reason": "Explicitly testing asyncapi generator with GitHub Pages",
+    "text": "Testing the asyncapi generator with github pages"
+  },
+  {
+    "repo": "ripple/rippled-api-spec",
+    "stars": 2,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.96,
+    "reason": "Repository of OpenAPI/AsyncAPI specs for XRP Ledger",
+    "text": "A repository for OpenAPI / AsyncAPI specifications. This ideally eventually can be used to automatically generate code and docs to simplify "
+  },
+  {
+    "repo": "sarkr72/practice",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.96,
+    "reason": "Explicitly described as a learning project for enterprise patterns",
+    "text": "EMS \u2014 Employee Management System Spring Boot 3.3 reference service. Built as a learning project for enterprise patterns: layered config, Fly"
+  },
+  {
+    "repo": "viktorSrk/quartogether",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.96,
+    "reason": "TU Delft CSE2000 course project, academic year",
+    "text": "Full-stack collaborative online text editor using the Quarto engine for rendering. The editor supports real-time collaboration through WebSo"
+  },
+  {
+    "repo": "EVerest/EVerest",
+    "stars": 207,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.95,
+    "reason": "Linux Foundation Energy-backed EV charging software stack",
+    "text": "Main Repository of EVerest - an EV charging software stack"
+  },
+  {
+    "repo": "PolyAI-LDN/polyai-mintlify-doc",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.95,
+    "reason": "Documentation site source for PolyAI Agent Studio",
+    "text": "This is the source code of the PolyAI Agent Studio documentation"
+  },
+  {
+    "repo": "juliangracin/community-docs",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.95,
+    "reason": "Repository contains AsyncAPI spec file for community API",
+    "text": "Community Docs Community API The asyncAPI spec in api/ws community api.yml file. To preview the file, copy it's contents into the AsyncAPI S"
+  },
+  {
+    "repo": "openfoodfacts/openfoodfacts-server",
+    "stars": 1047,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.95,
+    "reason": "Main food database API server and web interface",
+    "text": "Open Food Facts database, API server and web interface - \ud83d\udc2a\ud83e\udd8b Perl, CSS and JS coders welcome \ud83d\ude0a For helping in Python, see Robotoff or taxonom"
+  },
+  {
+    "repo": "roldaiateam/apis-especifications",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.95,
+    "reason": "API contract specifications published as Maven artifacts",
+    "text": "Este repositorio contiene las definiciones y especificaciones de las APIs del sistema"
+  },
+  {
+    "repo": "Pinit-Scheduler/pinit-task",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.93,
+    "reason": "Real task-management microservice backend",
+    "text": "\uc77c\uc815 \uad00\ub9ac/\uc2e4\ud589 \uc11c\ube44\uc2a4 Pinit\uc758 \uc77c\uc815 \uad00\ub9ac/\uc2e4\ud589 \uae30\ub2a5\uc744 \ub2f4\ub2f9\ud558\ub294 \ub9c8\uc774\ud06c\ub85c\uc11c\ube44\uc2a4"
+  },
+  {
+    "repo": "Benzinga/benzinga-docs",
+    "stars": 2,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.92,
+    "reason": "Mintlify-powered documentation site for Benzinga APIs",
+    "text": "Benzinga Docs Powered by Mintlify Live at https://benzinga 2.mintlify.app Click on Use this template to copy the Mintlify starter kit. The s"
+  },
+  {
+    "repo": "CardanoSolutions/ogmios",
+    "stars": 327,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.92,
+    "reason": "Real deployable WebSocket/JSON-RPC bridge for Cardano node",
+    "text": "\u2747\ufe0f A WebSocket JSON/RPC bridge for Cardano"
+  },
+  {
+    "repo": "EDALearn/EDA-TransactionalOutbox-Modulith-JPA",
+    "stars": 5,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Tutorial implementing Transactional Outbox pattern with ZenWaveSDK",
+    "text": "Implementing a Transactional OutBox With AsyncAPI, SpringModulith and ZenWaveSDK"
+  },
+  {
+    "repo": "Grinseteddy/DomainDrivenApiDesign",
+    "stars": 5,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Training resources with demo online library interfaces",
+    "text": "Repository for ressources for trainings"
+  },
+  {
+    "repo": "bian-official/public",
+    "stars": 194,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.92,
+    "reason": "Banking Swagger/OpenAPI APIs; no AsyncAPI usage",
+    "text": "This is a repository of BIAN artefacts, currently the BIAN Semantic APIs"
+  },
+  {
+    "repo": "exploding-CATs-42/ft_transcendence",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "42 school capstone project, not production software",
+    "text": "ft transcendence This project is run and developed via Docker Compose and Makefile . Below is the working command sequence for developers, i"
+  },
+  {
+    "repo": "lg-labs/blank-service",
+    "stars": 4,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Explicitly a template; readme says replace blank with domain",
+    "text": "\ud83d\udc4b Management the blank service for the blanksystem as template."
+  },
+  {
+    "repo": "ministryofjustice/hmpps-accredited-programmes-manage-and-deliver-api",
+    "stars": 3,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.92,
+    "reason": "Production Spring Boot API for HMPPS accredited programmes",
+    "text": "HMPPS Manage and Deliver Accredited Programmes API Layer (bootstrapped 2025-06-10)"
+  },
+  {
+    "repo": "specmatic/aws-lambda-kafka-with-localstack",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.92,
+    "reason": "Demo showing Lambda/Kafka contract testing with AsyncAPI 3.0",
+    "text": "Run Specmatic Kafka Contract Test on AWS Lambda with Amazon MSK on LocalStack using AsyncAPI 3.0 This project demonstrates below aspects Set"
+  },
+  {
+    "repo": "ministryofjustice/hmpps-find-and-refer-an-intervention-service",
+    "stars": 2,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.91,
+    "reason": "Production service for finding and referring interventions",
+    "text": "Business/domain interface for providing Find and Refer an Intervention Service"
+  },
+  {
+    "repo": "TemplateMechanics/tilt",
+    "stars": 2,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.9,
+    "reason": "Tilt file examples demonstrating deployment patterns",
+    "text": "Tilt File Examples"
+  },
+  {
+    "repo": "bitsy-ai/printnanny-webapp",
+    "stars": 3,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.9,
+    "reason": "Real IoT webapp and API for 3D printer monitoring plugin",
+    "text": "Print Nanny Webapp API and webapp for Octoprint Print Nanny plugin by Bitsy.ai .. image:: https://img.shields.io/badge/built%20with Cookiecu"
+  },
+  {
+    "repo": "deepgram/starter-contracts",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Collection of OpenAPI and AsyncAPI specs for Deepgram services",
+    "text": "Quickly build Deepgram Starter Apps from API specifications and Interface contracts"
+  },
+  {
+    "repo": "encypher-studio/newsware-docs",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.9,
+    "reason": "Frontend documentation site for Newsware API clients",
+    "text": "Frontend for user documentation of the Newsware clients to interact with the API"
+  },
+  {
+    "repo": "DEFRA/ffc-doc-statement-generator",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.88,
+    "reason": "Production statement generator service with Azure Service Bus",
+    "text": "FFC Payment Statement Generator Prerequisites Docker Docker Compose Optional: Kubernetes Helm Azure Service Bus This service depends on a va"
+  },
+  {
+    "repo": "Jacksonspencerd/tcss559-project",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.88,
+    "reason": "University course project (TCSS 559) observability platform",
+    "text": "\u2601\ufe0f TCSS 559 Project: Eye in the Sky A full stack observability platform featuring a React frontend, Node.js/Go backend services, Cloud Funct"
+  },
+  {
+    "repo": "RossBugginsNHS/notify-asyncapi",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Builds and publishes AsyncAPI schema pages for NHS Notify",
+    "text": "Notify Async Events Schema Setup bash make config Build bash make build Preview View build schema pages in /docs folder Setup github pages, "
+  },
+  {
+    "repo": "forepath/agenstra",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.88,
+    "reason": "Deployable platform for managing AI agent infrastructure",
+    "text": "Centralized management platform for distributed AI agent infrastructure with real-time interaction, code editing, and automated provisioning"
+  },
+  {
+    "repo": "l3wi/docs",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Documentation site using Mintlify starter kit",
+    "text": "Mintlify Starter Kit Use the starter kit to get your docs deployed and ready to customize. Click the green Use this template button at the t"
+  },
+  {
+    "repo": "samovers/OFARM",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Open semantic reference model and governance framework, not runnable software",
+    "text": "Open semantic reference model and governance framework for traceable, interoperable crop-farming platforms."
+  },
+  {
+    "repo": "simliai/docs",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.88,
+    "reason": "Documentation site using Mintlify, no runnable application",
+    "text": "Mintlify Starter Kit Click on Use this template to copy the Mintlify starter kit. The starter kit contains examples including Guide pages Na"
+  },
+  {
+    "repo": "acidtango/ollert-backend",
+    "stars": 2,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.87,
+    "reason": "API-first backend using asyncapi.yml to generate TypeScript types",
+    "text": "Generate Schemas First, you need to install @asyncapi/cli globally , installing it as dev dependencies doesn't work: npm install g @asyncapi"
+  },
+  {
+    "repo": "Caldis/frameworks",
+    "stars": 8,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.85,
+    "reason": "Curated design-frameworks catalog; AsyncAPI incidental",
+    "text": "Software Design Frameworks | A curated collection for engineers, architects, and AI agents"
+  },
+  {
+    "repo": "Opzet/EFDesignerExamples",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.85,
+    "reason": "Entity Framework code-gen examples; no AsyncAPI relevance",
+    "text": "EF Visual Designer Examples Model and generate code for Database Examples for both Entity Framework v6.x (Dot Net 4.x) and Entity Framework "
+  },
+  {
+    "repo": "bakabala27-svg/NAAS-Agentic-Core",
+    "stars": 2,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.85,
+    "reason": "AI tutoring framework; no AsyncAPI usage evident",
+    "text": "\ud83d\udee1\ufe0f North African AI Safety Lab (NAAS Lab) Project: EL NUKHBA (The Elite) NAAS Agentic Core 0b7285?style for the badge) The \"Elite\" Verify th"
+  },
+  {
+    "repo": "pascal-audio/px-api",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.85,
+    "reason": "API documentation and spec for hardware audio amplifiers",
+    "text": "Public JSON-RPC based API for PX-Series"
+  },
+  {
+    "repo": "pv-udpv/dual-publish-platform",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.85,
+    "reason": "Reference scaffold template for publishing OpenAPI/AsyncAPI specs",
+    "text": "Reference scaffold: dual-publish OpenAPI/AsyncAPI specs as both UTCP manuals and MCP server surfaces from one source of truth, with codegen "
+  },
+  {
+    "repo": "solace-cto-labs/solace-amplify-discovery-agent",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.85,
+    "reason": "Deployable agent synchronizing AsyncAPIs between Solace and Amplify",
+    "text": "Solace-Amplify-Discovery-Agent for synchronizing Solace AsyncAPIs with Axway Amplify Platform"
+  },
+  {
+    "repo": "DigKick/DigKick",
+    "stars": 4,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.83,
+    "reason": "Real table-soccer goal-detection system with MQTT hardware integration",
+    "text": "DigKick is a system that detects goals and tracks players elo for table soccer."
+  },
+  {
+    "repo": "AlexandrePh/flywheel-starter-kit",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Starter kit template for AI-driven application development",
+    "text": "Flywheel Starter Kit A comprehensive starter kit for building modern, AI driven applications following Flywheel principles. This repository "
+  },
+  {
+    "repo": "Tomeku-Development/AgentMesh",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.82,
+    "reason": "Hackathon competition entry for Vertex Swarm Challenge 2026",
+    "text": "MESH is a fully decentralized multi-agent system where autonomous agents negotiate, trade, ship, inspect, and settle supply chain orders -- "
+  },
+  {
+    "repo": "cipher982/longhouse",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.82,
+    "reason": "AI agent session manager; no AsyncAPI usage",
+    "text": "centralized location for managing ai agents"
+  },
+  {
+    "repo": "gocobalt/mintlify-docs",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.82,
+    "reason": "Mintlify docs starter kit, documentation only",
+    "text": "Mintlify Starter Kit Click on Use this template to copy the Mintlify starter kit. The starter kit contains examples including. This is a sam"
+  },
+  {
+    "repo": "klurvio/sukko",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.82,
+    "reason": "Real-time trading data WebSocket infrastructure platform",
+    "text": "Sukko Multi tenant WebSocket infrastructure platform for real time data distribution. Built for trading and market data \u2014 delivers messages "
+  },
+  {
+    "repo": "mayankshouche/docs",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.82,
+    "reason": "Mintlify docs starter kit, no AsyncAPI content evident",
+    "text": "Mintlify Starter Kit Click on Use this template to copy the Mintlify starter kit. The starter kit contains examples including Guide pages Na"
+  },
+  {
+    "repo": "mayankshouche/docs-ally",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.82,
+    "reason": "Mintlify docs starter kit, no AsyncAPI content evident",
+    "text": "Mintlify Starter Kit Use the starter kit to get your docs deployed and ready to customize. Click the green Use this template button at the t"
+  },
+  {
+    "repo": "paddypawprints/VLMChat",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.82,
+    "reason": "Deployable edge AI platform for vision language models on hardware",
+    "text": "VLMChat An edge AI platform for deploying vision language models (VLMs) on devices like Raspberry Pi and NVIDIA Jetson, with a web based man"
+  },
+  {
+    "repo": "David-Parry/server-agents",
+    "stars": 3,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.8,
+    "reason": "Deployable AI agent orchestration platform with governance",
+    "text": "Server Agents Platform The server side backbone of this AI agent infrastructure. It orchestrates LLM interactions, enforces governance polic"
+  },
+  {
+    "repo": "NHSDigital/nhs-notify-supplier-api",
+    "stars": 3,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.8,
+    "reason": "Primary content is API definitions, sandbox, and SDK for external suppliers",
+    "text": "API Definitions, Sandbox and SDK for the NHS Notify Supplier API"
+  },
+  {
+    "repo": "NeatGuyCoding/spring-io",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.8,
+    "reason": "Conference notes and summaries, not an actual service or spec",
+    "text": "spring io conference"
+  },
+  {
+    "repo": "OpenDonationAssistant/docs",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.8,
+    "reason": "Documentation site using Mintlify, not runnable software",
+    "text": "Mintlify Starter Kit Click on Use this template to copy the Mintlify starter kit. The starter kit contains examples including Guide pages Na"
+  },
+  {
+    "repo": "hahnbeelee/docs-michal",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.8,
+    "reason": "Mintlify starter kit, documentation only",
+    "text": "Mintlify Starter Kit Click on Use this template to copy the Mintlify starter kit. The starter kit contains examples including Guide pages Na"
+  },
+  {
+    "repo": "ppzxc/relaybox",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.8,
+    "reason": "Deployable relay hub with protocol parsing and message routing",
+    "text": "English \ud55c\uad6d\uc5b4 relaybox A generic relay hub: receives any inbound protocol/format, applies CEL/Expr expression based filter, transform, and rou"
+  },
+  {
+    "repo": "AbhishekCS3459/URL-Shortner-using-GRPC",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "Student project documenting AsyncAPI 3.0.0 spec for URL shortener",
+    "text": "This is a url service which uses grpc  for communicating to the url generator service which I have deployed over aws"
+  },
+  {
+    "repo": "E2RD0/digital-resources-transcription-service",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.78,
+    "reason": "Live Whisper-as-a-Service with email delivery and editor UI",
+    "text": "WaaS Whisper as a Service GUI and API for OpenAI Whisper No video support What is Jojo? Jojo is a GUI for upload and transcribe a audio or v"
+  },
+  {
+    "repo": "GopiR17/backstage-prod",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.78,
+    "reason": "Production Backstage developer portal deployment",
+    "text": "Backstage English \\ \ud55c\uad6d\uc5b4 \\ \u4e2d\u6587\u7248 What is Backstage? Backstage is an open source framework for building developer portals. Powered by a centrali"
+  },
+  {
+    "repo": "Zenika/kafka-schema-registry-publish",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "Best-practices demo for publishing schemas via CI/CD",
+    "text": "Publish schemas to your schemas registry using CI-CD"
+  },
+  {
+    "repo": "arc-framework/arc-platform",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.78,
+    "reason": "Production AI agent orchestration platform with event-driven services",
+    "text": "The official production monorepo for A.R.C. Houses the \"Brain\" (Python/LangGraph), Voice services, and OCI-compliant Docker infrastructure. "
+  },
+  {
+    "repo": "davidB/sandbox_cdevents_spec",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.78,
+    "reason": "Sandbox exploration of cdevents spec formats",
+    "text": "exploration of other way to define cdevents (and to generate doc, sdk,...)"
+  },
+  {
+    "repo": "ff-fab/cosalette-apps",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.78,
+    "reason": "Deployable smart home IoT bridge applications",
+    "text": "Monorepo for cosalette based smart home apps."
+  },
+  {
+    "repo": "AcidicSoil/lms-llmsTxt",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.75,
+    "reason": "LM Studio llms.txt generator, unrelated to AsyncAPI",
+    "text": "LM-Studio llms.txt generator using DSPy framework"
+  },
+  {
+    "repo": "BidnessForB/oas-converter-lambda",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.75,
+    "reason": "OAS 2\u21923 converter lambda; AsyncAPI not its focus",
+    "text": "Lambda function to convert API Definitions (schemas) from OAS 2.0 -> OAS 3.0"
+  },
+  {
+    "repo": "OKArc/backstage",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.75,
+    "reason": "Fork of Backstage, a real deployable developer portal platform",
+    "text": "Backstage English \\ \ud55c\uad6d\uc5b4 \\ \u4e2d\u6587\u7248 What is Backstage? Backstage is an open source framework for building developer portals. Powered by a centrali"
+  },
+  {
+    "repo": "Sovereign-Labs/sovereign-sdk",
+    "stars": 476,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.75,
+    "reason": "Blockchain rollup SDK; AsyncAPI mention likely incidental",
+    "text": "A flexible toolkit for building real-time blockchains"
+  },
+  {
+    "repo": "saujasn/accelerator",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.75,
+    "reason": "Deployable multi-service application generating code from AsyncAPI spec",
+    "text": "Accelerator Project Overview & Architecture \ud83d\udccb See PIPELINE.md for the data flow architecture and payload schemas. Available Commands task ve"
+  },
+  {
+    "repo": "worried-networking/uptrakit",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.75,
+    "reason": "Self-hosted deployable update-tracking service for homelabs",
+    "text": "Your homelab\u2019s little helper for tracking and applying updates."
+  },
+  {
+    "repo": "AcidicSoil/DSPyTeach",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.72,
+    "reason": "DSPy CLI analyzer tool, no meaningful AsyncAPI usage",
+    "text": "dspyteach \u2013 DSPy File Teaching Analyzer What it does dspyteach is a Python CLI with two top level workflows: dspyteach analyze ... for file "
+  },
+  {
+    "repo": "IMAGINARY/track-n-truck",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.72,
+    "reason": "Deployable game application with event-driven communication",
+    "text": "A game about Communication & Coordination."
+  },
+  {
+    "repo": "cidverse/repoanalyzer",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.72,
+    "reason": "Repo scanner library; AsyncAPI detection incidental",
+    "text": "a go library to analyze a project directory to determinate all modules / languages / build-systems used"
+  },
+  {
+    "repo": "dcSpark/sovereign-sdk",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.72,
+    "reason": "Blockchain rollup toolkit; no AsyncAPI connection visible",
+    "text": "A flexible toolkit for building real-time blockchains"
+  },
+  {
+    "repo": "ekidenfi/ekiden-docs",
+    "stars": 2,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.72,
+    "reason": "Documentation site for ekiden platform using Mintlify",
+    "text": "Mintlify Starter Kit Click on Use this template to copy the Mintlify starter kit. The starter kit contains examples including Guide pages Na"
+  },
+  {
+    "repo": "gonewton/newton",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.72,
+    "reason": "Deployable CLI for workflow automation and orchestration",
+    "text": "Newton"
+  },
+  {
+    "repo": "hotcode-dev/zerohub",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.72,
+    "reason": "Deployable open-source WebRTC signaling server",
+    "text": "An open-source WebRTC signaling server"
+  },
+  {
+    "repo": "jacekzwpl/docueye",
+    "stars": 18,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.72,
+    "reason": "Deployable architecture visualization tool with product page",
+    "text": "DocuEye is a tool that lets You visualize views and documentation created using Structurizr DSL"
+  },
+  {
+    "repo": "neosun100/VibeVoice",
+    "stars": 2,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.72,
+    "reason": "Deployable real-time TTS streaming application framework",
+    "text": "Open-Source Frontier Voice AI - Real-time Text-to-Speech with Docker support"
+  },
+  {
+    "repo": "rbaxim/MOP",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.72,
+    "reason": "Deployable stdio-to-HTTP bridge service with session management",
+    "text": "A stdio \u2194 HTTP(s) bridge"
+  },
+  {
+    "repo": "vivekjava/Spring-Boot-Rest",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.72,
+    "reason": "Deployable Spring Boot reporting service using AsyncAPI",
+    "text": "Standard service with low code and no code"
+  },
+  {
+    "repo": "daksh0702/first-backstage-app",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.7,
+    "reason": "'first-backstage-app' name signals learning/demo project",
+    "text": "Backstage English \\ \ud55c\uad6d\uc5b4 \\ \u4e2d\u6587\u7248 What is Backstage? Backstage is an open source framework for building developer portals. Powered by a centrali"
+  },
+  {
+    "repo": "knowmadmood-poc-rhdevhub/backstage",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.7,
+    "reason": "POC org name; Backstage proof-of-concept deployment",
+    "text": "Backstage English \\ \ud55c\uad6d\uc5b4 \\ \u4e2d\u6587\u7248 What is Backstage? Backstage is an open source framework for building developer portals. Powered by a centrali"
+  },
+  {
+    "repo": "maxkrv/uchat",
+    "stars": 4,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.68,
+    "reason": "Chat application in C with WebSocket and SQLite",
+    "text": "Chat application"
+  },
+  {
+    "repo": "certifieddata/certifieddata-agent-commerce-public",
+    "stars": 1,
+    "rule": "tooling/library",
+    "llm": "spec/docs",
+    "confidence": 0.67,
+    "reason": "Public API contracts, event schemas, and SDK for payments service",
+    "text": "Public API, SDKs, schemas, event contracts, and examples for CertifiedData Payments \u2014 a machine-readable payments and provenance layer for A"
+  },
+  {
+    "repo": "RafaelAlmeida00/Plant-Simulador-Huggy",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.65,
+    "reason": "Simulator on HuggingFace, minimal info suggests demo",
+    "text": "license: mit title: Simulator Plant sdk: docker emoji: \ud83d\ude80 colorFrom: blue colorTo: green short description: Simulator Plant"
+  },
+  {
+    "repo": "aperim/production-city-web",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.65,
+    "reason": "Production City web application monorepo foundation",
+    "text": "Production City web application"
+  },
+  {
+    "repo": "dalsgaard/account-service",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.65,
+    "reason": "Described as blank CDK template project",
+    "text": "Welcome to your CDK TypeScript project This is a blank project for CDK development with TypeScript. The cdk.json file tells the CDK Toolkit "
+  },
+  {
+    "repo": "donbagger/documentation",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "demo/fixture",
+    "confidence": 0.65,
+    "reason": "Mintlify starter kit boilerplate, not a real service",
+    "text": "Mintlify Starter Kit Click on Use this template to copy the Mintlify starter kit. The starter kit contains examples including Guide pages Na"
+  },
+  {
+    "repo": "allofmeng/streamline_project",
+    "stars": 9,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.62,
+    "reason": "Real web UI application for Decent Espresso DE1 IoT device",
+    "text": "Streamline.js A modern web UI skin for the Decent Espresso DE1, built on top of Streamline Bridge (reaprime). This is a full rewrite of the "
+  },
+  {
+    "repo": "fredabila/oahl",
+    "stars": 6,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.62,
+    "reason": "Deployable framework exposing hardware APIs to AI agents",
+    "text": "Open Agent Hardware Layer is an open-source framework for exposing real hardware capabilities to AI agents through standardized APIs."
+  },
+  {
+    "repo": "openagents-org/openagents",
+    "stars": 3737,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.62,
+    "reason": "Deployable AI agent collaboration platform/workspace",
+    "text": "OpenAgents - AI Agent Networks for Open Collaboration"
+  },
+  {
+    "repo": "JannikAlx/kafkaProducer",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.6,
+    "reason": "Kafka producer app; no AsyncAPI mention in available text",
+    "text": "Kafka Producer with Bundled Map Configuration Overview This project now supports both bundled and custom map configurations: 1. Bundled Map "
+  },
+  {
+    "repo": "jason931225/oyatie",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "tangential",
+    "confidence": 0.6,
+    "reason": "AI agent-oriented repo; AsyncAPI mentioned incidentally in specs",
+    "text": "Oyatie WIP"
+  },
+  {
+    "repo": "chem-gl/chemistry-apps",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.58,
+    "reason": "Real Django-based chemistry apps with async job orchestration",
+    "text": "Apps de quimica de uso general"
+  },
+  {
+    "repo": "Itshalffull/Concept-Oriented-Programming-Framework",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "uncategorized",
+    "confidence": 0.55,
+    "reason": "No readme; description too vague to classify",
+    "text": "A concept first, spec first, multi language programming framework"
+  },
+  {
+    "repo": "acvigue/casa-bonita",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "product",
+    "confidence": 0.55,
+    "reason": "Likely smart-home Nuxt app; AsyncAPI role unclear from readme",
+    "text": "Nuxt Minimal Starter Look at the Nuxt documentation to learn more. Setup Make sure to install dependencies: bash npm npm install pnpm pnpm i"
+  },
+  {
+    "repo": "Matusko/flea",
+    "stars": 0,
+    "rule": "tooling/library",
+    "llm": "uncategorized",
+    "confidence": 0.5,
+    "reason": "Only Nx workspace boilerplate readme, no domain context",
+    "text": "Flea \u2728 This workspace has been generated by Nx, a Smart, fast and extensible build system. \u2728 Generate code If you happen to use Nx plugins, "
+  }
+]

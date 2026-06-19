@@ -1,0 +1,4 @@
+mattmeye/payara-6-ibm-queue	src/main/resources/asyncapi.yaml	https://github.com/mattmeye/payara-6-ibm-queue/blob/933b385a1042ef5de2eca2498f92451a55f4ca14/src/main/resources/asyncapi.yaml
+codemonstersteam/pinout-asyncapi	testdata/contract_validator/consumer_local.yaml	https://github.com/codemonstersteam/pinout-asyncapi/blob/d370f39e352b4a1a6a41c4f6e0ff56d9a14103dd/testdata/contract_validator/consumer_local.yaml
+insspb/asyncapi3	tests/fixtures/yaml_specs/valid/single_file/ibm_mq.yaml	https://github.com/insspb/asyncapi3/blob/d7e6b604c4553873247525dd26a3c50b9ff16ff8/tests/fixtures/yaml_specs/valid/single_file/ibm_mq.yaml
+codemonstersteam/mq-rest-sync-adapter	contract-tests-v2/testdata/contract_validator/consumer_local.yaml	https://github.com/codemonstersteam/mq-rest-sync-adapter/blob/accc30f8d2f8cb97e4eff7d969bee81aacb58b2f/contract-tests-v2/testdata/contract_validator/consumer_local.yaml

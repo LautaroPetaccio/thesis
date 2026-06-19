@@ -1,0 +1,6502 @@
+{
+  "generated": "2026-06-07T23:57:30Z",
+  "definition": "operations with action:receive AND a reply (request channel may equal reply channel)",
+  "funnel": {
+    "unique_blobs": 4339,
+    "fetch_failed": 11,
+    "parsed_3x": 4151,
+    "no_operations": 668,
+    "specs_with_receive_reply": 122,
+    "receive_reply_ops": 356,
+    "non_3x": 141,
+    "parse_failed": 36
+  },
+  "by_extension": {
+    "yaml": 3719,
+    "yml": 574,
+    "json": 46
+  },
+  "headline_reply_scoped": [
+    {
+      "protocol": "kafka",
+      "ops": 27,
+      "specs": 24,
+      "repos": 20
+    },
+    {
+      "protocol": "mqtt",
+      "ops": 31,
+      "specs": 15,
+      "repos": 5
+    },
+    {
+      "protocol": "ws",
+      "ops": 73,
+      "specs": 11,
+      "repos": 9
+    },
+    {
+      "protocol": "http",
+      "ops": 18,
+      "specs": 9,
+      "repos": 6
+    },
+    {
+      "protocol": "amqp",
+      "ops": 13,
+      "specs": 6,
+      "repos": 6
+    },
+    {
+      "protocol": "sqs",
+      "ops": 8,
+      "specs": 6,
+      "repos": 4
+    },
+    {
+      "protocol": "wss",
+      "ops": 11,
+      "specs": 5,
+      "repos": 6
+    },
+    {
+      "protocol": "googlepubsub",
+      "ops": 4,
+      "specs": 2,
+      "repos": 2
+    },
+    {
+      "protocol": "redis",
+      "ops": 2,
+      "specs": 2,
+      "repos": 1
+    },
+    {
+      "protocol": "stomp",
+      "ops": 3,
+      "specs": 1,
+      "repos": 1
+    }
+  ],
+  "undetermined_ops": 186,
+  "document_level": [
+    {
+      "protocol": "kafka",
+      "specs": 31,
+      "repos": 25
+    },
+    {
+      "protocol": "mqtt",
+      "specs": 16,
+      "repos": 6
+    },
+    {
+      "protocol": "ws",
+      "specs": 11,
+      "repos": 9
+    },
+    {
+      "protocol": "amqp",
+      "specs": 10,
+      "repos": 9
+    },
+    {
+      "protocol": "http",
+      "specs": 10,
+      "repos": 7
+    },
+    {
+      "protocol": "sqs",
+      "specs": 6,
+      "repos": 4
+    },
+    {
+      "protocol": "wss",
+      "specs": 5,
+      "repos": 6
+    },
+    {
+      "protocol": "googlepubsub",
+      "specs": 2,
+      "repos": 2
+    },
+    {
+      "protocol": "jms",
+      "specs": 2,
+      "repos": 2
+    },
+    {
+      "protocol": "redis",
+      "specs": 2,
+      "repos": 1
+    },
+    {
+      "protocol": "stomp",
+      "specs": 1,
+      "repos": 1
+    }
+  ],
+  "specs": [
+    {
+      "sha": "f905c50d43f41b7b45b4b3e65be972607f18b1db",
+      "ext": "yaml",
+      "repo": "ambihome-gmbh/asyncapi",
+      "path": "examples/multi_stack/priv/schema/service.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "ambihome-gmbh/asyncapi"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "create",
+          "requestChannel": "#/channels/create",
+          "replyChannel": "#/channels/create_response",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "pop",
+          "requestChannel": "#/channels/pop",
+          "replyChannel": "#/channels/pop_response",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "7fb0650f39a48f6eac1dafe5914859ca9df8a594",
+      "ext": "yaml",
+      "repo": "lerenn/asyncapi-codegen",
+      "path": "test/v3/issues/148/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "dimonoff/asyncapi-codegen",
+        "lerenn/asyncapi-codegen"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "GetServiceInfo",
+          "requestChannel": "#/channels/reception",
+          "replyChannel": "#/channels/reply",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "7fb7eddb6d9ceeda1dc0e89731878ba27b82f336",
+      "ext": "yaml",
+      "repo": "Netcracker/qubership-apihub-api-processor",
+      "path": "test/projects/asyncapi-changes/operation/change-reply/after.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "Netcracker/qubership-apihub-api-processor"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "operation1",
+          "requestChannel": "#/channels/channel1",
+          "replyChannel": null,
+          "replyAddress": {
+            "location": "$message.header#/replyTo",
+            "description": "Reply to the new address"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "9ee87f309961fa36814c299dd47a5276d3ca2a00",
+      "ext": "yaml",
+      "repo": "lerenn/asyncapi-codegen",
+      "path": "test/v3/issues/181/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "dimonoff/asyncapi-codegen",
+        "lerenn/asyncapi-codegen"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "GetServiceInfo",
+          "requestChannel": "#/channels/request",
+          "replyChannel": "#/channels/reply",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "ada0dcb9252df5741136bc685db4d0ee609b0230",
+      "ext": "yaml",
+      "repo": "G-USI/asyncapi-python",
+      "path": "examples/amqp-rpc/spec/server.asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "G-USI/asyncapi-python"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "onPingRequest",
+          "requestChannel": "./common.asyncapi.yaml#/channels/ping",
+          "replyChannel": "./common.asyncapi.yaml#/channels/pong",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": false,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "3c7d1efcc1f92e9dfd9da548d0616fe25a4e41b3",
+      "ext": "yaml",
+      "repo": "OAI/Arazzo-Specification",
+      "path": "examples/1.1.0/pet-asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "OAI/Arazzo-Specification"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "placeOrder",
+          "requestChannel": "#/channels/place-order",
+          "replyChannel": "#/channels/confirm-order",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "d315ae8e83a2d9d6994dd136f5da14b51162242f",
+      "ext": "yaml",
+      "repo": "aklivity/zilla-demos",
+      "path": "extras-containers/todo/todo-command-service/src/main/api/todo-service-asyncapi-v3.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "aklivity/zilla-demos"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "createTask",
+          "requestChannel": null,
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        },
+        {
+          "opId": "updateTask",
+          "requestChannel": null,
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        },
+        {
+          "opId": "deleteTask",
+          "requestChannel": null,
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "49257f9dd8e3532e8d064897cb2e3a135c184557",
+      "ext": "yaml",
+      "repo": "Ravip2006/Demo",
+      "path": "io/specmatic/examples/store/asyncapi/3_0_0/order_service_async_v1.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "Ravip2006/Demo"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "onPlaceOrder",
+          "requestChannel": "#/channels/place-order",
+          "replyChannel": "#/channels/process-order",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "3ef4a3a1fd0cdc158c3d8c62c79e659e0dd85422",
+      "ext": "yaml",
+      "repo": "aklivity/todo-service",
+      "path": "src/main/api/todo-service-asyncapi-v3.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "aklivity/todo-service"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "createTask",
+          "requestChannel": null,
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        },
+        {
+          "opId": "renameTask",
+          "requestChannel": null,
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        },
+        {
+          "opId": "deleteTask",
+          "requestChannel": null,
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "82dc4efffb49ffb99bdd579e3c513850d2aedf7d",
+      "ext": "yaml",
+      "repo": "Forsakringskassan/gradle-conventions",
+      "path": "examples/asyncapi/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "Forsakringskassan/gradle-conventions"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "onVahRtfRequest",
+          "requestChannel": "#/channels/vah.rtf.requests",
+          "replyChannel": "#/channels/vah.rtf.responses",
+          "replyAddress": {
+            "description": "Resultatet skickas tillbaka till k\u00e4llan.",
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "adc8e54348824d34aa0743bd45e9d7c0e3d1c6df",
+      "ext": "yaml",
+      "repo": "stardew-valley-dedicated-server/web",
+      "path": "asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "stardew-valley-dedicated-server/web"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "updateMap",
+          "requestChannel": "#/channels/root",
+          "replyChannel": "#/channels/root",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "f2b7a4b9053d10509685fc0bd45e58793f1c3378",
+      "ext": "yaml",
+      "repo": "specmatic/docs.specmatic.io",
+      "path": "docs/supported_protocols/asyncapi/includes/index/order-service-sut/spec/order-service.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/docs.specmatic.io"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka",
+        "sqs"
+      ],
+      "ops": [
+        {
+          "opId": "sendOrder",
+          "requestChannel": "#/channels/placeOrder",
+          "replyChannel": "#/channels/wipOrder",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka",
+            "sqs"
+          ],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "kafka",
+            "sqs"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "0af1078b3e38a00c07420eb976294d92e2dea8e2",
+      "ext": "yaml",
+      "repo": "specmatic/docs.specmatic.io",
+      "path": "docs/supported_protocols/asyncapi/includes/index/order-service-mock/spec/order-service.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/docs.specmatic.io"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka",
+        "sqs"
+      ],
+      "ops": [
+        {
+          "opId": "sendOrder",
+          "requestChannel": "#/channels/placeOrder",
+          "replyChannel": "#/channels/wipOrder",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka",
+            "sqs"
+          ],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "kafka",
+            "sqs"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "1c5c027250461ecd9605a107c4e1d8da24f3713f",
+      "ext": "yaml",
+      "repo": "specmatic/specmatic-kafka-avro-sample",
+      "path": "api-specs/order-service-async-avro-v3_0_0.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/specmatic-kafka-avro-sample"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "placeOrder",
+          "requestChannel": "#/channels/new-orders",
+          "replyChannel": "#/channels/wip-orders",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "2d38bc1a0b6539dc4bd44f50a2761379a62b0475",
+      "ext": "yaml",
+      "repo": "Redocly/redocly-cli",
+      "path": "tests/e2e/split/asyncapi3-complex/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "Redocly/redocly-cli"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "receiveUserLoggedIn",
+          "requestChannel": "#/channels/userLoggedIn",
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "607681049fa61d0745fd0f29e243a1230265fef2",
+      "ext": "yaml",
+      "repo": "znsio/specmatic-async-order-api-kotlin",
+      "path": "spec/order_service_async_v1.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "znsio/specmatic-async-order-api-kotlin"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "createOrder",
+          "requestChannel": "#/channels/create-order-request",
+          "replyChannel": "#/channels/create-order-reply",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "4e80c4655a923452088e9388fa1202ba27a8f848",
+      "ext": "yaml",
+      "repo": "specmatic/studio-demo",
+      "path": "specs/workflow/asyncapi/order.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/specmatic-studio-playwright-ts-tests",
+        "specmatic/studio-demo"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "PlaceOrder",
+          "requestChannel": "#/channels/place-order",
+          "replyChannel": "#/channels/process-order",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "456a65fd3cd4e84d0fc0a426b909fbf029bf86d1",
+      "ext": "yaml",
+      "repo": "sillygod/scaffold",
+      "path": "go-web/{{ cookiecutter.project_slug }}/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "sillygod/scaffold"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "wss"
+      ],
+      "ops": [
+        {
+          "opId": "pricefeedRequest",
+          "requestChannel": "#/channels/pricefeed_request",
+          "replyChannel": "#/channels/pricefeed",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "wss"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "wss"
+          ]
+        },
+        {
+          "opId": "pingRequest",
+          "requestChannel": "#/channels/ping",
+          "replyChannel": "#/channels/pong",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "wss"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "wss"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "4973ad719aa1519335835bf43ae5be1d4df6da3e",
+      "ext": "yaml",
+      "repo": "stardew-valley-dedicated-server/asyncapi-generator-template-ts",
+      "path": "test/fixtures/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "stardew-valley-dedicated-server/asyncapi-generator-template-ts"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "updateMapData",
+          "requestChannel": "#/channels/root",
+          "replyChannel": "#/channels/root",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "93bdbc5129a34aa76f7146ebb20b6c4d638e9e0b",
+      "ext": "yaml",
+      "repo": "specmatic/enterprise-sample",
+      "path": "specs/inventory-asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/enterprise-sample"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "receiveReserveCommand",
+          "requestChannel": "#/channels/inventory.reserve.cmd",
+          "replyChannel": "#/channels/inventory.reserve.reply",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "7545dea431021c5ad9ba4f1d90425c84320847f7",
+      "ext": "yaml",
+      "repo": "specmatic/enterprise-sample",
+      "path": "specs/placeorder-asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/enterprise-sample"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "receivePlaceOrderCommand",
+          "requestChannel": "#/channels/orders.place.cmd",
+          "replyChannel": "#/channels/orders.place.reply",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "888b03be6588bd8a0415e4e46a9235774224c6f0",
+      "ext": "yaml",
+      "repo": "specmatic/labs-contracts",
+      "path": "asyncapi/kafka-avro/order-service-async-avro-v3_0_0.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/labs-contracts"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "placeOrder",
+          "requestChannel": "#/channels/new-orders",
+          "replyChannel": "#/channels/wip-orders",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "8f14394db90803ba53b93cbf510e0fbe6c310028",
+      "ext": "yaml",
+      "repo": "specmatic/enterprise-sample",
+      "path": "specs/payment-asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/enterprise-sample"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "receiveAuthorizeCommand",
+          "requestChannel": "#/channels/payment.authorize.cmd",
+          "replyChannel": "#/channels/payment.authorize.reply",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "84f986b2f494c3fc73aafa096c1f8badbb4dc847",
+      "ext": "yaml",
+      "repo": "specmatic/specmatic-arazzo-openapi-asyncapi-sample",
+      "path": "specifications/asyncapi/order.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/specmatic-arazzo-openapi-asyncapi-sample"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "createOrder",
+          "requestChannel": "#/channels/newOrders",
+          "replyChannel": "#/channels/wipOrders",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "7e6135c5cbf9a699ce3560ae39e6d96a72987331",
+      "ext": "yaml",
+      "repo": "specmatic/specmatic-order-contracts",
+      "path": "io/specmatic/examples/store/asyncapi/3_0_0/order_service_async_v1.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/specmatic-order-contracts"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "onPlaceOrder",
+          "requestChannel": "#/channels/place-order",
+          "replyChannel": "#/channels/process-order",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "97a5ec0f06b9ae96f9f3ef1525a0891b33a69e99",
+      "ext": "yaml",
+      "repo": "eclipse-uprotocol/symphony-target-example-rust",
+      "path": "uservice/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "Eclipse-SDV-Hackathon-Chapter-Three/Den-Team",
+        "eclipse-uprotocol/symphony-target-example-rust"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "Get",
+          "requestChannel": "#/channels/getRequests",
+          "replyChannel": "#/channels/getResponses",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "Update",
+          "requestChannel": "#/channels/updateRequests",
+          "replyChannel": "#/channels/updateResponses",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "Delete",
+          "requestChannel": "#/channels/deleteRequests",
+          "replyChannel": "#/channels/deleteResponses",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "a6b1114799b86ba15154c8dc04120f9f10883a1d",
+      "ext": "yaml",
+      "repo": "evryfs/asyncapi-generator",
+      "path": "asyncapi-generator-core/src/test/resources/parser/operations/asyncapi_parser_operations_valid.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "evryfs/asyncapi-generator"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "amqp"
+      ],
+      "ops": [
+        {
+          "opId": "receiveLightMeasurement",
+          "requestChannel": "#/channels/lightingMeasured",
+          "replyChannel": "#/channels/lightingMeasured",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "8e438beeb6de42354b6a2f4aa97a21a8682db1ca",
+      "ext": "yaml",
+      "repo": "lerenn/asyncapi-codegen",
+      "path": "test/v3/issues/130/requestreply/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "dimonoff/asyncapi-codegen",
+        "lerenn/asyncapi-codegen"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "ping",
+          "requestChannel": "#/channels/ping",
+          "replyChannel": "#/channels/pong",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "pingWithID",
+          "requestChannel": "#/channels/pingWithID",
+          "replyChannel": "#/channels/pongWithID",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "911546e2f8516cac46cb651f2a533c00a3a85c35",
+      "ext": "yaml",
+      "repo": "the-codegen-project/cli",
+      "path": "test/configs/asyncapi-request.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "the-codegen-project/cli"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "http"
+      ],
+      "ops": [
+        {
+          "opId": "pongResponse",
+          "requestChannel": "#/channels/ping",
+          "replyChannel": "#/channels/ping",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "9496c0f10a2a465e34eaafc541e0638091dd221c",
+      "ext": "yaml",
+      "repo": "codemonstersteam/pinout-asyncapi",
+      "path": "testdata/channel_validator/provider.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "codemonstersteam/mq-rest-sync-adapter",
+        "codemonstersteam/pinout-asyncapi"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [
+        "amqp"
+      ],
+      "ops": [
+        {
+          "opId": "receiveUserEvent",
+          "requestChannel": "#/channels/notifications~1user-events",
+          "replyChannel": "#/channels/notifications~1user-events",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "amqp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "8baed0b2072b771dc74049d8d8659e5f39298b98",
+      "ext": "yaml",
+      "repo": "zuevrs/yanote",
+      "path": "yanote-js/test/fixtures/asyncapi/spring-rabbitmq-two-service.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "zuevrs/yanote"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "amqp"
+      ],
+      "ops": [
+        {
+          "opId": "amqp receive users.created",
+          "requestChannel": "#/channels/userCreated",
+          "replyChannel": "#/channels/userCreated",
+          "replyAddress": {
+            "location": "$message.header#/reply_to"
+          },
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "amqp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "868785e9ff49485f5e34b77c6adee470c2f8c604",
+      "ext": "yaml",
+      "repo": "zuevrs/yanote",
+      "path": "yanote-js/test/fixtures/asyncapi/spring-kafka-single-service-republish.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "zuevrs/yanote"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "receiveUserCreated",
+          "requestChannel": "#/channels/userCreated",
+          "replyChannel": "#/channels/userCreated",
+          "replyAddress": {
+            "location": "$message.header#/reply_to"
+          },
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        },
+        {
+          "opId": "receiveUserRepublished",
+          "requestChannel": "#/channels/userRepublished",
+          "replyChannel": "#/channels/userRepublished",
+          "replyAddress": {
+            "location": "$message.header#/reply_to"
+          },
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "8a71b233004eb021378be55c75063782d02901df",
+      "ext": "yaml",
+      "repo": "zuevrs/yanote",
+      "path": "yanote-js/test/fixtures/asyncapi/spring-kafka-two-service.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "zuevrs/yanote"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "receiveUserCreated",
+          "requestChannel": "#/channels/userCreated",
+          "replyChannel": "#/channels/userCreated",
+          "replyAddress": {
+            "location": "$message.header#/reply_to"
+          },
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "be8dd7b6442620e07fe0fc9df629ec3f12cdb7fd",
+      "ext": "yaml",
+      "repo": "specmatic/labs",
+      "path": "arazzo-workflow-testing/specs/asyncapi/order.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/labs"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "createOrder",
+          "requestChannel": "#/channels/newOrders",
+          "replyChannel": "#/channels/wipOrders",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "b04ae501208c6380dfdc58ccad7ba2f36d1f8784",
+      "ext": "yaml",
+      "repo": "Forsakringskassan/template-asyncapi",
+      "path": "asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "Forsakringskassan/template-asyncapi"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "onExempelRtfRequest",
+          "requestChannel": "#/channels/exempel.rtf.requests",
+          "replyChannel": "#/channels/exempel.rtf.responses",
+          "replyAddress": {
+            "description": "Resultatet skickas tillbaka till k\u00e4llan.",
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "c382ae17f01e4607eff337e4ed35c8ce25738068",
+      "ext": "yaml",
+      "repo": "specmatic/aws-lambda-kafka-with-localstack",
+      "path": "api-specifications/order-service-async-v3_0_0.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/aws-lambda-kafka-with-localstack"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "cancelOrder",
+          "requestChannel": "#/channels/cancel-order",
+          "replyChannel": "#/channels/process-cancellation",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "b994b3aabdc7f7165634f94c2e107a49b7bcfab6",
+      "ext": "yaml",
+      "repo": "Forsakringskassan/rimfrost-regel-rtf-manuell-asyncapi",
+      "path": "asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "Forsakringskassan/rimfrost-regel-rtf-manuell-asyncapi"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "RtfManuellRequest",
+          "requestChannel": "#/channels/rtf.manuell.requests",
+          "replyChannel": "#/channels/rtf.manuell.responses",
+          "replyAddress": {
+            "description": "Resultatet skickas tillbaka till k\u00e4llan.",
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "afe0bc0f64bce6b5e839d20b0ab4f4ac2405d7ed",
+      "ext": "yaml",
+      "repo": "specmatic/specmatic",
+      "path": "application/src/test/resources/specifications/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/specmatic"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "pingRequest",
+          "requestChannel": "#/channels/ping_v2",
+          "replyChannel": "#/channels/pong",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "b76fa7b36e5dce99ebdadde7c34d0d461cb0d691",
+      "ext": "yaml",
+      "repo": "Netcracker/qubership-integration-runtime-catalog",
+      "path": "src/test/resources/asyncapi/v3/kafka-v3-channel-ref-messages.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "Netcracker/qubership-integration-platform",
+        "Netcracker/qubership-integration-runtime-catalog"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "receiveWithReply",
+          "requestChannel": "#/channels/inlineChannel",
+          "replyChannel": "#/channels/replyTargetChannel",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "f8368c9a002096fc8e189f3f829760f350d09b7e",
+      "ext": "yaml",
+      "repo": "lerenn/asyncapi-codegen",
+      "path": "examples/ping/v3/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "dimonoff/asyncapi-codegen",
+        "lerenn/asyncapi-codegen"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "pingRequest",
+          "requestChannel": "#/channels/ping",
+          "replyChannel": "#/channels/pong",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "f9afeca6ce6320234a6645176a7bccb5c8a33742",
+      "ext": "yaml",
+      "repo": "specmatic/aws-lambda-kafka-with-localstack",
+      "path": "xml_to_json.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/aws-lambda-kafka-with-localstack"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "jsonConversion",
+          "requestChannel": "#/channels/io.specmatic.json.request",
+          "replyChannel": "#/channels/io.specmatic.json.reply",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "f872c56bc31b23923811b9c50f6630fc067ca4d2",
+      "ext": "yaml",
+      "repo": "specmatic/labs-contracts",
+      "path": "asyncapi/quick-start/async.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/labs-contracts"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "placeOrder",
+          "requestChannel": "#/channels/NewOrderPlaced",
+          "replyChannel": "#/channels/OrderInitiated",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "f0e3d1cb3f4516677084216a7b0fa34c6b4b38d3",
+      "ext": "yaml",
+      "repo": "G-USI/asyncapi-python",
+      "path": "tests/codegen/specs/rpc.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "G-USI/asyncapi-python"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "user.process",
+          "requestChannel": "#/channels/user_requests",
+          "replyChannel": "#/channels/user_responses",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "fd93985ed0a57d38a0882d98d8ca77ef0486d1b8",
+      "ext": "yaml",
+      "repo": "microcks/microcks",
+      "path": "webapp/src/test/resources/io/github/microcks/util/asyncapi/user-signedup-asyncapi-3.0-reply.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "microcks/microcks"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [
+        "googlepubsub"
+      ],
+      "ops": [
+        {
+          "opId": "onUserSignup",
+          "requestChannel": "#/channels/userSignup",
+          "replyChannel": "#/channels/userSignupReply",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "googlepubsub"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "googlepubsub"
+          ]
+        },
+        {
+          "opId": "onEmailVerification",
+          "requestChannel": "#/channels/emailVerification",
+          "replyChannel": "#/channels/emailVerificationReply",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "googlepubsub"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "googlepubsub"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "f4ecc33d24b3ea018d375057eeabc98971f228e1",
+      "ext": "yaml",
+      "repo": "lerenn/asyncapi-codegen",
+      "path": "test/v3/issues/145/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "dimonoff/asyncapi-codegen",
+        "lerenn/asyncapi-codegen"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "pingRequest",
+          "requestChannel": "#/channels/ping",
+          "replyChannel": "#/channels/pong",
+          "replyAddress": {
+            "description": "Reply is sent to topic specified in 'replyTo' property in the message header",
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "b07102a39a3f9c7e42fdbd094de586a19ba807bc",
+      "ext": "yaml",
+      "repo": "specmatic/specmatic-order-contracts",
+      "path": "io/specmatic/examples/store/asyncapi/3_0_0/order_service_async_v2.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/specmatic-order-contracts"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "googlepubsub",
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "placeOrder",
+          "requestChannel": "#/channels/NewOrderPlaced",
+          "replyChannel": "#/channels/NewOrderProcessed",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "googlepubsub",
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "googlepubsub",
+            "kafka"
+          ]
+        },
+        {
+          "opId": "cancelOrder",
+          "requestChannel": "#/channels/OrderCancellationRequested",
+          "replyChannel": "#/channels/OrderCancellationProcessed",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "googlepubsub",
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "googlepubsub",
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "ef514a4bd8fd515b893a3a0bf93e9d776c688416",
+      "ext": "yaml",
+      "repo": "RobinTail/zod-sockets",
+      "path": "example/example-documentation.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "RobinTail/zod-sockets"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "http",
+        "ws"
+      ],
+      "ops": [
+        {
+          "opId": "RootRecvOperationPing",
+          "requestChannel": "#/channels/Root",
+          "replyChannel": "#/channels/Root",
+          "replyAddress": {
+            "location": "$message.payload#",
+            "description": "Last argument: acknowledgement handler"
+          },
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http",
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http",
+            "ws"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "4ad93c629123adb779d2e039bc0ef4af14da2b5b",
+      "ext": "yaml",
+      "repo": "specmatic/specmatic-order-contracts",
+      "path": "io/specmatic/examples/store/asyncapi/3_0_0/order_service_async_v3.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/specmatic-order-contracts"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "placeOrder",
+          "requestChannel": "#/channels/NewOrderPlaced",
+          "replyChannel": "#/channels/OrderInitiated",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "cancelOrder",
+          "requestChannel": "#/channels/OrderCancellationRequested",
+          "replyChannel": "#/channels/OrderCancelled",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "0c6d1173968c9e32c10fb2e4f38a1d783359b90d",
+      "ext": "yaml",
+      "repo": "Matusko/flea",
+      "path": "libs/flea/asyncapi-generator-typescript-cdk-event-bridge/src/lib/test-fixtures/test-hotel-asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "Matusko/flea"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "http"
+      ],
+      "ops": [
+        {
+          "opId": "receiveQueryHotelRoomList",
+          "requestChannel": "#/channels/hotel.query",
+          "replyChannel": "#/channels/hotel.query",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "1aebb6ac7d4aa485436b833223484c5b8469a5b4",
+      "ext": "yaml",
+      "repo": "evryfs/asyncapi-generator",
+      "path": "asyncapi-generator-core/src/test/resources/examples/asyncapi_kafka_request_reply_example.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "evryfs/asyncapi-generator"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "receiveACostingRequest",
+          "requestChannel": "#/channels/costingRequestChannel",
+          "replyChannel": "#/channels/costingResponseChannel",
+          "replyAddress": {
+            "location": "$message.header#/REPLY_TOPIC"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "31504181c197797125b2da7ef553f531d8719d4f",
+      "ext": "yaml",
+      "repo": "gopal45656/everest-core-release",
+      "path": "doc/everest_api_specs/auth_token_validator_API/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "gopal45656/everest-core-release"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "receive_request_validate_token",
+          "requestChannel": "#/channels/receive_request_validate_token",
+          "replyChannel": "#/channels/send_reply_validate_token",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "4206da1069b12e295ced53b06b7a36df3235c2dc",
+      "ext": "yaml",
+      "repo": "holydocs/messageflow",
+      "path": "pkg/schema/source/asyncapi/testdata/user.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "holydocs/messageflow"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "replyUserInfo",
+          "requestChannel": "#/channels/user.info.request",
+          "replyChannel": "#/channels/user.info.request",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "29f685748b2ca3b9efff8320257775301759000a",
+      "ext": "yaml",
+      "repo": "holydocs/messageflow",
+      "path": "pkg/schema/source/asyncapi/testdata/notification.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "holydocs/messageflow"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "replyPreferences",
+          "requestChannel": "#/channels/notification.preferences.get",
+          "replyChannel": "#/channels/notification.preferences.get",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "6a9675f75fad3d8d2c5d733f646321f55ca283c1",
+      "ext": "yaml",
+      "repo": "specmatic/specmatic-order-contracts",
+      "path": "io/specmatic/examples/store/asyncapi/3_0_0/sqs_kafka/order-service-sqs-kafka.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/specmatic-order-contracts"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka",
+        "sqs"
+      ],
+      "ops": [
+        {
+          "opId": "sendOrder",
+          "requestChannel": "#/channels/placeOrder",
+          "replyChannel": "#/channels/wipOrder",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka",
+            "sqs"
+          ],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "kafka",
+            "sqs"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "542d59441d7d018ce28722477d406ad8a99758ec",
+      "ext": "yaml",
+      "repo": "gopal45656/everest-core-release",
+      "path": "doc/everest_api_specs/display_message_API/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "gopal45656/everest-core-release"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "receive_request_set_display_message",
+          "requestChannel": "#/channels/receive_request_set_display_message",
+          "replyChannel": "#/channels/send_reply_set_display_message",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_get_display_message",
+          "requestChannel": "#/channels/receive_request_get_display_message",
+          "replyChannel": "#/channels/send_reply_get_display_message",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_clear_display_message",
+          "requestChannel": "#/channels/receive_request_clear_display_message",
+          "replyChannel": "#/channels/send_reply_clear_display_message",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "50060a80e9e451e28cfec9a94de344cd27eb9a06",
+      "ext": "yaml",
+      "repo": "simliai/docs",
+      "path": "api-reference/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "simliai/docs"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "wss"
+      ],
+      "ops": [
+        {
+          "opId": "sendOffer",
+          "requestChannel": "#/channels/peer_to_peer",
+          "replyChannel": "#/channels/peer_to_peer",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "wss"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "wss"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "5a10b2f1a4f2ec1d6c1c0d394f05b81ea306d35f",
+      "ext": "yaml",
+      "repo": "EVerest/EVerest",
+      "path": "docs/source/reference/EVerest_API/auth_token_validator_API.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "EVerest/EVerest"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "receive_request_validate_token",
+          "requestChannel": "#/channels/receive_request_validate_token",
+          "replyChannel": "#/channels/send_reply_validate_token",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "5a9b8dc0ac816f3ad52a70aadc9b49c0fb867660",
+      "ext": "yaml",
+      "repo": "dduartee/sigaa-socket-api",
+      "path": "asyncapi/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "dduartee/sigaa-socket-api"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "ws"
+      ],
+      "ops": [
+        {
+          "opId": "validateAuth",
+          "requestChannel": "#/channels/authValid",
+          "replyChannel": "#/channels/authValid",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "loginUser",
+          "requestChannel": "#/channels/userLogin",
+          "replyChannel": "#/channels/userLogin",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getUserInfo",
+          "requestChannel": "#/channels/userInfo",
+          "replyChannel": "#/channels/userInfo",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getBondsList",
+          "requestChannel": "#/channels/bondsList",
+          "replyChannel": "#/channels/bondsList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getCoursesList",
+          "requestChannel": "#/channels/coursesList",
+          "replyChannel": "#/channels/coursesList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getGradesList",
+          "requestChannel": "#/channels/gradesList",
+          "replyChannel": "#/channels/gradesList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getActivitiesList",
+          "requestChannel": "#/channels/activitiesList",
+          "replyChannel": "#/channels/activitiesList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getAbsencesList",
+          "requestChannel": "#/channels/absencesList",
+          "replyChannel": "#/channels/absencesList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getHomeworkContent",
+          "requestChannel": "#/channels/homeworkContent",
+          "replyChannel": "#/channels/homeworkContent",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getLessonsList",
+          "requestChannel": "#/channels/lessonsList",
+          "replyChannel": "#/channels/lessonsList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getNewsList",
+          "requestChannel": "#/channels/newsList",
+          "replyChannel": "#/channels/newsList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getSyllabusContent",
+          "requestChannel": "#/channels/syllabusContent",
+          "replyChannel": "#/channels/syllabusContent",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getInstitutionsList",
+          "requestChannel": "#/channels/institutionsList",
+          "replyChannel": "#/channels/institutionsList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "6dca84b48fb1a79ad25b3017ed9c3a440f9a022a",
+      "ext": "yaml",
+      "repo": "specmatic/specmatic-order-contracts",
+      "path": "io/specmatic/examples/store/asyncapi/3_0_0/order_service_async_v4.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/specmatic-order-contracts"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "placeOrder",
+          "requestChannel": "#/channels/NewOrderPlaced",
+          "replyChannel": "#/channels/OrderInitiated",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "cancelOrder",
+          "requestChannel": "#/channels/OrderCancellationRequested",
+          "replyChannel": "#/channels/OrderCancelled",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "5fadce60123a46e6ff9b75ddbd4e5b2a68bd6a5c",
+      "ext": "yaml",
+      "repo": "codemonstersteam/pinout-asyncapi",
+      "path": "testdata/contract_validator/provider_external.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "codemonstersteam/mq-rest-sync-adapter",
+        "codemonstersteam/pinout-asyncapi"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [
+        "http"
+      ],
+      "ops": [
+        {
+          "opId": "receiveBalanceRequest",
+          "requestChannel": "#/channels/walletBalanceRequest",
+          "replyChannel": "#/channels/walletBalanceResponse",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "http"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "89150a874e64f6a2e6c9124f393e62ef9c8b75ab",
+      "ext": "yaml",
+      "repo": "specmatic/specmatic-kafka-sample-asyncapi3",
+      "path": "specs/async-order-service.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/labs-contracts",
+        "specmatic/specmatic-kafka-sample-asyncapi3"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "placeOrder",
+          "requestChannel": "#/channels/NewOrderPlaced",
+          "replyChannel": "#/channels/OrderInitiated",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        },
+        {
+          "opId": "cancelOrder",
+          "requestChannel": "#/channels/OrderCancellationRequested",
+          "replyChannel": "#/channels/OrderCancelled",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "73bc1afaa17013cf721cb4883c50f0b8adc055a1",
+      "ext": "yaml",
+      "repo": "CodingFlow/rating-service-dotnet",
+      "path": "RequestDecoratorGenerator/TestLibrary/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "CodingFlow/rating-service-dotnet"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "getRatings",
+          "requestChannel": "#/channels/getRatings",
+          "replyChannel": null,
+          "replyAddress": {
+            "location": "$message.payload#/originReplyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "postRatings",
+          "requestChannel": "#/channels/postRatings",
+          "replyChannel": null,
+          "replyAddress": {
+            "location": "$message.payload#/originReplyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "deleteRatings",
+          "requestChannel": "#/channels/deleteRatings",
+          "replyChannel": null,
+          "replyAddress": {
+            "location": "$message.payload#/originReplyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "894839d034a30f7b9baf639a55364bf6f573d25d",
+      "ext": "yaml",
+      "repo": "CodingFlow/rating-service-dotnet",
+      "path": "RatingService.Api/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "CodingFlow/rating-service-dotnet"
+      ],
+      "n_locations": 3,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "getRatings",
+          "requestChannel": "#/channels/getRatings",
+          "replyChannel": null,
+          "replyAddress": {
+            "location": "$message.payload#/originReplyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "postRatings",
+          "requestChannel": "#/channels/postRatings",
+          "replyChannel": null,
+          "replyAddress": {
+            "location": "$message.payload#/originReplyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "deleteRatings",
+          "requestChannel": "#/channels/deleteRatings",
+          "replyChannel": null,
+          "replyAddress": {
+            "location": "$message.payload#/originReplyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "ad59cdb6d449ac69c8fa3212dceb986622c25d17",
+      "ext": "yaml",
+      "repo": "specmatic/specmatic-async-sample",
+      "path": "spec/spec.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/specmatic-async-sample"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "amqp",
+        "jms",
+        "kafka",
+        "mqtt",
+        "sqs"
+      ],
+      "ops": [
+        {
+          "opId": "placeOrder",
+          "requestChannel": "#/channels/NewOrderPlaced",
+          "replyChannel": "#/channels/OrderInitiated",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka",
+            "sqs"
+          ],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "amqp",
+            "jms",
+            "kafka",
+            "mqtt",
+            "sqs"
+          ]
+        },
+        {
+          "opId": "cancelOrder",
+          "requestChannel": "#/channels/OrderCancellationRequested",
+          "replyChannel": "#/channels/OrderCancelled",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka",
+            "sqs"
+          ],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "amqp",
+            "jms",
+            "kafka",
+            "mqtt",
+            "sqs"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "bf4d8b43ae4bc25d7c6c04a3663d15ca8f57a2f3",
+      "ext": "yaml",
+      "repo": "asyncapi/website",
+      "path": "public/resources/casestudies/adeo/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "asyncapi/website"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "requestCosting",
+          "requestChannel": "#/channels/costingRequest",
+          "replyChannel": "#/channels/costingResponse",
+          "replyAddress": {
+            "location": "$message.header#/REPLY_TOPIC"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "c3d471b1c359ab54acc88b7843d69af17c171da9",
+      "ext": "yaml",
+      "repo": "specmatic/specmatic-order-contracts",
+      "path": "io/specmatic/examples/store/asyncapi/3_0_0/order_service_async_multi_protocol.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/specmatic-order-contracts"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "amqp",
+        "jms",
+        "kafka",
+        "mqtt",
+        "sqs"
+      ],
+      "ops": [
+        {
+          "opId": "placeOrder",
+          "requestChannel": "#/channels/NewOrderPlaced",
+          "replyChannel": "#/channels/OrderInitiated",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt",
+            "sqs"
+          ],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "amqp",
+            "jms",
+            "kafka",
+            "mqtt",
+            "sqs"
+          ]
+        },
+        {
+          "opId": "cancelOrder",
+          "requestChannel": "#/channels/OrderCancellationRequested",
+          "replyChannel": "#/channels/OrderCancelled",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt",
+            "sqs"
+          ],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "amqp",
+            "jms",
+            "kafka",
+            "mqtt",
+            "sqs"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "c0768e375b04e924e7355bd5d041821e3c39cdea",
+      "ext": "yaml",
+      "repo": "StableCoinTF/StableCoinBC_Adapter_Docs",
+      "path": "asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "StableCoinTF/StableCoinBC_Adapter_Docs"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "receiveAccountCreate",
+          "requestChannel": "#/channels/accountCreate",
+          "replyChannel": "#/channels/accountCreated",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveAccountDeploy",
+          "requestChannel": "#/channels/accountDeploy",
+          "replyChannel": "#/channels/accountDeployed",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveWithdrawRequest",
+          "requestChannel": "#/channels/withdrawRequest",
+          "replyChannel": "#/channels/withdrawResult",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receivePaymentRequest",
+          "requestChannel": "#/channels/paymentRequest",
+          "replyChannel": "#/channels/paymentResult",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveConfirm",
+          "requestChannel": "#/channels/commonConfirm",
+          "replyChannel": "#/channels/commonConfirmed",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveSettlementRequest",
+          "requestChannel": "#/channels/settlementRequest",
+          "replyChannel": "#/channels/settlementResult",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveBalanceInquiry",
+          "requestChannel": "#/channels/balanceInquiry",
+          "replyChannel": "#/channels/balanceResult",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveReconciliationInquiry",
+          "requestChannel": "#/channels/reconciliationInquiry",
+          "replyChannel": "#/channels/reconciliationResult",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveSubmissionInquiry",
+          "requestChannel": "#/channels/submissionInquiry",
+          "replyChannel": "#/channels/submissionResult",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveMonitorEntrypointTransfer",
+          "requestChannel": "#/channels/monitorEntrypointTransfer",
+          "replyChannel": "#/channels/monitorEntrypointTransferResult",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveMonitorMetricInquiry",
+          "requestChannel": "#/channels/monitorMetricInquiry",
+          "replyChannel": "#/channels/monitorMetricResult",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveMonitorContractInquiry",
+          "requestChannel": "#/channels/monitorContractInquiry",
+          "replyChannel": "#/channels/monitorContractResult",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveMonitorContractHistory",
+          "requestChannel": "#/channels/monitorContractHistory",
+          "replyChannel": "#/channels/monitorContractHistoryResult",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveMonitorInfraInquiry",
+          "requestChannel": "#/channels/monitorInfraInquiry",
+          "replyChannel": "#/channels/monitorInfraResult",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "df2dafd931a82c4974611e700805b1d0dd227877",
+      "ext": "yaml",
+      "repo": "BackendFans83/Taxi",
+      "path": "pricing-service/docs/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "BackendFans83/Taxi"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "CalculatePriceOperation",
+          "requestChannel": "#/channels/CalculatePrice",
+          "replyChannel": "#/channels/CalculatePrice",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "e69472b650bcac7447e12b3277c097fe58613f60",
+      "ext": "yaml",
+      "repo": "EVerest/EVerest",
+      "path": "docs/source/reference/EVerest_API/system_API.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "EVerest/EVerest"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "receive_request_update_firmware",
+          "requestChannel": "#/channels/receive_request_update_firmware",
+          "replyChannel": "#/channels/send_reply_update_firmware",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_upload_logs",
+          "requestChannel": "#/channels/receive_request_upload_logs",
+          "replyChannel": "#/channels/send_reply_upload_logs",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_is_reset_allowed",
+          "requestChannel": "#/channels/receive_request_is_reset_allowed",
+          "replyChannel": "#/channels/send_reply_is_reset_allowed",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_set_system_time",
+          "requestChannel": "#/channels/receive_request_set_system_time",
+          "replyChannel": "#/channels/send_reply_set_system_time",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_get_boot_reason",
+          "requestChannel": "#/channels/receive_request_get_boot_reason",
+          "replyChannel": "#/channels/send_reply_get_boot_reason",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "ce5ebdc61c44afea51b4f8b166f2d652a6196b8f",
+      "ext": "yaml",
+      "repo": "wohnheim/stueble",
+      "path": "packages/frontend/static/api-spec/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "wohnheim/stueble"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "ws"
+      ],
+      "ops": [
+        {
+          "opId": "receiveGuestListChanges",
+          "requestChannel": "#/channels/primary",
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "receiveHostsChanges",
+          "requestChannel": "#/channels/primary",
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "receiveTutorsChanges",
+          "requestChannel": "#/channels/primary",
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "4fab3981214302cd027ee39a99467089ca462639",
+      "ext": "yaml",
+      "repo": "EVerest/EVerest",
+      "path": "docs/source/reference/EVerest_API/evse_board_support_API.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "EVerest/EVerest"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "receive_request_reset",
+          "requestChannel": "#/channels/receive_request_reset",
+          "replyChannel": "#/channels/send_reply_reset",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "54fc2cd23b208d3298d814384bf42795bb1b2e8b",
+      "ext": "yaml",
+      "repo": "specmatic/labs-contracts",
+      "path": "asyncapi/kafka-sqs-retry-dlq/order-service-sqs-kafka.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "specmatic/labs-contracts"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka",
+        "sqs"
+      ],
+      "ops": [
+        {
+          "opId": "sendOrder",
+          "requestChannel": "#/channels/placeOrder",
+          "replyChannel": "#/channels/wipOrder",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka",
+            "sqs"
+          ],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "kafka",
+            "sqs"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "09b37956c13fb82b46495a5e9e5d4e9566b223fa",
+      "ext": "yaml",
+      "repo": "EVerest/EVerest",
+      "path": "docs/source/reference/EVerest_API/powermeter_API.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "EVerest/EVerest"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "receive_request_start_transaction",
+          "requestChannel": "#/channels/receive_request_start_transaction",
+          "replyChannel": "#/channels/send_reply_start_transaction",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_stop_transaction",
+          "requestChannel": "#/channels/receive_request_stop_transaction",
+          "replyChannel": "#/channels/send_reply_stop_transaction",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "1c6b1af47e304fde064f27d3c4d80d59d8652624",
+      "ext": "yaml",
+      "repo": "gopal45656/everest-core-release",
+      "path": "doc/everest_api_specs/evse_board_support_API/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "gopal45656/everest-core-release"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "receive_request_reset",
+          "requestChannel": "#/channels/receive_request_reset",
+          "replyChannel": "#/channels/send_reply_reset",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "2191479e587f92cec521dde1fde75b10d196bc69",
+      "ext": "yaml",
+      "repo": "G-USI/asyncapi-python",
+      "path": "examples/specs/financial-trading-system.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "G-USI/asyncapi-python"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "amqp",
+        "kafka",
+        "ws"
+      ],
+      "ops": [
+        {
+          "opId": "analytics.process",
+          "requestChannel": "(inline)",
+          "replyChannel": "(inline)",
+          "replyAddress": "analytics.responses.{correlation_id}",
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "amqp",
+            "kafka",
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp",
+            "kafka",
+            "ws"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "2a70ed867a649bc310f74d9e2d2fe9428e34c4bd",
+      "ext": "yaml",
+      "repo": "holydocs/messageflow",
+      "path": "pkg/schema/source/asyncapi/testdata/analytics_ver2.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "holydocs/messageflow"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "replyAnalyticsReport",
+          "requestChannel": "#/channels/analytics.report.request",
+          "replyChannel": "#/channels/analytics.report.request",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "76a3f291238fb63f4565a07ad3ab5260abcfe5ff",
+      "ext": "yaml",
+      "repo": "dduartee/sigaa-socket-api",
+      "path": "asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "dduartee/sigaa-socket-api"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "ws"
+      ],
+      "ops": [
+        {
+          "opId": "validateAuth",
+          "requestChannel": "#/channels/authValid",
+          "replyChannel": "#/channels/authValid",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "loginUser",
+          "requestChannel": "#/channels/userLogin",
+          "replyChannel": "#/channels/userLogin",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getUserInfo",
+          "requestChannel": "#/channels/userInfo",
+          "replyChannel": "#/channels/userInfo",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getBondsList",
+          "requestChannel": "#/channels/bondsList",
+          "replyChannel": "#/channels/bondsList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getCoursesList",
+          "requestChannel": "#/channels/coursesList",
+          "replyChannel": "#/channels/coursesList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getGradesList",
+          "requestChannel": "#/channels/gradesList",
+          "replyChannel": "#/channels/gradesList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getActivitiesList",
+          "requestChannel": "#/channels/activitiesList",
+          "replyChannel": "#/channels/activitiesList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getAbsencesList",
+          "requestChannel": "#/channels/absencesList",
+          "replyChannel": "#/channels/absencesList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getHomeworkContent",
+          "requestChannel": "#/channels/homeworkContent",
+          "replyChannel": "#/channels/homeworkContent",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getLessonsList",
+          "requestChannel": "#/channels/lessonsList",
+          "replyChannel": "#/channels/lessonsList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getNewsList",
+          "requestChannel": "#/channels/newsList",
+          "replyChannel": "#/channels/newsList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getSyllabusContent",
+          "requestChannel": "#/channels/syllabusContent",
+          "replyChannel": "#/channels/syllabusContent",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "getInstitutionsList",
+          "requestChannel": "#/channels/institutionsList",
+          "replyChannel": "#/channels/institutionsList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "7ad18a0b845850d0f64cbb46599977916d21bbba",
+      "ext": "yaml",
+      "repo": "evryfs/asyncapi-generator",
+      "path": "asyncapi-generator-core/src/test/resources/asyncapi_kafka_single_file_example.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "evryfs/asyncapi-generator"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "amqp",
+        "http",
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "receiveLightMeasurement",
+          "requestChannel": "#/channels/lightingMeasured",
+          "replyChannel": "#/channels/lightingMeasured",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp",
+            "http",
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "601b7e2eec26b04b7eb7bbb92a55baa87a3d850e",
+      "ext": "yaml",
+      "repo": "EVerest/EVerest",
+      "path": "docs/source/reference/EVerest_API/display_message_API.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "EVerest/EVerest"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "receive_request_set_display_message",
+          "requestChannel": "#/channels/receive_request_set_display_message",
+          "replyChannel": "#/channels/send_reply_set_display_message",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_get_display_message",
+          "requestChannel": "#/channels/receive_request_get_display_message",
+          "replyChannel": "#/channels/send_reply_get_display_message",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_clear_display_message",
+          "requestChannel": "#/channels/receive_request_clear_display_message",
+          "replyChannel": "#/channels/send_reply_clear_display_message",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "5812476077f7c607c69f3e0a461d26383a0d2f38",
+      "ext": "yaml",
+      "repo": "l3wi/docs",
+      "path": "websockets/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "l3wi/docs"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "authenticate",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "subscribeTrade",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "subscribeBook",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "subscribeCandle",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "subscribePosition",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "subscribeOrder",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "createOrder",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "cancelOrder",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "unsubscribeTrade",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "unsubscribeBook",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "unsubscribeCandle",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "unsubscribePosition",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "unsubscribeOrder",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "subscribeBalance",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "unsubscribeBalance",
+          "requestChannel": "#/channels/websocket",
+          "replyChannel": "#/channels/websocket",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "9f764defb54d15d4097dcfca9a0b3bd29f42d9f2",
+      "ext": "yaml",
+      "repo": "EVerest/EVerest",
+      "path": "docs/source/reference/EVerest_API/ocpp_consumer_API.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "EVerest/EVerest"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "receive_request_data_transfer_incoming",
+          "requestChannel": "#/channels/receive_request_data_transfer_incoming",
+          "replyChannel": "#/channels/send_reply_data_transfer_incoming",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "89e56546dd72a54058348f2a99176cd752234508",
+      "ext": "yaml",
+      "repo": "gopal45656/everest-core-release",
+      "path": "doc/everest_api_specs/ocpp_consumer_API/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "gopal45656/everest-core-release"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "receive_request_data_transfer_incoming",
+          "requestChannel": "#/channels/receive_request_data_transfer_incoming",
+          "replyChannel": "#/channels/send_reply_data_transfer_incoming",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "97f9003b74f02567beef701bb5d4c5633afa7f71",
+      "ext": "yaml",
+      "repo": "huynguyengl99/chanx",
+      "path": "sandbox_fastapi/tests/test_results/asyncapi_schema.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "huynguyengl99/chanx"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "ws"
+      ],
+      "ops": [
+        {
+          "opId": "handle_chat",
+          "requestChannel": "#/channels/chat",
+          "replyChannel": "#/channels/chat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_extra_message",
+          "requestChannel": "#/channels/chat",
+          "replyChannel": "#/channels/chat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_ping",
+          "requestChannel": "#/channels/chat",
+          "replyChannel": "#/channels/chat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "reliable_chat_handle_ping",
+          "requestChannel": "#/channels/reliable_chat",
+          "replyChannel": "#/channels/reliable_chat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_reliable_chat",
+          "requestChannel": "#/channels/reliable_chat",
+          "replyChannel": "#/channels/reliable_chat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_notification",
+          "requestChannel": "#/channels/notifications",
+          "replyChannel": "#/channels/notifications",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "notification_handle_ping",
+          "requestChannel": "#/channels/notifications",
+          "replyChannel": "#/channels/notifications",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_analytics",
+          "requestChannel": "#/channels/analytics",
+          "replyChannel": "#/channels/analytics",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "analytics_handle_ping",
+          "requestChannel": "#/channels/analytics",
+          "replyChannel": "#/channels/analytics",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "system_message_handle_ping",
+          "requestChannel": "#/channels/system",
+          "replyChannel": "#/channels/system",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_system",
+          "requestChannel": "#/channels/system",
+          "replyChannel": "#/channels/system",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_job",
+          "requestChannel": "#/channels/background_jobs",
+          "replyChannel": "#/channels/background_jobs",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "background_job_handle_ping",
+          "requestChannel": "#/channels/background_jobs",
+          "replyChannel": "#/channels/background_jobs",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "room_chat_handle_ping",
+          "requestChannel": "#/channels/room_chat",
+          "replyChannel": "#/channels/room_chat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_room_chat",
+          "requestChannel": "#/channels/room_chat",
+          "replyChannel": "#/channels/room_chat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "9abe872a356d0d3f06f48cc55a456b0e7bb732c1",
+      "ext": "yaml",
+      "repo": "gopal45656/everest-core-release",
+      "path": "doc/everest_api_specs/powermeter_API/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "gopal45656/everest-core-release"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "receive_request_start_transaction",
+          "requestChannel": "#/channels/receive_request_start_transaction",
+          "replyChannel": "#/channels/send_reply_start_transaction",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_stop_transaction",
+          "requestChannel": "#/channels/receive_request_stop_transaction",
+          "replyChannel": "#/channels/send_reply_stop_transaction",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "bcd2e556ef1ce6031f84a50ea96a689da8c549c7",
+      "ext": "yaml",
+      "repo": "metalalive/e_commerce",
+      "path": "services/order/doc/api/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "metalalive/e_commerce"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "amqp"
+      ],
+      "ops": [
+        {
+          "opId": "stock-level-edit",
+          "requestChannel": "#/channels/stock_level_edit",
+          "replyChannel": null,
+          "replyAddress": {
+            "description": "The response destination is dynamically set according to the `replyTo` field in the request header",
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "amqp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp"
+          ]
+        },
+        {
+          "opId": "stock-level-return",
+          "requestChannel": "#/channels/stock_return_cancelled",
+          "replyChannel": null,
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "amqp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp"
+          ]
+        },
+        {
+          "opId": "order-rsv-replica-inventory",
+          "requestChannel": "#/channels/order_reserved_replica_inventory",
+          "replyChannel": null,
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "amqp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp"
+          ]
+        },
+        {
+          "opId": "order-rsv-replica-payment",
+          "requestChannel": "#/channels/order_reserved_replica_payment",
+          "replyChannel": null,
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "amqp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp"
+          ]
+        },
+        {
+          "opId": "order-returned-replica-refund",
+          "requestChannel": "#/channels/order_returned_replica_refund",
+          "replyChannel": null,
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "amqp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp"
+          ]
+        },
+        {
+          "opId": "order-rsv-update-payment",
+          "requestChannel": "#/channels/order_reserved_update_payment",
+          "replyChannel": null,
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "amqp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "d2151cd54cf0992010fa899f0356b577bd0a4fac",
+      "ext": "yaml",
+      "repo": "huynguyengl99/chanx-fastapi-tutorial",
+      "path": "src/tests/test_results/asyncapi_schema.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "huynguyengl99/chanx-fastapi-tutorial"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "ws"
+      ],
+      "ops": [
+        {
+          "opId": "handle_ping",
+          "requestChannel": "#/channels/system",
+          "replyChannel": "#/channels/system",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_system",
+          "requestChannel": "#/channels/system",
+          "replyChannel": "#/channels/system",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "room_chat_handle_ping",
+          "requestChannel": "#/channels/room_chat",
+          "replyChannel": "#/channels/room_chat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_room_chat",
+          "requestChannel": "#/channels/room_chat",
+          "replyChannel": "#/channels/room_chat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_job",
+          "requestChannel": "#/channels/background_jobs",
+          "replyChannel": "#/channels/background_jobs",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "background_job_handle_ping",
+          "requestChannel": "#/channels/background_jobs",
+          "replyChannel": "#/channels/background_jobs",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_chat",
+          "requestChannel": "#/channels/chat",
+          "replyChannel": "#/channels/chat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "chat_handle_ping",
+          "requestChannel": "#/channels/chat",
+          "replyChannel": "#/channels/chat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "reliable_chat_handle_ping",
+          "requestChannel": "#/channels/reliable_chat",
+          "replyChannel": "#/channels/reliable_chat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_reliable_chat",
+          "requestChannel": "#/channels/reliable_chat",
+          "replyChannel": "#/channels/reliable_chat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_notification",
+          "requestChannel": "#/channels/notifications",
+          "replyChannel": "#/channels/notifications",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "notification_handle_ping",
+          "requestChannel": "#/channels/notifications",
+          "replyChannel": "#/channels/notifications",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "handle_analytics",
+          "requestChannel": "#/channels/analytics",
+          "replyChannel": "#/channels/analytics",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "analytics_handle_ping",
+          "requestChannel": "#/channels/analytics",
+          "replyChannel": "#/channels/analytics",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "aa64af593096f95a5579148030d6bbeb5fa797a3",
+      "ext": "yaml",
+      "repo": "GreenRover/async-api-validator",
+      "path": "tests/controllers/apis/monalesy_service_desc_3.0.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "GreenRover/async-api-validator"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "serviceDescRequestGlobal",
+          "requestChannel": "#/channels/servicedesc-request-global",
+          "replyChannel": "#/channels/response",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "serviceDescRequestOne",
+          "requestChannel": "#/channels/servicedesc-request-one",
+          "replyChannel": "#/channels/response",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "serviceStateRequestGlobal",
+          "requestChannel": "#/channels/servicedesc-request-global",
+          "replyChannel": "#/channels/response",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "serviceStateRequestOne",
+          "requestChannel": "#/channels/servicedesc-request-one",
+          "replyChannel": "#/channels/response",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "c437d10b745652fdc8e1d33677338fa2b8788757",
+      "ext": "yaml",
+      "repo": "huynguyengl99/chanx",
+      "path": "sandbox_django/asyncapi/tests/test_results/asyncapi_schema.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "huynguyengl99/chanx"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "ws"
+      ],
+      "ops": [
+        {
+          "opId": "handlePing",
+          "requestChannel": "#/channels/assistants",
+          "replyChannel": "#/channels/assistants",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "discussionListHandlePing",
+          "requestChannel": "#/channels/discussionList",
+          "replyChannel": "#/channels/discussionList",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "discussionTopicHandlePing",
+          "requestChannel": "#/channels/discussionTopic",
+          "replyChannel": "#/channels/discussionTopic",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "groupChatHandlePing",
+          "requestChannel": "#/channels/groupChat",
+          "replyChannel": "#/channels/groupChat",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        },
+        {
+          "opId": "chatDetailHandlePing",
+          "requestChannel": "#/channels/chatDetail",
+          "replyChannel": "#/channels/chatDetail",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "fcad61bf5cd9f350a8557f9cecb56629a14907fc",
+      "ext": "yaml",
+      "repo": "gopal45656/everest-core-release",
+      "path": "doc/everest_api_specs/system_API/asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "gopal45656/everest-core-release"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "receive_request_update_firmware",
+          "requestChannel": "#/channels/receive_request_update_firmware",
+          "replyChannel": "#/channels/send_reply_update_firmware",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_upload_logs",
+          "requestChannel": "#/channels/receive_request_upload_logs",
+          "replyChannel": "#/channels/send_reply_upload_logs",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_is_reset_allowed",
+          "requestChannel": "#/channels/receive_request_is_reset_allowed",
+          "replyChannel": "#/channels/send_reply_is_reset_allowed",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_set_system_time",
+          "requestChannel": "#/channels/receive_request_set_system_time",
+          "replyChannel": "#/channels/send_reply_set_system_time",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        },
+        {
+          "opId": "receive_request_get_boot_reason",
+          "requestChannel": "#/channels/receive_request_get_boot_reason",
+          "replyChannel": "#/channels/send_reply_get_boot_reason",
+          "replyAddress": {
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "d4adc40b8606295c856e8f22239e11a65f9d8ea9",
+      "ext": "yaml",
+      "repo": "holydocs/messageflow",
+      "path": "pkg/schema/source/asyncapi/testdata/analytics.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "holydocs/messageflow"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "replyAnalyticsReport",
+          "requestChannel": "#/channels/analytics.report.request",
+          "replyChannel": "#/channels/analytics.report.request",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "549cc2aa9a7c5faa9534683592b61f6ebbc2f263",
+      "ext": "yaml",
+      "repo": "VoiceBlender/voiceblender",
+      "path": "asyncapi.yaml",
+      "version": "3.0.0",
+      "repos": [
+        "VoiceBlender/voiceblender"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "recv_list_legs",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_get_leg",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_create_leg",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_answer_leg",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_delete_leg",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_mute_leg",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_unmute_leg",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_deaf_leg",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_undeaf_leg",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_hold_leg",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_unhold_leg",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_send_leg_dtmf",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_accept_leg_dtmf",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_reject_leg_dtmf",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_send_leg_rtt",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_accept_leg_rtt",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_reject_leg_rtt",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_webrtc_offer",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_webrtc_add_candidate",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_webrtc_get_candidates",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_list_rooms",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_get_room",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_create_room",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_delete_room",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_add_leg_to_room",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_remove_leg_from_room",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_bridge_create",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_bridge_list",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_bridge_get",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_bridge_update",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_bridge_delete",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_routing_get",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_routing_set",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_routing_update",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_set_leg_role",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_ring",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_early_media",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_amd_start",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_record_start",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_record_start",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_record_pause",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_record_resume",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_record_stop",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_record_stop",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_record_pause",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_record_resume",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_play_start",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_play_stop",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_play_start",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_play_stop",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_play_volume",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_play_volume",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_stt_start",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_stt_start",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_stt_stop",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_stt_stop",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_tts",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_tts",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_transfer",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_agent_elevenlabs",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_agent_vapi",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_agent_pipecat",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_agent_deepgram",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_agent_elevenlabs",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_agent_vapi",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_agent_pipecat",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_agent_deepgram",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_agent_stop",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_agent_stop",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_leg_agent_message",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "recv_room_agent_message",
+          "requestChannel": "#/channels/vsi",
+          "replyChannel": "#/channels/vsi",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "2cac597d6dd824c0a788b9ff83bc1eee81426095",
+      "ext": "yaml",
+      "repo": "Jack-the-Pro101/vequate",
+      "path": "spec/asyncapi/orchestrator.asyncapi.yaml",
+      "version": "3.1.0",
+      "repos": [
+        "Jack-the-Pro101/vequate"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "redis"
+      ],
+      "ops": [
+        {
+          "opId": "onServerCreateRequest",
+          "requestChannel": "#/channels/servers.create",
+          "replyChannel": "#/channels/servers.creating",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "redis"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "redis"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "129840a931882a6f26103af053e9907358d3a67b",
+      "ext": "yaml",
+      "repo": "Jack-the-Pro101/vequate",
+      "path": "spec/asyncapi/lobby.asyncapi.yaml",
+      "version": "3.1.0",
+      "repos": [
+        "Jack-the-Pro101/vequate"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "redis"
+      ],
+      "ops": [
+        {
+          "opId": "onChallenge",
+          "requestChannel": "#/channels/games.challenge",
+          "replyChannel": "#/channels/games.challenge.response",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "redis"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "redis"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "937f094579238e11bec999a263506c262ccbd64b",
+      "ext": "yaml",
+      "repo": "Integration-Project-2026-Groep-2/CRM",
+      "path": "docs/crm-asyncapi-v1.yaml",
+      "version": "3.1.0",
+      "repos": [
+        "Integration-Project-2026-Groep-2/CRM"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "amqp"
+      ],
+      "ops": [
+        {
+          "opId": "receiveCompanyDataRequest",
+          "requestChannel": "#/channels/facturatieCompanyRequested",
+          "replyChannel": "#/channels/crmCompanyResponded",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "amqp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp"
+          ]
+        },
+        {
+          "opId": "receivePersonLookup",
+          "requestChannel": "#/channels/kassaPersonLookupRequested",
+          "replyChannel": "#/channels/crmPersonLookupResponded",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "amqp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp"
+          ]
+        },
+        {
+          "opId": "receiveUnpaidRequest",
+          "requestChannel": "#/channels/kassaUnpaidRequested",
+          "replyChannel": "#/channels/crmUnpaidResponded",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "amqp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "amqp"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "1e800293b574fa4a1516d9b9207f61a9b714a2c9",
+      "ext": "yaml",
+      "repo": "davidtgillard/fits",
+      "path": "docs/asyncapi.yaml",
+      "version": "3.1.0",
+      "repos": [
+        "davidtgillard/fits"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "handleGraphRpc",
+          "requestChannel": "#/channels/fitsStdin",
+          "replyChannel": "#/channels/fitsStdout",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": false,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "handleGraphRpcOnSocket",
+          "requestChannel": "#/channels/socketInbound",
+          "replyChannel": "#/channels/socketOutbound",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": false,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "a5a8b88139645807922e4c2a309afbbe07ee4f29",
+      "ext": "yml",
+      "repo": "asyncapi/generator",
+      "path": "packages/templates/clients/kafka/test/__fixtures__/asyncapi-adeo.yml",
+      "version": "3.0.0",
+      "repos": [
+        "asyncapi/generator"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "requestCosting",
+          "requestChannel": "#/channels/costingRequest",
+          "replyChannel": "#/channels/costingResponse",
+          "replyAddress": {
+            "location": "$message.header#/REPLY_TOPIC"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "9abb793982ffcac8f624d7c11f34ef0d4dea579f",
+      "ext": "yml",
+      "repo": "KrushilProlink/studio-new",
+      "path": "src/examples/real-world/kraken-api-request-reply-filter.yml",
+      "version": "3.0.0",
+      "repos": [
+        "CodeBeast357/webosapi-asyncapi",
+        "KrushilProlink/studio-new",
+        "Shurtu-gal/action-test-bed",
+        "TahaShahid203/async-api-issue",
+        "asyncapi/studio",
+        "dghilardi/asyncapiv3"
+      ],
+      "n_locations": 6,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "receivePing",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveSubscribeRequest",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveUnsubscribeRequest",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "128c547f990fd54fdd9eaf48b717ffa4776cf4e3",
+      "ext": "yml",
+      "repo": "gematik/zeta-testfachdienst",
+      "path": "docs/async-api-docs.yml",
+      "version": "3.0.0",
+      "repos": [
+        "gematik/zeta-testfachdienst"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "stomp"
+      ],
+      "ops": [
+        {
+          "opId": "delete.{id}_receive_delete",
+          "requestChannel": "#/channels/delete.{id}",
+          "replyChannel": "#/channels/_queue_erezept",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "stomp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "stomp"
+          ]
+        },
+        {
+          "opId": "list_receive_list",
+          "requestChannel": "#/channels/list",
+          "replyChannel": "#/channels/_queue_erezept",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "stomp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "stomp"
+          ]
+        },
+        {
+          "opId": "read.{id}_receive_read",
+          "requestChannel": "#/channels/read.{id}",
+          "replyChannel": "#/channels/_queue_erezept",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "stomp"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "stomp"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "3107c5212af0fbfdd66fc8e7652b13d3fc95c580",
+      "ext": "yml",
+      "repo": "YOU54F/pact-asyncapi-comparator",
+      "path": "asyncapi/ping-pong-dynamic.yml",
+      "version": "3.0.0",
+      "repos": [
+        "YOU54F/pact-asyncapi-comparator"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "pingRequest",
+          "requestChannel": "#/channels/ping",
+          "replyChannel": "#/channels/pong",
+          "replyAddress": {
+            "description": "Reply is sent to topic specified in 'replyTo' property in the message header",
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "7f00a04e37a4b91f1668bf61f4567cb6bbaf1cf8",
+      "ext": "yml",
+      "repo": "the-codegen-project/cli",
+      "path": "test/blackbox/schemas/asyncapi/kraken-websocket-request-reply-message-filter-in-reply-asyncapi.yml",
+      "version": "3.0.0",
+      "repos": [
+        "the-codegen-project/cli"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "receivePing",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveSubscribeRequest",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveUnsubscribeRequest",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "ae0494379aa66a9ece1f10e93cfbb4ae5dd45c97",
+      "ext": "yml",
+      "repo": "asyncapi/markdown-template",
+      "path": "test/spec/asyncapi_v3.yml",
+      "version": "3.0.0",
+      "repos": [
+        "asyncapi/markdown-template"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka",
+        "mqtt"
+      ],
+      "ops": [
+        {
+          "opId": "createSomeRequest",
+          "requestChannel": "#/channels/someRequest",
+          "replyChannel": "#/channels/someRequestReply",
+          "replyAddress": {
+            "location": "$message.payload#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "mqtt"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka",
+            "mqtt"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "2a2c2e3ed0c8b2e7dd7f5a96dd6f16dce1c3fd37",
+      "ext": "yml",
+      "repo": "dghilardi/asyncapiv3",
+      "path": "test-res/3.0.0/adeo-kafka-request-reply-asyncapi.yml",
+      "version": "3.0.0",
+      "repos": [
+        "dghilardi/asyncapiv3"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "receiveACostingRequest",
+          "requestChannel": "#/channels/costingRequestChannel",
+          "replyChannel": "#/channels/costingResponseChannel",
+          "replyAddress": {
+            "location": "$message.header#/REPLY_TOPIC"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "7cc9d246bf843ea1c676341b9206199402ed8c19",
+      "ext": "yml",
+      "repo": "asyncapi/converter-js",
+      "path": "test/output/openapi-to-asyncapi/components_and_security.yml",
+      "version": "3.0.0",
+      "repos": [
+        "asyncapi/converter-js"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "http"
+      ],
+      "ops": [
+        {
+          "opId": "getsecure",
+          "requestChannel": "#/channels/secure",
+          "replyChannel": "#/channels/secure",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        },
+        {
+          "opId": "getoauth",
+          "requestChannel": "#/channels/oauth",
+          "replyChannel": "#/channels/oauth",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "11396152c909e8119a2ccc3771d67a572ba368c2",
+      "ext": "yml",
+      "repo": "insspb/asyncapi3",
+      "path": "tests/fixtures/yaml_specs/valid/single_file/kraken-websocket-request-reply-multiple-channels-asyncapi.yml",
+      "version": "3.0.0",
+      "repos": [
+        "insspb/asyncapi3"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "receivePing",
+          "requestChannel": "#/channels/ping",
+          "replyChannel": "#/channels/pong",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "subscribe",
+          "requestChannel": "#/channels/subscribe",
+          "replyChannel": "#/channels/currencyInfo",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "unsubscribe",
+          "requestChannel": "#/channels/unsubscribe",
+          "replyChannel": "#/channels/currencyInfo",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "98a3d12e31e4313a8e50ff21e4aaca94cda0d9d9",
+      "ext": "yml",
+      "repo": "coinpaprika/coinpaprika-docs",
+      "path": "api-reference/streaming-api/asyncapi.yml",
+      "version": "3.0.0",
+      "repos": [
+        "coinpaprika/coinpaprika-docs",
+        "donbagger/documentation"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [
+        "wss"
+      ],
+      "ops": [
+        {
+          "opId": "ping",
+          "requestChannel": "#/channels/~1ticks",
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "wss"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "wss"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "5066a2fe7fcf316681edb680ed306a80ca863eab",
+      "ext": "yml",
+      "repo": "asyncapi/converter-js",
+      "path": "test/output/openapi-to-asyncapi/external_reference.yml",
+      "version": "3.0.0",
+      "repos": [
+        "asyncapi/converter-js"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "http"
+      ],
+      "ops": [
+        {
+          "opId": "gettest",
+          "requestChannel": "#/channels/test",
+          "replyChannel": "#/channels/test",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "623d2f563f985f864ae19742d4e92b9b127d4b03",
+      "ext": "yml",
+      "repo": "asyncapi/jasyncapi",
+      "path": "asyncapi-core/src/test/resources/examples/v3.0.0/adeo-kafka-request-reply-asyncapi.yml",
+      "version": "3.0.0",
+      "repos": [
+        "asyncapi/jasyncapi",
+        "the-codegen-project/cli"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "receiveACostingRequest",
+          "requestChannel": "#/channels/costingRequestChannel",
+          "replyChannel": "#/channels/costingResponseChannel",
+          "replyAddress": {
+            "location": "$message.header#/REPLY_TOPIC"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "ec7814c95829c9096dedf072615c1415f796a45d",
+      "ext": "yml",
+      "repo": "asyncapi/converter-js",
+      "path": "test/output/openapi-to-asyncapi/callbacks_and_contents.yml",
+      "version": "3.0.0",
+      "repos": [
+        "asyncapi/converter-js"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "http"
+      ],
+      "ops": [
+        {
+          "opId": "subscribeWebhook",
+          "requestChannel": "#/channels/webhooks",
+          "replyChannel": "#/channels/webhooks",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        },
+        {
+          "opId": "getUser",
+          "requestChannel": "#/channels/users_{userId}",
+          "replyChannel": "#/channels/users_{userId}",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        },
+        {
+          "opId": "getUserPosts",
+          "requestChannel": "#/channels/users_{userId}_posts",
+          "replyChannel": "#/channels/users_{userId}_posts",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        },
+        {
+          "opId": "uploadFile",
+          "requestChannel": "#/channels/upload",
+          "replyChannel": "#/channels/upload",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        },
+        {
+          "opId": "getStream",
+          "requestChannel": "#/channels/stream",
+          "replyChannel": "#/channels/stream",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "090a8cdbf3187f767497e13047d3c3eff4e1362a",
+      "ext": "yml",
+      "repo": "insspb/asyncapi3",
+      "path": "tests/fixtures/yaml_specs/valid/single_file/kraken-websocket-request-reply-message-filter-in-reply-asyncapi.yml",
+      "version": "3.0.0",
+      "repos": [
+        "insspb/asyncapi3"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "receivePing",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveSubscribeRequest",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveUnsubscribeRequest",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "6f6e9044f6cee71b4b9336cb88a4a428ae0dce27",
+      "ext": "yml",
+      "repo": "codemonstersteam/mq-rest-sync-adapter",
+      "path": "contract-tests/testdata/structure_validator/request_reply_provider_asyncapi.yml",
+      "version": "3.0.0",
+      "repos": [
+        "codemonstersteam/mq-rest-sync-adapter"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "amqp"
+      ],
+      "ops": [
+        {
+          "opId": "receiveProcessEventRequest",
+          "requestChannel": "#/channels/process_event_request",
+          "replyChannel": "#/channels/process_event_response",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "amqp"
+          ],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "amqp"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "2610fdc61574cefddfeb542a799b6e10464fa29c",
+      "ext": "yml",
+      "repo": "adreno255/nurtura-backend",
+      "path": "docs/asyncapi-websocket.yml",
+      "version": "3.0.0",
+      "repos": [
+        "adreno255/nurtura-backend"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "ws",
+        "wss"
+      ],
+      "ops": [
+        {
+          "opId": "onConnect",
+          "requestChannel": "#/channels/root",
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "ws",
+            "wss"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws",
+            "wss"
+          ]
+        },
+        {
+          "opId": "broadcastSensorData",
+          "requestChannel": "#/channels/sensorUpdate",
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "ws",
+            "wss"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws",
+            "wss"
+          ]
+        },
+        {
+          "opId": "broadcastDeviceStatus",
+          "requestChannel": "#/channels/deviceStatusUpdate",
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "ws",
+            "wss"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws",
+            "wss"
+          ]
+        },
+        {
+          "opId": "broadcastNotification",
+          "requestChannel": "#/channels/notificationUpdate",
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "ws",
+            "wss"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws",
+            "wss"
+          ]
+        },
+        {
+          "opId": "broadcastAutomationEvent",
+          "requestChannel": "#/channels/automationEventTriggered",
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "ws",
+            "wss"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws",
+            "wss"
+          ]
+        },
+        {
+          "opId": "broadcastUserNotifications",
+          "requestChannel": "#/channels/userNotificationUpdate",
+          "replyChannel": null,
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "ws",
+            "wss"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws",
+            "wss"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "6b09cab7f60f24a97bf79e600cd0334f94b08c16",
+      "ext": "yml",
+      "repo": "CodeBeast357/webosapi-asyncapi",
+      "path": "kraken-websocket-request-reply-multiple-channels-asyncapi.yml",
+      "version": "3.0.0",
+      "repos": [
+        "CodeBeast357/webosapi-asyncapi",
+        "dghilardi/asyncapiv3",
+        "the-codegen-project/cli"
+      ],
+      "n_locations": 3,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "receivePing",
+          "requestChannel": "#/channels/ping",
+          "replyChannel": "#/channels/pong",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "subscribe",
+          "requestChannel": "#/channels/subscribe",
+          "replyChannel": "#/channels/currencyInfo",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "unsubscribe",
+          "requestChannel": "#/channels/unsubscribe",
+          "replyChannel": "#/channels/currencyInfo",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "6660ba14fc2efe98c0082d0a64fa0a322f774255",
+      "ext": "yml",
+      "repo": "acidtango/ollert-backend",
+      "path": "asyncapi.yml",
+      "version": "3.0.0",
+      "repos": [
+        "acidtango/ollert-backend"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "ws"
+      ],
+      "ops": [
+        {
+          "opId": "addColumn",
+          "requestChannel": "#/channels/boardCommands",
+          "replyChannel": "#/channels/boardEvents",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "ws"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "1b51ad6e3c6838e1b8d735e5895a77cf60c3978a",
+      "ext": "yml",
+      "repo": "asyncapi/jasyncapi",
+      "path": "asyncapi-core/src/test/resources/examples/v3.0.0/kraken-websocket-request-reply-message-filter-in-reply-asyncapi.yml",
+      "version": "3.0.0",
+      "repos": [
+        "asyncapi/jasyncapi"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "receivePing",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveSubscribeRequest",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveUnsubscribeRequest",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "55532975f766788c4cfa39a848284cb8d981d6f9",
+      "ext": "yml",
+      "repo": "asyncapi/converter-js",
+      "path": "test/output/openapi-to-asyncapi/operation_and_parameter.yml",
+      "version": "3.0.0",
+      "repos": [
+        "asyncapi/converter-js"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "http"
+      ],
+      "ops": [
+        {
+          "opId": "listItems",
+          "requestChannel": "#/channels/items",
+          "replyChannel": "#/channels/items",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        },
+        {
+          "opId": "createItem",
+          "requestChannel": "#/channels/items",
+          "replyChannel": "#/channels/items",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        },
+        {
+          "opId": "getItem",
+          "requestChannel": "#/channels/items_{itemId}",
+          "replyChannel": "#/channels/items_{itemId}",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        },
+        {
+          "opId": "updateItem",
+          "requestChannel": "#/channels/items_{itemId}",
+          "replyChannel": "#/channels/items_{itemId}",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        },
+        {
+          "opId": "deleteItem",
+          "requestChannel": "#/channels/items_{itemId}",
+          "replyChannel": "#/channels/items_{itemId}",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "http"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "ad0c5dbf03ef9f86b6cd3a04a7c014b82ff43f34",
+      "ext": "yml",
+      "repo": "asyncapi/generator",
+      "path": "packages/templates/clients/websocket/test/__fixtures__/asyncapi-slack-client.yml",
+      "version": "3.0.0",
+      "repos": [
+        "asyncapi/generator"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [
+        "ws",
+        "wss"
+      ],
+      "ops": [
+        {
+          "opId": "onEvent",
+          "requestChannel": "#/channels/root",
+          "replyChannel": "#/channels/root",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "ws",
+            "wss"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "ws",
+            "wss"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "49f2b529a0b193bfcc28a8b8cc2362d64ff1d702",
+      "ext": "yml",
+      "repo": "WaleedAshraf/asyncapi-validator",
+      "path": "test/schemas/v3.0.0/pingPong.yml",
+      "version": "3.0.0",
+      "repos": [
+        "WaleedAshraf/asyncapi-validator"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "pingRequest",
+          "requestChannel": "#/channels/ping",
+          "replyChannel": "#/channels/pong",
+          "replyAddress": {
+            "description": "Reply is sent to topic specified in 'replyTo' property in the message header",
+            "location": "$message.header#/replyTo"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "2230e2bf7219f56de5bf6ed2988597451bf3df1c",
+      "ext": "yml",
+      "repo": "codemonstersteam/pinout-asyncapi",
+      "path": "cmd/testdata/cmd/producer-asyncapi-fixed.yml",
+      "version": "3.0.0",
+      "repos": [
+        "codemonstersteam/mq-rest-sync-adapter",
+        "codemonstersteam/pinout-asyncapi"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [
+        "http"
+      ],
+      "ops": [
+        {
+          "opId": "receiveBalanceRequest",
+          "requestChannel": "#/channels/restGetBalanceRequest",
+          "replyChannel": "#/channels/restGetBalanceRequest",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [
+            "http"
+          ],
+          "viaAllServers": false,
+          "docLevelProtocols": [
+            "http"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "d3c1c257c7875aff2300e1f4b7e211085c295660",
+      "ext": "yml",
+      "repo": "asyncapi/jasyncapi",
+      "path": "asyncapi-core/src/test/resources/examples/v3.0.0/kraken-websocket-request-reply-multiple-channels-asyncapi.yml",
+      "version": "3.0.0",
+      "repos": [
+        "asyncapi/jasyncapi"
+      ],
+      "n_locations": 1,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "receivePing",
+          "requestChannel": "#/channels/ping",
+          "replyChannel": "#/channels/pong",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "subscribe",
+          "requestChannel": "#/channels/subscribe",
+          "replyChannel": "#/channels/currencyInfo",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "unsubscribe",
+          "requestChannel": "#/channels/unsubscribe",
+          "replyChannel": "#/channels/currencyInfo",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "348075e95d81bfe54906cb855109f6d877d4f1f3",
+      "ext": "yml",
+      "repo": "Lap-Platform/LAP",
+      "path": "examples/verbose/asyncapi/adeo-kafka-request-reply-asyncapi.yml",
+      "version": "3.1.0",
+      "repos": [
+        "Lap-Platform/LAP",
+        "asyncapi/spec"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [
+        "kafka"
+      ],
+      "ops": [
+        {
+          "opId": "receiveACostingRequest",
+          "requestChannel": "#/channels/costingRequestChannel",
+          "replyChannel": "#/channels/costingResponseChannel",
+          "replyAddress": {
+            "location": "$message.header#/REPLY_TOPIC"
+          },
+          "sameChannel": false,
+          "replyScopedProtocols": [
+            "kafka"
+          ],
+          "viaAllServers": true,
+          "docLevelProtocols": [
+            "kafka"
+          ]
+        }
+      ]
+    },
+    {
+      "sha": "0f7691336040be8df2210c1c2cc2787683fedf82",
+      "ext": "yml",
+      "repo": "Lap-Platform/LAP",
+      "path": "examples/verbose/asyncapi/kraken-websocket-request-reply-multiple-channels-asyncapi.yml",
+      "version": "3.1.0",
+      "repos": [
+        "Lap-Platform/LAP",
+        "asyncapi/spec"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "receivePing",
+          "requestChannel": "#/channels/ping",
+          "replyChannel": "#/channels/pong",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "subscribe",
+          "requestChannel": "#/channels/subscribe",
+          "replyChannel": "#/channels/currencyInfo",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "unsubscribe",
+          "requestChannel": "#/channels/unsubscribe",
+          "replyChannel": "#/channels/currencyInfo",
+          "replyAddress": null,
+          "sameChannel": false,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    },
+    {
+      "sha": "f2950ac1cec11609b7da86dc26ce4b13dc9993e0",
+      "ext": "yml",
+      "repo": "asyncapi/spec",
+      "path": "examples/kraken-websocket-request-reply-message-filter-in-reply-asyncapi.yml",
+      "version": "3.1.0",
+      "repos": [
+        "Lap-Platform/LAP",
+        "asyncapi/spec"
+      ],
+      "n_locations": 2,
+      "docLevelProtocols": [],
+      "ops": [
+        {
+          "opId": "receivePing",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveSubscribeRequest",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        },
+        {
+          "opId": "receiveUnsubscribeRequest",
+          "requestChannel": "#/channels/currencyExchange",
+          "replyChannel": "#/channels/currencyExchange",
+          "replyAddress": null,
+          "sameChannel": true,
+          "replyScopedProtocols": [],
+          "viaAllServers": true,
+          "docLevelProtocols": []
+        }
+      ]
+    }
+  ]
+}

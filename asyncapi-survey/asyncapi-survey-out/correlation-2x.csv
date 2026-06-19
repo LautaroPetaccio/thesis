@@ -1,0 +1,56 @@
+repo,path,sha,version,n_correlationIds,locations,location_classes,protocols,duplex_channel,reqreply_naming
+4g3nt4333/Ascy-website,public/resources/casestudies/adeo/asyncapi.yaml,ebc2e682004b002c0b2f863a29d094fc9a9c2fe8,2.4.0,5,$message.header#/REQUEST_ID,header:5,kafka,False,True
+LowellObservatory/Lorax,PWMountAgent/extern/example_api.yaml,8329944ffcaa6c8ec8fcc7d615ede46a2272ad06,2.0.0,4,$message.header#/x-correlation-id,header:4,amqp|mqtt,False,False
+OI4/oi4-oec-service,packages/oi4-oec-asyncapi/asyncapi.yaml,9c13611625d066130e41bcd9e708bf9b9c518a25,2.3.0,23,$message.header#/correlationId,header:23,mqtt,False,False
+Redocly/redocly-cli,resources/async.yaml,41f5a2032602e06fd8dbb3f4be95d7268583d7f6,2.6.0,5,$message.payload#/sentAt,payload:5,amqp|http|kafka|mqtt,False,False
+The-Microservice-Dungeon/game,doc/asyncapi-doc.yaml,d967911eef1ada4f595f6e0fa52ee16f6a21dba4,2.2.0,7,$message.header#/transactionId,header:7,kafka,False,False
+The-Microservice-Dungeon/gamelog,docs/event-spec.yaml,391fa16c43cd853eea0ced7d9825b423f59e639f,2.2.0,2,$message.header#/transactionId,header:2,kafka,False,False
+The-Microservice-Dungeon/robot,swagger/v3/asyncapi.yaml,2e70dcb645934e8b92a6de939e2b76178a3bddd2,2.2.0,25,$message.header#/transactionId,header:25,kafka,False,False
+The-Microservice-Dungeon/robot,swagger/v4/asyncapi.yaml,ae63d5b2f27ac5491ec136652e9f8b874182c0dc,2.2.0,21,$message.header#/transactionId,header:21,kafka,False,False
+The-Microservice-Dungeon/robot,swagger/v5/asyncapi.yaml,be09ec8f138574693df4218ac3d55a3fd03702fa,2.2.0,25,$message.header#/transactionId,header:25,kafka,False,False
+The-Microservice-Dungeon/trading,swagger/v1/asyncAPI.yaml,4f87db40be1639f8dbb3267c38f1207fcb412ad2,2.2.0,10,$message.header#/transactionId,header:10,kafka,False,False
+TykTechnologies/graphql-translator,asyncapi/fixtures/print-service-api-2.0.0.yaml,eaf7b9e7fb9a217f382082505bb4ea0248ff68aa,2.0.0,4,$message.header#/x-correlation-id,header:4,amqp|mqtt,False,False
+aml-org/als,als-actions/shared/src/test/resources/actions/hover/async-api20-full.yaml,ffe72f03837fa3e8090a3e99af135b87f5300748,2.0.0,8,$message.header#/correlationId,header:8,amqp|kafka,True,False
+aml-org/amf,amf-cli/shared/src/test/resources/cycle/async20/correlation-id/api.yaml,abd6fa73683ee3fe09e9c000b9193d632982a295,2.0.0,1,$message.header#/correlationId,header:1,undetermined,False,False
+aml-org/amf,amf-cli/shared/src/test/resources/upanddown/cycle/async20/components/components-cycle.yaml,beff0437001a4c72d7555537f3403a3da1b09f00,2.0.0,3,$message.header#/correlationId,header:3,amqp,False,False
+aml-org/amf,amf-cli/shared/src/test/resources/upanddown/cycle/async20/rpc-server.yaml,fde257ad49dff576f67dcc1d2d00c5e500e7e962,2.0.0,2,$message.header#/correlation_id,header:2,amqp,False,False
+aml-org/amf,amf-cli/shared/src/test/resources/validations/async20/components/async-components.yaml,dab7330cf919685e2709250728161a7db3ffc9d3,2.0.0,2,$message.header#/correlationId,header:2,amqp,True,False
+aml-org/amf,amf-cli/shared/src/test/resources/validations/async20/message-obj.yaml,f7aff3160e35e88bbdf8ae5f03ee45268a543e16,2.0.0,1,$message.header#/MQMD/CorrelId,header:1,undetermined,False,False
+aml-org/amf,amf-cli/shared/src/test/resources/validations/async20/rpc-server.yaml,48e7f2fd2ebd221fbcd7e38d27cd3d9df1c3038a,2.0.0,2,$message.header#/correlation_id,header:2,amqp,False,False
+aml-org/amf,amf-cli/shared/src/test/resources/validations/async20/validations/invalid-component-names.yaml,8a564bcadf14b9a4065bb38befd664c8fc7ece17,2.0.0,2,$message.header#/correlationId,header:2,undetermined,False,False
+aml-org/amf,amf-cli/shared/src/test/resources/validations/async20/validations/invalid-runtime-expressions.yaml,5be2fe2f9669aa83a4f4c4bbabd70d4b6ea6ed92,2.0.0,1,not a valid runtime expression,other:1,undetermined,False,False
+aml-org/amf-metadata,transform/src/test/resources/specs/async20/components/async-components.yaml,6e39231269ecb69ee8731fa07af5b0f41140a0f7,2.0.0,2,$message.header#/correlationId,header:2,amqp,True,False
+aml-org/amf-metadata,transform/src/test/resources/specs/async20/message-obj.yaml,34aab23da09e484f4484a02f5ad97574caaff42d,2.0.0,1,$message.header#/MQMD/CorrelId,header:1,undetermined,False,False
+asyncapi/bundler,tests/gh-185.yaml,74b79651983e58758fc9d63a26140b0ac452118d,2.0.0,1,$message.header#/correlation_id,header:1,amqp,False,False
+asyncapi/dotnet-rabbitmq-template,example/asyncapi.yaml,9b47afb80cbd32c801a3a0546dc23b76837d7df5,2.2.0,2,$message.header#/correlation_id,header:2,amqp,True,False
+asyncapi/dotnet-rabbitmq-template,example/publisher.yaml,b2bdfc529d65f278216c027d1a6dc36ff12d9b7a,2.2.0,1,$message.header#/correlation_id,header:1,amqp,False,False
+asyncapi/dotnet-rabbitmq-template,example/subscriber.yaml,170616f90ef15f7c8eac12750a28550a0058e8e8,2.2.0,1,$message.header#/correlation_id,header:1,amqp,False,False
+asyncapi/tck,tests/asyncapi-2.0/Components Object/invalid-correlationIds-key.yaml,6cbea6dda3e702cc20cf6400351e8cf56121df5b,2.0.0,1,$message.header#/correlationId,header:1,undetermined,False,False
+asyncapi/tck,tests/asyncapi-2.0/Components Object/valid-complete.yaml,47bd27a98e35f745066950b0e3cb9d59dc4097d9,2.0.0,6,$message.header#/correlationId,header:6,kafka,False,False
+asyncapi/tck,tests/asyncapi-2.0/Correlation ID Object/Fields Types/invalid-description-type.yaml,63afaba9e8c61fcb42686cc2b6c4a2c57a19da1d,2.0.0,2,$message.header#/correlationId,header:2,undetermined,False,False
+asyncapi/tck,tests/asyncapi-2.0/Correlation ID Object/invalid-location-expression.yaml,27d052e1237f35f4c0cac71ac48dd3f008c1a3c8,2.0.0,2,not a valid runtime expression,other:2,undetermined,False,False
+asyncapi/tck,tests/asyncapi-2.0/Correlation ID Object/valid.yaml,506471390904d5960fc668e99e2ef88e43e8bfcc,2.0.0,2,$message.header#/correlationId,header:2,undetermined,False,False
+asyncapi/tck,tests/asyncapi-2.0/Message Object/valid.yaml,5c608f44aaa972f25afba0bc15728fd0157a3d67,2.0.0,1,$message.header#/correlationId,header:1,undetermined,False,False
+asyncapi/tck,tests/asyncapi-2.0/Message Trait Object/valid-internal-ref-correlationId.yaml,9c73a0b4f0f54cdb3767c92583fdd4e653d22859,2.0.0,3,$message.header#/correlationId,header:3,undetermined,False,False
+asyncapi/tck,tests/asyncapi-2.0/Message Trait Object/valid.yaml,bd34611cf48968456f8b3818863c1c5f9b350893,2.0.0,2,$message.header#/correlationId,header:2,undetermined,False,False
+dgomezs/learning-AI-agents,apps/product-catalog/api/events/asyncapi.yaml,d009274fd53e05a296dc2952da6fb9f5e6c449f3,2.6.0,2,$message.header#/correlationId,header:2,kafka,False,False
+edward-hsu-1994/asyncapi-viewer,src/assets/test.yaml,3a95eea09287201afd465d843b3f267979c20f4c,2.4.0,5,$message.payload#/sentAt,payload:5,http|kafka|mqtt,False,False
+fluximus-prime/fluximus-prime.github.io,docs/private/asyncapi.yaml,6ceb4ec7ecf3e7479064a09ea1f7d339e43527c4,2.6.0,10,$message.header#/traceId,header:10,kafka,False,False
+hdulay/streaming-data-mesh,kafka-pubsub.yaml,a01b2800ed7e351d09b9ddd22a91734a57467e92,2.2.0,2,$message.payload#/CountryCode,payload:2,kafka,False,False
+jbrannst/async,spec/async.yaml,66470f00ca108956a22c840a5f6fec6b48d68441,2.6.0,5,$message.payload#/sentAt,payload:5,amqp|http|kafka|mqtt,False,False
+jstoiko/amf,amf-client/shared/src/test/resources/upanddown/cycle/async20/components-cycle.yaml,3561762969b04e26459c62757d139ecb143aac47,2.0.0,3,$message.header#/correlationId,header:3,amqp,False,False
+jstoiko/amf,amf-client/shared/src/test/resources/validations/async20/components/async-components.yaml,755473a2f574afb15f40e0bb89fe94b3f3163d75,2.0.0,2,$message.header#/correlationId,header:2,amqp,True,False
+jstoiko/amf,amf-client/shared/src/test/resources/validations/async20/message-obj.yaml,d9b2256fa529c8de5e69c181920f58715ecfc3ea,2.0.0,1,$message.header#/MQMD/CorrelId,header:1,undetermined,False,False
+leefreemanxyz/redocly-async-api-reproduction,bundled.yaml,1fbfab58c16232a638b7bed0acbb34a5512436d3,2.6.0,2,$message.payload#/sentAt,payload:2,amqp|http|kafka|mqtt,False,False
+lerenn/asyncapi-codegen,examples/ping/v2/asyncapi.yaml,02681e92b500857952f6048eb16a69949ec4d607,2.6.0,4,$message.header#/correlationId,header:4,undetermined,False,False
+mcrawfo2/go-msx,schema/asyncapi/testdata/compliance-asyncapi.yaml,befbde7dba73811ccdbe8c818301fb9d02d024f6,2.4.0,4,$message.payload#/messageId,payload:4,undetermined,False,False
+metricq/metricq-rpc-docs,manager.asyncapi.yaml,a97fd8958a7337feb6efb08f98355ab84a46d314,2.0.0,1,$message.header#/correlation_id,header:1,amqp,True,False
+periclescesar/event-processor,docs/asyncapi.yaml,05d3da7c401a1d637da9986d57a7ab50711be06c,2.6.0,3,$message.header#/correlationId,header:3,amqp,False,False
+prakhar47b/faststream-poc,asyncapi.yaml,787cb87a06966505d50822b5a2d40da6ea567363,2.6.0,4,$message.header#/correlation_id,header:4,amqp,False,False
+shashanksaxena-tz/munciplaityTax,specs/1-withholding-reconciliation/contracts/event-w1-filed.yaml,dab983e4fc6a2a99f56beca48e7cedf7b4ffafa5,2.6.0,12,$message.payload#/businessId|$message.payload#/tenantId,payload:12,kafka|redis,False,False
+siom79/jasyncapicmp,jasyncapicmp-maven-plugin/src/it/simple-it/new_2.6.0.yaml,28c8a67da414fc7b062a6fe6c58e7f8def63a8c5,2.6.0,2,$message.header#/correlationId,header:2,amqp,False,False
+siom79/jasyncapicmp,jasyncapicmp-maven-plugin/src/it/simple-it/old_2.6.0.yaml,02508f6d44eb43d89e169202a9e7129b703a17e1,2.6.0,2,$message.header#/correlationId,header:2,amqp,False,False
+somosphi/ts-seed-hexagonal,docs/asyncapi.yaml,9f164f92d8566afe4de6f3c03c79fb83cabd1e29,2.0.0,2,$message.header#/correlation_id,header:2,amqp,False,True
+weidmueller/u-os-hub-api,variable-nats-asyncapi.yaml,ca3f480e5a647c24118ca190e58559e51ebac1f7,2.6.0,8,$message.header#/reply,header:8,nats,True,True
+zuevrs/yanote,yanote-js/test/fixtures/asyncapi/trait-declarations-inline-v2.yaml,852f43930b1727546850a97addbbb4057e0ec118,2.6.0,1,$message.header#/correlation_id,header:1,kafka,False,False
+zuevrs/yanote,yanote-js/test/fixtures/asyncapi/trait-declarations-trait-v2.yaml,05360b28c504520058169b85aa852f245803b13e,2.6.0,2,$message.header#/correlation_id,header:2,kafka,False,False
