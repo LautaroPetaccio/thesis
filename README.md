@@ -7,7 +7,6 @@ Working materials for the master's thesis *Black-Box Testing of AsyncAPI Service
 - **`proposal.md`** — the proposal / problem characterization: AsyncAPI vs. REST black-box testing,
   the observable request/reply subset, the public-corpus survey, the four transports
   (Kafka / AMQP / MQTT / WebSocket), correlation, and the SUT-usability of the corpus.
-- **`proposal-problems.md`** — running record of open problems and threats to validity.
 - **`corpus-suitability.md`** — the full per-repo ledger: every AsyncAPI repository code-read across
   the survey (the 3.x `receive`+`reply` repos plus the 2.x / cross-corpus Kafka/AMQP and
   WebSocket/MQTT passes), each with a USABLE / USABLE-WITH-CHANGES / PARTIAL / NOT-USABLE verdict.
