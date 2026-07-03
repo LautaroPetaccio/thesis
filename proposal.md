@@ -553,20 +553,26 @@ its channel and messages, and its `reply`), and that entry's key is the stable i
 `(reply-variant × operation)` target hangs on. This is the clean case — and the one our authored 3.0
 SUTs provide by construction.
 
-A **2.x** service is reconstructed into the same unit. Its consume side is a channel's `publish` block
-— in 2.x's inverted vocabulary, the operation where _the application receives_ (others publish to it),
-the equivalent of 3.0 `receive` (`subscribe` is the `send` side). Its reply side has **no contract slot
-at all**, so the reply channel is recovered the only way it can be — **empirically, from the
-implementation** — the very code-read this proposal already leans on (the implementation read in
-**Are the real services usable as SUTs?**). The synthesized identity `(channel, consume-block) ↦
-recovered reply channel` then plays the role the 3.0 operation key does.
+A **2.x** service is reconstructed into the same unit **automatically** — from the contract plus
+run-time probing, never by reading source. The consume side is mechanical: a channel's `publish` block
+is, in 2.x's inverted vocabulary, the operation where _the application receives_ (others publish to it),
+the equivalent of 3.0 `receive` (`subscribe` is the `send` side). The reply side has **no contract slot
+at all**, so rather than pin it statically the tool **discovers it empirically at run time**: it
+publishes a request with a stamped id and watches the channels the contract's `subscribe` blocks declare
+— narrowed by a duplex or `*.request`/`*.reply` pairing where present, plus AMQP's native `reply-to` —
+for a message echoing that id; whichever channel returns it is the reply channel, and the echo is the
+correlation. This is the **same stamp-and-watch** used everywhere (see **Correlating automatically — and
+why the contract can't be trusted**), extended only to _discover_ the reply channel 2.x cannot name. The
+synthesized identity `(consume channel ↦ discovered reply channel)` then plays the role the 3.0
+operation key does — with no human reading the repository. (The code-read in **Are the real services
+usable as SUTs?** is a _survey_ activity for measuring the corpus, never part of the running tool.)
 
-So the model is **3.0-shaped by design, not by oversight**: it follows the proposal's position that
-AsyncAPI 3.0 is the version carrying the observable signal, that real 2.x request/reply is rare and its
-`correlationId` mostly does tracing, and that 2.x candidates surface by code-reading rather than from
-the contract. In practice the coverage target is defined on the 3.0 operation, and the few testable
-2.x services are **lifted into that 3.0 shape** before testing — not given a second, parallel target
-model.
+Its reach is bounded by the same thing as 3.0: the SUT must echo the id on a channel the tool can watch
+— a declared `subscribe` channel, an AMQP `reply-to`, or a broker-wide scan as a last resort — and
+where it correlates by business data instead, no black-box tool can pair it. That the model stays
+**3.0-shaped** is deliberate: 2.x request/reply is vanishingly rare (3 products in the survey, its
+`correlationId` mostly tracing), so the few testable services are reconstructed into the 3.0 shape
+automatically rather than given a second, parallel target model.
 
 #### The status analogue: the reply variant
 
