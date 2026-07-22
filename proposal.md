@@ -6,8 +6,9 @@ request/response assumptions, which interactions are observable at all (only **r
 often that pattern occurs in the wild (a corpus survey — rarely, and mostly in tooling), how the four
 dominant transports each carry the correlation a reply needs, and whether the real services that do it
 are usable as systems under test (largely not). The **approach**: reuse EvoMaster's black-box engine by
-making the **reply message a synthesized status code**, drive every transport through a thin,
-protocol-agnostic boundary, and ground it in controlled SUTs. The companion `corpus-suitability.md`
+making the **reply message a synthesized status code**, drive every transport through a
+**user-supplied driver** (the extension point EvoMaster already uses for non-HTTP protocols) that keeps
+the core protocol-agnostic, and ground it in controlled SUTs. The companion `corpus-suitability.md`
 holds the full per-repository evidence behind the survey.
 
 ## What is AsyncAPI
@@ -237,7 +238,8 @@ clients publish to hierarchical **topics** (with `+`/`#` wildcards) at a chosen 
 partitions or consumer-group offsets. Its versions differ in the one capability that matters here:
 **3.1.1** carries nothing beyond topic and payload, whereas **5.0** adds **Correlation Data** and a
 **Response Topic** (effectively AMQP-like). But almost no one opts into 5.0 — only a handful of the 219
-3.x MQTT specs declare it, and similarly in 2.x — so a tool must assume **3.1.1** and find correlation
+3.x MQTT specs record it in the server's `protocolVersion` (the one field where a protocol version is
+stated), and similarly in 2.x — so a tool must assume **3.1.1** and find correlation
 hand-rolled **inside the payload** or as a per-request reply-**topic** convention. There is nothing
 transport-level to rely on; read the payload or the topic scheme.
 
@@ -417,16 +419,26 @@ that follows factors out.
 ## The approach: classifying replies as the unit of coverage
 
 Everything above characterizes the **problem**; this section sketches the **approach**. The aim is to
-reuse EvoMaster's existing black-box engine — its **SMARTS** sampler, which generates a request,
+reuse EvoMaster's existing black-box engine — its **SMARTS** algorithm (smart sampling, the black-box
+default), which generates a request,
 classifies the result, and keeps one test per newly-covered outcome, with **no instrumentation and no
 search gradient** — and to give it a notion of "result" that asynchronous messaging can actually
 supply. REST hands that engine an HTTP status code for free; async hands it nothing. So the whole
 design reduces to one question: **what plays the role of the status code**, such that a decoupled
 reply — arriving later, on another channel, possibly not at all — can be turned into the same kind of
 discrete, assertable outcome. The short answer, developed below, is that **the reply message itself
-becomes the unit of coverage**. Three pieces make up the solution, defined in turn: a protocol-agnostic
-**transport adapter** (how EvoMaster reaches the SUT), a notion of **coverage** (what a generated suite
-is measured against), and the **generated test** itself (what comes out).
+becomes the unit of coverage**. The solution has four parts, defined in turn: a protocol-agnostic
+**transport driver** (how EvoMaster reaches the SUT), a notion of **coverage** (what a generated suite
+is measured against), the **individual** the search mutates (the representation the other parts hang on),
+and the **generated test** itself (what comes out).
+
+**Scope.** The black-box implementation targets **Kafka and AMQP, over AsyncAPI 3.x** — the combination
+where a first-class `reply` exists and the correlation id rides in transport **metadata** (AMQP's native
+`correlation-id` property, a Kafka header) that the tool can stamp and match without touching the
+message body. MQTT 3.1.1 and WebSocket push the id into a **bespoke payload**, coupling the tool to each
+service's hand-rolled message schema (the gradient of **The four transports and their correlation**), and
+2.x has no reply construct at all — so those are **deferred**, not designed out: everything below is
+written transport-agnostically, and the deferred cases re-enter as the per-SUT effort they demand.
 
 ### What black-box testing can reach
 
@@ -443,64 +455,157 @@ left as a refinement.)
 So **all the novelty is on the output side**: turning the async reply into the discrete result REST
 reads off a status line — which is what the rest of this section develops.
 
-### The transport adapter
+### The transport driver
 
-Triggering needs a live **transport client**, and async has no universal wire. EvoMaster's own
-architecture already shows how to handle that without coupling the tool to a protocol: every black-box
-mode it has — REST, GraphQL — rides **HTTP**, so it needs no transport code at all; the _only_
-non-HTTP protocol it supports, **RPC**, has **no black-box mode** (the core throws "NOT SUPPORT
-black-box for RPC") and instead delegates the wire call to a user-written Driver. AsyncAPI is the
-non-HTTP case — but, unlike RPC, it comes with a **portable contract**. That places it at a new point
-on the spectrum and dictates the design: **EvoMaster's core stays protocol-agnostic, with every
-transport library behind a thin boundary.**
+Triggering needs a live **transport client**, and async has no universal wire. EvoMaster's architecture
+already fixes how to supply one. Every black-box mode it ships — REST, GraphQL — rides **HTTP**, so the
+core points straight at a URL and needs nothing beside the running SUT. Its only non-HTTP problem,
+**RPC**, has no URL to point at, and is therefore driven by a user-written **Driver**: a subclass of
+`SutController` that the core talks to over an HTTP control protocol (`/controller/api/…`) and that holds
+the client stub and performs the call — the core is emphatic that this cannot be skipped, throwing
+_"NOT SUPPORT black-box for RPC yet"_ in `Main.kt`. AsyncAPI is the same shape: no universal wire, so
+**a driver must hold the transport client and move the bytes**, with the core protocol-agnostic behind it.
+The one way async is _easier_ than RPC is the schema: RPC has no contract, so EvoMaster reconstructs it by
+**reflecting over the SUT's compiled interfaces** (`RPCEndpointsBuilder`), whereas the AsyncAPI document
+already declares the operations and their JSON-Schema messages — parsed as data, like REST's OpenAPI, with
+no reflection and no DTO classes on the classpath.
 
-- **The core** reads the AsyncAPI document _as data_, generates inputs from the message schemas, mints
-  / injects / matches the correlation id (driven by `correlationId.location`), classifies the reply,
-  and runs SMARTS. It imports **no** broker or socket library.
-- **A transport boundary** — a small **SPI** (a _Service Provider Interface_: an interface the core
-  defines and calls and a provider implements — the inverse of an API) that is a pure pipe:
+The driver is therefore **not a new abstraction but a `SutController` subclass** — the same base the REST
+and RPC drivers extend — in one of the two standard flavours, which are **deployment choices, not testing
+modes**:
+
+- **`ExternalSutController`** — the SUT (and its broker) run as separate processes the driver starts and
+  stops; instrumentation is still available (the driver injects the Java agent into the SUT's JVM and
+  pulls coverage over a socket).
+- **`EmbeddedSutController`** — the SUT runs inside the driver's own JVM, instrumented directly.
+
+Black-box vs white-box is orthogonal to that choice: **black-box simply leaves instrumentation off**
+(`isInstrumentationActivated()` returns false) and uses the driver for lifecycle and wire access only;
+white-box turns it on (developed in `proposal-white-box.md`). Either way the core never speaks a broker
+protocol; it drives the SUT through the `SutController` control API, exactly as it drives its other
+problem types.
+
+**What the driver declares — `AsyncApiProblem`.** A `SutController` announces its kind through
+`getProblemInfo()`, which returns a `ProblemInfo` — today `RestProblem`, `GraphQlProblem` or `RPCProblem`.
+AsyncAPI adds one more, modelled on `RPCProblem` (which carries the interface class _and_ a live client
+stub):
 
 ```
-interface Transport:                 # the whole protocol surface the core sees
-    connect()
-    send(address, headers, bytes)    # the core stamps the id into headers or bytes
-    receive(address, within) -> (headers, bytes)
+class AsyncApiProblem extends ProblemInfo:
+    schema:  AsyncAPI document (URL or inline)     # operations, messages, servers, bindings
+    client:  a transport client the driver holds   # Kafka producer + consumer, AMQP channel, …
 ```
 
-- **An adapter** on the far side implements that SPI with the actual Kafka / AMQP / MQTT / WebSocket
-  client, and is the _only_ place a protocol dependency lives. It is supplied by the user, or shipped
-  as an optional plugin the core does not depend on.
+The two fields play different roles. `schema` is the **portable, serialisable** part — the exact analogue
+of `RestProblem`'s OpenAPI, conveyed the same way: the driver provides either a **URL** or the **inline
+document**, and the core does the rest — it _fetches_ the document when given a URL (usually the SUT's own
+served spec) or _parses_ it directly when given inline text, then reads it as data to learn the operations
+and message JSON Schemas and build the input genes. The driver itself never parses the contract, and there
+is no reflection step; the schema is the only part that crosses the control protocol to the core. `client` is a **live wire handle** — a Kafka producer/consumer, an AMQP channel — used
+only on the driver side, inside `executeAsyncAction`, to publish and await; being an open connection it
+never travels to the core. The contrast with RPC is instructive: `RPCProblem`'s client does _double
+duty_ — its class is reflected for the schema **and** it is invoked to make the call — whereas
+`AsyncApiProblem` keeps the two apart, `schema` describing the SUT and `client` only moving bytes.
 
-An adapter is a **dumb pipe**: all the smarts — serialising the request, placing and reading the
-correlation id, matching and classifying the reply — stay in the core. The two extremes make that
-concrete:
+Introducing it is a **new problem type, not just a subclass**: like the four before it (REST, GraphQL,
+RPC, Web) it is added at a handful of hardcoded dispatch sites — a `ProblemType` enum value, a field on
+`SutInfoDto`, a branch in the controller's `getProblemInfo` handling, and the problem→module wiring in
+`Main.kt` — plus, for `executeAsyncAction`, a field on the action DTO. Additive and well-trodden, but
+real plumbing across the controller, controller-api and core modules rather than a drop-in.
+
+**The lifecycle methods, and how they behave.** The driver implements the same `SutController` methods as
+any other driver; their async behaviour is:
+
+- `startSut()` — start the SUT (black-box: and its broker), open `client`, **block until the SUT's
+  consumer is subscribed and ready**, and return a base address.
+- `resetStateOfSUT()` — restore a clean baseline between tests: drain reply queues/topics, reset consumer
+  offsets, clear any seeded state.
+- `stopSut()` — close `client`, stop the SUT (and broker).
+- `getProblemInfo()` returns the `AsyncApiProblem`; `getPreferredOutputFormat()` gives the emitted-suite
+  language — both unchanged in spirit from REST/RPC.
+
+**How one action is executed — `executeAsyncAction`.** RPC adds exactly one method to the control
+protocol that the core calls once per action, `executeRPCEndpoint(dto)`, which resolves the held client
+and invokes the method reflectively (`method.invoke(client, params)`). AsyncAPI adds the direct analogue:
 
 ```
-# Kafka adapter — a broker; the id rides in a header
-class KafkaTransport implements Transport:
-    connect():                 producer = KafkaProducer(spec.server.url)
-                               consumer = KafkaConsumer(spec.server.url)
-    send(addr, headers, body): producer.send(topic=addr, headers=headers, value=body)
-    receive(addr, within):     r = consumer.subscribe(addr).poll(within); return (r.headers, r.value)
-
-# WebSocket adapter — broker-less; one socket; the id rides in the payload
-class WebSocketTransport implements Transport:
-    connect():                 sock = openWebSocket(spec.server.url)     # ws://host/ncs
-    send(addr, headers, body): sock.sendText(body)   # addr/headers unused: one socket, id already in body
-    receive(addr, within):     return ({}, sock.awaitFrame(within))
+# on the driver (a SutController subclass); the core calls this once per action over the control API
+executeAsyncAction(dto) -> AsyncReplyDto:
+    cid   = dto.correlationId
+    client.publish(dto.address, inject(cid, dto.body, dto.correlationLocation))   # header or payload
+    reply = client.awaitReply(dto.replyAddress, match = cid, within = dto.window)
+    return AsyncReplyDto(reply.headers, reply.body)          # handed back to the core to classify
 ```
 
-The core hands them a body it has already serialised (per the contract's `contentType`), with a fresh
-id placed in `headers` (Kafka) or inside `body` (WebSocket, per `correlationId.location`), then reads
-the id back and classifies. The four NCS messaging tests are, in effect, these four adapters by hand.
+The core builds `dto` from the individual's genes (payload, correlation id, request/reply addresses,
+window), sends it over the existing control protocol, and classifies the returned reply — importing no
+broker library. Only `publish` / `awaitReply` are protocol-specific, and they live **entirely inside the
+driver**, a dumb pipe over `client`:
 
-**This adapter is not a Driver.** EvoMaster's Driver is a white-box controller that owns the SUT's
-lifecycle, instruments it for code coverage, and is the source of the schema; in black-box mode no
-Driver exists at all. The adapter does none of that — no lifecycle, no instrumentation, no schema, no
-reset — it only moves bytes. It is the single wire-touching responsibility that black-box testing
-always got _for free_ from HTTP, isolated and made pluggable now that the wire is no longer universal.
+```
+Kafka:  publish    → producer.send(topic=address, headers={correlationId: cid}, value=body)
+        awaitReply → consumer.subscribe(replyTopic).poll(window)   matching header correlationId == cid
+AMQP:   publish    → channel.basicPublish(address, props={correlationId: cid, replyTo: replyQueue}, body)
+        awaitReply → channel.consume(replyQueue)                   matching property correlationId == cid
+```
 
-How much of that adapter the contract can fill — measured over every `ws` / `wss`, Kafka, AMQP and MQTT
+(MQTT 3.1.1 and WebSocket carry the id in the payload rather than a header/property, so the driver injects
+and reads it there; `executeAsyncAction`'s shape is unchanged.) The four NCS messaging tests are, in
+effect, four such drivers written by hand.
+
+**Which protocol version the driver speaks** is only loosely fixed by the contract. AsyncAPI states it, if
+at all, in the server's optional `protocolVersion` (free text like `"5.0"`, rarely set); the one firm
+signal is the **binding choice** — the `amqp` binding _is_ AMQP 0-9-1, distinct from the separate `amqp1`
+(1.0) binding, and `bindingVersion` names the AsyncAPI binding definition, not the protocol. So the driver
+takes the version from the binding plus `protocolVersion` where present, and otherwise from a per-SUT
+default (e.g. MQTT **3.1.1**). The same resolved version then steers **test generation**: the emitted
+client code is written to match it, automatically (see **The generated test**).
+
+**Who supplies that transport code — two scenarios to choose from.** The `publish` / `awaitReply` above
+must be implemented somewhere on the driver side. There are two ways to provide it, and **neither couples
+the core**:
+
+- **Scenario A — a shipped, contract-driven transport module.** EvoMaster ships an optional `KafkaDriver`
+  / `AmqpDriver` (a ready-made `SutController` base for the standard transport) that reads the AsyncAPI
+  document and implements `startSut` and `executeAsyncAction` generically. The user writes almost nothing
+  — a thin subclass pointing it at the SUT, plus the per-SUT bits the contract cannot give (a correlation
+  field name where undeclared, auth). This is feasible _only because_ the AsyncAPI contract is portable
+  and standard — the same reason RPC cannot ship a generic driver. The module depends on the Kafka / AMQP
+  client library, but it is a **separate, optional artifact the core does not depend on**.
+- **Scenario B — a user-written driver.** For a bespoke wire — a hand-rolled WebSocket protocol, a
+  proprietary broker — the user implements the transport code in their own `SutController` subclass, with
+  full control at the cost of more effort.
+
+In both, the broker library lives on the driver side of the control protocol; the only difference is
+whether **EvoMaster ships it (A)** or **the user writes it (B)**. The core is byte-for-byte identical
+either way and imports nothing transport-specific — the decoupling holds regardless of which scenario a
+given SUT uses.
+
+**Black-box and white-box are one driver in two modes, not two drivers.** The split is not a different
+class but which parts of the same `SutController` the core exercises:
+
+- **Black-box** binds the driver as the core's `RemoteController` and drives actions through
+  `executeAsyncAction`, but **never calls `getTestResults`** — there is no coverage to pull; the reply is
+  the signal. EvoMaster already runs exactly this shape: its `bbExperiments` mode sets
+  `usingRemoteController` and performs a black-box search against a live controller (used there only to
+  reset the SUT between tests). Async black-box makes that path first-class, with the controller also
+  doing the wire call.
+- **White-box** is the _same driver_ with three switches thrown: `isInstrumentationActivated()` /
+  `getPackagePrefixesToCover()` so the SUT is instrumented, the core's per-evaluation `getTestResults`
+  pull, and a **completion hook** telling the core when the consumer has finished
+  (`proposal-white-box.md`).
+
+This "two modes, one representation" split is not new — **REST already works this way**: black-box and
+white-box share a single `RestCallAction` and a single `RestIndividual`, and `BlackBoxRestFitness` is
+literally a _subclass_ of the white-box `RestFitness` with the coverage pull removed. The mode lives in
+the fitness and the module wiring (`RestModule` vs `BlackBoxRestModule`), never in the action or the
+individual — precisely the arrangement the async `AsyncMessageAction` / `AsyncApiIndividual` reuse.
+
+The consequence unique to async: it makes **black-box require a driver at all** — the one place it
+departs from REST/GraphQL, where black-box needs only a URL. With no universal wire, something must hold
+the client, and that something is the `SutController`, exactly as for RPC.
+
+How much of that driver the contract can fill — measured over every `ws` / `wss`, Kafka, AMQP and MQTT
 spec in the corpus — splits cleanly:
 
 | What it gives the client | Schema-derivable? | Corpus (3.x, per repo) |
@@ -511,31 +616,28 @@ spec in the corpus — splits cleanly:
 | **Correlation / framing** → a full request/reply client | **rarely** | `correlationId` 4–11%; full client ≤ 8% (mostly samples), 2% on WS |
 
 So the contract reliably auto-fills **connection, encoding and addressing on every transport**,
-thinning the adapter to its one irreducible job: the wire, plus the correlation hook the schema almost
+thinning the driver to its one irreducible job: the wire, plus the correlation hook the schema almost
 never declares. Where that hook lives is the gradient from **The four transports and their correlation** — native for
-AMQP (the adapter need only honour `correlation-id` / `reply-to`), a header name for Kafka, a payload
+AMQP (the driver need only honour `correlation-id` / `reply-to`), a header name for Kafka, a payload
 field for MQTT / WebSocket — so the per-SUT effort _shrinks as the transport's native correlation
-grows_, but the boundary above it never changes.
+grows_, but the driver interface above it never changes.
 
-**How the adapter is initialised and consumed.** The core never constructs a protocol client directly.
-It **resolves** the adapter from the server's protocol — a shipped plugin (`kafka` → KafkaTransport,
-`ws` → WebSocketTransport, …, discovered the way the JVM loads any service provider) or, for a bespoke
-wire, a user-supplied class — **initialises** it once at the start of a run from the server URL (plus a
-small per-SUT profile where the contract is silent on a correlation field, address or auth) and calls
-`connect()` to open the wire. From then on EvoMaster **consumes** it only through the SPI: for each
-request action the search produces, the core calls `send(address, headers, body)` and then
-`receive(replyAddress, within)`, holding one long-lived adapter and reusing it across the whole run —
-never importing a broker or socket library itself. The emitted suite carries the same shape: the
-adapter is built once in the test fixture and driven by `send` / `receive` in each test — the concrete
-form of the dependency noted in **The generated test**, that the adapter must be present for the suite
-to run.
+**How the driver is resolved.** As with any EvoMaster controller, the driver is a `SutController` the user
+registers with EvoMaster at launch (there is no auto-discovery) — their own subclass (Scenario B) or a thin subclass of a
+shipped transport module (Scenario A). The user launches the driver process; the core **connects** to it
+(host and port given at launch), learns from `getProblemInfo()` that the problem is an
+`AsyncApiProblem`, asks it to start the SUT, and from then on drives one `executeAsyncAction` per sampled action for the
+whole run — holding the single long-lived driver and never importing a broker library itself. That is the
+_search-time_ picture; the **emitted suite** is different: like RPC's pure-test mode it is written against
+a concrete transport client rather than this control protocol (see **The generated test**).
 
 ### Coverage
 
-REST shows what to port. With no code coverage to optimise, the SMARTS sampler manufactures coverage
+REST shows what to port. With no code coverage to optimise, SMARTS manufactures coverage
 from the response: each **(endpoint, status-code)** pair it observes is a **binary coverage target**
 (`GET /products → 200`, `→ 404`, `POST /products → 400` are three), and on top sit **automated
-oracles** — a `5xx`, or a body that **violates the declared schema**, is flagged a _potential fault_.
+oracles** — an **HTTP 500**, or a body that **violates the declared schema** (where a response validator
+is available), is flagged a _potential fault_.
 That single mechanism — enumerate the distinct outcomes per operation, keep a test for each, mark some
 as faults — is what stands in for the white-box branch-distance gradient. Porting it to AsyncAPI means
 defining the async equivalents of **`endpoint`**, **`status code`** and the **fault rules**: `endpoint`
@@ -553,7 +655,10 @@ its channel and messages, and its `reply`), and that entry's key is the stable i
 `(reply-variant × operation)` target hangs on. This is the clean case — and the one our authored 3.0
 SUTs provide by construction.
 
-A **2.x** service is reconstructed into the same unit **automatically** — from the contract plus
+A **2.x** service sits **beyond the initial black-box scope** (which targets 3.x — see **Scope** above),
+but the unit generalises to it, and stating how matters: the white-box mode does cover 2.x, and the
+handful of 2.x request/reply services should not need a second target model if black-box is later
+extended. A 2.x service is reconstructed into the same unit **automatically** — from the contract plus
 run-time probing, never by reading source. The consume side is mechanical: a channel's `publish` block
 is, in 2.x's inverted vocabulary, the operation where _the application receives_ (others publish to it),
 the equivalent of 3.0 `receive` (`subscribe` is the `send` side). The reply side has **no contract slot
@@ -614,7 +719,7 @@ distinct reply outcome the sampler produces per operation.
 
 | REST fault signal                | AsyncAPI analogue                                                                                       |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `5xx` server error               | a reply carrying a **server-fault code** (e.g. JSON-RPC `-32603`, a `status:"error"` with a server code); a SUT crash / connection drop mid-process |
+| HTTP **500** server error        | a reply carrying a **server-fault code** (e.g. JSON-RPC `-32603`, a `status:"error"` with a server code); a SUT crash / connection drop mid-process |
 | response **violates the schema** | a reply that matches **no declared reply message** (wrong type, missing required field, out-of-range)   |
 | —                                | **correlation broken** — a reply arrives whose id is missing or does not match the one sent             |
 | —                                | **silent drop** — no reply to an operation whose contract _declares_ one (delivered, but silent past _W_) |
@@ -691,55 +796,141 @@ This layering is what lets a **single, transport-agnostic outcome model** sit on
 incompatible transports: only _how the reply and its id are read off the wire_ differs per transport
 (the gradient in **The four transports and their correlation**); _what an outcome means_ is uniform.
 
+### The individual
+
+The parts above — driver, coverage — hang on the object the search actually holds, mutates and finally
+serialises into a test: EvoMaster's **individual**. How an async one is shaped is where the
+protocol-agnosticism is kept or lost, so it is worth stating explicitly.
+
+EvoMaster gives **each protocol its own individual subclass and one main action type**, over a shared
+spine: `Individual` → `EnterpriseIndividual` → `ApiWsIndividual` → `RestIndividual` / `GraphQLIndividual`
+/ `RPCIndividual`. An individual is an ordered list of actions partitioned into **groups** —
+initialization (SQL / Mongo / Redis seeding), a **main** group of the executable actions under test, and
+cleanup — where each main action is wrapped in a group that can also carry its attached external-service
+mocks. **RPC is the exact template for async**: its `RPCCallAction` holds an id, a list of input
+parameters that _are_ the mutable genes, an **immutable response template**, and a **response filled at
+execution** — and, tellingly, the genes it exposes to the search are only the input parameters, never the
+response.
+
+Async reuses that spine with **one `AsyncApiIndividual` for all four transports — not one per
+transport.** This is the single most important representational decision, and it is the
+protocol-agnosticism of **The transport driver** made concrete in the data model: the transport (Kafka
+vs WebSocket vs …) appears **nowhere** in the individual. The individual is pure data — the operation,
+the payload genes, the correlation gene, the declared reply — and Kafka-vs-WebSocket is decided entirely
+below the driver interface, in the driver and the fitness function. The same individual with the same genes runs over
+any wire; only `send` / `receive` differ. Were the transport to leak into the representation, there would
+be a `KafkaIndividual` and a `WebSocketIndividual` — exactly the coupling the approach rejects.
+
+Its main action mirrors `RPCCallAction` almost one for one:
+
+```
+AsyncMessageAction:
+    operationId        # the coverage unit: the 3.0 operation key,
+                       #   or the synthesized 2.x (consume channel ↦ reply channel)
+    inputParameters    # THE GENES: request payload built from the message JSON Schema
+                       #   (same gene machinery as REST) + a correlation-id gene
+    channel            # addressing, from the contract — immutable, NOT a gene
+    replyTemplate      # the declared reply message set — immutable; the reply-variant axis
+    reply              # filled at execution; read only by the classifier, never a gene
+
+    seeGenes() = inputParameters.genes          # reply excluded, exactly as in RPC
+```
+
+Everything the coverage model needs is already here. `operationId` is the endpoint-analogue; the
+correlation id is just another gene the fitness function stamps and matches; and the reply-variant
+classification reads `reply` against `replyTemplate` **at fitness time**, so the search mutates only the
+request while the reply drives the `(reply-variant × operation)` targets. Because it is an
+`EnterpriseIndividual`, it inherits database seeding in the initialization groups with no async-specific
+structure; per-action external-service mocking is the same shared machinery, though it is wired for REST
+today, so a new problem type would need to wire it in rather than getting it for free. The individual
+itself stays transport-agnostic; the emitted test, though, is written against a _concrete_ transport
+client — so, unlike the search representation, its body does vary by transport.
+
+### The life of an action
+
+Driver, coverage and individual meet in the run-time lifecycle of a single action, which is EvoMaster's
+**standard `Action` loop** — only two of its steps carry async-specific behaviour:
+
+1. **Built from the contract, once.** At start-up the core parses the AsyncAPI document and, for each
+   triggerable operation (a 3.0 `receive`, a 2.x consume block), creates one `AsyncMessageAction` template
+   whose genes come from the message JSON Schema via the same builder REST uses.
+2. **Sampled and randomised.** SMARTS places one or more such actions in an individual's MAIN group
+   (optionally behind SQL-seeding init actions) and randomises the genes.
+3. **Mutated.** The search perturbs only `seeGenes()` — the payload genes, boundary-fuzzed — leaving
+   `operationId`, `channel` and `replyTemplate` fixed; the correlation id is stamped fresh per run.
+4. **Executed — through the driver, never the wire.** The core serialises the genes to a DTO and calls
+   `executeAsyncAction` over the control protocol; the driver publishes and awaits the correlated reply
+   (**The transport driver**). The core imports no broker library.
+5. **Scored.** The reply is classified into a `(reply-variant × operation)` target plus the fault oracles
+   (**Coverage**), and the archive keeps one minimal test per newly-covered target.
+6. **Emitted.** A retained action is serialised into concrete client code (next).
+
+Only steps 4–5 are async-specific — and they are also the only steps that change in **white-box**: there
+the driver reports *processing complete* rather than a reply, and step 5 reads code coverage instead of
+classifying a reply (`proposal-white-box.md`). Steps 1–3 and 6 are shared across both modes, exactly as
+REST shares them across its black-box and white-box fitness. Execution is **single-flight** by default
+(one message outstanding, so the reply is unambiguously the one we sent); concurrency is an optimisation
+that leans on the correlation id to re-pair replies.
+
 ### The generated test
 
-A generated test has two parts. **Pre-execution** (the fixture): assume the SUT and its broker are
-already running — black-box owns no lifecycle — bind the transport **adapter** and open the connection.
-**The body**: build the request from the genes, stamp a fresh id at the contract's location, `send`,
-`receive` the correlated reply, assert the classified outcome. Because the body is written against the
-`Transport` boundary, it is **identical across transports** — only the adapter bound in the fixture
-differs:
+Here the driver is deliberately **left out of the output**. The emitted test is written against a
+**concrete version of the transport — a real client — not the driver's control protocol.** This mirrors
+EvoMaster's RPC test generation exactly: during the search the core drives the SUT through the driver,
+but the test it _writes out_ (under `enablePureRPCTestGeneration`) fetches the **actual client stub** and
+calls its real methods, rather than re-invoking the driver's generic `executeRPCEndpoint`. Async follows
+suit — a generated Kafka test uses a real Kafka producer/consumer, a WebSocket test a real socket — so
+the output is a standard client program a developer can read and run, with no dependency on the driver.
+The driver (and its `executeAsyncAction`) governs the _search_; it is **not** what the suite runs against.
+
+Concretely, the generated test is the hand-written shape from **What a request/reply test looks like**
+with the genes and the expected variant filled in — for Kafka, `bessj_valid_over_kafka` with a real
+producer/consumer:
 
 ```
-fixture:
-    transport = Adapter.for(spec.server)        # Kafka|AMQP|MQTT|WS — supplied / plugin
-    transport.connect()                         # SUT + broker assumed up
-
 test ncs_bessj__DoubleResult:                   # one test per covered (variant x operation)
-    cid     = freshId()
-    payload = generateFrom(spec.op("bessj").request)        # genes -> { n:3, x:2.0 }
-    transport.send(addressOf("bessj"),
-                   inject(cid, payload, spec.correlationLocation))   # header or body
-    reply   = transport.receive(replyAddressOf("bessj"), match=cid, within=W)
-    assert variantOf(reply) == "DoubleResult"   # classifier: which declared reply + schema
-    assert correlationOf(reply) == cid
+    cid      = freshId()
+    producer = connectKafkaProducer("kafka:9092")           # a concrete client, not Driver.send
+    consumer = connectKafkaConsumer("kafka:9092", topic="ncs.bessj.reply")
+    producer.publish(topic="ncs.bessj.request",
+                     headers={ correlationId: cid }, body={ n:3, x:2.0 })   # genes -> body
+    reply = consumer.pollUntil(match = r -> r.headers.correlationId == cid, within=W)
+    assert reply.body.resultAsDouble is finite  # the DoubleResult variant
+    assert not reply.body.has("error")
 
 test ncs_bessj__Error:                          # the out-of-range outcome, n below minimum=3
-    cid     = freshId()
-    payload = generateFrom(spec.op("bessj").request)        # boundary-fuzzed -> { n:2 }
-    transport.send(addressOf("bessj"), inject(cid, payload, spec.correlationLocation))
-    reply   = transport.receive(replyAddressOf("bessj"), match=cid, within=W)
-    assert variantOf(reply) == "Error"
-    assert correlationOf(reply) == cid
+    cid      = freshId()
+    producer = connectKafkaProducer("kafka:9092")
+    consumer = connectKafkaConsumer("kafka:9092", topic="ncs.bessj.reply")
+    producer.publish(topic="ncs.bessj.request",
+                     headers={ correlationId: cid }, body={ n:2, x:2.0 })   # boundary-fuzzed genes
+    reply = consumer.pollUntil(match = r -> r.headers.correlationId == cid, within=W)
+    assert reply.body.error.code == 400          # the Error variant
 ```
 
-`addressOf`, `replyAddressOf` and `correlationLocation` come straight from the AsyncAPI document;
-switching transport is swapping `Adapter.for(...)` — the body never changes. The generator does not
-write that adapter: `Adapter.for(spec.server)` is the run-time binding **serialised** — resolve the
-adapter by the server's protocol, configure it from the server URL plus the per-SUT profile — using the
-very values the core already used to drive the SUT during the run; the adapter implementation stays the
-external dependency. The per-protocol fixture is the only delta:
+The addressing (`ncs.bessj.request` / `.reply`), the correlation location (a header here) and the message
+shapes all come **straight from the AsyncAPI document** — the same values the core used to drive the SUT
+during the run, now serialised into concrete client code. Only the **genes** and the asserted **variant**
+differ between the two tests. Because the client is concrete, the body **does** vary by transport — the
+WebSocket test is the `bessj_over_websocket` socket shape, AMQP the RabbitMQ-channel shape — which is
+exactly the per-transport plumbing tabulated in **What a request/reply test looks like**:
 
-| | fixture (pre-execution) | id carried in |
+| | concrete client (pre-execution) | id carried in |
 | --- | --- | --- |
 | Kafka | producer + reply-topic consumer | header |
 | AMQP | channel + reply queue | `correlation-id` property |
 | MQTT | client + reply-topic subscription | payload |
 | WebSocket | one socket to `/ncs` | payload |
 
-Unlike a black-box REST test, the emitted suite is **not self-contained**: it carries a dependency on
-the adapter, which must be present for the test to run — the concrete form of "a transport client must
-exist".
+The generator also writes the client code **to match the protocol version** the contract resolves to (per
+the binding and `protocolVersion` above). This is where the version pays off: an **MQTT 5.0** test places
+the id in Correlation Data with a Response Topic, an **MQTT 3.1.1** test hand-rolls it into the payload,
+and an **AMQP 0-9-1** test uses the native `correlation-id` / `reply-to` properties — the generator emits
+the version-correct calls automatically, falling back to the default only when the contract is silent.
+
+Unlike a black-box REST test, the emitted suite is **not self-contained**: it depends on the **concrete
+transport client** — the client library on the classpath and (for a bespoke wire, as with RPC's
+`getRPCClient`) whatever hands it its connection — the concrete form of "a transport client must exist".
 
 ### What async adds that REST gets for free
 
