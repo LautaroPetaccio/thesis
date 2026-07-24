@@ -169,16 +169,14 @@ therefore be reported separated by contract richness.
 
 #### The driver
 
-Async has no URL to point at, so — exactly like EvoMaster's RPC support — it needs a **driver**: a
-`SutController` subclass sitting next to the SUT, holding the transport client (a Kafka producer/consumer,
-an AMQP channel) and doing the publish-and-await on the core's behalf. The core talks to it over the same
-control protocol every EvoMaster driver already speaks, and stays protocol-agnostic: the driver declares the
+Async has no URL to point at, so — exactly like RPC — it needs a **driver**: a `SutController` holding
+the transport client (a Kafka producer/consumer, an AMQP channel) and doing the publish-and-await on the
+core's behalf. The core talks to it over the usual control protocol, and stays protocol-agnostic: the driver declares the
 SUT via `getProblemInfo()` — a new `AsyncApiProblem` carrying the **AsyncAPI document** (the schema the
 core reads to generate inputs, the only part that crosses to the core) and the **transport client** (a
 live wire handle the driver keeps for the publish-and-await, never crossing to the core) — and the core
-drives one action per call, the analogue of RPC's `executeRPCEndpoint`. The document is conveyed exactly
-as REST conveys OpenAPI — a URL the core fetches, or inline text it parses — so no reflection is needed:
-the document already _is_ the schema. (The protocol _version_ is only loosely pinned — the binding fixes
+drives one action per call, the analogue of RPC's `executeRPCEndpoint`. The document is conveyed as
+OpenAPI is (URL or inline); no reflection is needed — the document already _is_ the schema. (The protocol _version_ is only loosely pinned — the binding fixes
 AMQP at 0-9-1, and the server's optional `protocolVersion` states the rest, defaulting to e.g. MQTT 3.1.1
 when silent.)
 
@@ -195,8 +193,8 @@ client.
 
 #### The individual
 
-There is **one `AsyncApiIndividual`** (an `ApiWsIndividual`, alongside `RestIndividual` /
-`GraphQLIndividual` / `RPCIndividual`) for all transports — **not one per transport**. The transport
+There is **one `AsyncApiIndividual`** (an `ApiWsIndividual`) for all transports — **not one per
+transport**. The transport
 appears nowhere in it; Kafka-vs-AMQP is decided below the driver interface. Its main action mirrors
 `RPCCallAction` almost exactly:
 
@@ -303,12 +301,16 @@ follow from coverage-as-signal:
 - The outcome is **branch-distance coverage** collected at completion, not a reply variant; for a
   request/reply operation the black-box reply oracle can still ride along as an extra target.
 - **Completion is Driver-side**, so the action's lifecycle gains a "wait for completion" step between
-  invocation and fitness collection.
+  invocation and fitness collection. Concretely: after the driver has published the message, the core
+  polls the driver's completion hook (`isScheduleTaskCompleted`) in a bounded loop — the wait-loop this
+  proposal adds — and the driver answers it from whichever completion mechanism is wired (probe
+  inactivity, a downstream side effect, broker state, a handler hook). Only on "done" — or on the
+  timeout — does the core pull coverage (`getTestResults`) and score the individual. (A driver may
+  instead resolve the wait internally: block inside the invocation and return `COMPLETED` directly —
+  the same contract, discharged driver-side.)
 
-So the representation is shared; the fitness and the presence of a reply are what differ. This is how
-REST already works — both REST modes use one `RestCallAction` and one `RestIndividual`, and
-`BlackBoxRestFitness` is a subclass of the white-box `RestFitness` with the coverage pull removed — so the
-shared-action-and-individual, per-mode-fitness split is the established pattern, not a new invention.
+So the representation is shared; the fitness and the presence of a reply are what differ — the same
+shared-action, per-mode-fitness split REST already uses.
 
 #### Extending the driver for white-box
 
@@ -322,18 +324,45 @@ the driver already does for its other white-box modes.
 
 #### What the generated tests assert
 
-Coverage was the _search_ signal, not a check a regression test can assert. An emitted white-box test
-therefore asserts on the **observable residue** of the processing: the side effects the handler left
-behind (database rows re-read and compared, an emitted message, an external call), completion without a
-crash, and — where the operation replies — the black-box reply assertions unchanged. It publishes with a
-concrete transport client while — like every EvoMaster white-box suite — scaffolding on the driver for
-start and reset; the SUT itself runs uninstrumented at replay. The assertions follow EvoMaster's
-established pattern: values observed during the search are baked in, unstable ones demoted to comments;
-the only new emission machinery is the subscribe/await plumbing and the database _re-read_ — payload
-matchers, exception and timeout handling, and the WireMock mocks all reuse existing writers. One evaluation
-asset follows from this: the controlled NCS SUTs are request/reply throughout, so **fire-and-forget
-variants** (consume-only, no reply, an observable side effect) must be authored before the headline
-fire-and-forget measurement can run — an explicit deliverable, not an assumption.
+An emitted white-box test asserts on the **observable residue** of the processing:
+
+- **the side effects** the handler left behind — database rows re-read and compared, an emitted
+  message, an external call;
+- **completion without a crash**, within the window;
+- **the reply**, where the operation declares one — the black-box reply assertions unchanged.
+
+Structurally it is an ordinary EvoMaster white-box test: the suite scaffolds on the **driver**, which
+starts the SUT and resets it between tests, and the SUT runs **uninstrumented** at replay. Only the wire
+differs — the message goes out through a **concrete transport client** instead of an HTTP call. Emitting
+the test reuses the existing writers almost wholesale:
+
+- **reused** — payload matchers, exception and timeout handling, and the WireMock _stubbing_ (as
+  stimulus, so the handler's outbound calls succeed);
+- **new** — the subscribe/await plumbing, the database _re-read_, and a one-line WireMock `verify(...)`
+  that turns the existing stub into an oracle for "the handler made this call."
+
+Concretely, for a fire-and-forget NCS variant — a `bessj` operation that stores its computation in a
+database instead of replying (such consume-only variants must still be authored; the current NCS SUTs
+are request/reply throughout):
+
+```
+fixture:                                        # every white-box suite scaffolds on the driver
+    controller = new NcsEvoMasterController()
+    baseUrl    = controller.startSut()          # boots SUT + broker; SUT uninstrumented at replay
+    beforeEach : controller.resetStateOfSUT()   # for async: also drains topics and queues
+
+test ncs_recordBessj__computationStored:        # fire-and-forget: no reply to await
+    producer = connectKafkaProducer("kafka:9092")            # concrete client — the wire only
+    producer.publish("ncs.bessj.record", body={n:3, x:2.0})  # genes -> body; no exception = delivered
+    row = awaitDbRow(controller, table="computations",       # completion proxy: the side effect,
+                     where={fn:"bessj", n:3}, within=W)      #   under the test's @Timeout ceiling
+    assert row != null                          # the handler processed our message
+    assert row.result is finite                 # value observed at search time, baked in
+    // reached BessjRecordHandler.onMessage; completed via DB write   <- comments, never assertions
+```
+
+Had the handler emitted a message onto another channel instead of writing a row, the test would
+subscribe there and assert on that payload with the same matchers.
 
 ## Appendix: How the corpus was computed
 
