@@ -153,14 +153,22 @@ _Scope: Kafka + AMQP, AsyncAPI 3.x — metadata-level correlation, first-class r
 
 #### What counts as coverage
 
-REST hands SMARTS a status code; async must manufacture one. The device is to treat the
-**reply message as the synthesized status code**. Coverage targets are keyed on **`(reply-variant ×
-operation)`** — which of the declared `reply` messages a given reply validates as (a `result`, an `error`,
-…), per operation — plus a `no-reply` target. This is the direct analogue of REST's `(status × endpoint)`,
-and it reuses the archive machinery unchanged; only the target strings differ.
+REST hands SMARTS a status code for free; async must manufacture one. The raw material is the contract:
+a 3.0 `reply` declares the set of messages a reply may be — a `result`, an `error`, and so on. Which of
+those declared messages an actual reply validates as is its **reply variant**: a discrete,
+contract-enumerated label, and the closest thing async has to a status code.
 
-On top sit **fault targets**: a **server-fault** reply (e.g. a JSON-RPC `-32603`, a `status:"error"` server
-code, or a crash mid-process) or a **schema mismatch** (a reply matching no declared reply message). A well-formed _error_ reply is not a fault but valid, declared behaviour, exactly as a 400 is in REST.
+Coverage targets follow directly: one binary target per observed **`(reply-variant × operation)`** pair
+— the analogue of REST's `(status × endpoint)` — plus a `no-reply` target per operation. The archive
+machinery is reused unchanged; only the target strings differ.
+
+**Fault targets** sit on top, for outcomes that signal a defect rather than declared behaviour:
+
+- a **server-fault** reply — a JSON-RPC `-32603`, a `status:"error"` server code, a crash mid-process;
+- a **schema mismatch** — a reply that validates as none of the declared reply messages.
+
+The line between the two matters: a well-formed _error_ reply is **not** a fault but valid, declared
+behaviour — exactly as a 400 is in REST.
 
 The honest limitation: the target is only as discriminating as the contract is rich. When a contract
 declares a **single** reply variant, `(reply-variant × operation)` collapses to one target per operation —
