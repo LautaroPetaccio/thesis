@@ -16,7 +16,7 @@ routing keys), **operations** on those channels, **messages** typed with **JSON 
 
 AsyncAPI comes in two major versions, both still in active use, that express these same ideas with
 different vocabulary — and the gap between them turns out to matter for testing. **2.x** (versions
-2.0–2.6) places each operation as a `publish` or `subscribe` block *inside* its channel, and has no notion
+2.0–2.6) places each operation as a `publish` or `subscribe` block _inside_ its channel, and has no notion
 of a paired response. **3.0** reorganises that: operations become top-level entries typed `send` /
 `receive`, and — the change that matters most here — a `receive` may declare a first-class **`reply`**.
 That difference is not cosmetic: a reply is the only point at which a consumed message produces something
@@ -26,9 +26,9 @@ as the problem section makes precise.
 Four differences from OpenAPI drive everything below:
 
 - **No single wire.** OpenAPI is always HTTP; AsyncAPI is an architectural concept realised over many
-  *incompatible* transports (Kafka, AMQP, MQTT, WebSocket, …). There is no universal client to point at.
-- **Decoupled interaction.** A publish is consumed and processed *later*; the broker acknowledges
-  *delivery*, not *processing*, and in many designs there is no response at all.
+  _incompatible_ transports (Kafka, AMQP, MQTT, WebSocket, …). There is no universal client to point at.
+- **Decoupled interaction.** A publish is consumed and processed _later_; the broker acknowledges
+  _delivery_, not _processing_, and in many designs there is no response at all.
 - **The reply is the only status-code analogue, and only in 3.0.** Where REST always returns a
   self-labelling response, async offers at most a `reply` message — and 2.x cannot even express one.
 - **No synchronous round-trip.** There is no single point at which "the call returned" and an outcome can
@@ -39,15 +39,15 @@ Four differences from OpenAPI drive everything below:
 ### 2.1 The transports, and where correlation lives
 
 The four transports that dominate the corpus share nothing at the API level, and a request/reply pair is
-only recoverable if the tester can tell *which* request a reply answers — a **correlation id** the
-requester stamps and the responder echoes. Crucially, *where* that id can ride differs by transport:
+only recoverable if the tester can tell _which_ request a reply answers — a **correlation id** the
+requester stamps and the responder echoes. Crucially, _where_ that id can ride differs by transport:
 
-| Transport      | Where the correlation id rides            | Reply destination            | Nature                          |
-| -------------- | ----------------------------------------- | ---------------------------- | ------------------------------- |
-| **AMQP** 0-9-1 | native `correlation-id` **property**      | `reply-to` property          | protocol-native metadata        |
-| **Kafka**      | a record **header** (e.g. `correlationId`)| reply-topic header           | client-library convention       |
-| **MQTT** 3.1.1 | inside the **payload**                    | encoded in the payload       | bespoke, no transport metadata  |
-| **WebSocket**  | inside the **payload**                    | same socket, in the payload  | bespoke, per-service protocol   |
+| Transport      | Where the correlation id rides             | Reply destination           | Nature                         |
+| -------------- | ------------------------------------------ | --------------------------- | ------------------------------ |
+| **AMQP** 0-9-1 | native `correlation-id` **property**       | `reply-to` property         | protocol-native metadata       |
+| **Kafka**      | a record **header** (e.g. `correlationId`) | reply-topic header          | client-library convention      |
+| **MQTT** 3.1.1 | inside the **payload**                     | encoded in the payload      | bespoke, no transport metadata |
+| **WebSocket**  | inside the **payload**                     | same socket, in the payload | bespoke, per-service protocol  |
 
 The line that matters runs between **metadata-level** correlation (AMQP, Kafka), which a tool can place
 and read without understanding the message body, and **payload-level** correlation (MQTT 3.1.1,
@@ -56,7 +56,7 @@ distinction is what makes some transports tractable black-box and others not.
 
 ### 2.2 Black-box: the request/reply problem
 
-In black-box mode, EvoMaster can assert only on what the SUT sends *back*. A fire-and-forget consume operation
+In black-box mode, EvoMaster can assert only on what the SUT sends _back_. A fire-and-forget consume operation
 returns nothing — publishing into it is publishing into a void, indistinguishable from a silently dropped
 message. So the **only observable interaction is request/reply**: a `receive` operation with a paired
 `reply` (a 3.0 construct — 2.x has none).
@@ -64,7 +64,7 @@ message. So the **only observable interaction is request/reply**: a `receive` op
 Even there, correlation is not free. The pairing is built by the **SUT**, not by us — a reply becomes ours
 only once the service copies our stamped id onto it. That behaviour is rarely declared in the contract (the
 `correlationId` keyword is almost never present and, when it is, often disagrees with the code), so
-correlation must be established **empirically**: stamp a fresh id, watch for the echo. A tool can *detect*
+correlation must be established **empirically**: stamp a fresh id, watch for the echo. A tool can _detect_
 a missing or mismatched id, but cannot supply it.
 
 Combined with §2.1, this fixes the black-box scope. Where the id is **metadata** (AMQP's native property,
@@ -83,7 +83,7 @@ own. This is why **white-box can cover both 3.x and 2.x** — a 2.x `publish` bl
 
 The cost moves elsewhere. Because the consumer runs **later, on a broker- or listener-driven thread**,
 after the publish call has returned, there is no synchronous moment at which "the SUT has finished this
-message." The central white-box problem is thus **completion detection** — knowing *when* to snapshot
+message." The central white-box problem is thus **completion detection** — knowing _when_ to snapshot
 coverage and score the individual.
 
 ### 2.4 The corpus
@@ -95,14 +95,14 @@ measured by each version's native signal — 3.x structural `receive`+`reply`, 2
 
 **Black-box view — request/reply is rare and thinly spread.** In 3.x, **122 specs across 81 repositories**
 (~2.9% of parsed 3.x specs) declare a `receive`+`reply` (356 operations); in 2.x, **55 specs** (~2.0% of
-parsed 2.x specs) declare a `correlationId`, but it is overwhelmingly *tracing*, with only **9 of the 55**
+parsed 2.x specs) declare a `correlationId`, but it is overwhelmingly _tracing_, with only **9 of the 55**
 request/reply-shaped. The 81
 reply repositories skew to tooling test-fixtures and teaching examples — only **13 are genuine products**.
 And reading them as candidate systems-under-test, almost none are runnable as-is:
 
 | Black-box SUT usability (of the 81 reply repos) | repos |
 | ----------------------------------------------- | ----: |
-| usable with minimal effort                      |  **2**|
+| usable with minimal effort                      | **2** |
 | usable with real work                           |   ~17 |
 | not usable as a SUT                             |   ~62 |
 
@@ -117,26 +117,26 @@ service + instrumentable consume listener + a mapping AsyncAPI doc + a standable
 
 | White-box usability (of the 92 JVM products) | repos |
 | -------------------------------------------- | ----: |
-| drivable with modest effort                  |  **8**|
+| drivable with modest effort                  | **8** |
 | drivable with real work                      |    51 |
 | not usable as a SUT                          |    33 |
 
 **70 of the 92 carry an instrumentable consumer** — a far bigger reach than black-box's request/reply
 slice, exactly because coverage, not a reply, is the signal. The binding constraint shifts to consume-side
 **spec drift**: only **24** ship an AsyncAPI doc that maps cleanly to the listener (35 describe only what
-the service *publishes*, 15 are aspirational, 10 have a real consumer but no file, 8 neither).
+the service _publishes_, 15 are aspirational, 10 have a real consumer but no file, 8 neither).
 
 **Protocol complexity, both modes.** Pulling §2.1–§2.3 together, the two modes differ sharply in how much
 the transport matters:
 
-| Protocol   | Correlation lives in | Black-box complexity          | White-box complexity |
-| ---------- | -------------------- | ----------------------------- | -------------------- |
-| AMQP       | native property      | **low** — in scope            | low                  |
-| Kafka      | header (convention)  | **low–medium** — in scope     | low                  |
-| MQTT 3.1.1 | payload              | high — deferred (payload-coupled) | medium           |
-| WebSocket  | payload (bespoke)    | high — deferred (payload-coupled) | medium           |
+| Protocol   | Correlation lives in | Black-box complexity              | White-box complexity |
+| ---------- | -------------------- | --------------------------------- | -------------------- |
+| AMQP       | native property      | **low** — in scope                | low                  |
+| Kafka      | header (convention)  | **low–medium** — in scope         | low                  |
+| MQTT 3.1.1 | payload              | high — deferred (payload-coupled) | medium               |
+| WebSocket  | payload (bespoke)    | high — deferred (payload-coupled) | medium               |
 
-Black-box complexity tracks *where correlation lives*; white-box is far less transport-sensitive, since it
+Black-box complexity tracks _where correlation lives_; white-box is far less transport-sensitive, since it
 never correlates a reply — it only publishes and reads coverage. Version cuts the same way: black-box
 needs 3.0's first-class reply, while white-box, needing only coverage, drives 2.x `publish` blocks and 3.0
 `receive` operations alike. Hence the scoping this proposal adopts: **black-box → Kafka + AMQP + 3.x;
@@ -149,7 +149,7 @@ parts are described here. Each subsection opens with its scope.
 
 ### 3.1 Black-box
 
-*Scope: Kafka + AMQP, AsyncAPI 3.x — metadata-level correlation, first-class reply.*
+_Scope: Kafka + AMQP, AsyncAPI 3.x — metadata-level correlation, first-class reply._
 
 #### What counts as coverage
 
@@ -160,14 +160,11 @@ operation)`** — which of the declared `reply` messages a given reply validates
 and it reuses the archive machinery unchanged; only the target strings differ.
 
 On top sit **fault targets**: a **server-fault** reply (e.g. a JSON-RPC `-32603`, a `status:"error"` server
-code, or a crash mid-process), a **schema mismatch** (a reply matching no declared reply message), a
-**broken correlation** (the id absent or not echoed), and a **silent drop** (no reply where the contract
-promises one — recorded cautiously, since async slowness is not a defect). A well-formed *error* reply is
-not a fault but valid, declared behaviour, exactly as a 400 is in REST.
+code, or a crash mid-process) or a **schema mismatch** (a reply matching no declared reply message). A well-formed _error_ reply is not a fault but valid, declared behaviour, exactly as a 400 is in REST.
 
 The honest limitation: the target is only as discriminating as the contract is rich. When a contract
 declares a **single** reply variant, `(reply-variant × operation)` collapses to one target per operation —
-"did a reply come back" — and the search has nothing to optimise within the operation. Results must
+"did a reply come back" — and the search has nothing to optimize within the operation. Results must
 therefore be reported separated by contract richness.
 
 #### The driver
@@ -181,7 +178,7 @@ core reads to generate inputs, the only part that crosses to the core) and the *
 live wire handle the driver keeps for the publish-and-await, never crossing to the core) — and the core
 drives one action per call, the analogue of RPC's `executeRPCEndpoint`. The document is conveyed exactly
 as REST conveys OpenAPI — a URL the core fetches, or inline text it parses — so no reflection is needed:
-the document already *is* the schema. (The protocol *version* is only loosely pinned — the binding fixes
+the document already _is_ the schema. (The protocol _version_ is only loosely pinned — the binding fixes
 AMQP at 0-9-1, and the server's optional `protocolVersion` states the rest, defaulting to e.g. MQTT 3.1.1
 when silent.)
 
@@ -206,7 +203,8 @@ appears nowhere in it; Kafka-vs-AMQP is decided below the driver interface. Its 
 ```
 AsyncMessageAction:
     operationId        # the coverage unit (the 3.0 operation key)
-    inputParameters    # THE GENES: payload from the message JSON Schema + a correlation-id gene
+    inputParameters    # THE GENES: payload from the message JSON Schema
+    correlationId      # a fresh nonce stamped at each execution — deliberately NOT a gene
     channel            # addressing, from the contract — immutable, NOT a gene
     replyTemplate      # the declared reply message set — immutable; the reply-variant axis
     reply              # filled at execution; read by the classifier, never a gene
@@ -222,7 +220,7 @@ problem type must wire it in.
 
 Following RPC's `enablePureRPCTestGeneration`, the emitted test is written against a **concrete transport
 client, not the driver**: a generated Kafka test uses a real producer/consumer, an AMQP test a real
-channel — standard client code a developer can read and run. The driver governs the *search*; it is not
+channel — standard client code a developer can read and run. The driver governs the _search_; it is not
 what the suite runs against. The consequence is that the emitted body is
 concrete and **varies by transport** (a Kafka test differs from an AMQP one), and the suite carries a
 dependency on the concrete transport-client library — the black-box price for having no universal wire.
@@ -258,8 +256,8 @@ an MQTT 3.1.1 test hand-rolls the id into the payload, an AMQP 0-9-1 test uses t
 
 ### 3.2 White-box
 
-*Scope: AsyncAPI 3.x and 2.x — coverage is the signal, so no reply and no correlation are required; a 2.x
-`publish` block is as drivable as a 3.0 `receive`.*
+_Scope: AsyncAPI 3.x and 2.x — coverage is the signal, so no reply and no correlation are required; a 2.x
+`publish` block is as drivable as a 3.0 `receive`._
 
 #### Tackling completion (when to collect coverage)
 
@@ -279,12 +277,12 @@ and sharpens only when the framework is known:
    `Thread.start` / `Executor.submit`) so background work is awaited too — zero means done.
 5. **A timeout** — the last resort, a tuning parameter with the usual slow-vs-stuck ambiguity.
 
-Two points the mechanisms turn on. **Attribution** — *which* thread is ours — is not known in advance
+Two points the mechanisms turn on. **Attribution** — _which_ thread is ours — is not known in advance
 (the broker picks the listener thread); it is learned at handler entry, where the probe runs on the
 worker thread and the **id we stamped** into the message confirms the invocation is ours (the same id
 black-box uses, present even for fire-and-forget). When the entry point can't be hooked, **single-flight**
 makes attribution moot. **Reach** — collecting coverage is transport-agnostic (probes sit in the SUT's
-own code), so *only the precise hook* is per-library; it targets the transport library's delivery method
+own code), so _only the precise hook_ is per-library; it targets the transport library's delivery method
 (Spring Kafka/AMQP/JMS; for WebSocket `jakarta.websocket`, Java-WebSocket, Spring `TextWebSocketHandler`,
 Netty). A "custom WebSocket" rides one of these, so it is still hookable; only a raw-socket wire with no
 library boundary falls back to agnostic completion + single-flight (or a per-SUT entry-point hint).
@@ -324,11 +322,15 @@ the driver already does for its other white-box modes.
 
 #### What the generated tests assert
 
-Coverage was the *search* signal, not a check a regression test can assert. An emitted white-box test
+Coverage was the _search_ signal, not a check a regression test can assert. An emitted white-box test
 therefore asserts on the **observable residue** of the processing: the side effects the handler left
 behind (database rows re-read and compared, an emitted message, an external call), completion without a
 crash, and — where the operation replies — the black-box reply assertions unchanged. It publishes with a
-concrete transport client, so the suite runs against a plain, uninstrumented deployment. One evaluation
+concrete transport client while — like every EvoMaster white-box suite — scaffolding on the driver for
+start and reset; the SUT itself runs uninstrumented at replay. The assertions follow EvoMaster's
+established pattern: values observed during the search are baked in, unstable ones demoted to comments;
+the only new emission machinery is the subscribe/await plumbing and the database _re-read_ — payload
+matchers, exception and timeout handling, and the WireMock mocks all reuse existing writers. One evaluation
 asset follows from this: the controlled NCS SUTs are request/reply throughout, so **fire-and-forget
 variants** (consume-only, no reply, an observable side effect) must be authored before the headline
 fire-and-forget measurement can run — an explicit deliverable, not an assumption.
@@ -352,7 +354,7 @@ archive to grep for a real message-consumer (`@KafkaListener`, `@SqsListener`, `
 check whether the contract maps to that consumer — and graded against the runnable-SUT bar defined next.
 
 **The three usability tiers.** Both usability tables in §2.4 grade each candidate into the same three
-tiers by how much stands between the repository and a controlled run; licensing is *not* a criterion (the
+tiers by how much stands between the repository and a controlled run; licensing is _not_ a criterion (the
 SUTs are booted for evaluation, not modified or redistributed). Only the bar differs by mode:
 
 - **usable with minimal effort** (black-box) / **drivable with modest effort** (white-box) — a runnable

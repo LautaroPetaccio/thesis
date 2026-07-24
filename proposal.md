@@ -1,15 +1,29 @@
-# Black-Box Testing of AsyncAPI Services in EvoMaster
+# Testing AsyncAPI Services in EvoMaster: Black-Box and White-Box
 
-This proposal asks whether EvoMaster, an automated test generator, can test **AsyncAPI** services as a
-black box. It proceeds in two parts. The **problem**: why asynchronous messaging breaks REST's
-request/response assumptions, which interactions are observable at all (only **request/reply**), how
-often that pattern occurs in the wild (a corpus survey — rarely, and mostly in tooling), how the four
-dominant transports each carry the correlation a reply needs, and whether the real services that do it
-are usable as systems under test (largely not). The **approach**: reuse EvoMaster's black-box engine by
-making the **reply message a synthesized status code**, drive every transport through a
-**user-supplied driver** (the extension point EvoMaster already uses for non-HTTP protocols) that keeps
-the core protocol-agnostic, and ground it in controlled SUTs. The companion `corpus-suitability.md`
-holds the full per-repository evidence behind the survey.
+This proposal asks whether EvoMaster, an automated test generator, can test **AsyncAPI** services — in
+two modes that resolve the same difficulty from opposite ends. A message published into an async service
+is consumed and processed **later**, off the request thread. **Black-box** can observe only what the
+service sends _back_, which confines it to the rare **request/reply** subset; **white-box** adds
+instrumentation, so it can test an operation by its **coverage** rather than a reply — unlocking the
+**fire-and-forget** majority, at the price of a new question black-box never faces: _when has the SUT
+finished processing the message?_
+
+The document runs problem-first, then one approach per mode:
+
+- **The problem** — why asynchronous messaging breaks REST's request/response assumptions (for
+  black-box, no self-labelling response; for white-box, no synchronous moment to collect coverage);
+  which interactions are observable at all; how often they occur in the wild (a corpus survey — rarely,
+  and mostly in tooling); how the four dominant transports carry correlation; and whether the real
+  services are usable as SUTs — read once for black-box (the 81 request/reply repositories) and once
+  for white-box (the 92 JVM products).
+- **The black-box approach**, scoped to **Kafka and AMQP over AsyncAPI 3.x** — reuse EvoMaster's
+  black-box engine by making the **reply message a synthesized status code**, drive every transport
+  through a **user-supplied driver** (the extension point EvoMaster already uses for non-HTTP
+  protocols) that keeps the core protocol-agnostic, and ground it in controlled SUTs.
+- **The white-box approach**, covering **AsyncAPI 3.x and 2.x** — reuse MIO, the Driver and the
+  instrumentation, model a consume operation as an async action, and solve **completion detection**.
+
+The companion `corpus-suitability.md` holds the full per-repository evidence behind the survey.
 
 ## What is AsyncAPI
 
@@ -31,7 +45,7 @@ a `correlationId`). AsyncAPI **3.0** lifts operations to the top level and intro
 `reply:` field. Because that reply is what makes an interaction observable from the outside,
 **AsyncAPI 3.0 is the version that matters for black-box testing**.
 
-## Differences from REST-based black-box testing
+## Differences from REST-based testing
 
 ### Asserting over responses
 
@@ -70,6 +84,54 @@ The practical consequence is that **a transport client must exist for any genera
 either the tool or the developer using it has to provide the code that actually connects to the
 broker and publishes/consumes. There is no single wire to target, the way REST always has HTTP.
 
+### White-box: when to collect coverage
+
+The two differences above frame the black-box difficulty. White-box testing has its own. In REST
+white-box testing, EvoMaster runs the instrumented SUT behind a **Driver** and drives it with HTTP. The
+call is **synchronous**: the handler executes _during_ the call, the instrumentation records the lines,
+branches and **branch distances** it took, and MIO climbs that gradient toward uncovered code. The HTTP
+response is almost incidental — **code coverage is the objective**, and it is available the instant the
+call returns.
+
+Async messaging removes that instant. When EvoMaster publishes a message, the SUT's consumer runs
+**later, on a broker- or listener-driven thread**, after the publish call has already returned. There
+is no synchronous point at which "the SUT has finished this message," so the core does not know when to
+snapshot coverage and evaluate the individual:
+
+|                            | REST (white-box)           | Async messaging (white-box)                                                          |
+| -------------------------- | -------------------------- | ------------------------------------------------------------------------------------ |
+| Trigger → processing       | same thread, same call     | publish returns; consumer runs later, another thread                                 |
+| When is coverage complete? | when the HTTP call returns | **unknown** — no synchronous signal                                                  |
+| What ends the test         | the response               | must be **detected** (instrumentation inactivity, a completion signal, or a timeout) |
+
+So the central white-box-async problem is not _what to assert_ (coverage answers that) but **when to
+collect it**: attributing a test's coverage requires knowing that the async processing it triggered has
+finished.
+
+That cost buys a decisive gain. Black-box can only reach operations that reply, because the reply is its
+only observable signal — and the survey below shows that subset is small, with products overwhelmingly
+using Kafka/AMQP for **fire-and-forget** streaming, outside it. White-box needs no reply: if publishing a
+message drives the consumer's code, the branch-distance gradient over that code **is** the signal,
+whether or not anything is sent back. So the fire-and-forget majority — the bulk of real async
+operations — moves **into scope**; the only thing standing between EvoMaster and testing them is the
+completion problem above. For a request/reply operation, white-box gets **both**: the coverage gradient
+_and_ the reply, so the black-box reply oracle still applies as an extra check. White-box therefore
+strictly dominates black-box in _what_ it can test — at the cost of instrumentation and solving
+completion (a driver is needed in both modes, since async has no universal wire; white-box just asks
+more of it).
+
+The secondary white-box difficulties:
+
+- **Non-determinism / timing.** Completion is inherently racy; the same message may finish at different
+  times across runs, so the mechanism that decides "done" must tolerate that without flaking.
+- **Attribution under concurrency.** With several messages in flight on shared consumers, the coverage
+  a run produces must be attributed to the message that caused it — or the tool falls back to
+  **single-flight** execution (one outstanding message at a time).
+- **The standing white-box requirements.** The SUT must be **instrumentable** — in EvoMaster's case, a
+  **JVM** application — and reachable through a Driver. That requirement, more than anything, bounds how
+  much of the AsyncAPI world this approach can address, which the white-box read of **Are the real
+  services usable as SUTs?** measures.
+
 ## The observable subset: request/reply
 
 The asymmetry above has a sharp consequence for what black-box testing can even attempt. A
@@ -97,10 +159,10 @@ kind — a baseline for how AsyncAPI is used at all, before narrowing to request
 | Repository kind                                         | 3.x repos | 2.x repos |
 | ------------------------------------------------------- | --------: | --------: |
 | product — real deployable apps / services               |       262 |       296 |
-| demo / fixture — examples, tutorials, student/book code  |       261 |       322 |
-| tool / library — generators, parsers, SDKs, validators   |       183 |       198 |
-| spec / docs — the repo _is_ a spec / schema set / docs   |        97 |        85 |
-| _tangential_ (excluded — incidental / AI-agent matches)  |        56 |        92 |
+| demo / fixture — examples, tutorials, student/book code |       261 |       322 |
+| tool / library — generators, parsers, SDKs, validators  |       183 |       198 |
+| spec / docs — the repo _is_ a spec / schema set / docs  |        97 |        85 |
+| _tangential_ (excluded — incidental / AI-agent matches) |        56 |        92 |
 | _catalog_ (excluded — API directories)                  |        48 |         0 |
 | _uncategorized_ (no readable metadata)                  |        77 |       110 |
 | **total**                                               |   **984** | **1,103** |
@@ -171,13 +233,13 @@ whole corpus above (the product / tool-library / demo-fixture / spec-docs scheme
 plus an LLM pass) over the 81 repositories that declare a `receive`+`reply` operation; the breakdown —
 and the **13 products** it yields — is:
 
-| Repository kind |  repos | examples (with reply transport)                                                                                                                   |
-| --------------- | -----: | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| tool / library  |     30 | [`asyncapi/generator`](https://github.com/asyncapi/generator), [`microcks`](https://github.com/microcks/microcks), [`specmatic`](https://github.com/specmatic/specmatic), [`zod-sockets`](https://github.com/RobinTail/zod-sockets)                                                                                      |
-| demo / fixture  |     23 | [`aklivity/zilla-demos`](https://github.com/aklivity/zilla-demos), the Kraken-WebSocket and ping-pong examples                                                                               |
+| Repository kind |  repos | examples (with reply transport)                                                                                                                                                                                                                                                                                                                                                      |
+| --------------- | -----: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| tool / library  |     30 | [`asyncapi/generator`](https://github.com/asyncapi/generator), [`microcks`](https://github.com/microcks/microcks), [`specmatic`](https://github.com/specmatic/specmatic), [`zod-sockets`](https://github.com/RobinTail/zod-sockets)                                                                                                                                                  |
+| demo / fixture  |     23 | [`aklivity/zilla-demos`](https://github.com/aklivity/zilla-demos), the Kraken-WebSocket and ping-pong examples                                                                                                                                                                                                                                                                       |
 | **product**     | **13** | [`EVerest`](https://github.com/EVerest/EVerest) (MQTT), [`voiceblender`](https://github.com/VoiceBlender/voiceblender), Netcracker qubership integration platform, [`ollert-backend`](https://github.com/acidtango/ollert-backend) / [`sigaa-socket-api`](https://github.com/dduartee/sigaa-socket-api) (WebSocket), [`vequate`](https://github.com/Jack-the-Pro101/vequate) (Redis) |
-| spec / docs     |     12 | [`asyncapi/spec`](https://github.com/asyncapi/spec), [`OAI/Arazzo-Specification`](https://github.com/OAI/Arazzo-Specification)                                                                                                       |
-| uncategorized   |      3 | —                                                                                                                                                 |
+| spec / docs     |     12 | [`asyncapi/spec`](https://github.com/asyncapi/spec), [`OAI/Arazzo-Specification`](https://github.com/OAI/Arazzo-Specification)                                                                                                                                                                                                                                                       |
+| uncategorized   |      3 | —                                                                                                                                                                                                                                                                                                                                                                                    |
 
 The contrast with the full corpus is itself the finding: where 3.x splits evenly between products (262)
 and demos (261), the request/reply _subset_ skews to **tooling test-fixtures and teaching examples**
@@ -274,6 +336,12 @@ payload, coupling the tool to each message schema and, for WebSocket, to a bespo
 
 ## Are the real services usable as SUTs?
 
+The corpus is read twice against the runnable-SUT bar — once per mode, since each mode needs different
+things from a repository: black-box a correlated request/reply it can drive from outside, white-box an
+instrumentable JVM consumer.
+
+### Through the black-box lens: the 81 reply repositories
+
 Finding the request/reply pattern in a repository is not the same as having a **runnable system under
 test**. Reading the **81 3.x `receive`+`reply` repositories** one by one — _is this a real, runnable
 service that consumes a request and emits a correlated reply over a broker/socket, that could be
@@ -334,7 +402,83 @@ correlates must be learned from its behaviour, not its schema.
 The practical consequence frames the rest of this proposal: **the public corpus does not supply ready
 SUTs.** A corpus-grounded evaluation cannot simply harvest these repositories — it must adapt the handful
 of genuine services and/or build **controlled SUTs** whose transports, correlation and licensing are
-known. To make concrete what such a test must actually do, the next section shows one by hand.
+known.
+
+### Through the white-box lens: the 92 JVM products
+
+White-box testing needs two things at once: a **JVM** service EvoMaster can instrument
+(Java / Kotlin / Scala / Groovy), and an **AsyncAPI** document telling it which consume operations to
+drive. The reachable population is the intersection — JVM services expressed in AsyncAPI — so we sliced
+the corpus surveyed above by each repository's primary language (from the survey's
+`repo-metadata.json`, cross-tabulated with the gold `product` classification):
+
+|                            | 3.x corpus                     | 2.x corpus          |
+| -------------------------- | ------------------------------ | ------------------- |
+| classified repositories    | 984                            | 1,103               |
+| — of which JVM (all kinds) | 148                            | 148                 |
+| — **of which products**    | **55** (Java 33, Kotlin 21, …) | **43** (Java 35, …) |
+
+JVM is a **top-tier** language for AsyncAPI products — Java is the third or fourth most common and
+Kotlin adds a substantial tail — so a JVM-instrumenting tool has a real reachable population: **92
+distinct JVM AsyncAPI products** across the two versions (55 + 43, with 6 in both).
+
+But "JVM product with an AsyncAPI file" is a ceiling, not a runnable-SUT count. So we ran the deeper pass
+this slice previously deferred, reading **all 92** repositories one by one — fetching each file tree and
+source archive to grep for a real message **consumer** (`@KafkaListener`, `@SqsListener`,
+`@RabbitListener`, `@Incoming`, `@MessageMapping`, Paho `messageArrived`, Ktor / Spring WS handlers, …)
+and opening the AsyncAPI document to see whether it maps to that consumer — and graded each against the
+white-box bar: _a runnable JVM service, with an instrumentable consume listener, described by an AsyncAPI
+doc, whose transport we can stand up_:
+
+| Of the 92 JVM products      | repos |
+| --------------------------- | ----: |
+| drivable with modest effort | **8** |
+| drivable with real work     |    51 |
+| not usable as a SUT         |    33 |
+
+The tiers mirror the black-box read's (licensing again not a factor); only the bar changes. **Modest
+effort** additionally demands an instrumentable consume listener that the AsyncAPI doc actually maps to,
+over a transport we can stand up locally (a Testcontainers broker, or localstack for SNS/SQS). **Real
+work** adds the white-box blockers: a streaming (Kafka Streams) or bespoke consume path to adapt, or
+consume-side spec drift to reconcile by reading the listener. **Not usable** adds the white-box
+disqualifiers: no async consumer at all (producer-only, or spec-only) or a bespoke non-standard
+transport EvoMaster cannot instrument-and-drive.
+
+The reachability gain white-box promised is real: **70 of the 92 carry an instrumentable consumer** —
+against black-box, where only a _reply_ counted and the previous section found ~2 usable as-is and ~17
+with work of the 81 request/reply repositories. Driving by coverage rather than by reply widens the
+surface to **every consume operation**, fire-and-forget included.
+
+**The binding constraint shifts, though — from "is there a reply" to "does the contract describe the
+consume side," and usually it does not.** Only **24** of the 92 ship an AsyncAPI doc that maps cleanly to
+the listener; in **35** the service genuinely consumes but the document describes only what it
+_publishes_ (`action: send`), 15 are aspirational (a spec with no matching listener), 10 have a real
+consumer but no AsyncAPI file, and 8 neither. This is the white-box echo of black-box's contract-drift
+finding. One thing softens it here that did not hold for black-box: a white-box tool can **recover the
+consume channel from the listener itself** — `@KafkaListener(topics=…)`, `@SqsListener("queue")` name it
+in code the Driver already sees — so drift is survivable, and the AsyncAPI doc's irreducible value
+narrows to supplying the **message schema** for payload generation rather than channel discovery.
+
+The **8 modest-effort candidates** span every transport in scope — Kafka, AMQP, MQTT, WebSocket and
+STOMP — and each ships an AsyncAPI doc that maps to its listener: [`kidoneself/DockPilot`](https://github.com/kidoneself/DockPilot)
+(WebSocket), [`LingshijunRenzy/ICS-guard-next`](https://github.com/LingshijunRenzy/ICS-guard-next)
+(Kafka), [`ODS-IS-UASL/safety-management`](https://github.com/ODS-IS-UASL/safety-management) (MQTT),
+[`doemefu/very-cool-karaoke-server`](https://github.com/doemefu/very-cool-karaoke-server) (STOMP), the
+two [`VALAWAI`](https://github.com/VALAWAI) components (AMQP, Quarkus `@Incoming`), and two more Kafka /
+WebSocket services. Honestly, they skew small — student, hobby and research code, only DockPilot at all
+product-like — the same lesson black-box reached: drivable real _products_ are rare. The largest
+coherent seam is a different shape entirely: **17 near-identical Ministry-of-Justice HMPPS services**,
+Kotlin Spring Boot consumers of domain events over AWS SNS/SQS (16 of the 17 land in "real work," gated
+only by needing localstack and a publish-oriented spec) — a ready homogeneous cohort a single Driver
+template could drive across all sixteen.
+
+Two caveats bound this. The pass measures only the JVM fraction of repositories that **are** in
+AsyncAPI; the far larger population of JVM messaging systems carrying **no** AsyncAPI document is, by
+construction, invisible to it. And the per-repo verdicts come from automated tree/archive inspection, so
+the modest-effort shortlist should be **hand-confirmed** before it anchors an evaluation.
+
+Either way the corpus is read, controlled SUTs carry the evaluation. To make concrete what a test
+against such a service must actually do, the next section writes one by hand.
 
 ## What a request/reply test looks like
 
@@ -405,20 +549,21 @@ test bessj_valid_over_amqp:
 MQTT follows the WebSocket shape, with the id in the payload. So the same handful of steps is written
 four times, differing only in addressing and where the id rides:
 
-| | Kafka | AMQP | MQTT | WebSocket |
-| --- | --- | --- | --- | --- |
-| addressing | topic `ncs.bessj.request` → `.reply` | queue `ncs.bessj.request` → `.reply` | topic `ncs/bessj/request` → `/reply` | single socket `/ncs`, `operation` field |
-| correlation id | record **header** | **`correlation-id` property** | **payload** field | **payload** field |
-| what the client connects to | a broker (`kafka:9092`) | a broker (RabbitMQ) | a broker (Mosquitto) | the SUT itself (`ws://sut/ncs`) |
+|                             | Kafka                                | AMQP                                 | MQTT                                 | WebSocket                               |
+| --------------------------- | ------------------------------------ | ------------------------------------ | ------------------------------------ | --------------------------------------- |
+| addressing                  | topic `ncs.bessj.request` → `.reply` | queue `ncs.bessj.request` → `.reply` | topic `ncs/bessj/request` → `/reply` | single socket `/ncs`, `operation` field |
+| correlation id              | record **header**                    | **`correlation-id` property**        | **payload** field                    | **payload** field                       |
+| what the client connects to | a broker (`kafka:9092`)              | a broker (RabbitMQ)                  | a broker (Mosquitto)                 | the SUT itself (`ws://sut/ncs`)         |
 
 That hand-written test is the target artifact: an AsyncAPI-aware EvoMaster must generate the input from
 the message schema, stamp and match the id, await the reply, and assert the outcome — and **the only
 thing that changes between the four transports is the plumbing**, which is exactly what the approach
 that follows factors out.
 
-## The approach: classifying replies as the unit of coverage
+## The black-box approach: classifying replies as the unit of coverage
 
-Everything above characterizes the **problem**; this section sketches the **approach**. The aim is to
+Everything above characterizes the **problem**; this section sketches the **black-box approach** (the
+white-box one follows it). The aim is to
 reuse EvoMaster's existing black-box engine — its **SMARTS** algorithm (smart sampling, the black-box
 default), which generates a request,
 classifies the result, and keeps one test per newly-covered outcome, with **no instrumentation and no
@@ -481,7 +626,7 @@ modes**:
 
 Black-box vs white-box is orthogonal to that choice: **black-box simply leaves instrumentation off**
 (`isInstrumentationActivated()` returns false) and uses the driver for lifecycle and wire access only;
-white-box turns it on (developed in `proposal-white-box.md`). Either way the core never speaks a broker
+white-box turns it on (developed in **The white-box approach**). Either way the core never speaks a broker
 protocol; it drives the SUT through the `SutController` control API, exactly as it drives its other
 problem types.
 
@@ -537,8 +682,8 @@ executeAsyncAction(dto) -> AsyncReplyDto:
     return AsyncReplyDto(reply.headers, reply.body)          # handed back to the core to classify
 ```
 
-The core builds `dto` from the individual's genes (payload, correlation id, request/reply addresses,
-window), sends it over the existing control protocol, and classifies the returned reply — importing no
+The core builds `dto` from the individual (the payload genes, a freshly minted correlation id, the
+request/reply addresses, the window), sends it over the existing control protocol, and classifies the returned reply — importing no
 broker library. Only `publish` / `awaitReply` are protocol-specific, and they live **entirely inside the
 driver**, a dumb pipe over `client`:
 
@@ -593,7 +738,7 @@ class but which parts of the same `SutController` the core exercises:
 - **White-box** is the _same driver_ with three switches thrown: `isInstrumentationActivated()` /
   `getPackagePrefixesToCover()` so the SUT is instrumented, the core's per-evaluation `getTestResults`
   pull, and a **completion hook** telling the core when the consumer has finished
-  (`proposal-white-box.md`).
+  (**The white-box approach**).
 
 This "two modes, one representation" split is not new — **REST already works this way**: black-box and
 white-box share a single `RestCallAction` and a single `RestIndividual`, and `BlackBoxRestFitness` is
@@ -608,12 +753,12 @@ the client, and that something is the `SutController`, exactly as for RPC.
 How much of that driver the contract can fill — measured over every `ws` / `wss`, Kafka, AMQP and MQTT
 spec in the corpus — splits cleanly:
 
-| What it gives the client | Schema-derivable? | Corpus (3.x, per repo) |
-| --- | --- | --- |
-| **Connection** — server URL + handshake | **yes** | connectable 79–95% |
-| **Encoding** — JSON / text / binary (`contentType` / `schemaFormat`) | **yes** | JSON 87–96% |
-| **Addressing + message shapes** → connect + typed send/receive | **yes** | **81–89% of repos** |
-| **Correlation / framing** → a full request/reply client | **rarely** | `correlationId` 4–11%; full client ≤ 8% (mostly samples), 2% on WS |
+| What it gives the client                                             | Schema-derivable? | Corpus (3.x, per repo)                                             |
+| -------------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------ |
+| **Connection** — server URL + handshake                              | **yes**           | connectable 79–95%                                                 |
+| **Encoding** — JSON / text / binary (`contentType` / `schemaFormat`) | **yes**           | JSON 87–96%                                                        |
+| **Addressing + message shapes** → connect + typed send/receive       | **yes**           | **81–89% of repos**                                                |
+| **Correlation / framing** → a full request/reply client              | **rarely**        | `correlationId` 4–11%; full client ≤ 8% (mostly samples), 2% on WS |
 
 So the contract reliably auto-fills **connection, encoding and addressing on every transport**,
 thinning the driver to its one irreducible job: the wire, plus the correlation hook the schema almost
@@ -693,14 +838,11 @@ is a _literal_ status-code analogue (`-32601` method-not-found, `-32603` interna
 That label is synthesized from a handful of independently observable axes of a single
 publish-then-await interaction:
 
-| Axis                              | Observable values                                                                                   | REST analogue                       |
-| --------------------------------- | --------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| **Delivery**                      | broker accepted / rejected the publish                                                              | (transport-level; ~ connection error) |
-| **Reply arrival** (within window _W_) | a correlated reply arrived / nothing arrived (timeout)                                          | a response always returns           |
-| **Correlation**                   | id echoed and matches / mismatched / absent                                                         | none — async-only                   |
-| **Reply variant**                 | which declared `reply` message it validates as (`result`, `error`, …) / matches none               | status _class_ (2xx vs 4xx)         |
-| **Schema conformance**            | reply payload conforms / violates the declared reply schema                                         | response-schema oracle              |
-| **Application status**            | an explicit code/flag inside the payload (a JSON-RPC `error.code`, a `status: ok\|error` enum)      | the status code itself              |
+| Axis                   | Observable values                                                                              | REST analogue               |
+| ---------------------- | ---------------------------------------------------------------------------------------------- | --------------------------- |
+| **Reply variant**      | which declared `reply` message it validates as (`result`, `error`, …) / matches none           | status _class_ (2xx vs 4xx) |
+| **Schema conformance** | reply payload conforms / violates the declared reply schema                                    | response-schema oracle      |
+| **Application status** | an explicit code/flag inside the payload (a JSON-RPC `error.code`, a `status: ok\|error` enum) | the status code itself      |
 
 The **reply variant** (and any **application status** field it carries) is the strongest analogue,
 because it is a _discrete enumeration the contract already declares_ — so the coverage target keys on
@@ -717,12 +859,12 @@ distinct reply outcome the sampler produces per operation.
 
 **Fault targets** — the outcomes that signal a defect:
 
-| REST fault signal                | AsyncAPI analogue                                                                                       |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| REST fault signal                | AsyncAPI analogue                                                                                                                                   |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | HTTP **500** server error        | a reply carrying a **server-fault code** (e.g. JSON-RPC `-32603`, a `status:"error"` with a server code); a SUT crash / connection drop mid-process |
-| response **violates the schema** | a reply that matches **no declared reply message** (wrong type, missing required field, out-of-range)   |
-| —                                | **correlation broken** — a reply arrives whose id is missing or does not match the one sent             |
-| —                                | **silent drop** — no reply to an operation whose contract _declares_ one (delivered, but silent past _W_) |
+| response **violates the schema** | a reply that matches **no declared reply message** (wrong type, missing required field, out-of-range)                                               |
+| —                                | **correlation broken** — a reply arrives whose id is missing or does not match the one sent                                                         |
+| —                                | **silent drop** — no reply to an operation whose contract _declares_ one (delivered, but silent past _W_)                                           |
 
 A suite's coverage is the **set of distinct targets its tests cover**, and the search maximises that
 set. One asymmetry with REST matters: a **well-formed error reply** — a conforming `error` message, a
@@ -816,7 +958,7 @@ Async reuses that spine with **one `AsyncApiIndividual` for all four transports 
 transport.** This is the single most important representational decision, and it is the
 protocol-agnosticism of **The transport driver** made concrete in the data model: the transport (Kafka
 vs WebSocket vs …) appears **nowhere** in the individual. The individual is pure data — the operation,
-the payload genes, the correlation gene, the declared reply — and Kafka-vs-WebSocket is decided entirely
+the payload genes, the declared reply — and Kafka-vs-WebSocket is decided entirely
 below the driver interface, in the driver and the fitness function. The same individual with the same genes runs over
 any wire; only `send` / `receive` differ. Were the transport to leak into the representation, there would
 be a `KafkaIndividual` and a `WebSocketIndividual` — exactly the coupling the approach rejects.
@@ -828,7 +970,8 @@ AsyncMessageAction:
     operationId        # the coverage unit: the 3.0 operation key,
                        #   or the synthesized 2.x (consume channel ↦ reply channel)
     inputParameters    # THE GENES: request payload built from the message JSON Schema
-                       #   (same gene machinery as REST) + a correlation-id gene
+                       #   (same gene machinery as REST)
+    correlationId      # a fresh nonce stamped at each execution — deliberately NOT a gene
     channel            # addressing, from the contract — immutable, NOT a gene
     replyTemplate      # the declared reply message set — immutable; the reply-variant axis
     reply              # filled at execution; read only by the classifier, never a gene
@@ -837,7 +980,9 @@ AsyncMessageAction:
 ```
 
 Everything the coverage model needs is already here. `operationId` is the endpoint-analogue; the
-correlation id is just another gene the fitness function stamps and matches; and the reply-variant
+correlation id is deliberately **not** a gene — searching over it could achieve nothing (the SUT only
+echoes it) and pairing demands a value unique to each execution, so the core stamps a fresh nonce at
+execution time and matches it on the reply, the way REST handles auth outside the genome; and the reply-variant
 classification reads `reply` against `replyTemplate` **at fitness time**, so the search mutates only the
 request while the reply drives the `(reply-variant × operation)` targets. Because it is an
 `EnterpriseIndividual`, it inherits database seeding in the initialization groups with no async-specific
@@ -866,8 +1011,8 @@ Driver, coverage and individual meet in the run-time lifecycle of a single actio
 6. **Emitted.** A retained action is serialised into concrete client code (next).
 
 Only steps 4–5 are async-specific — and they are also the only steps that change in **white-box**: there
-the driver reports *processing complete* rather than a reply, and step 5 reads code coverage instead of
-classifying a reply (`proposal-white-box.md`). Steps 1–3 and 6 are shared across both modes, exactly as
+the driver reports _processing complete_ rather than a reply, and step 5 reads code coverage instead of
+classifying a reply (see **The white-box approach**). Steps 1–3 and 6 are shared across both modes, exactly as
 REST shares them across its black-box and white-box fitness. Execution is **single-flight** by default
 (one message outstanding, so the reply is unambiguously the one we sent); concurrency is an optimisation
 that leans on the correlation id to re-pair replies.
@@ -915,12 +1060,12 @@ differ between the two tests. Because the client is concrete, the body **does** 
 WebSocket test is the `bessj_over_websocket` socket shape, AMQP the RabbitMQ-channel shape — which is
 exactly the per-transport plumbing tabulated in **What a request/reply test looks like**:
 
-| | concrete client (pre-execution) | id carried in |
-| --- | --- | --- |
-| Kafka | producer + reply-topic consumer | header |
-| AMQP | channel + reply queue | `correlation-id` property |
-| MQTT | client + reply-topic subscription | payload |
-| WebSocket | one socket to `/ncs` | payload |
+|           | concrete client (pre-execution)   | id carried in             |
+| --------- | --------------------------------- | ------------------------- |
+| Kafka     | producer + reply-topic consumer   | header                    |
+| AMQP      | channel + reply queue             | `correlation-id` property |
+| MQTT      | client + reply-topic subscription | payload                   |
+| WebSocket | one socket to `/ncs`              | payload                   |
 
 The generator also writes the client code **to match the protocol version** the contract resolves to (per
 the binding and `protocolVersion` above). This is where the version pays off: an **MQTT 5.0** test places
@@ -950,6 +1095,246 @@ experimental work to follow:
 
 These are the async-specific price of buying back the one thing REST supplies for nothing — a
 synchronous, self-labelling response.
+
+## The white-box approach: coverage as the signal, completion as the problem
+
+### A consume operation is an async action
+
+The engine is reused wholesale: EvoMaster's **white-box search — MIO with the branch-distance gradient**,
+its **Driver** (`SutController`) that starts, instruments and resets the SUT, its database seeding, and
+its external-service (WireMock) machinery — all stay (though the last is wired only for REST today, so a
+new problem type must wire it in). Async adds one thing: a **new kind of action** — the
+`AsyncMessageAction` of **The individual**, here possibly reply-less — and the lifecycle to run it.
+Black-box and white-box thus **share the action and the individual**; only the fitness differs — the
+same "two modes, one representation" split, with its REST precedent, described under **The transport
+driver**.
+
+For each `receive` operation (3.0) or consume block (2.x) in the AsyncAPI document, EvoMaster builds
+the message payload exactly as the black-box side does — the genes of **The individual** — publishes it
+to the SUT's channel, and then **waits for the SUT to finish processing it** before reading coverage.
+With that wait in place, coverage over the consumer's code is the fitness, and MIO climbs it exactly as
+for a REST endpoint. No reply is required, so fire-and-forget operations are first-class — and
+correlation, the crux of the black-box approach, stops being central: nothing needs pairing for the
+search to score a test.
+
+### Solving "when did it end"
+
+This is the crux. The signal can come from the SUT's own code, the effects
+it leaves behind, the broker, or the clock — and the axis that matters is **how much each option must
+know about the SUT**: its application framework (Spring / Micronaut / Quarkus / a plain client) and its
+transport (Kafka / AMQP / MQTT / …). The right **default assumes nothing** and reuses instrumentation
+EvoMaster already has; knowing the framework is an _optimization_ that buys precision, not a prerequisite.
+Ordered most-agnostic first — precision rising as the tool is willing to know more:
+
+1. **Instrumentation-probe inactivity — the default (agnostic to framework _and_ transport).** White-box
+   already weaves bytecode probes into the SUT to compute coverage; as the consumer processes our message
+   it executes instrumented code and those probes fire. So "done" is simply **the SUT's probe activity
+   going quiet for a debounce interval** — a signal that knows nothing about Kafka or Spring, because it
+   watches the SUT _execute code_, which is exactly what is already instrumented. It is always available
+   and reuses the core mechanism. The costs are real but bounded: background threads (schedulers, health
+   checks) add probe noise to filter out, and pinning quiet-time to _our_ message needs single-flight or
+   thread tagging (below).
+2. **A downstream side effect — also agnostic, and it doubles as an oracle.** Observed _below_ the
+   messaging framework — at the JDBC and HTTP layers EvoMaster already intercepts — so it is independent
+   of both framework and transport, and it tells us not just _when_ the handler finished but _what_ it
+   did:
+   - a **database write** surfacing in the per-action SQL snapshot the core already captures;
+   - an **outbound message or external call**, intercepted by the external-service (WireMock) machinery
+     (shared code, but wired for REST today — a new problem type must wire it in);
+   - an **outbox / inbox / dedup row keyed by message id** — a near-perfect signal that is also
+     **self-attributing under concurrency**, since the row carries _our_ id;
+   - a **metric / counter delta** (a Micrometer processed-message counter) or, most brittle, a **terminal
+     log line** correlated to our message.
+     The limit is that a pure-compute handler with no observable effect gives nothing — so this sharpens or
+     cross-checks probe inactivity rather than replacing it.
+3. **Broker and transport-client signals — framework-agnostic, transport-specific.** These need one hook
+   per _transport_, but none per framework, because every framework rides the same wire client:
+   - **broker state** — a Kafka **committed offset / consumer lag** advancing past our record, or a
+     RabbitMQ **queue depth** (ready + unacked) returning to baseline; observed off the broker, needing
+     nothing from the SUT;
+   - a **transport-client hook** — instrumenting the wire client itself (the Kafka `Consumer` commit, the
+     RabbitMQ `Channel.basicAck`, the Paho MQTT callback) catches _every_ Spring / Micronaut / plain
+     consumer built on that client with a single hook;
+   - a **fence / sentinel** — publish a marker to the same partition/queue right after the test message;
+     in-order delivery (a transport guarantee, not a framework feature) means that once the marker is
+     observably handled — its offset commits, it is dead-lettered — our message is already done. Breaks
+     under parallel consumers/partitions, and the marker still needs some observable, usually the offset
+     commit above.
+4. **The handler boundary — the precise option, when the framework _is_ known.** Knowing it is Spring
+   Kafka, JMS, and so on buys the tightest, most attributable signal, hooked at the point that best
+   matches the design — the obvious one is often too early:
+   - the **listener method** entry/return (`@KafkaListener` / `@RabbitListener` / `@JmsListener`);
+   - the **ack / commit** — `Acknowledgment.acknowledge()`, a Kafka offset commit, a RabbitMQ `basicAck`,
+     or a `@Transactional` listener's commit — where the application declares it is done, later than the
+     method return in hand-off designs;
+   - the **terminal signal of a returned reactive type** (`CompletableFuture` / `Mono` / `Flux`), since a
+     reactive handler returns an unresolved publisher immediately — "done" is its `onComplete` / `onError`;
+   - the **whole task tree** — an **in-flight counter** that increments at handler entry and decrements at
+     return, and follows the handler's hand-offs (instrumented `Thread.start` / `Executor.submit` /
+     `CompletableFuture`) so background work our message spawns is awaited too, not just its top frame;
+     the counter returning to zero is _done_.
+     These need not weave user code either: register a **framework interceptor** (Spring Kafka
+     `RecordInterceptor`, an AMQP advice) or subscribe to the SUT's existing **OpenTelemetry / Micrometer
+     consume span** and wait for the span matched to our message to close. This family is the shape the
+     `scheduletask` hooks are meant for — though, as the implementation section shows, only half-wired
+     today (below).
+5. **A timeout — the last resort, when nothing above fires.** A window _W_, the white-box analogue of
+   black-box's observation window; a fixed _W_ is arbitrary, an **adaptive** one profiled from warm-up
+   handler durations less so. Too short truncates coverage, too long slows every test, and slow-vs-stuck
+   stays undecidable from outside.
+
+**Which thread is ours, and following its hand-offs.** The precise options above need to know _which_
+thread is processing _our_ message — and that is not known in advance: the broker dispatches onto a
+listener thread we neither created nor hold. It is learned **at handler entry** — the instrumented
+delivery method runs on the worker thread (`Thread.currentThread()` in the probe _is_ the worker,
+whatever the framework picked), and reading back the **id we stamped** into the published message confirms
+the invocation is ours. (It is the same id the black-box side uses, and it rides in the message even for
+fire-and-forget, where there is no reply.) From that thread a task-local tag propagates through the
+instrumented hand-offs, so the in-flight counter counts only work descended from our message. Where the
+entry point cannot be hooked, **single-flight** makes this moot — with one message outstanding, any
+consumer activity is necessarily ours.
+
+**Coverage is transport-agnostic; only the hook is per-library.** Collecting coverage is _not_
+transport-specific — the probes are woven into the SUT's own classes regardless of wire — so any
+instrumentable JVM SUT is coverage-testable. Only the _precise_ completion hook is framework-specific, and
+it targets the transport **library's** delivery method, an enumerable set: Spring Kafka / AMQP / JMS for
+brokers, and for WebSocket `jakarta.websocket` `@OnMessage`, Java-WebSocket `onMessage`, Spring
+`TextWebSocketHandler`, or Netty's frame handler. A "custom WebSocket" is almost always a bespoke message
+format on one of these libraries, so it is still hookable. The genuinely hard case is a wire hand-rolled
+on **raw sockets with no library boundary** (e.g. `free-note-service`, graded not-usable in the corpus
+slice for exactly this reason): there the fallback ladder is **agnostic completion (probe inactivity /
+side effect / timeout) → single-flight → a per-SUT entry-point hint** (the user names the handler
+`class#method`, à la `getPackagePrefixesToCover`). Precision and parallelism are lost; testability is not.
+
+Orthogonally, completion can be **forced rather than detected** by collapsing the asynchrony at test time:
+drive the listener **synchronously** (invoke the handler directly, or run the container at concurrency = 1
+and pump a single poll), or swap the broker for an **in-VM one that dispatches on the calling thread**.
+Either turns "done" into a plain method return — the cleanest signal there is — but does not exercise the
+production transport's real timing, trading fidelity for determinism rather than being strictly better.
+**Single-flight** (one message outstanding) is the mild version: it keeps the real transport yet makes
+probe inactivity unambiguous and every completion trivially attributable.
+
+### Implementation: extending the scheduletask machinery
+
+EvoMaster already has _partial_ scaffolding, built for a neighbouring problem. Its **`scheduletask`**
+mechanism (`ScheduleTaskAction`, `ScheduleTaskExecutor`, `ScheduleTaskActionResult`) models **deferred
+work** as an action, and the Driver exposes two hooks — `customizeScheduleTaskInvocation(...)` to
+_trigger_ it and `isScheduleTaskCompleted(...)` to _report when it finished_ — the right shape for
+"invoke async work, then know it is done." But it is scaffolding, not a finished mechanism, and closing
+three gaps is the proposal's actual content:
+
+- **The completion hook is inert.** `isScheduleTaskCompleted(...)` is _defined but never called_ by the
+  framework today — the current flow invokes `customizeScheduleTaskInvocation` once and records its
+  returned status immediately, with **no wait-for-completion loop**. The proposal must add that loop (or
+  have the driver block/poll internally and return `COMPLETED`); this is where the completion mechanisms
+  above plug in.
+- **The path is RPC-bound.** Sampling is gated RPC-only (`probOfSamplingScheduleTask`) and invocation
+  runs through `RPCFitness` and RPC-namespaced DTOs, so extending to AsyncAPI means a new sampler/fitness
+  path or lifting this code out of the RPC package — not a flag flip.
+- **`ScheduleTaskAction` is an init `EnvironmentAction`** (it does not count for fitness), so the consume
+  operation is not literally a `ScheduleTaskAction` but a **new MAIN, coverage-bearing action** reusing
+  the same trigger/completion hooks.
+
+With those closed, the mapping onto existing machinery is:
+
+| Piece                | Reused / extended                                                                                                                                             | What it does for a consume operation                                                                                                                                                                                               |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Action + individual  | a **new MAIN consume action** in `EnterpriseIndividual` (modelled on `ScheduleTaskAction`'s lifecycle, but fitness-bearing — not an init `EnvironmentAction`) | one action per `receive`/consume operation, sampled and mutated by MIO                                                                                                                                                             |
+| **Input generation** | REST's schema→gene builder                                                                                                                                    | build the message payload from the AsyncAPI message JSON Schema                                                                                                                                                                    |
+| **Invocation**       | `customizeScheduleTaskInvocation` (Driver-side)                                                                                                               | the Driver publishes the message to the SUT's broker/channel — it holds the transport client, exactly as an RPC Driver holds the RPC stub                                                                                          |
+| **Completion**       | `isScheduleTaskCompleted` hook + a **new wait-loop** that calls it                                                                                            | by default, detect completion agnostically — instrumentation-probe inactivity, a downstream write/emit, or broker/offset state — and, when the framework is known, sharpen it with a handler-boundary hook; timeout as last resort |
+| **Fitness**          | standard branch-distance coverage                                                                                                                             | collected at completion; for request/reply operations, add the black-box reply oracle as an extra target                                                                                                                           |
+
+Relative to RPC schedule tasks, the genuinely new pieces are: the trigger is a **broker publish** rather
+than a direct method call; the operations and input schemas come from an **AsyncAPI document** rather than
+RPC reflection; and — the real addition — the **wait-for-completion step**, which today's schedule-task
+flow lacks. The target run lifecycle is sample → invoke → **wait for completion** → collect coverage →
+MIO: the sample, collect and MIO stages reuse existing machinery, while the broker invoke and the wait are
+what this proposal builds.
+
+The open engineering items are correspondingly focused:
+
+- **The agnostic completion default** — wiring instrumentation-probe inactivity and the side-effect
+  signals (SQL snapshot, external-call interception) the core already produces, so completion works with
+  no per-framework code; the optional per-**library** delivery hooks (Spring Kafka, Spring AMQP, JMS, and
+  for WebSocket `jakarta.websocket` / Java-WebSocket / Spring `TextWebSocketHandler` / Netty) are the
+  precision upgrade layered on top — an enumerable set, since coverage itself is already transport-
+  agnostic — with a timeout, or a per-SUT entry-point hint for a raw-socket wire, as the final fallback.
+- **Wiring completion and lifting it out of RPC** — the biggest lift: the `isScheduleTaskCompleted` hook
+  is inert, so the wait-for-completion loop must be added, and the schedule-task path must gain an
+  AsyncAPI sampler/fitness route (or be generalised out of the RPC package).
+- **Attribution under concurrency** — identifying our worker thread **at handler entry** by the stamped
+  id and tagging its hand-off lineage into an in-flight counter, or serialising to **single-flight** when
+  the entry point cannot be hooked. The counter's thread/executor hooks are **new instrumentation** — no
+  existing hook targets `Thread`/`Executor` — though EvoMaster's method-replacement framework and its
+  DynamoDB `CompletableFuture` tracker are a close template.
+- **Timeout tuning** — the completion timeout as a first-class, reported parameter, since (as in
+  black-box) slow-vs-stuck is undecidable from outside the handler.
+
+### What the generated white-box tests look like
+
+One design question the coverage-driven search leaves open is the **output**: what does an emitted test
+_assert_? Coverage cannot be the answer — it was the **search signal**, not a regression check; a test
+that "asserts coverage" would be meaningless to a developer and brittle to any refactor. The emitted
+test instead asserts on the **observable residue** of the processing that the completion mechanisms
+already capture during the search. Ranked by how much of EvoMaster's existing assertion machinery each
+one reuses:
+
+1. **The publish completed without exception** — the existing try/catch + `fail(...)` emission,
+   reusable as-is; the floor (a broker ack is not processing).
+2. **A message the handler emitted onto another channel** — the strongest oracle: the test subscribes
+   there, and the full REST/RPC payload machinery applies to that message (field matchers, list sizes,
+   capped collections, volatile fields skipped) — in effect a "reply on another channel."
+3. **The database rows the handler wrote** — read back and asserted RPC-style (typed, field-by-field
+   equals, capped, unsafe values emitted commented-out); the comparison template exists, the
+   **read-back is new machinery**.
+4. **The external call the handler made** — WireMock stubs are already emitted into white-box suites
+   but never verified; adding `verify(...)` is a one-line extension that turns the existing mock from
+   stimulus into an oracle.
+5. **Completion within the window** — the await doubles as an implicit assertion (timeout ⇒ fail),
+   with the already-emitted per-test `@Timeout` as the hard ceiling; the await loop itself is new
+   (nothing asynchronous has ever been emitted before).
+6. **The SUT survived** — a health probe through the fixture's controller, generalising the existing
+   `assertNotNull(baseUrlOfSut)` sanity idiom: it separates "crashed the consumer" from "processed
+   quietly."
+
+Where the operation *does* declare a reply, the black-box reply assertions ride along unchanged. And
+three deliberate don'ts, each backed by an existing convention: no **absence** assertions (proving
+silence is inherently flaky — a missing expected message is recorded as a comment, per the
+flaky-to-comment rule); no **log or metric** assertions (no precedent, and the completion taxonomy
+already calls the log line the most brittle signal); never **coverage** (run-time knowledge belongs in
+comments, as REST's `// last executed statement` hint on 500s shows — an async test can annotate the
+handler reached and the completion mechanism used the same way).
+
+So a fire-and-forget test reads: publish the generated message with a concrete transport client (exactly
+as in **The generated test** — the driver governs the search, not the output), await the completion
+proxy (the observable side effect, or a bounded wait), then assert on the state the handler left behind.
+At replay the SUT runs **uninstrumented** — but the suite is not driver-free: like every white-box suite
+EvoMaster emits, it scaffolds on the driver (`SutHandler controller` in the fixture; `startSut()` before
+the class, `resetStateOfSUT()` before each test — for async also draining reply topics and queues —
+`stopSut()` after), while the **concrete transport client is only the wire**. That is exactly the split
+the emitted REST suites already show: driver for lifecycle and state, client library for the calls.
+
+The through-line of that menu: **assert-what-you-observed is EvoMaster's house style** — REST bakes the
+response captured during the search into `.body("field", equalTo(…))` matchers, RPC generates typed
+`assertEquals` scripts on the response object, and anything unstable across evaluations is demoted to a
+"flaky" comment — and the async assertions inherit it wholesale: the values asserted are the ones the
+search observed. (RPC also shows a second emission route — the driver itself generates the invocation
+and assertion scripts, which the writer replays verbatim — an option for the transport-specific publish
+code.) Netting it out, the genuinely new emission machinery is exactly **two pieces**: the
+**subscribe/await plumbing** (items 2 and 5) and the **database read-back** (item 3 — emitted suites
+today only _write_ DB state through the seeding DSL; a small driver-side query helper is needed to read
+it back) — plus the one-line WireMock `verify` extension (item 4). Everything else reuses writers that
+already exist.
+
+Grounded in the same controlled NCS SUTs as the black-box approach, the evaluation would
+then measure what black-box could not even attempt: coverage achieved on **fire-and-forget** consume
+operations, over the JVM transports, with completion resolved by instrumentation. One evaluation asset
+must be built first: the current NCS messaging SUTs are **request/reply throughout** (every operation
+declares a reply), so the suite must gain **fire-and-forget variants** — consume-only operations with no
+reply and an observable side effect (a database write, an emitted event) — before the headline
+fire-and-forget measurement can run. Authoring those variants is an explicit deliverable of this
+proposal, not an assumption.
 
 ## Appendix: How repositories are classified
 
@@ -983,13 +1368,13 @@ classes — they are not scored as candidate services.)
 tooling-library / demo-fixture / spec-docs from the observable signals below; the highest-scoring bucket
 wins:
 
-| Signal                     | Weight | How it is read                                                                                                  |
-| -------------------------- | -----: | --------------------------------------------------------------------------------------------------------------- |
-| GitHub topic               |     +3 | substring-matched against ordered fragment groups (demo → tool → product → spec, first group wins): `documentation-generator` → tool, `schema-registry` → product, `json-schema` → spec |
-| description + README lead  |     +2 | per-bucket keyword regexes (below); unambiguous demo markers score +3, weak product cues only +1                |
-| repository name            |   +1–2 | `*-sample` / `*-demo` → demo, `*-cli` / `*-sdk` → tool, `*-spec` → spec                                          |
-| spec-file location         |     +1 | specs only under `tests/` / `fixtures/` → tool + demo; a spec at repo root or `docs/` → product                 |
-| docs-only language         |     +1 | HTML / MDX / Markdown / TeX … → spec/docs                                                                        |
+| Signal                    | Weight | How it is read                                                                                                                                                                          |
+| ------------------------- | -----: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| GitHub topic              |     +3 | substring-matched against ordered fragment groups (demo → tool → product → spec, first group wins): `documentation-generator` → tool, `schema-registry` → product, `json-schema` → spec |
+| description + README lead |     +2 | per-bucket keyword regexes (below); unambiguous demo markers score +3, weak product cues only +1                                                                                        |
+| repository name           |   +1–2 | `*-sample` / `*-demo` → demo, `*-cli` / `*-sdk` → tool, `*-spec` → spec                                                                                                                 |
+| spec-file location        |     +1 | specs only under `tests/` / `fixtures/` → tool + demo; a spec at repo root or `docs/` → product                                                                                         |
+| docs-only language        |     +1 | HTML / MDX / Markdown / TeX … → spec/docs                                                                                                                                               |
 
 **Step 3 — decide.** The top bucket wins if it clears **2 points** (one clear signal); ties break
 **tool → demo → product → spec** (deliberately conservative about calling something a product); anything
