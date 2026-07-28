@@ -15,13 +15,14 @@ The document runs problem-first, then one approach per mode:
   which interactions are observable at all; how often they occur in the wild (a corpus survey — rarely,
   and mostly in tooling); how the four dominant transports carry correlation; and whether the real
   services are usable as SUTs — read once for black-box (the 81 request/reply repositories) and once
-  for white-box (the 92 JVM products).
+  for white-box (the 92 JVM products) — closing with what such a test looks like, written by hand.
 - **The black-box approach**, scoped to **Kafka and AMQP over AsyncAPI 3.x** — reuse EvoMaster's
   black-box engine by making the **reply message a synthesized status code**, drive every transport
   through a **user-supplied driver** (the extension point EvoMaster already uses for non-HTTP
   protocols) that keeps the core protocol-agnostic, and ground it in controlled SUTs.
 - **The white-box approach**, covering **AsyncAPI 3.x and 2.x** — reuse MIO, the Driver and the
-  instrumentation, model a consume operation as an async action, and solve **completion detection**.
+  instrumentation across all four transports, model a consume operation as an async action, and solve
+  **completion detection**.
 
 The companion `corpus-suitability.md` holds the full per-repository evidence behind the survey.
 
@@ -148,8 +149,8 @@ both major versions. Each version is measured by its own native signal: in **3.0
 which has no reply construct, a message **`correlationId`**. Using GitHub code search we enumerated and
 parsed every discoverable document (versions 2.0–2.6 and 3.0.0 / 3.1.0), attributed each hit's transport
 from its servers and bindings, and classified every repository as **product**, **tool/library**,
-**demo/fixture** or **spec/docs** by deterministic rules plus an LLM refinement pass. (Full method,
-scripts and output are in the appendix and under `asyncapi-survey/`.)
+**demo/fixture** or **spec/docs** by deterministic rules plus an LLM refinement pass. (The classification
+method is in the appendix; the full scripts and output are under `asyncapi-survey/`.)
 
 **The corpus at scale.** The survey parsed **4,151 AsyncAPI 3.x specs** (across **984** repositories)
 and **2,701 AsyncAPI 2.x specs** (of 3,189 candidates, across **1,108** repositories, 1,103 still
@@ -194,7 +195,7 @@ correlation** below — are the ones worth pursuing.
 
 **The observable signal, by version.** Both versions land at almost the same rarity. In **3.x**,
 **122 specs across 81 repositories** (~2.9% of parsed specs) declare at least one `receive`+`reply`
-operation — **356 operations** in all. In **2.x**, **55 specs across 36 repositories** (2.0%) declare a
+operation — **356 operations** in all. In **2.x**, **55 specs across 32 repositories** (2.0%) declare a
 `correlationId`; but it almost always rides in a **header** (46 specs) on **one-way events**, pointing at
 tracing/business keys (`transactionId`, `traceId`), and only **9 of the 55** show any request/reply
 shape — so in 2.x the construct serves **distributed tracing, not reply-pairing**. The two are different
@@ -322,7 +323,7 @@ Sending a correlated request is the easy half, and entirely on our end: the `cor
 the transport has one, or inside the payload where it does not. The **correlation itself is built by the
 SUT, not by us**: a request and a reply become a matched pair only once the responder copies our id onto
 the message it sends back, which is the service's own behaviour and outside black-box reach. A tool can
-_detect_ a missing or non-matching id — itself an observable conformance failure — but cannot supply it.
+_detect_ a missing or non-matching id — but cannot supply it.
 
 And the contract is an unreliable guide. The `correlationId` keyword is **rarely declared** (2.0% of 2.x
 specs; frequently absent even in 3.x) and, when present, may not match the code — specs even name a
@@ -356,9 +357,10 @@ containerized and driven as a black box?_ — the answer is sobering:
 What the three tiers mean — how much stands between the repository and a black-box run, against that
 bar:
 
-- **usable with minimal effort** — runs essentially as-is (a container or a fat jar), its request/reply
-  and correlation work out of the box, and the license is permissive: stand it up and point the tool at
-  it.
+- **usable with minimal effort** — runs essentially as-is (a container or a fat jar), and its
+  request/reply and correlation work out of the box: stand it up and point the tool at it. (Licensing is
+  not part of the bar — the SUTs are only run for evaluation, modified at most to get them running,
+  never redistributed.)
 - **usable with real work** — a genuine request/reply service, but not drivable until real setup is done
   — a heavy backend or stack to stand up, the correlation to recover by reading the code, an external
   dependency to stub, or a transport client to write.
@@ -368,7 +370,7 @@ bar:
 
 **42 of the 81 are tooling/library or spec/docs repos** — not runnable services at all. Among the 39
 candidate services, **reading each one** shows almost none sit in the "small, clean, runnable,
-well-specified, permissively-licensed" sweet spot; they are **bimodal** — tiny hobby, student or
+well-specified" sweet spot; they are **bimodal** — tiny hobby, student or
 course-project repos (0–3★, the AsyncAPI file aspirational rather than backed by a running service), or
 large platforms (EVerest, the Netcracker integration platform) that are genuine but heavy to stand up. The same blockers recur, each a facet of the problem:
 
@@ -380,8 +382,9 @@ large platforms (EVerest, the Netcracker integration platform) that are genuine 
   `correlationId.location` (as **The four transports and their correlation** set out).
 - **Contracts drift from implementations** — a spec claims a transport the code does not use (gRPC with
   no code, AMQP where the code uses IBM MQ), so the contract cannot be trusted at face value.
-- **Hard external dependencies and licensing** — real candidates are frequently gated by live SaaS,
-  Kubernetes stacks, or paid services, and a striking number ship **no license** at all.
+- **Hard external dependencies** — real candidates are frequently gated by live SaaS, Kubernetes
+  stacks, or paid services. (A striking number also ship **no license** at all — an observation about
+  the corpus, not a usability criterion.)
 
 Full per-repo verdicts are in `corpus-suitability.md`.
 
@@ -400,9 +403,9 @@ one-directional contract reliably predicts one-way code); for anything bidirecti
 correlates must be learned from its behaviour, not its schema.
 
 The practical consequence frames the rest of this proposal: **the public corpus does not supply ready
-SUTs.** A corpus-grounded evaluation cannot simply harvest these repositories — it must adapt the handful
-of genuine services and/or build **controlled SUTs** whose transports, correlation and licensing are
-known.
+SUTs.** A corpus-grounded evaluation cannot simply harvest these repositories: the two minimal-effort
+repositories are run against directly, and the rest of the evaluation is anchored on **controlled SUTs**
+whose transports and correlation are known.
 
 ### Through the white-box lens: the 92 JVM products
 
@@ -459,8 +462,8 @@ consume channel from the listener itself** — `@KafkaListener(topics=…)`, `@S
 in code the Driver already sees — so drift is survivable, and the AsyncAPI doc's irreducible value
 narrows to supplying the **message schema** for payload generation rather than channel discovery.
 
-The **8 modest-effort candidates** span every transport in scope — Kafka, AMQP, MQTT, WebSocket and
-STOMP — and each ships an AsyncAPI doc that maps to its listener: [`kidoneself/DockPilot`](https://github.com/kidoneself/DockPilot)
+The **8 modest-effort candidates** span the four transports (Kafka, AMQP, MQTT, WebSocket) plus one
+STOMP service, and each ships an AsyncAPI doc that maps to its listener: [`kidoneself/DockPilot`](https://github.com/kidoneself/DockPilot)
 (WebSocket), [`LingshijunRenzy/ICS-guard-next`](https://github.com/LingshijunRenzy/ICS-guard-next)
 (Kafka), [`ODS-IS-UASL/safety-management`](https://github.com/ODS-IS-UASL/safety-management) (MQTT),
 [`doemefu/very-cool-karaoke-server`](https://github.com/doemefu/very-cool-karaoke-server) (STOMP), the
@@ -470,7 +473,7 @@ product-like — the same lesson black-box reached: drivable real _products_ are
 coherent seam is a different shape entirely: **17 near-identical Ministry-of-Justice HMPPS services**,
 Kotlin Spring Boot consumers of domain events over AWS SNS/SQS (16 of the 17 land in "real work," gated
 only by needing localstack and a publish-oriented spec) — a ready homogeneous cohort a single Driver
-template could drive across all sixteen.
+template could drive across all 16 of those.
 
 Two caveats bound this. The pass measures only the JVM fraction of repositories that **are** in
 AsyncAPI; the far larger population of JVM messaging systems carrying **no** AsyncAPI document is, by
@@ -631,7 +634,8 @@ protocol; it drives the SUT through the `SutController` control API, exactly as 
 problem types.
 
 **What the driver declares — `AsyncApiProblem`.** A `SutController` announces its kind through
-`getProblemInfo()`, which returns a `ProblemInfo` — today `RestProblem`, `GraphQlProblem` or `RPCProblem`.
+`getProblemInfo()`, which returns a `ProblemInfo` — today `RestProblem`, `GraphQlProblem`, `RPCProblem`
+or `WebProblem`.
 AsyncAPI adds one more, modelled on `RPCProblem` (which carries the interface class _and_ a live client
 stub):
 
@@ -655,8 +659,11 @@ duty_ — its class is reflected for the schema **and** it is invoked to make th
 Introducing it is a **new problem type, not just a subclass**: like the four before it (REST, GraphQL,
 RPC, Web) it is added at a handful of hardcoded dispatch sites — a `ProblemType` enum value, a field on
 `SutInfoDto`, a branch in the controller's `getProblemInfo` handling, and the problem→module wiring in
-`Main.kt` — plus, for `executeAsyncAction`, a field on the action DTO. Additive and well-trodden, but
-real plumbing across the controller, controller-api and core modules rather than a drop-in.
+`Main.kt` — plus, for `executeAsyncAction`, a field on the action DTO. The module that wiring points at
+must in turn bind the problem type's own creation/execution pair — the new `AsyncApiSampler` and
+`AsyncApiFitness` (see **The life of an action**) — alongside the shared mutator and archive. Additive
+and well-trodden, but real plumbing across the controller, controller-api and core modules rather than a
+drop-in.
 
 **The lifecycle methods, and how they behave.** The driver implements the same `SutController` methods as
 any other driver; their async behaviour is:
@@ -669,9 +676,10 @@ any other driver; their async behaviour is:
 - `getProblemInfo()` returns the `AsyncApiProblem`; `getPreferredOutputFormat()` gives the emitted-suite
   language — both unchanged in spirit from REST/RPC.
 
-**How one action is executed — `executeAsyncAction`.** RPC adds exactly one method to the control
-protocol that the core calls once per action, `executeRPCEndpoint(dto)`, which resolves the held client
-and invokes the method reflectively (`method.invoke(client, params)`). AsyncAPI adds the direct analogue:
+**How one action is executed — `executeAsyncAction`.** RPC drives each action through the control
+protocol's shared per-action endpoint, landing in one driver-side method — `executeRPCEndpoint` — which
+resolves the held client and invokes the method reflectively (`method.invoke(client, params)`). AsyncAPI
+adds the direct analogue:
 
 ```
 # on the driver (a SutController subclass); the core calls this once per action over the control API
@@ -732,9 +740,9 @@ class but which parts of the same `SutController` the core exercises:
 - **Black-box** binds the driver as the core's `RemoteController` and drives actions through
   `executeAsyncAction`, but **never calls `getTestResults`** — there is no coverage to pull; the reply is
   the signal. EvoMaster already runs exactly this shape: its `bbExperiments` mode sets
-  `usingRemoteController` and performs a black-box search against a live controller (used there only to
-  reset the SUT between tests). Async black-box makes that path first-class, with the controller also
-  doing the wire call.
+  `usingRemoteController` and performs a black-box search against a live controller (used to start the
+  SUT and fetch its schema at start-up, and only to reset it during the fitness loop). Async black-box
+  makes that path first-class, with the controller also doing the wire call.
 - **White-box** is the _same driver_ with three switches thrown: `isInstrumentationActivated()` /
   `getPackagePrefixesToCover()` so the SUT is instrumented, the core's per-evaluation `getTestResults`
   pull, and a **completion hook** telling the core when the consumer has finished
@@ -800,7 +808,8 @@ its channel and messages, and its `reply`), and that entry's key is the stable i
 `(reply-variant × operation)` target hangs on. This is the clean case — and the one our authored 3.0
 SUTs provide by construction.
 
-A **2.x** service sits **beyond the initial black-box scope** (which targets 3.x — see **Scope** above),
+A **2.x** service sits **beyond the initial black-box scope** (which targets 3.x — see the **Scope**
+paragraph at the top of this section),
 but the unit generalises to it, and stating how matters: the white-box mode does cover 2.x, and the
 handful of 2.x request/reply services should not need a second target model if black-box is later
 extended. A 2.x service is reconstructed into the same unit **automatically** — from the contract plus
@@ -853,9 +862,9 @@ because it is a _discrete enumeration the contract already declares_ — so the 
 Coverage is defined over **targets**, created as outcomes are observed and reusing the very same archive
 machinery as REST — only the _target strings_ change. There are two kinds.
 
-**Coverage targets** — each distinct `(reply-variant × operation)` pair, plus the `no-reply` outcome;
-binary, created on first observation. They drive diversity: the archive keeps one minimal test for each
-distinct reply outcome the sampler produces per operation.
+**Coverage targets** — each distinct `(reply-variant × operation)` pair; binary, created on first
+observation. They drive diversity: the archive keeps one minimal test for each distinct reply outcome
+the sampler produces per operation.
 
 **Fault targets** — the outcomes that signal a defect:
 
@@ -863,19 +872,25 @@ distinct reply outcome the sampler produces per operation.
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
 | HTTP **500** server error        | a reply carrying a **server-fault code** (e.g. JSON-RPC `-32603`, a `status:"error"` with a server code); a SUT crash / connection drop mid-process |
 | response **violates the schema** | a reply that matches **no declared reply message** (wrong type, missing required field, out-of-range)                                               |
-| —                                | **correlation broken** — a reply arrives whose id is missing or does not match the one sent                                                         |
-| —                                | **silent drop** — no reply to an operation whose contract _declares_ one (delivered, but silent past _W_)                                           |
+| a **hung endpoint** (no response) | **no reply within the window _W_** — the operation declares a reply, so silence for the whole window breaks the contract's promise (the `no-reply` target) |
 
 A suite's coverage is the **set of distinct targets its tests cover**, and the search maximises that
 set. One asymmetry with REST matters: a **well-formed error reply** — a conforming `error` message, a
 declared client-error code — is **not** a fault but valid, declared behaviour and a coverage target,
-exactly as a 400 is in REST; only _malformed_, _uncorrelated_, _absent-when-promised_ or _server-error_
-replies are faults. The schema-conformance oracle ports directly (validate the reply payload against the
-`reply` message schema); the **correlation** and **silent-drop** oracles are genuinely new, falling out
-of the asynchronous semantics established earlier — and silent-drop is treated **cautiously** (a
-configurable timeout, recorded but not hard-asserted), since a missing async reply may be slowness
-rather than a defect. The criterion is thus the async analogue of REST's `(status × endpoint)` coverage
-plus its fault oracle — though only as fine as the contract is rich (see **When coverage degenerates**).
+exactly as a 400 is in REST; only _malformed_ or _server-error_ replies are faults. The
+schema-conformance oracle ports directly (validate the reply payload against the `reply` message
+schema). The **no-reply fault** needs its caveats stated plainly. The claim is about the missing
+_declared_ reply — the contract's one promise, broken — not about processing, which stays unknowable
+from outside. The verdict is _W_-sensitive: a slow SUT, broker timing and a stuck handler all look
+alike, so _W_ is set generously and reported with the result. And it presupposes correlation has
+already been shown to work empirically (stamp-and-watch, above) — where the SUT correlates by business
+key instead of echoing our id, every reply goes unmatched and blanket silence indicts the setup, not
+the SUT. For exactly that reason one candidate oracle is deliberately **not** adopted: a **broken
+correlation id** is recorded as an outcome — the unmatched reply is discarded — never flagged as a
+fault, since black-box cannot distinguish a defect from business-keyed correlation, and promoting it
+would manufacture false positives. The criterion is thus the async analogue of REST's
+`(status × endpoint)` coverage plus its fault oracle — though only as fine as the contract is rich (see
+**When coverage degenerates**).
 
 #### When coverage degenerates
 
@@ -911,7 +926,7 @@ generalises:
 What remains is a genuine **limitation**: when a contract declares a single, flat reply with no
 enumerated alternatives, the coverage signal stays coarse and no black-box technique recovers a finer
 one — the discriminating behaviour simply is not observable from outside. Such an operation leans
-entirely on the **fault oracle** (schema-mismatch, correlation, silent-drop), which fires regardless of
+entirely on the **fault oracle** (schema-mismatch, server-fault), which fires regardless of
 variant count, so it is _under-exercised_ rather than untestable. Two things follow for the evaluation.
 Target **granularity is a per-SUT property to measure, not assume**. And because authored SUTs _can_ be
 written contract-honest (success and error as distinct reply messages, or an enumerated status field)
@@ -947,7 +962,7 @@ protocol-agnosticism is kept or lost, so it is worth stating explicitly.
 EvoMaster gives **each protocol its own individual subclass and one main action type**, over a shared
 spine: `Individual` → `EnterpriseIndividual` → `ApiWsIndividual` → `RestIndividual` / `GraphQLIndividual`
 / `RPCIndividual`. An individual is an ordered list of actions partitioned into **groups** —
-initialization (SQL / Mongo / Redis seeding), a **main** group of the executable actions under test, and
+initialization (SQL / Mongo / Redis seeding, DNS, schedule tasks), a **main** group of the executable actions under test, and
 cleanup — where each main action is wrapped in a group that can also carry its attached external-service
 mocks. **RPC is the exact template for async**: its `RPCCallAction` holds an id, a list of input
 parameters that _are_ the mutable genes, an **immutable response template**, and a **response filled at
@@ -1017,6 +1032,21 @@ REST shares them across its black-box and white-box fitness. Execution is **sing
 (one message outstanding, so the reply is unambiguously the one we sent); concurrency is an optimisation
 that leans on the correlation id to re-pair replies.
 
+Each step also names its owner — and with it, the new core classes this proposal must build, since every
+problem type supplies its own creation/execution pair. Steps 1–2 belong to a **new `AsyncApiSampler`** —
+**one class for both modes**: the usual reason a sampler branches by mode (black-box reading the schema
+from a config URL, white-box getting it from the controller) vanishes here, since a driver exists in
+both modes and the document always arrives through its `AsyncApiProblem`; nothing else in creation
+(templates, sampling, gene randomisation) cares about the mode. Step 3 belongs to the **standard mutator, unchanged** (it operates on genes). Steps 4–5 belong to a
+**new `AsyncApiFitness`** — the **only class the mode split doubles**: the black-box variant is a
+subclass of the white-box one minus the coverage pull, as `BlackBoxRestFitness` is to `RestFitness`.
+Step 6 belongs to a **new `AsyncApiTestCaseWriter`** — also one class: the black-box/white-box scaffold
+difference already lives in the shared suite writer, and the differing assertions are an internal
+branch. Two thin Guice modules — `AsyncApiModule` and its black-box sibling — wire each mode, the async
+twist being that the black-box module binds the controller connection **unconditionally**, since the
+driver is always needed for the wire. The individual itself stays inert throughout — created, mutated,
+executed and emitted by these components, never acting on its own.
+
 ### The generated test
 
 Here the driver is deliberately **left out of the output**. The emitted test is written against a
@@ -1024,7 +1054,7 @@ Here the driver is deliberately **left out of the output**. The emitted test is 
 EvoMaster's RPC test generation exactly: during the search the core drives the SUT through the driver,
 but the test it _writes out_ (under `enablePureRPCTestGeneration`) fetches the **actual client stub** and
 calls its real methods, rather than re-invoking the driver's generic `executeRPCEndpoint`. Async follows
-suit — a generated Kafka test uses a real Kafka producer/consumer, a WebSocket test a real socket — so
+suit — a generated Kafka test uses a real Kafka producer/consumer, an AMQP test a real channel — so
 the output is a standard client program a developer can read and run, with no dependency on the driver.
 The driver (and its `executeAsyncAction`) governs the _search_; it is **not** what the suite runs against.
 
@@ -1060,18 +1090,19 @@ differ between the two tests. Because the client is concrete, the body **does** 
 WebSocket test is the `bessj_over_websocket` socket shape, AMQP the RabbitMQ-channel shape — which is
 exactly the per-transport plumbing tabulated in **What a request/reply test looks like**:
 
-|           | concrete client (pre-execution)   | id carried in             |
-| --------- | --------------------------------- | ------------------------- |
-| Kafka     | producer + reply-topic consumer   | header                    |
-| AMQP      | channel + reply queue             | `correlation-id` property |
-| MQTT      | client + reply-topic subscription | payload                   |
-| WebSocket | one socket to `/ncs`              | payload                   |
+|                      | concrete client (pre-execution)   | id carried in             |
+| -------------------- | --------------------------------- | ------------------------- |
+| Kafka                | producer + reply-topic consumer   | header                    |
+| AMQP                 | channel + reply queue             | `correlation-id` property |
+| MQTT _(deferred)_    | client + reply-topic subscription | payload                   |
+| WebSocket _(deferred)_ | one socket to `/ncs`            | payload                   |
 
 The generator also writes the client code **to match the protocol version** the contract resolves to (per
-the binding and `protocolVersion` above). This is where the version pays off: an **MQTT 5.0** test places
-the id in Correlation Data with a Response Topic, an **MQTT 3.1.1** test hand-rolls it into the payload,
-and an **AMQP 0-9-1** test uses the native `correlation-id` / `reply-to` properties — the generator emits
-the version-correct calls automatically, falling back to the default only when the contract is silent.
+the binding and `protocolVersion` above). This is where the version pays off: an **AMQP 0-9-1** test uses
+the native `correlation-id` / `reply-to` properties, chosen automatically from the contract's binding —
+and once the deferred transports are added, the same mechanism carries over (an **MQTT 5.0** test would
+place the id in Correlation Data with a Response Topic, an **MQTT 3.1.1** test would hand-roll it into
+the payload), falling back to the default only when the contract is silent.
 
 Unlike a black-box REST test, the emitted suite is **not self-contained**: it depends on the **concrete
 transport client** — the client library on the classpath and (for a bespoke wire, as with RPC's
@@ -1083,8 +1114,8 @@ Three costs come with manufacturing a status code rather than being handed one, 
 experimental work to follow:
 
 - **The observation window.** "No reply" is only decidable relative to a timeout _W_: too short
-  manufactures false silent-drops, too long makes every test slow, and slow-vs-dropped is inherently
-  undecidable black-box. _W_ is a tuning parameter with no REST counterpart.
+  manufactures false `no-reply` faults, too long makes every test slow, and slow-vs-dropped is
+  inherently undecidable black-box. _W_ is a tuning parameter with no REST counterpart.
 - **Shared channels and ordering.** Replies for different actions can interleave on one channel, arrive
   out of order, or be multiple; the correlation id is what untangles them, and where there is none the
   tool must fall back to **single-flight** execution (one outstanding request at a time) at a real
@@ -1102,8 +1133,8 @@ synchronous, self-labelling response.
 
 The engine is reused wholesale: EvoMaster's **white-box search — MIO with the branch-distance gradient**,
 its **Driver** (`SutController`) that starts, instruments and resets the SUT, its database seeding, and
-its external-service (WireMock) machinery — all stay (though the last is wired only for REST today, so a
-new problem type must wire it in). Async adds one thing: a **new kind of action** — the
+its external-service (WireMock) machinery — all stay (the last still REST-wired, as noted in **The
+individual**). Async adds one thing: a **new kind of action** — the
 `AsyncMessageAction` of **The individual**, here possibly reply-less — and the lifecycle to run it.
 Black-box and white-box thus **share the action and the individual**; only the fitness differs — the
 same "two modes, one representation" split, with its REST precedent, described under **The transport
@@ -1140,7 +1171,7 @@ Ordered most-agnostic first — precision rising as the tool is willing to know 
    did:
    - a **database write** surfacing in the per-action SQL snapshot the core already captures;
    - an **outbound message or external call**, intercepted by the external-service (WireMock) machinery
-     (shared code, but wired for REST today — a new problem type must wire it in);
+     (REST-wired today; see **The individual**);
    - an **outbox / inbox / dedup row keyed by message id** — a near-perfect signal that is also
      **self-attributing under concurrency**, since the row carries _our_ id;
    - a **metric / counter delta** (a Micrometer processed-message counter) or, most brittle, a **terminal
@@ -1266,7 +1297,8 @@ The open engineering items are correspondingly focused:
 - **Attribution under concurrency** — identifying our worker thread **at handler entry** by the stamped
   id and tagging its hand-off lineage into an in-flight counter, or serialising to **single-flight** when
   the entry point cannot be hooked. The counter's thread/executor hooks are **new instrumentation** — no
-  existing hook targets `Thread`/`Executor` — though EvoMaster's method-replacement framework and its
+  existing hook targets thread _spawning or hand-off_ (`Thread.start` / `Executor.submit`; only
+  `Thread.sleep` is replaced today) — though EvoMaster's method-replacement framework and its
   DynamoDB `CompletableFuture` tracker are a close template.
 - **Timeout tuning** — the completion timeout as a first-class, reported parameter, since (as in
   black-box) slow-vs-stuck is undecidable from outside the handler.
@@ -1290,7 +1322,8 @@ one reuses:
    **read-back is new machinery**.
 4. **The external call the handler made** — WireMock stubs are already emitted into white-box suites
    but never verified; adding `verify(...)` is a one-line extension that turns the existing mock from
-   stimulus into an oracle.
+   stimulus into an oracle. (A partial precedent exists: the SSRF security oracle already emits a
+   received-request check against its own callback mock.)
 5. **Completion within the window** — the await doubles as an implicit assertion (timeout ⇒ fail),
    with the already-emitted per-test `@Timeout` as the hard ceiling; the await loop itself is new
    (nothing asynchronous has ever been emitted before).
