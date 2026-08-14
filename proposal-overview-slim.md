@@ -5,9 +5,10 @@ This proposal extends EvoMaster to test **AsyncAPI** services, in both a **black
 `SutController`, individuals and genes) and focuses on the AsyncAPI-specific decisions. The scope is the
 same for both modes: **AsyncAPI 3.x only** — its first-class `reply` is the one observable both modes
 anchor on. Black-box classifies that reply as the test's outcome; white-box collects coverage a short
-settle window after the reply arrives — or at the full reply window when none does. Black-box targets
-**Kafka and AMQP**; white-box covers the four dominant transports. The document runs problem-first, then one proposal section per
-mode.
+settle window after the reply arrives — or at the full reply window when none does. Black-box is built on
+**Kafka** first — the densest transport in the corpus, and one where correlation rides in metadata — with
+**WebSocket**, the most widely adopted, as the stated next target; white-box covers the four dominant
+transports. The document runs problem-first, then one proposal section per mode.
 
 ## 1. AsyncAPI, and how it differs from OpenAPI
 
@@ -90,19 +91,38 @@ operation returns nothing — publishing into it is publishing into a void, indi
 silently dropped message. So the **only observable interaction is request/reply**: a `receive` operation
 with a paired `reply`.
 
-Even there, correlation is not free — and it has two halves. **Placing the id is our half, and the easy
-one**: the contract's `correlationId` declaration says where it goes when present, and the in-scope
-transports offer a natural metadata slot regardless (AMQP's native `correlation-id` property, a Kafka
-header). **The pairing itself is the SUT's half**: a reply becomes ours only once the service copies our
-stamped id onto it, and whether it does so cannot be read off the contract — the declaration is often
-absent and, when present, may disagree with the code. So whether correlation _works_ is established
-**empirically**: stamp a fresh id, watch for the echo. A tool can _detect_ a missing or mismatched id,
-but cannot supply it.
+That exclusion is a scope decision rather than a permanent verdict, and it marks the clearest research
+opening on the black-box side. What fire-and-forget denies us is not the message — we can always publish
+one — but any way to tell **when, or whether, the SUT finished processing it**. Signals do exist outside
+the service, though: the broker carries them (a consumer-group offset advancing past our record, a
+queue's unacked count draining to zero), and the same contract often declares other channels the
+application _sends_ on, whose traffic is a side effect we are entitled to watch. Turning those into a
+**completion heuristic** — good enough to call a fire-and-forget action done, and so to give it a testable
+outcome at all — is future work this proposal deliberately leaves open, and the outside-in half of a
+question white-box faces from within (§3.2).
 
-The transport scope follows directly from §2.1's split. Stamp-and-watch is generic only where the id
-rides in **metadata**; on the payload transports (MQTT, WebSocket) it would have to be re-implemented
-per service, inside each hand-rolled message layout. **Black-box is therefore developed for Kafka and
-AMQP** — the transports where correlation is recoverable without reading anyone's message body.
+Within the request/reply subset itself, correlation is not free either — and it has two halves.
+**Placing the id is our half, and the easy one**: the contract's `correlationId` declaration says where
+it goes when present, and Kafka offers a natural metadata slot regardless — a record header. **The pairing itself is the SUT's half**: a reply
+becomes ours only once the service copies our stamped id onto it, and whether it does so cannot be read
+off the contract — the declaration is often absent and, when present, may disagree with the code. So
+whether correlation _works_ is established **empirically**: stamp a fresh id, watch for the echo. A tool
+can _detect_ a missing or mismatched id, but cannot supply it.
+
+The transport scope follows from §2.1's split. Stamp-and-watch is generic only where the id rides in
+**metadata**, so **black-box is built on Kafka** — the metadata transport with the densest declared usage
+in the corpus (393 specs across 193 repositories in 3.x). **AMQP is dropped**: it offers the same
+metadata slot, and so would be nearly free to add, but it is the least adopted of the four (107
+repositories) and cheapness alone does not earn scope.
+
+**WebSocket is the stated next target**, for two reasons. It is the **most widely adopted** transport in
+the corpus — 203 repositories, more than any other — and its payload-level correlation is an
+**architectural challenge worth pursuing** rather than a mechanical port. With no metadata slot to stamp,
+the id has to ride inside the service's own message layout, so it cannot be placed by anything that has
+not been told that layout. The answer is a boundary rather than a guess: the core mints the correlation
+id and hands it down, and the transport client — the one piece written against that layout — places it on
+the wire and matches it on the reply (§3.1). Drawing that line correctly is what puts a payload transport
+in reach without teaching the core anyone's message format.
 
 ### 2.3 White-box: when to collect coverage
 
@@ -175,22 +195,36 @@ AsyncApiDriver (a SutController):
     getProblemInfo() = AsyncApiProblem:
         schema   # the AsyncAPI document, URL or inline — conveyed as OpenAPI is; the only part
                  #   that crosses to the core (no reflection: the document already IS the schema)
-        client   # live wire handle (Kafka producer/consumer, AMQP channel) — never crosses
+        client   # live wire handle (a Kafka producer/consumer pair) — never crosses
 
     executeAsyncAction(dto):     # the core calls this once per action — the executeRPCEndpoint analogue
-        publish(dto.address, inject(dto.correlationId, dto.body))   # header (Kafka) / property (AMQP)
-        return awaitReply(dto.replyAddress, match=dto.correlationId, within=dto.window)
+        client.publish(dto.address, dto.body, correlationId=dto.correlationId)
+        return client.awaitReply(dto.replyAddress, match=dto.correlationId, within=dto.window)
+        # the CLIENT places the id on the wire and reads it back off the reply — a record
+        #   header on Kafka, a payload field on a socket transport; neither the core nor
+        #   the driver above it ever learns which
         # returns the reply — or nothing, when the window W expires
 ```
 
-A note on protocol _versions_: the document pins them only loosely. AMQP is the firm case — AsyncAPI
-names the two AMQPs as different protocols, so `amqp` alone fixes 0-9-1 (the incompatible AMQP 1.0 is
-`amqp1`). Everywhere else the version lives in the server's `protocolVersion` field, which is
-**optional and free-text**, so when it is absent the driver assumes a conservative default. (The
-`bindingVersion` field inside binding objects is no substitute: it versions the binding _definition_,
-not the protocol.)
+Note where the correlation id sits in that split. The **core mints it** — a fresh nonce per execution —
+and passes it down as a plain value; the **transport client places it and matches it back**. Nothing in
+between needs to know _how_: whether the id ends up in a Kafka record header or in a field of the
+service's own JSON envelope is knowledge belonging to the client, which is written against the one
+message layout it speaks. That is what keeps the core protocol-agnostic, and it is also what makes the
+payload transports reachable at all — on WebSocket the id rides wherever that service's protocol puts it,
+and the client is simply the piece that knows.
 
-The transport code (the Kafka/AMQP publish-and-await) sits in the driver, and can be supplied in one of
+A note on protocol _versions_: the document pins them only loosely. For Kafka the version lives in the
+server's `protocolVersion` field, which is **optional and free-text**, so when it is absent the driver
+assumes a conservative default. (Occasionally AsyncAPI encodes the version in the protocol id itself —
+`mqtt` and `mqtt5` are named as separate protocols — which pins it exactly; that is the exception, and it
+matters mainly to the shared driver under white-box's wider transport set. The `bindingVersion` field
+inside binding objects is no substitute either way: it versions the binding _definition_, not the
+protocol.) WebSocket is the loose case and points ahead: `ws` versus `wss` distinguishes only transport
+security, and **no field anywhere describes the service's own message framing** — which is precisely why
+that framing, correlation id included, is the client's business and not the document's.
+
+The transport code (the Kafka publish-and-await) sits in the driver, and can be supplied in one of
 two ways — neither of which touches the core:
 
 1. **A module EvoMaster ships** — optional and contract-driven, for a standard transport; the user just
@@ -208,7 +242,8 @@ no driver): with no universal wire, a driver must always be present to hold the 
 #### The individual
 
 There is **one `AsyncApiIndividual`** (an `ApiWsIndividual`) for all transports — **not one per
-transport**. The transport appears nowhere in it; Kafka-vs-AMQP is decided below the driver interface.
+transport**. The transport appears nowhere in it; Kafka-vs-WebSocket is decided below the driver
+interface — which is why the follow-on transport (§2.2) costs the representation nothing.
 The subclass itself is as thin as its REST/GraphQL/RPC siblings — the structure is all inherited:
 
 ```
@@ -268,9 +303,10 @@ controller connection unconditionally, since the driver is always needed for the
 #### Test generation
 
 Following RPC's `enablePureRPCTestGeneration`, the emitted test is written against a **concrete transport
-client, not the driver**: a generated Kafka test uses a real producer/consumer, an AMQP test a real
-channel — standard client code a developer can read and run. The driver governs the _search_; it is not
-what the suite runs against. The consequence is that the emitted body is concrete and **varies by
+client, not the driver**: a generated Kafka test uses a real producer/consumer — and, once WebSocket
+lands, a real socket client — standard client code a developer can read and run. The driver governs the
+_search_; it is not what the suite runs against. The consequence is that the emitted body is concrete and
+**varies by
 transport**, and the suite carries a dependency on the concrete transport-client library — the black-box
 price for having no universal wire.
 
@@ -298,9 +334,10 @@ test ncs_bessj__Error:                      # boundary-fuzzed genes (n < 3) → 
 ```
 
 The correlation id rides in a Kafka **header** and never touches the payload; a real producer/consumer
-pair is stood up in the test itself — no EvoMaster driver at run time. The generator also writes the
-client code **to match the protocol version**: an AMQP 0-9-1 test uses the native `correlation-id` /
-`reply-to` properties, chosen automatically from the contract's binding and `protocolVersion`.
+pair is stood up in the test itself — no EvoMaster driver at run time. The generator writes the client
+code **to match the wire it found**, reading the header name and the topics from the contract's binding
+and `protocolVersion`; on a payload transport it would emit the same placement the transport client used
+during the search, since that client is the piece that knows where the id belongs.
 
 ### 3.2 White-box
 
@@ -329,11 +366,23 @@ always wait the full _W_.
 Both windows are heuristics, but not equally blind. _S_ proves nothing — it is only the line after
 which we snapshot. _W_ is sharper wherever a reply is declared: the contract promised one, so silence
 for the whole window is that promise broken — which is why §3.1 counts it as a fault, black-box and
-white-box drawing the same line; for operations that declare no reply, _W_ is as blind as _S_. Sharper
-completion detectors do exist — watching the instrumentation's own probes go quiet, tracking the worker
-threads a message spawns and hands off to, hooking the listener framework's handler, reading broker
-offsets — each buying precision at the cost of knowing more about the SUT. **This proposal deliberately
-takes the two fixed windows as its first iteration**, and leaves those finer detectors as future work.
+white-box drawing the same line.
+
+**Fire-and-forget is where both windows go blind at once**, and it is white-box's version of the gap
+§2.2 leaves open on the black-box side. With no reply declared, nothing shortens the wait and nothing
+confirms it: _W_ elapses in full for every such action and tells us only that time passed, so coverage is
+snapshotted at a moment chosen for no reason connected to the SUT. Since these are also the operations
+white-box exists to reach — the ones black-box cannot observe at all — the crude answer costs most
+exactly where the mode is worth most.
+
+Sharper completion detectors do exist, and instrumentation unlocks the strongest of them: watching the
+probes themselves go quiet, tracking the worker threads a message spawns and hands off to, hooking the
+listener framework's handler — each buying precision at the cost of knowing more about the SUT. The
+outside-in signals of §2.2 stay available here as well; white-box simply has more to work with. **This
+proposal deliberately takes the two fixed windows as its first iteration**, and leaves those detectors as
+future work — which, with §2.2's black-box counterpart, makes one research question asked from two sides:
+_when is a message done?_ Inside is the more tractable side, because the evidence there is the running
+code rather than a broker's bookkeeping.
 
 #### The fitness function in white-box
 
